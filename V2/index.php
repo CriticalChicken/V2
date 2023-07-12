@@ -1,5 +1,9 @@
 <!doctype html>
 <html>
+
+<!-- Copyright © Critical Chicken. All rights reserved. Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.
+All other trademarks referred to are trademarks of their respective owners. See website for current copyright years. -->
+
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,35 +52,57 @@
 				<a href="#" title="Search"><img src="<?php echo get_template_directory_uri(); ?>/img/ui_search_white-on-black_for20px.png" alt="Search" height="16"></a>
 			</div><!-- /menu-inner -->
 		</div><!-- /menu-outer -->
-		<div id="ticker-outer">
-			<div id="ticker-titletag">
-				<span class="titletag titletag-live">Live</span>
-			</div><!-- /ticker-titletag -->
-			<div id="ticker-inner">
-				<ul id="ticker-contents">
-					<li>Nintendo has announced its &ldquo;Switch 2&rdquo; console will be revealed during this Friday&rsquo;s Nintendo Direct stream</li>
-					<li>An enhanced version of <b>The Legend of Zelda: Tears of the Kingdom</b> will also be previewed</li>
-					<li>More to follow&hellip;</li>
-				</ul><!-- /ticker-contents -->
-			</div><!-- /ticker-inner -->
-			<div id="ticker-link">
-				<a href="#" title="Read more">Read more</a>
-			</div><!-- /ticker-link -->
-		</div><!-- /ticker-outer -->
-		<div id="jumbotron-outer" class="orange">
+		<?php $ticker_checker = get_option('ticker_display'); if($ticker_checker == "on") { ?>
+			<div id="ticker-outer">
+				<div id="ticker-titletag">
+					<span class="titletag titletag-<?php echo get_option('ticker_titletag_special'); ?>"><?php echo get_option('ticker_titletag_text'); ?></span>
+				</div><!-- /ticker-titletag -->
+				<div id="ticker-inner">
+					<ul id="ticker-contents">
+						<?php
+							$item1 = get_option('ticker_item1');
+							$item2 = get_option('ticker_item2');
+							$item3 = get_option('ticker_item3');
+							$item4 = get_option('ticker_item4');
+							$item5 = get_option('ticker_item5');
+							$item6 = get_option('ticker_item6');
+							$item7 = get_option('ticker_item7');
+							$item8 = get_option('ticker_item8');
+							$item9 = get_option('ticker_item9');
+							$item10 = get_option('ticker_item10');
+
+							if(!$item1 == "") { echo "<li>" . $item1 . "</li>"; }
+							if(!$item2 == "") { echo "<li>" . $item2 . "</li>"; }
+							if(!$item3 == "") { echo "<li>" . $item3 . "</li>"; }
+							if(!$item4 == "") { echo "<li>" . $item4 . "</li>"; }
+							if(!$item5 == "") { echo "<li>" . $item5 . "</li>"; }
+							if(!$item6 == "") { echo "<li>" . $item6 . "</li>"; }
+							if(!$item7 == "") { echo "<li>" . $item7 . "</li>"; }
+							if(!$item8 == "") { echo "<li>" . $item8 . "</li>"; }
+							if(!$item9 == "") { echo "<li>" . $item9 . "</li>"; }
+							if(!$item10 == "") { echo "<li>" . $item10 . "</li>"; }
+						?>
+					</ul><!-- /ticker-contents -->
+				</div><!-- /ticker-inner -->
+				<?php $ticker_link_checker = get_option('ticker_link'); if(!$ticker_link_checker == "") { ?><div id="ticker-link">
+					<a href="<?php echo get_option('ticker_link'); ?>" title="Read more">Read more</a>
+				</div><!-- /ticker-link --><?php } ?>
+			</div><!-- /ticker-outer -->
+		<?php } ?>
+		<div id="jumbotron-outer" class="<?php echo get_option('jumbotron_color_field'); ?>">
 			<div class="bg"></div>
 			<div class="bg bg2"></div>
 			<div class="bg bg3"></div>
+			<div id="jumbotron-link">
+				<?php $jumbotron_link_checker = get_option('jumbotron_link'); if(!$jumbotron_link_checker == "") { ?><a href="<?php echo get_option('jumbotron_link'); ?>" title="Read more">Read more</a><?php } ?>
+			</div><!-- /jumbotron-link -->
 			<div id="jumbotron-inner">
 				<div id="jumbotron-text">
-					<span class="titletag">Review</span><span class="titletag titletag-hollow">First impressions</span>
-					<span>Were Pok&eacute;mon Scarlet and Violet even designed for the current Switch?</span>
+					<span class="titletag titletag-<?php echo get_option('jumbotron_titletag1_special'); ?>"><?php echo get_option('jumbotron_titletag1_text'); ?></span><?php $titletag_checker = get_option('jumbotron_titletag2_display'); if($titletag_checker == "on") { ?><span class="titletag titletag-<?php $titletag_type = get_option('jumbotron_titletag2_type'); if(!$titletag_type == "hollow") { echo get_option('jumbotron_titletag2_special'); } else { echo 'hollow'; } ?>"><?php echo get_option('jumbotron_titletag2_text'); ?></span><?php } ?>
+					<span><?php echo get_option('jumbotron_text'); ?></span>
 				</div><!-- /jumbotron-text -->
-				<img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="544" height="306">
+				<img src="<?php echo get_option('jumbotron_image'); ?>" alt="<?php echo get_option('jumbotron_alt'); ?>" width="544" height="306">
 			</div><!-- /jumbotron-inner -->
-			<div id="jumbotron-link">
-				<a href="#" title="Read more">Read more</a>
-			</div><!-- /jumbotron-link -->
 		</div><!-- /jumbotron-outer -->
 		<div id="socials">
 			<ul>
@@ -90,37 +116,13 @@
 		<div id="home-content-upper">
 			<h1>Our latest posts</h1>
 			<div id="posts-container-upper">
-				<?php if(have_posts()):while(have_posts()):the_post(); ?>
-				<div class="homepage-post">
-					<a href="#" title="Read more" class="thumb-link"><img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352"></a>
-					<a href="#"><span class="titletag titletag-reviews">Review</span></a>
-					<span class="homepage-post-title"><a href="#" title="Read more">E3 is back and it&rsquo;s under new management</a></span>
-				</div>
-				<div class="homepage-post">
-					<a href="#" title="Read more" class="thumb-link"><img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352"></a>
-					<a href="#"><span class="titletag titletag-reviews">Review</span></a>
-					<span class="homepage-post-title"><a href="#" title="Read more">E3 is back and it&rsquo;s under new management and here&rsquo;s another line of text</a></span>
-				</div>
-				<div class="homepage-post">
-					<a href="#" title="Read more" class="thumb-link"><img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352"></a>
-					<a href="#"><span class="titletag titletag-reviews">Review</span></a>
-					<span class="homepage-post-title"><a href="#" title="Read more">E3 is back and it&rsquo;s under new management</a></span>
-				</div>
-				<div class="homepage-post">
-					<a href="#" title="Read more" class="thumb-link"><img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352"></a>
-					<a href="#"><span class="titletag titletag-reviews">Review</span></a>
-					<span class="homepage-post-title"><a href="#" title="Read more">E3 is back and it&rsquo;s under new management</a></span>
-				</div>
-				<div class="homepage-post">
-					<a href="#" title="Read more" class="thumb-link"><img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352"></a>
-					<a href="#"><span class="titletag titletag-reviews">Review</span></a>
-					<span class="homepage-post-title"><a href="#" title="Read more">E3 is back and it&rsquo;s under new management and here&rsquo;s another line of text</a></span>
-				</div>
-				<div class="homepage-post">
-					<a href="#" title="Read more" class="thumb-link"><img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352"></a>
-					<a href="#"><span class="titletag titletag-reviews">Review</span></a>
-					<span class="homepage-post-title"><a href="#" title="Read more">E3 is back and it&rsquo;s under new management</a></span>
-				</div>
+				<?php query_posts('posts_per_page=6&offset=0'); if(have_posts()):while(have_posts()):the_post(); ?>
+					<div id="post-<?php the_ID(); ?>"<?php post_class('homepage-post') ?>>
+						<a href="<?php echo the_permalink(); ?>" title="Read more" class="thumb-link"><img src="<?php if(get_field('thumbnail')):echo the_field('thumbnail');else:echo get_template_directory_uri();fallbackThumbnailPicker();endif; ?>" alt="<?php if(get_field('alt')):echo the_field('alt');endif; ?>" width="352"></a>
+						<?php categoryLinkGenerator(); ?>
+						<span class="homepage-post-title"><a href="<?php echo the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></span>
+					</div>
+				<?php endwhile;endif; ?>
 			</div><!-- /posts-container-upper -->
 		</div><!-- /home-content-upper -->
 		<div id="not-sidebar-outer">
@@ -134,7 +136,7 @@
 				<div id="not-sidebar-box-right">
 					<h1>This is&hellip;<br>objectionable</h1>
 					<img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352">
-					<p>We&rsquo;ve spent the last <span class="timetip" waiting for <b>Ace Attorney 7</b>. Hmph.</p>
+					<p>We&rsquo;ve spent the last <span class="timetip" title="8th September 2016 - release date of Ace Attorney 6"><?php echo do_shortcode('[DateCounter startDate="2016-09-08" endDate="now" format="%y years, %m months, and %d days"]'); ?></span> waiting for <b>Ace Attorney 7</b>. Hmph.</p>
 					<a href="<?php echo get_site_url(); ?>/category/ace-attorney" class="raquo">More Ace Attorney &raquo;</a>
 				</div><!-- /not-sidebar-box-right -->
 				<div id="not-sidebar-box-mastodon">
@@ -144,31 +146,12 @@
 		</div><!-- /not-sidebar-outer -->
 		<div id="home-content-lower">
 			<div id="posts-container-lower">
-				<div id="post-<?php the_ID(); ?>"<?php post_class('homepage-post') ?>>
-					<a href="<?php echo the_permalink(); ?>" title="Read more" class="thumb-link"><img src="<?php if(get_field('thumbnail')):echo the_field('thumbnail');else:echo get_template_directory_uri();echo "/img/thumbnail_black-on-yellow_for198px.png";endif; ?>" alt="<?php if(get_field('alt')):echo the_field('alt');endif; ?>" width="352"></a>
-					<?php categoryLinkGenerator(); ?>
-					<span class="homepage-post-title"><a href="<?php echo the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></span>
-				</div>
-				<div class="homepage-post">
-					<a href="#" title="Read more" class="thumb-link"><img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352"></a>
-					<a href="#"><span class="titletag titletag-reviews">Review</span></a>
-					<span class="homepage-post-title"><a href="#" title="Read more">E3 is back and it&rsquo;s under new management</a></span>
-				</div>
-				<div class="homepage-post">
-					<a href="#" title="Read more" class="thumb-link"><img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352"></a>
-					<a href="#"><span class="titletag titletag-reviews">Review</span></a>
-					<span class="homepage-post-title"><a href="#" title="Read more">E3 is back and it&rsquo;s under new management</a></span>
-				</div>
-				<div class="homepage-post">
-					<a href="#" title="Read more" class="thumb-link"><img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352"></a>
-					<a href="#"><span class="titletag titletag-reviews">Review</span></a>
-					<span class="homepage-post-title"><a href="#" title="Read more">E3 is back and it&rsquo;s under new management and here&rsquo;s another line of text</a></span>
-				</div>
-				<div class="homepage-post">
-					<a href="#" title="Read more" class="thumb-link"><img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352"></a>
-					<a href="#"><span class="titletag titletag-reviews">Review</span></a>
-					<span class="homepage-post-title"><a href="#" title="Read more">E3 is back and it&rsquo;s under new management</a></span>
-				</div>
+				<?php query_posts('posts_per_page=6&offset=6'); if(have_posts()):while(have_posts()):the_post(); ?>
+					<div id="post-<?php the_ID(); ?>"<?php post_class('homepage-post') ?>>
+						<a href="<?php echo the_permalink(); ?>" title="Read more" class="thumb-link"><img src="<?php if(get_field('thumbnail')):echo the_field('thumbnail');else:echo get_template_directory_uri();fallbackThumbnailPicker();endif; ?>" alt="<?php if(get_field('alt')):echo the_field('alt');endif; ?>" width="352"></a>
+						<?php categoryLinkGenerator(); ?>
+						<span class="homepage-post-title"><a href="<?php echo the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></span>
+					</div>
 				<?php endwhile;endif; ?>
 			</div><!-- /posts-container-lower -->
 		</div><!-- /home-content-lower -->
@@ -193,7 +176,7 @@
 					</ul>
 				</div><!-- /footer-links -->
 				<div id="version">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/branding_v2_color-on-white_for32px.png" width="43" height="32" alt="Critical Chicken V2" title="V2.0 MVP - Brazen Blackbird"><p id="load_time">Still loading&hellip;</p>
+					<img src="<?php echo get_template_directory_uri(); ?>/img/branding_v2_color-on-white_for32px.png" width="43" height="32" alt="Critical Chicken V2" title="V2 MVP - Brazen Blackbird"><p id="load_time">Still loading&hellip;</p>
 				</div><!-- /version -->
 			</div><!-- /footer-inner -->
 		</div><!-- /footer-outer -->

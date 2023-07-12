@@ -1,6 +1,22 @@
 <?php
 
-/* Copyright © Critical Chicken. All rights reserved. Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken. All other trademarks referred to are trademarks of their respective owners. See website for current copyright years. */
+/* Copyright © Critical Chicken. All rights reserved. Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.
+All other trademarks referred to are trademarks of their respective owners. See website for current copyright years. */
+
+// Fallback thumbnail picker
+function fallbackThumbnailPicker() {
+	if (in_category('exclusives') || in_category('live') || in_category('breaking-news') || in_category('news-alerts')) {
+		echo('/img/thumbnail_black-on-yellow_for198px.png');
+	} else if (in_category('news')) {
+		echo('/img/thumbnail_white-on-red_for198px.png');
+	} else if (in_category('features')) {
+		echo('/img/thumbnail_white-on-blue_for198px.png');
+	} else if (in_category('reviews')) {
+		echo('/img/thumbnail_white-on-orange_for198px.png');
+	} else {
+		echo('/img/thumbnail_white-on-black_for198px.png');
+	}
+}
 
 // Category link generator
 function categoryLinkGenerator() {
@@ -180,3 +196,7 @@ function categoryLinkGenerator() {
 	}
 
 }
+
+// Add extra pages to the admin dashboard
+require_once(TEMPLATEPATH . '/functions/jumbotron-editor.php');
+require_once(TEMPLATEPATH . '/functions/ticker-editor.php');
