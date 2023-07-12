@@ -118,12 +118,12 @@ All other trademarks referred to are trademarks of their respective owners. See 
 body {
 	background-color: #edecec;
 	min-height: 100%;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 b,
 strong {
-	font-weight: 600;
+	font-weight: 700;
 }
 
 i,
@@ -343,6 +343,7 @@ em {
 	position: relative;
 	left: calc((100% - 1120px) / 2);
 	z-index: 50;
+	top: -400px;
 }
 
 #jumbotron-inner img {
@@ -376,7 +377,7 @@ em {
 	height: 400px;
 	position: relative;
 	z-index: 300;
-	top: -375px;
+	top: 0;
 }
 
 #jumbotron-link a {
@@ -699,7 +700,7 @@ em {
 	width: 1120px;
 	left: calc((100% - 1120px) / 2);
 	padding-top: 30px;
-	padding-bottom: 64px;
+	padding-bottom: 32px;
 }
 
 #footer-inner span.copyright {
@@ -728,7 +729,7 @@ em {
 }
 
 #footer-links ul li {
-	margin-right: 28px;
+	margin-right: 12px;
 }
 
 #footer-links ul li a {
@@ -745,7 +746,7 @@ em {
 	font-family: "Lora", serif;
 	font-size: 18.5px;
 	color: black;
-	font-weight: 400;
+	font-weight: 500;
 	margin-top: 27px;
 }
 
@@ -783,7 +784,7 @@ em {
 .individual-post p {
 	display: block;
 	font-family: "Lora", serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 21px;
 	line-height: 32px;
 	position: relative;
@@ -833,7 +834,7 @@ em {
 .individual-post blockquote {
 	display: block;
 	font-family: "Lora", serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 21px;
 	line-height: 32px;
 	position: relative;
@@ -908,7 +909,7 @@ em {
 	width: 928px;
 	padding-left: 96px;
 	font-family: "Lora", serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 21px;
 	line-height: 32px;
 	margin-top: 16px;
@@ -937,7 +938,7 @@ hr {
 .individual-post ol li {
 	width: 928px;
 	font-family: "Lora", serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 21px;
 	line-height: 32px;
 	margin-top: 16px;
@@ -954,6 +955,11 @@ hr {
 	margin-left: -96px;
 	text-align: right;
 	margin-right: 32px;
+}
+
+span.timetip {
+	text-decoration: underline;
+	cursor: help;
 }
 
 /* TITLETAGS */
