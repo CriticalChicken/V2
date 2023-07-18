@@ -13,6 +13,9 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <meta name="msapplication-config" content="<?php echo get_template_directory_uri(); ?>/img/manifest/browserconfig.xml">
 <meta name="theme-color" content="#d20202">
 <meta name="robots" content="noindex"><!-- REMOVE THIS LINE BEFORE LAUNCHING -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&subset=latin-ext&display=swap" rel="stylesheet">
 <link href="<?php echo get_template_directory_uri(); ?>/css/reset.css" rel="stylesheet" type="text/css">
 <link href="<?php echo get_template_directory_uri(); ?>/css/styles.css" rel="stylesheet" type="text/css">
 <?php if(current_user_can('edit_posts')): ?><link href="<?php echo get_template_directory_uri(); ?>/css/admin.css" rel="stylesheet" type="text/css" /><?php endif; ?>
@@ -98,7 +101,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 			</div><!-- /jumbotron-link -->
 			<div id="jumbotron-inner">
 				<div id="jumbotron-text">
-					<span class="titletag titletag-<?php echo get_option('jumbotron_titletag1_special'); ?>"><?php echo get_option('jumbotron_titletag1_text'); ?></span><?php $titletag_checker = get_option('jumbotron_titletag2_display'); if($titletag_checker == "on") { ?><span class="titletag titletag-<?php $titletag_type = get_option('jumbotron_titletag2_type'); if(!$titletag_type == "hollow") { echo get_option('jumbotron_titletag2_special'); } else { echo 'hollow'; } ?>"><?php echo get_option('jumbotron_titletag2_text'); ?></span><?php } ?>
+					<span class="titletag titletag-<?php echo get_option('jumbotron_titletag1_special'); ?>"><?php echo get_option('jumbotron_titletag1_text'); ?></span><?php $titletag_checker = get_option('jumbotron_titletag2_display'); if($titletag_checker == "on") { ?><span class="titletag titletag-<?php $titletag_type = get_option('jumbotron_titletag2_type'); if($titletag_type == "main") { echo get_option('jumbotron_titletag2_special'); } else { echo 'hollow'; } ?>"><?php echo get_option('jumbotron_titletag2_text'); ?></span><?php } ?>
 					<span><?php echo get_option('jumbotron_text'); ?></span>
 				</div><!-- /jumbotron-text -->
 				<img src="<?php echo get_option('jumbotron_image'); ?>" alt="<?php echo get_option('jumbotron_alt'); ?>" width="540" height="304">
