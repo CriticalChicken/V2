@@ -101,7 +101,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 					<span class="titletag titletag-<?php echo get_option('jumbotron_titletag1_special'); ?>"><?php echo get_option('jumbotron_titletag1_text'); ?></span><?php $titletag_checker = get_option('jumbotron_titletag2_display'); if($titletag_checker == "on") { ?><span class="titletag titletag-<?php $titletag_type = get_option('jumbotron_titletag2_type'); if(!$titletag_type == "hollow") { echo get_option('jumbotron_titletag2_special'); } else { echo 'hollow'; } ?>"><?php echo get_option('jumbotron_titletag2_text'); ?></span><?php } ?>
 					<span><?php echo get_option('jumbotron_text'); ?></span>
 				</div><!-- /jumbotron-text -->
-				<img src="<?php echo get_option('jumbotron_image'); ?>" alt="<?php echo get_option('jumbotron_alt'); ?>" width="544" height="306">
+				<img src="<?php echo get_option('jumbotron_image'); ?>" alt="<?php echo get_option('jumbotron_alt'); ?>" width="540" height="304">
 			</div><!-- /jumbotron-inner -->
 		</div><!-- /jumbotron-outer -->
 		<div id="socials">
@@ -114,7 +114,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 			</ul>
 		</div><!-- /socials -->
 		<div id="home-content-upper">
-			<h1>Our latest posts</h1>
+			<h1>Posts we think you&rsquo;ll like</h1>
 			<div id="posts-container-upper">
 				<?php query_posts('posts_per_page=6&offset=0'); if(have_posts()):while(have_posts()):the_post(); ?>
 					<div id="post-<?php the_ID(); ?>"<?php post_class('homepage-post') ?>>
@@ -130,17 +130,17 @@ All other trademarks referred to are trademarks of their respective owners. See 
 				<div id="not-sidebar-box-left">
 					<h1>We&rsquo;re feeling &lsquo;hype&rsquo; about this thing here</h1>
 					<img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352">
-					<p>Triangles, ghosties, and hot stepbrothers, oh my! The first one was great, so we can&rsquo;t wait for <b>Oxenfree II</b>.</p>
+					<p>Triangles, ghosties, and hot stepbrothers, oh my! We can&rsquo;t wait for the continuation of <b>Oxenfree</b>.</p>
 					<a href="<?php echo get_site_url(); ?>/radar" class="raquo">What&rsquo;s on our Radar &raquo;</a>
 				</div><!-- /not-sidebar-box-left -->
 				<div id="not-sidebar-box-right">
 					<h1>This is&hellip;<br>objectionable</h1>
 					<img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352">
-					<p>We&rsquo;ve spent the last <span class="timetip" title="8th September 2016 - release date of Ace Attorney 6"><?php echo do_shortcode('[DateCounter startDate="2016-09-08" endDate="now" format="%y years, %m months, and %d days"]'); ?></span> waiting for <b>Ace Attorney 7</b>. Hmph.</p>
+					<p>We&rsquo;ve spent the last <span class="timetip" title="8th September 2016 - release date of Ace Attorney 6"><?php echo do_shortcode('[DateCounter startDate="2016-09-08" endDate="now" format="%y years, %m months, and %d days"]'); ?></span> waiting for <b>Ace&nbsp;Attorney&nbsp;7</b>. Hmph.</p>
 					<a href="<?php echo get_site_url(); ?>/category/ace-attorney" class="raquo">More Ace Attorney &raquo;</a>
 				</div><!-- /not-sidebar-box-right -->
 				<div id="not-sidebar-box-mastodon">
-					<iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="352" height="392" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fohai.social%2Fusers%2FCriticalChicken&theme=light&size=100&header=true&replies=false&boosts=false" frameborder="0"></iframe>
+					<iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="352" height="424" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fohai.social%2Fusers%2FCriticalChicken&theme=light&size=100&header=true&replies=false&boosts=false" frameborder="0"></iframe>
 				</div><!-- /not-sidebar-box-mastodon -->
 			</div><!-- /not-sidebar-inner -->
 		</div><!-- /not-sidebar-outer -->
@@ -166,7 +166,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 		</div><!-- /home-navigation -->
 		<div id="footer-outer">
 			<div id="footer-inner">
-				<span class="copyright">Copyright &copy; 2016 &ndash; <?php echo date("Y"); ?> Critical Chicken. All rights reserved.</span>
+				<span class="copyright">Copyright &copy; 2016&ndash;<?php echo date("Y"); ?> Critical Chicken. All rights reserved.</span>
 				<span class="trademark">Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.<br>All other trademarks referred to are trademarks of their respective owners.</span>
 				<div id="footer-links">
 					<ul>

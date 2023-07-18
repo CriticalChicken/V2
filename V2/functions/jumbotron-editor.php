@@ -139,7 +139,7 @@ function jumbotron_settings_init() {
 }
 
 function jumbotron_editor_intro() {
-    echo '<style type="text/css">@font-face { font-family: "calamitybold"; src: url("' . get_template_directory_uri() . '/woff/calamity-bold.woff2") format("woff2"), url("' . get_template_directory_uri() . '/woff/calamity-bold.woff") format("woff"); font-weight: normal; font-style: normal; }</style>';
+    echo '<style type="text/css">@font-face { font-display: swap; font-family: "Noto Sans Display"; font-style: normal; font-weight: 700; src: url("' . get_template_directory_uri() . '/woff/noto-sans-display-v20-latin_latin-ext-700.woff2") format("woff2"); }</style>';
 }
 
 function jumbotron_editor_color_field() {
@@ -231,7 +231,7 @@ function jumbotron_editor_titletag2_text() {
 
 function jumbotron_editor_text() {
 ?>
-		<textarea name="jumbotron_text" id="jumbotron_text" style="width: 544px; height: 332px; font-family: 'calamitybold', sans-serif; font-size: 61px; line-height: 64px; resize: none;" rows="5"><?php echo get_option('jumbotron_text'); ?></textarea>
+		<textarea name="jumbotron_text" id="jumbotron_text" style="width: 544px; height: 326px; font-family: 'Noto Sans Display', sans-serif; font-size: 62px; line-height: 80px; font-weight: 700; resize: none;" rows="5"><?php echo get_option('jumbotron_text'); ?></textarea>
 		<p style="font-size: small;">If your text fits in the box (without scrollbars), it&rsquo;ll fit on the website.</p>
 
 <?php
