@@ -6,76 +6,149 @@ All other trademarks referred to are trademarks of their respective owners. See 
 
 /* FONTS */
 
+/* noto-sans-display-100 - latin_latin-ext */
 @font-face {
-	font-family: 'calamityregular';
-	src: url('../woff/calamity-regular.woff2') format('woff2'),
-		 url('../woff/calamity-regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-sans-display-100italic - latin_latin-ext */
 @font-face {
-	font-family: 'calamitybold';
-	src: url('../woff/calamity-bold.woff2') format('woff2'),
-		 url('../woff/calamity-bold.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: italic;
+  font-weight: 100;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-100italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-sans-display-200 - latin_latin-ext */
 @font-face {
-	font-family: 'Lora';
-	src: url('../woff/lora-v32-latin-ext-regular.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-sans-display-200italic - latin_latin-ext */
 @font-face {
-	font-family: 'Lora';
-	src: url('../woff/lora-v32-latin-ext-italic.woff2') format('woff2');
-	font-weight: 400;
-	font-style: italic;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: italic;
+  font-weight: 200;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-sans-display-300 - latin_latin-ext */
 @font-face {
-	font-family: 'Lora';
-	src: url('../woff/lora-v32-latin-ext-500.woff2') format('woff2');
-	font-weight: 500;
-	font-style: normal;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-sans-display-300italic - latin_latin-ext */
 @font-face {
-	font-family: 'Lora';
-	src: url('../woff/lora-v32-latin-ext-500italic.woff2') format('woff2');
-	font-weight: 500;
-	font-style: italic;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-sans-display-regular - latin_latin-ext */
 @font-face {
-	font-family: 'Lora';
-	src: url('../woff/lora-v32-latin-ext-600.woff2') format('woff2');
-	font-weight: 600;
-	font-style: normal;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-sans-display-italic - latin_latin-ext */
 @font-face {
-	font-family: 'Lora';
-	src: url('../woff/lora-v32-latin-ext-600italic.woff2') format('woff2');
-	font-weight: 600;
-	font-style: italic;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-sans-display-500 - latin_latin-ext */
 @font-face {
-	font-family: 'Lora';
-	src: url('../woff/lora-v32-latin-ext-700.woff2') format('woff2');
-	font-weight: 700;
-	font-style: normal;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-sans-display-500italic - latin_latin-ext */
 @font-face {
-	font-family: 'Lora';
-	src: url('../woff/lora-v32-latin-ext-700italic.woff2') format('woff2');
-	font-weight: 700;
-	font-style: italic;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-display-600 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-display-600italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: italic;
+  font-weight: 600;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-display-700 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-display-700italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-display-800 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-display-800italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: italic;
+  font-weight: 800;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-display-900 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-display-900italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Display';
+  font-style: italic;
+  font-weight: 900;
+  src: url('../woff/noto-sans-display-v20-latin_latin-ext-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* ANIMATIONS */
@@ -118,12 +191,13 @@ All other trademarks referred to are trademarks of their respective owners. See 
 body {
 	background-color: #edecec;
 	min-height: 100%;
-	font-weight: 500;
+	font-family: "Noto Sans Display", sans-serif;
+	font-weight: 400;
 }
 
 b,
 strong {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 i,
@@ -151,10 +225,10 @@ em {
 #header-inner {
 	width: 1120px;
 	height: 96px;
-	background-image: url("../img/branding_forthegaymers_color-on-white_for96px.png");
+	background-image: url("../img/branding_forthegaymers_noto-sans-variant_color-on-white_for96px.png");
 	background-position: right top;
 	background-repeat: no-repeat;
-	background-size: 325.5px 96px;
+	background-size: 280.5px 96px;
 	left: calc(50% - 560px);
 	position: relative;
 }
@@ -182,12 +256,13 @@ em {
 
 #menu-inner {
 	width: 1120px;
-	height: 20px;
+	height: 63px;
 	position: relative;
 	left: calc(50% - 560px);
-	top: 22px;
+	top: 0;
 	text-align-last: justify;
 	cursor: default;
+	line-height: 63px;
 }
 
 #menu-inner a {
@@ -208,15 +283,15 @@ em {
 
 #bold-menu-items li a,
 #regular-menu-items li a {
-	font-family: "calamitybold", sans-serif;
 	color: white;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 22px;
 	margin-right: 28px;
+	font-weight: 500;
 }
 
 #regular-menu-items li a {
-	font-family: "calamityregular", sans-serif !important;
+	font-weight: 300;
 }
 
 #bold-menu-items li:last-of-type a,
@@ -234,17 +309,17 @@ em {
 
 #ticker-inner {
 	width: 1120px;
-	height: 32px;
+	height: 63px;
 	position: relative;
 	left: calc((100% - 1120px) / 2);
-	top: -16px;
+	top: -18px;
 }
 
 #ticker-contents {
-	font-family: "Lora", serif !important;
+	font-family: "Noto Sans Display", sans-serif !important;
+	font-size: 22px !important;
+	line-height: 63px !important;
 	font-weight: 500 !important;
-	font-size: 21px !important;
-	line-height: 32px !important;
 }
 
 #ticker-contents b,
@@ -254,10 +329,10 @@ em {
 
 #ticker-contents li {
 	padding: 1px 45px 0 32px !important;
-	background-image: url("../img/ui_ticker-bullet_color-on-yellow_for15px.png");
-	background-size: 12px 15px;
+	background-image: url("../img/ui_ticker-bullet_color-on-yellow_for16px.png");
+	background-size: 13px 16px;
 	background-repeat: no-repeat;
-	background-position: right center;
+	background-position: right 10px;
 }
 
 #ticker-link {
@@ -265,7 +340,7 @@ em {
 	height: 64px;
 	position: relative;
 	z-index: 150;
-	top: -64px;
+	top: -95px;
 }
 
 #ticker-link a {
@@ -344,32 +419,29 @@ em {
 	left: calc((100% - 1120px) / 2);
 	z-index: 50;
 	top: -400px;
+	padding-top: 16px;
 }
 
 #jumbotron-inner img {
 	float: right;
 	position: absolute;
-	top: 31px;
+	top: 32px;
 	z-index: 250;
 	border-radius: 8px;
-	left: 576px;
+	left: 580px;
 }
 
 #jumbotron-text {
 	width: 544px;
 }
 
-#jumbotron-text .titletag-large {
-	left: 0;
-}
-
 #jumbotron-text span:last-of-type {
-	font-family: "calamitybold", sans-serif;
 	color: white;
-	font-size: 61px;
-	line-height: 64px;
+	font-size: 62px;
+	line-height: 80px;
 	display: block;
-	margin-top: 23px;
+	margin-top: 16px;
+	font-weight: 700;
 }
 
 #jumbotron-link {
@@ -490,7 +562,7 @@ em {
 	position: relative;
 	width: 1153px;
 	left: calc((100% - 1120px) / 2);
-	top: -37px;
+	top: -36px;
 	display: block;
 }
 
@@ -504,18 +576,22 @@ em {
 
 #home-content-upper h1,
 #home-content-lower h1 {
-	font-family: "calamitybold", sans-serif;
-	font-size: 40px;
+	font-size: 41px;
 	color: black;
+	font-weight: 500;
 }
 
 #posts-container-upper,
 #posts-container-lower {
 	width: 100%;
-	margin-top: 29px;
+	margin-top: 27px;
 	display: flex;
 	flex-wrap: wrap;
-	row-gap: 28px;
+	row-gap: 23px;
+}
+
+#posts-container-lower {
+	margin-top: 25px;
 }
 
 .homepage-post {
@@ -526,7 +602,7 @@ em {
 
 .homepage-post a.thumb-link {
 	border-radius: 8px;
-	margin-bottom: 15px;
+	margin-bottom: 16px;
 	display: block;
 }
 
@@ -537,17 +613,17 @@ em {
 .homepage-post-title {
 	width: 100%;
 	display: block;
-	padding-top: 4px;
+	padding-top: 1px;
 }
 
 .homepage-post-title a {
-	font-family: "calamitybold", sans-serif;
 	font-size: 20px;
-	line-height: 24px;
+	line-height: 32px;
 	color: black;
 	text-decoration: none;
 	opacity: 1;
 	transition: opacity 0.16s;
+	font-weight: 700;
 }
 
 .homepage-post-title a:hover {
@@ -559,8 +635,8 @@ em {
 	background: #1564dc;
 	position: relative;
 	display: block;
-	top: -9px;
-	height: 432px;
+	top: -13px;
+	height: 464px;
 	padding-top: 24px;
 }
 
@@ -571,33 +647,31 @@ em {
 }
 
 #not-sidebar-inner h1 {
-	font-family: "calamitybold", sans-serif;
-	font-size: 30px;
+	font-size: 31px;
 	line-height: 40px;
 	color: white;
+	font-weight: 600;
 }
 
 #not-sidebar-inner img {
-	margin-top: 8px;
+	margin-top: 16px;
 	border-radius: 8px;
 }
 
 #not-sidebar-inner p {
-	font-family: "Lora", serif;
-	font-weight: 500;
-	font-size: 18.5px;
-	line-height: 24px;
-	margin-top: 12px;
+	font-size: 20px;
+	line-height: 32px;
+	margin-top: 9px;
 	margin-bottom: 8px;
 	color: white;
 }
 
 #not-sidebar-inner a.raquo {
-	font-family: "calamitybold", sans-serif;
-	font-size: 18.5px;
-	line-height: 24px;
+	font-size: 20px;
+	line-height: 32px;
 	text-decoration: underline;
 	color: white;
+	font-weight: 600;
 }
 
 #not-sidebar-box-left,
@@ -614,7 +688,7 @@ em {
 
 #not-sidebar-box-mastodon iframe {
 	border-radius: 8px;
-	margin-top: 9px;
+	margin-top: 8px;
 	margin-bottom: 18px;
 }
 
@@ -624,21 +698,23 @@ em {
 	width: 1120px;
 	left: calc((100% - 1120px) / 2);
 	border-top: 1px #717070 solid;
-	margin-top: 22px;
+	margin-top: 16px;
 }
 
 #home-navigation ul,
 #home-navigation ul li {
 	display: inline-block;
+	font-size: 0;
+	line-height: 0;
 }
 
 #home-navigation ul li {
 	width: 160px;
 	height: 64px;
-	margin-right: 28px;
+	margin-right: 32px;
 	border-radius: 8px;
 	background: black;
-	margin-top: 23px;
+	margin-top: 32px;
 	text-align: center;
 }
 
@@ -661,9 +737,8 @@ em {
 }
 
 #home-navigation ul li a {
-	font-size: 20px;
-	font-family: "calamitybold", sans-serif;
-	line-height: 64px;
+	font-size: 22px;
+	line-height: 63px;
 	width: 160px;
 	height: 64px;
 	display: block;
@@ -673,6 +748,7 @@ em {
 	text-decoration: none;
 	background: rgba(255, 255, 255, 0);
 	transition: background 0.16s;
+	font-weight: 500;
 }
 
 #home-navigation ul li a:hover {
@@ -692,7 +768,8 @@ em {
 	display: block;
 	position: relative;
 	background: white;
-	margin-top: 21px;
+	margin-top: 30px;
+	box-shadow: 0 0 32px rgba(113, 112, 112, 0.16);
 }
 
 #footer-inner {
@@ -704,23 +781,22 @@ em {
 }
 
 #footer-inner span.copyright {
-	font-family: "calamitybold", sans-serif;
-	font-size: 20px;
+	font-size: 21px;
 	color: black;
 	display: block;
-	margin-bottom: 7px;
+	margin-bottom: 11px;
+	font-weight: 600;
 }
 
 #footer-inner span.trademark {
-	font-family: "calamityregular", sans-serif;
 	font-size: 15px;
-	line-height: 22px;
+	line-height: 24px;
 	color: black;
 	display: block;
 }
 
 #footer-links {
-	margin-top: 10px;
+	margin-top: 9px;
 }
 
 #footer-links ul,
@@ -733,21 +809,20 @@ em {
 }
 
 #footer-links ul li a {
-	font-family: "calamitybold", sans-serif;
 	font-size: 15px;
 	line-height: 22px;
 	text-decoration: underline;
 	color: black;
+	font-weight: 600;
 }
 
 #version {
 	height: 32px;
 	line-height: 32px;
-	font-family: "Lora", serif;
-	font-size: 18.5px;
+	font-size: 18px;
 	color: black;
-	font-weight: 500;
 	margin-top: 27px;
+	font-weight: 500;
 }
 
 #version img {
@@ -967,17 +1042,24 @@ span.timetip {
 .individual-post span.titletag,
 #jumbotron-outer span.titletag,
 #ticker-titletag span.titletag {
-	font-family: "calamitybold", sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	height: 32px;
 	padding: 0 8px 0 8px;
 	border-radius: 8px;
 	display: inline-block;
-	line-height: 32px;
+	line-height: 31px;
 	position: relative;
 	left: 0;
 	z-index: 100;
 	top: 16px;
+}
+
+span.titletag {
+	font-weight: 700;
+}
+
+span.titletag.titletag-hollow {
+	font-weight: 500;
 }
 
 #jumbotron-outer span.titletag {
@@ -1347,8 +1429,7 @@ span.timetip {
 }
 
 .homepage-post span.titletag {
-	font-family: "calamitybold", sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	height: 24px;
 	padding: 0 8px 0 8px;
 	border-radius: 4px;
