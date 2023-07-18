@@ -12,6 +12,22 @@ function jumbotron_editor() {
 function jumbotron_editor_contents() {
 ?>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,700;1,700&subset=latin-ext&display=swap" rel="stylesheet">
+<style type="text/css">
+#jumbotron_text {
+	width: 544px;
+	height: 326px;
+	font-family: 'Noto Sans Display', sans-serif;
+	font-size: 62px;
+	line-height: 80px;
+	font-weight: 700;
+	resize: none;
+	overflow: hidden;
+}
+</style>
+
 <div class="wrap">
 	<h1 style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/admin_v2_color-on-transparent_for31px.png'); background-size: 41.5px 31px; background-position: left 12px; background-repeat: no-repeat; padding: 8px 0 12px 53.5px !important; height: 31px !important; line-height: 31px !important;">Jumbotron Editor</h1>
 	<form method="POST" action="options.php">
@@ -139,7 +155,7 @@ function jumbotron_settings_init() {
 }
 
 function jumbotron_editor_intro() {
-    echo '<style type="text/css">@font-face { font-display: swap; font-family: "Noto Sans Display"; font-style: normal; font-weight: 700; src: url("' . get_template_directory_uri() . '/woff/noto-sans-display-v20-latin_latin-ext-700.woff2") format("woff2"); }</style>';
+	// Not currently used
 }
 
 function jumbotron_editor_color_field() {
@@ -196,7 +212,7 @@ function jumbotron_editor_titletag2_type() {
 		<p>Type:</p>
 		<select name="jumbotron_titletag2_type" id="jumbotron_titletag2_type" style="width: 400px">
 			<option value="main"<?php if($current_titletag2_type == "main") { echo(' selected="selected"'); } ?>>Main TitleTag (filled in)</option>
-			<option value="sub"<?php if($current_titletag2_type == "hollow") { echo(' selected="selected"'); } ?>>Sub TitleTag (outlined)</option>
+			<option value="sub"<?php if($current_titletag2_type == "sub") { echo(' selected="selected"'); } ?>>Sub TitleTag (outlined)</option>
 		</select>
 
 <?php
@@ -231,8 +247,8 @@ function jumbotron_editor_titletag2_text() {
 
 function jumbotron_editor_text() {
 ?>
-		<textarea name="jumbotron_text" id="jumbotron_text" style="width: 544px; height: 326px; font-family: 'Noto Sans Display', sans-serif; font-size: 62px; line-height: 80px; font-weight: 700; resize: none;" rows="5"><?php echo get_option('jumbotron_text'); ?></textarea>
-		<p style="font-size: small;">If your text fits in the box (without scrollbars), it&rsquo;ll fit on the website.</p>
+		<textarea name="jumbotron_text" id="jumbotron_text" rows="4"><?php echo get_option('jumbotron_text'); ?></textarea>
+		<p style="font-size: small;">If your text fits in the box, it&rsquo;ll fit on the website.</p>
 
 <?php
 }
@@ -241,7 +257,7 @@ function jumbotron_editor_image() {
 ?>
 		<p>URL:</p>
 		<input type="text" name="jumbotron_image" id="jumbotron_image" value="<?php echo get_option('jumbotron_image'); ?>" style="width: 400px">
-		<p style="font-size: small;">Images <strong>must</strong> be 16:9 (widescreen) and <strong>at least</strong> 1,088 &times; 612 pixel resolution.</p>
+		<p style="font-size: small;">Images <strong>must</strong> be 16:9 (widescreen) and <strong>at least</strong> 1,080 &times; 608 pixel resolution.</p>
 		<p><a href="<?php echo get_site_url(); ?>/wp-admin/upload.php" target="_blank"><b>Media Library &raquo;</b></a></p>
 
 <?php
