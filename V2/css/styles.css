@@ -79,12 +79,12 @@ em {
 #header-inner {
 	width: 1120px;
 	height: 96px;
-	background-image: url("../img/branding_forthegaymers_noto-sans-variant_color-on-white_for96px.png");
-	background-position: right top;
-	background-repeat: no-repeat;
-	background-size: 280.5px 96px;
 	left: calc(50% - 560px);
 	position: relative;
+	background-image: url("../img/branding_forthegaymers_noto-sans-variant_color-on-white_for96px.png");
+	background-size: 280.5px 96px;
+	background-position: right top;
+	background-repeat: no-repeat;
 }
 
 #header-inner a {
@@ -162,10 +162,10 @@ em {
 }
 
 #ticker-inner {
-	width: 1120px;
+	width: 1100px;
 	height: 63px;
 	position: relative;
-	left: calc((100% - 1120px) / 2);
+	left: calc(((100% - 1100px) / 2) + 10px);
 	top: -18px;
 }
 
@@ -214,7 +214,9 @@ em {
 
 #jumbotron-outer {
 	width: 100%;
-	height: 400px;
+	height: auto;
+	overflow-y: visible;
+	overflow-x: hidden;
 	display: block;
 	position: relative;
 	background: rgb(244,118,20);
@@ -222,7 +224,7 @@ em {
 }
 
 #jumbotron-outer div.bg {
-	height: 400px;
+	height: 100%;
 	animation: slide 24s ease-in-out infinite alternate;
 	background-image: linear-gradient(-63.4deg, black 50%, #717070 50%);
 	bottom: 0;
@@ -272,8 +274,11 @@ em {
 	position: relative;
 	left: calc((100% - 1120px) / 2);
 	z-index: 50;
-	top: -400px;
+	top: 0;
 	padding-top: 16px;
+	padding-bottom: 16px;
+	height: auto;
+	display: block;
 }
 
 #jumbotron-inner img {
@@ -283,10 +288,12 @@ em {
 	z-index: 250;
 	border-radius: 8px;
 	left: 580px;
+	display: block;
 }
 
 #jumbotron-text {
 	width: 544px;
+	display: block;
 }
 
 #jumbotron-text span:last-of-type {
@@ -300,15 +307,18 @@ em {
 
 #jumbotron-link {
 	width: 100%;
-	height: 400px;
-	position: relative;
+	height: 100%;
+	overflow: auto;
+	position: absolute;
 	z-index: 300;
 	top: 0;
+	display: block;
 }
 
 #jumbotron-link a {
 	width: 100%;
-	height: 400px;
+	height: 100%;
+	overflow: auto;
 	display: block;
 	font-size: 0;
 	line-height: 0;
@@ -490,14 +500,24 @@ em {
 	position: relative;
 	display: block;
 	top: -13px;
-	height: 464px;
+	height: auto;
+	overflow: auto;
 	padding-top: 24px;
+	padding-bottom: 23px;
 }
 
 #not-sidebar-inner {
 	width: 1120px;
 	left: calc((100% - 1120px) / 2);
 	position: relative;
+	height: auto;
+	overflow: hidden;
+	display: block;
+}
+
+#not-sidebar-inner div {
+	padding-bottom: 100%;
+	margin-bottom: -100%;
 }
 
 #not-sidebar-inner h1 {
@@ -533,17 +553,24 @@ em {
 	width: 352px;
 	margin-right: 32px;
 	float: left;
+	display: block;
+	height: 100%;
 }
 
 #not-sidebar-box-mastodon {
 	width: 352px;
 	float: left;
+	height: 100%;
+	display: block;
 }
 
 #not-sidebar-box-mastodon iframe {
 	border-radius: 8px;
 	margin-top: 8px;
 	margin-bottom: 18px;
+	height: calc(100% - 17px);
+	position: absolute;
+	display: block;
 }
 
 #home-navigation {
@@ -651,6 +678,7 @@ em {
 
 #footer-links {
 	margin-top: 9px;
+	cursor: default;
 }
 
 #footer-links ul,
@@ -682,6 +710,20 @@ em {
 #version img {
 	float: left;
 	margin-right: 16px;
+}
+
+#listing-container {
+	position: relative;
+	width: 1153px;
+	left: calc((100% - 1120px) / 2);
+	top: 28px;
+	display: block;
+}
+
+#listing-container h1 {
+	font-size: 41px;
+	color: black;
+	font-weight: 500;
 }
 
 .individual-post {
@@ -942,31 +984,31 @@ span.titletag.titletag-hollow {
 }
 
 #jumbotron-outer span.titletag.titletag-ace-attorney {
-	background-image: url("../img/titletag_ace-attorney_black-on-white_for16px.png");
-	background-size: 16px 16px;
-	background-position: 8px center;
+	background-image: url("../img/titletag_ace-attorney_black-on-white_for18px.png");
+	background-size: 17px 18px;
+	background-position: 7.5px center;
 	background-repeat: no-repeat;
 	padding-left: 32px;
 }
 
 #jumbotron-outer.red span.titletag.titletag-ace-attorney {
-	background-image: url("../img/titletag_ace-attorney_red-on-white_for16px.png");
+	background-image: url("../img/titletag_ace-attorney_red-on-white_for18px.png");
 }
 
 #jumbotron-outer.blue span.titletag.titletag-ace-attorney {
-	background-image: url("../img/titletag_ace-attorney_blue-on-white_for16px.png");
+	background-image: url("../img/titletag_ace-attorney_blue-on-white_for18px.png");
 }
 
 #jumbotron-outer.orange span.titletag.titletag-ace-attorney {
-	background-image: url("../img/titletag_ace-attorney_orange-on-white_for16px.png");
+	background-image: url("../img/titletag_ace-attorney_orange-on-white_for18px.png");
 }
 
 #jumbotron-outer span.titletag.titletag-e3 {
 	background-image: url("../img/titletag_e3_black-on-white_for16px.png");
-	background-size: 13px 16px;
+	background-size: 23px 16px;
 	background-position: 8px center;
 	background-repeat: no-repeat;
-	padding-left: 29px;
+	padding-left: 39px;
 }
 
 #jumbotron-outer.red span.titletag.titletag-e3 {
@@ -1063,23 +1105,23 @@ span.titletag.titletag-hollow {
 }
 
 #jumbotron-outer span.titletag.titletag-summer-game-fest {
-	background-image: url("../img/titletag_summer-game-fest_black-on-white_for16px.png");
-	background-size: 12px 16px;
-	background-position: 8px center;
+	background-image: url("../img/titletag_summer-game-fest_black-on-white_for18px.png");
+	background-size: 13px 18px;
+	background-position: 7.5px center;
 	background-repeat: no-repeat;
 	padding-left: 28px;
 }
 
 #jumbotron-outer.red span.titletag.titletag-summer-game-fest {
-	background-image: url("../img/titletag_summer-game-fest_red-on-white_for16px.png");
+	background-image: url("../img/titletag_summer-game-fest_red-on-white_for18px.png");
 }
 
 #jumbotron-outer.blue span.titletag.titletag-summer-game-fest {
-	background-image: url("../img/titletag_summer-game-fest_blue-on-white_for16px.png");
+	background-image: url("../img/titletag_summer-game-fest_blue-on-white_for18px.png");
 }
 
 #jumbotron-outer.orange span.titletag.titletag-summer-game-fest {
-	background-image: url("../img/titletag_summer-game-fest_orange-on-white_for16px.png");
+	background-image: url("../img/titletag_summer-game-fest_orange-on-white_for18px.png");
 }
 
 #jumbotron-outer span.titletag.titletag-hollow {
@@ -1112,9 +1154,9 @@ span.titletag.titletag-hollow {
 
 .individual-post span.titletag.titletag-ace-attorney {
 	background-color: black;
-	background-image: url("../img/titletag_ace-attorney_white-on-black_for16px.png");
-	background-size: 16px 16px;
-	background-position: 8px center;
+	background-image: url("../img/titletag_ace-attorney_white-on-black_for18px.png");
+	background-size: 17px 18px;
+	background-position: 7.5px center;
 	background-repeat: no-repeat;
 	padding-left: 32px;
 }
@@ -1132,10 +1174,10 @@ span.titletag.titletag-hollow {
 .individual-post span.titletag.titletag-e3 {
 	background-color: black;
 	background-image: url("../img/titletag_e3_color-on-black_for16px.png");
-	background-size: 13px 16px;
+	background-size: 23px 16px;
 	background-position: 8px center;
 	background-repeat: no-repeat;
-	padding-left: 29px;
+	padding-left: 39px;
 }
 
 .individual-post span.titletag.titletag-forthegaymers {
@@ -1187,9 +1229,9 @@ span.titletag.titletag-hollow {
 
 .individual-post span.titletag.titletag-summer-game-fest {
 	background-color: #3d299c;
-	background-image: url("../img/titletag_summer-game-fest_white-on-purple_for16px.png");
-	background-size: 12px 16px;
-	background-position: 8px center;
+	background-image: url("../img/titletag_summer-game-fest_white-on-purple_for18px.png");
+	background-size: 13px 18px;
+	background-position: 7.5px center;
 	background-repeat: no-repeat;
 	padding-left: 28px;
 }
@@ -1226,9 +1268,9 @@ span.titletag.titletag-hollow {
 }
 
 #ticker-titletag span.titletag.titletag-ace-attorney {
-	background-image: url("../img/titletag_ace-attorney_yellow-on-black_for16px.png");
-	background-size: 16px 16px;
-	background-position: 8px center;
+	background-image: url("../img/titletag_ace-attorney_yellow-on-black_for18px.png");
+	background-size: 17px 18px;
+	background-position: 7.5px center;
 	background-repeat: no-repeat;
 	padding-left: 32px;
 }
@@ -1275,9 +1317,9 @@ span.titletag.titletag-hollow {
 }
 
 #ticker-titletag span.titletag.titletag-summer-game-fest {
-	background-image: url("../img/titletag_summer-game-fest_yellow-on-black_for16px.png");
-	background-size: 13px 16px;
-	background-position: 8px center;
+	background-image: url("../img/titletag_summer-game-fest_yellow-on-black_for18px.png");
+	background-size: 13px 18px;
+	background-position: 7.5px center;
 	background-repeat: no-repeat;
 	padding-left: 29px;
 }
@@ -1322,9 +1364,9 @@ span.titletag.titletag-hollow {
 
 .homepage-post span.titletag.titletag-ace-attorney {
 	background-color: black;
-	background-image: url("../img/titletag_ace-attorney_white-on-black_for12px.png");
-	background-size: 12px 12px;
-	background-position: 8px center;
+	background-image: url("../img/titletag_ace-attorney_white-on-black_for14px.png");
+	background-size: 13px 14px;
+	background-position: 7.5px center;
 	background-repeat: no-repeat;
 	color: white;
 	padding-left: 28px;
@@ -1334,7 +1376,7 @@ span.titletag.titletag-hollow {
 	background-color: #be9f43;
 	background-image: url("../img/titletag_best-of_white-on-gold_for24px.png");
 	background-size: 176px 24px;
-	background-position: left center;
+	background-position: -0.5px center;
 	background-repeat: no-repeat;
 	color: white;
 	padding-left: 29px;
@@ -1364,8 +1406,8 @@ span.titletag.titletag-hollow {
 .homepage-post span.titletag.titletag-live {
 	background-color: #ffdc17;
 	background-image: url("../img/titletag_live_black-on-yellow_for24px.png");
-	background-size: 12px 72px;
-	background-position: 8px top;
+	background-size: 13px 72px;
+	background-position: 7.5px top;
 	background-repeat: no-repeat;
 	color: black;
 	padding-left: 28px;
@@ -1394,9 +1436,9 @@ span.titletag.titletag-hollow {
 
 .homepage-post span.titletag.titletag-state-of-play {
 	background-color: black;
-	background-image: url("../img/titletag_state-of-play_white-on-black_for12px.png");
-	background-size: 15.5px 12px;
-	background-position: 8px center;
+	background-image: url("../img/titletag_state-of-play_white-on-black_for14px.png");
+	background-size: 16.5px 14px;
+	background-position: 7.5px center;
 	background-repeat: no-repeat;
 	color: white;
 	padding-left: 31.5px;
@@ -1404,9 +1446,9 @@ span.titletag.titletag-hollow {
 
 .homepage-post span.titletag.titletag-summer-game-fest {
 	background-color: #3d299c;
-	background-image: url("../img/titletag_summer-game-fest_white-on-purple_for12px.png");
-	background-size: 9px 12px;
-	background-position: 8px center;
+	background-image: url("../img/titletag_summer-game-fest_white-on-purple_for14px.png");
+	background-size: 10px 14px;
+	background-position: 7.5px center;
 	background-repeat: no-repeat;
 	color: white;
 	padding-left: 25px;
