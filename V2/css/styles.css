@@ -726,6 +726,14 @@ em {
 	font-weight: 500;
 }
 
+#the-post-listing {
+	width: 100%;
+	margin-top: 27px;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 23px;
+}
+
 .individual-post {
 	width: 1120px;
 	display: block;
