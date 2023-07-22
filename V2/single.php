@@ -13,6 +13,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <body>
 <?php get_template_part("V2-header"); ?>
 <?php if(have_posts()):while(have_posts()):the_post(); ?>
+<div id="progress-container"<?php post_class(); ?>><div id="reading-progress"></div></div>
 <div id="post-<?php the_ID(); ?>"<?php post_class('individual-post') ?>>
 <?php categoryLinkGenerator(); ?><span class="timestamp"><?php echo the_date("l, jS F Y"); ?> by <?php echo the_author_posts_link();?></span>
 <h1><?php the_title(); ?></h1>
@@ -37,6 +38,9 @@ All other trademarks referred to are trademarks of their respective owners. See 
 </div><!-- /home-navigation -->
 <?php endwhile;endif; ?>
 <?php get_template_part("V2-footer"); ?>
+
+<?php if(current_user_can('edit_posts')) { ?><script type="text/javascript">$('.individual-post').momentum({barSelector: '#reading-progress',offset: 32});</script><?php } else { ?><script type="text/javascript">$('.individual-post').momentum({barSelector: '#reading-progress',offset: 'top'});</script><?php } ?>
+
 <?php wp_footer();?>
 </body>
 </html>

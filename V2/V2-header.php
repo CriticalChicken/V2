@@ -1,4 +1,3 @@
-<a name="top"></a>
 <div id="container">
 <div id="header-outer">
 <div id="header-inner">
