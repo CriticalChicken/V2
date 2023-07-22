@@ -3,6 +3,7 @@
 /* Copyright © Critical Chicken. All rights reserved. Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.
 All other trademarks referred to are trademarks of their respective owners. See website for current copyright years. */
 
+
 // Animate the breaking news ticker
 $("#ticker-contents").webTicker({
 	height: "32px",
@@ -58,6 +59,7 @@ function getPageLoadTime(){
     $("#load_time").text('This page was ' + r_text[i] + ' in ' + seconds + ' second' + plurality);
 }
 
+
 // Fix pluralisation on the "waiting for Ace Attorney 7" clock
 $("span.timetip").each(function() {
 	if($(this).text().charAt(0) == "1" && $(this).text().charAt(1) == " ") {
@@ -66,6 +68,19 @@ $("span.timetip").each(function() {
 	$(this).text($(this).text().replace(" 1 months"," 1 month"));
 	$(this).text($(this).text().replace(" 1 days"," 1 day"));
 });
+
+
+// Keep spacing on .individual-post on-grid
+$(".wp-element-caption").each(function() {
+	$(this).parent("figure").addClass("has-caption");
+});
+
+
+// Add "and" before the last tag in the list
+$("span.post-meta-tags a:last-of-type").each(function() {
+	$(this).before("and ");
+});
+
 
 // Handle functions that trigger when the page is fully loaded
 $(window).on("load", function() {
