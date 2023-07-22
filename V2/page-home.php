@@ -35,6 +35,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <li class="socials-instagram"><a href="https://www.instagram.com/criticalchicken" title="Instagram" target="_blank" rel="external me">Instagram</a></li>
 <li class="socials-mastodon"><a href="https://ohai.social/@CriticalChicken" title="Mastodon" target="_blank" rel="external me">Mastodon</a></li>
 <li class="socials-ko-fi"><a href="https://ko-fi.com/criticalchicken" title="Ko-fi" target="_blank" rel="external me">Ko-fi</a></li>
+<li class="socials-tumblr"><a href="#" title="Tumblr" target="_blank" rel="external me">Tumblr</a></li>
 <li class="socials-threads"><a href="<?php echo get_site_url(); ?>/threads" title="Threads" rel="help">Threads</a></li>
 </ul>
 </div><!-- /socials -->

@@ -335,7 +335,7 @@ em {
 	height: 64px;
 	position: relative;
 	top: -32px;
-	left: calc(50% + 208px);
+	left: calc(50% + 112px);
 	z-index: 300;
 	border-radius: 8px;
 }
@@ -385,6 +385,14 @@ em {
 	background-color: #29abe0;
 }
 
+#socials ul li.socials-tumblr {
+	background-image: url("../img/socials_tumblr_white-on-blue_for32px.png");
+	background-size: 18px 32px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #011935;
+}
+
 #socials ul li.socials-threads {
 	width: 24px;
 	height: 24px;
@@ -396,7 +404,7 @@ em {
 	background-repeat: no-repeat;
 	background-color: #ff1066;
 	position: relative;
-	left: -144px;
+	left: -240px;
 	top: 48px;
 }
 
@@ -1269,6 +1277,114 @@ span.timetip {
 
 #pagination span.older-posts a {
 	background-image: url(../img/ui_older-posts-icon_white-on-black_for16px.png);
+}
+
+#footer-socials {
+	height: 32px;
+	position: relative;
+	float: right;
+	display: block;
+	padding-top: 2px;
+}
+
+#footer-socials ul,
+#footer-socials ul li {
+	display: block;
+	float: left;
+}
+
+#footer-socials ul li {
+	width: 32px;
+	height: 32px;
+	margin-right: 16px;
+	border-radius: 4px;
+}
+
+#footer-socials ul li.footer-socials-discord {
+	background-image: url("../img/socials_discord_white-on-purple_for14px.png");
+	background-size: 16px 12px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #5865f2;
+}
+
+#footer-socials ul li.footer-socials-instagram {
+	background-image: url("../img/socials_instagram_white-on-color_for32px.png");
+	background-size: 32px 32px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #ff1066;
+}
+
+#footer-socials ul li.footer-socials-mastodon {
+	background-image: url("../img/socials_mastodon_white-on-purple_for16px.png");
+	background-size: 15px 16px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #6364ff;
+}
+
+#footer-socials ul li.footer-socials-ko-fi {
+	background-image: url("../img/socials_ko-fi_color-on-blue_for10px.png");
+	background-size: 16px 10px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #29abe0;
+}
+
+#footer-socials ul li.footer-socials-tumblr {
+	background-image: url("../img/socials_tumblr_white-on-blue_for16px.png");
+	background-size: 9px 16px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #011935;
+	margin-right: 0;
+}
+
+#footer-socials ul li.footer-socials-threads {
+	background-image: url("../img/socials_threads_white-on-color_for32px.png");
+	background-size: 32px 32px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #ff1066;
+}
+
+#footer-socials ul li a {
+	width: 32px;
+	height: 32px;
+	border-radius: 4px;
+	background: rgba(255, 255, 255, 0);
+	transition: background 0.16s;
+	font-size: 0;
+	line-height: 0;
+	color: rgba(0, 0, 0, 0);
+	display: block;
+}
+
+#footer-socials ul li a:hover {
+	background: rgba(255, 255, 255, 0.16);
+}
+
+#back-to-top {
+	float: right;
+	display: block;
+	width: 64px;
+	height: 64px;
+	background-color: black;
+	border-radius: 8px;
+	font-size: 0;
+	line-height: 0;
+	position: relative;
+	top: -5px;
+	background-image: url(../img/ui_arrow-up_white-on-black_for32px.png);
+	background-size: 32px 32px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.scrollgress {
+	z-index: 9999 !important;
 }
 
 

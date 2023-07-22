@@ -82,6 +82,38 @@ $("span.post-meta-tags a:last-of-type").each(function() {
 });
 
 
+// Make the "back to top" button smooooooth
+$("#back-to-top").click(function() {
+    $("html, body").animate({scrollTop: 0}, 1200);
+});
+
+
+// Colour-coded reading progress indicators
+$(".individual-post").each(function() {
+	if($(this).hasClass("category-news")) {
+		$(this).scrollgress({
+			height: '4px',
+			color: '#d20202',
+		});
+	} else if($(this).hasClass("category-features")) {
+		$(this).scrollgress({
+			height: '4px',
+			color: '#1564dc',
+		});
+	} else if($(this).hasClass("category-reviews")) {
+		$(this).scrollgress({
+			height: '4px',
+			color: '#f47614',
+		});
+	} else {
+		$(this).scrollgress({
+			height: '4px',
+			color: '#000000',
+		});
+	}
+});
+
+
 // Handle functions that trigger when the page is fully loaded
 $(window).on("load", function() {
 	getPageLoadTime();

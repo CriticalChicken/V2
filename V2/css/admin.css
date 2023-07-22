@@ -8,8 +8,16 @@ All other trademarks referred to are trademarks of their respective owners. See 
 	top: 32px;
 }
 
+.scrollgress {
+	top: 32px !important;
+}
+
 @media only screen and (max-width: 782px) {
 	#container {
 		top: 46px;
+	}
+	
+	.scrollgress {
+		top: 46px !important;
 	}
 }
