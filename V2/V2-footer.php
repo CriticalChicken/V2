@@ -28,7 +28,7 @@
 </div><!-- /container -->
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.4.1.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.webticker.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/scrollgress.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/momentum.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 <script type="module" src="https://unpkg.com/friendly-challenge@0.9.5/widget.module.min.js" async defer></script>
 <script nomodule src="https://unpkg.com/friendly-challenge@0.9.5/widget.min.js" async defer></script>

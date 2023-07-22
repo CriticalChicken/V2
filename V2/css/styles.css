@@ -889,7 +889,7 @@ em {
 	padding-left: 32px;
 	padding-right: 32px;
 	display: block;
-	background-image: url("../img/ui_image-caption_dark-grey-on-grey_for15px.png");
+	background-image: url("../img/ui_caption-image_dark-grey-on-grey_for15px.png");
 	background-size: 15.5px 15px;
 	background-repeat: no-repeat;
 	background-position: left 9px;
@@ -1266,17 +1266,17 @@ span.timetip {
 	border-radius: 8px;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: 23px 16px;
+	background-size: 32px 32px;
 	font-size: 0;
 	line-height: 0;
 }
 
 #pagination span.newer-posts a {
-	background-image: url(../img/ui_newer-posts-icon_white-on-black_for16px.png);
+	background-image: url(../img/ui_arrow-left_white-on-black_for32px.png);
 }
 
 #pagination span.older-posts a {
-	background-image: url(../img/ui_older-posts-icon_white-on-black_for16px.png);
+	background-image: url(../img/ui_arrow-right_white-on-black_for32px.png);
 }
 
 #footer-socials {
@@ -1297,7 +1297,7 @@ span.timetip {
 	width: 32px;
 	height: 32px;
 	margin-right: 16px;
-	border-radius: 4px;
+	border-radius: 6px;
 }
 
 #footer-socials ul li.footer-socials-discord {
@@ -1352,7 +1352,7 @@ span.timetip {
 #footer-socials ul li a {
 	width: 32px;
 	height: 32px;
-	border-radius: 4px;
+	border-radius: 6px;
 	background: rgba(255, 255, 255, 0);
 	transition: background 0.16s;
 	font-size: 0;
@@ -1385,6 +1385,36 @@ span.timetip {
 
 .scrollgress {
 	z-index: 9999 !important;
+}
+
+#progress-container {
+	width: 100%;
+	height: 4px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	z-index: 9999;
+}
+
+#reading-progress {
+	background: transparent !important;
+}
+
+.progress-amt {
+	background: black !important;
+}
+
+.category-news .progress-amt {
+	background: #d20202 !important;
+}
+
+.category-features .progress-amt {
+	background: #1564dc !important;
+}
+
+.category-reviews .progress-amt {
+	background: #f47614 !important;
 }
 
 
