@@ -81,15 +81,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <?php endwhile;endif; ?>
 </div><!-- /posts-container-lower -->
 </div><!-- /home-content-lower -->
-<div id="home-navigation">
-<ul>
-<li class="latest"><a href="<?php echo get_site_url(); ?>/latest">Latest</a></li>
-<li class="news"><a href="<?php echo get_site_url(); ?>/category/news">News</a></li>
-<li class="features"><a href="<?php echo get_site_url(); ?>/category/features">Features</a></li>
-<li class="reviews"><a href="<?php echo get_site_url(); ?>/category/reviews">Reviews</a></li>
-<li class="ko-fi"><a href="https://ko-fi.com/criticalchicken" target="_blank" rel="external me"><img src="<?php echo get_template_directory_uri(); ?>/img/ui_ko-fi_color-on-transparent_for16px.png" width="25" height="16" alt="">Support us on Ko-fi</a></li>
-</ul>
-</div><!-- /home-navigation -->
+<?php get_template_part("V2-home-navigation"); ?>
 <?php get_template_part("V2-footer"); ?>
 <?php wp_footer();?>
 </body>

@@ -60,6 +60,16 @@ function getPageLoadTime(){
 }
 
 
+// Make the search button work
+$("#search-button").click(function() {
+    $("#search-container").addClass("active");
+	$("#s").focus();
+});
+$("#search-handle").click(function() {
+    $("#search-container").removeClass("active");
+});
+
+
 // Fix pluralisation on the "waiting for Ace Attorney 7" clock
 $("span.timetip").each(function() {
 	if($(this).text().charAt(0) == "1" && $(this).text().charAt(1) == " ") {

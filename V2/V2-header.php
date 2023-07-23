@@ -19,9 +19,16 @@
 <li><a href="<?php echo get_site_url(); ?>/about">About</a></li>
 <li><a href="<?php echo get_site_url(); ?>/contact">Contact</a></li>
 </ul><!-- /regular-menu-items -->
-<a href="#" title="Search"><img src="<?php echo get_template_directory_uri(); ?>/img/ui_search_white-on-black_for20px.png" alt="Search" height="16"></a>
+<div id="search-button" title="Search"></div>
 </div><!-- /menu-inner -->
 </div><!-- /menu-outer -->
+<div id="search-container">
+<div id="search-handle">
+</div>
+<div id="search-box">
+<form role="search" method="get" id="searchform" class="searchform" action="<?php echo site_url(); ?>/"><div><label class="screen-reader-text" for="s">Search for:</label><input type="text" name="s" id="s" placeholder="Search&hellip;" /><input type="hidden" value="post" name="post_type" id="post_type"/></div></form>
+</div>
+</div>
 <?php $ticker_checker = get_option('ticker_display'); if($ticker_checker == "on") { ?><div id="ticker-outer">
 <div id="ticker-titletag">
 <span class="titletag titletag-<?php echo get_option('ticker_titletag_special'); ?>"><?php echo get_option('ticker_titletag_text'); ?></span>
