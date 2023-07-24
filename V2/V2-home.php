@@ -35,7 +35,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <li class="socials-instagram"><a href="https://www.instagram.com/criticalchicken" title="Instagram" target="_blank" rel="external me">Instagram</a></li>
 <li class="socials-mastodon"><a href="https://ohai.social/@CriticalChicken" title="Mastodon" target="_blank" rel="external me">Mastodon</a></li>
 <li class="socials-ko-fi"><a href="https://ko-fi.com/criticalchicken" title="Ko-fi" target="_blank" rel="external me">Ko-fi</a></li>
-<li class="socials-tumblr"><a href="#" title="Tumblr" target="_blank" rel="external me">Tumblr</a></li>
+<li class="socials-tumblr"><a href="https://criticalchicken.tumblr.com" title="Tumblr" target="_blank" rel="external me">Tumblr</a></li>
 <li class="socials-threads"><a href="<?php echo get_site_url(); ?>/threads" title="Threads" rel="help">Threads</a></li>
 </ul>
 </div><!-- /socials -->
@@ -44,7 +44,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <div id="posts-container-upper">
 <?php query_posts('cat=36&posts_per_page=6&offset=0'); if(have_posts()):while(have_posts()):the_post(); ?>
 <div id="post-<?php the_ID(); ?>"<?php post_class('homepage-post') ?>>
-<a href="<?php echo the_permalink(); ?>" title="Read more" class="thumb-link"><img src="<?php if(get_field('thumbnail')):echo the_field('thumbnail');else:echo get_template_directory_uri();fallbackThumbnailPicker();endif; ?>" alt="<?php if(get_field('alt')):echo the_field('alt');endif; ?>" width="352"></a>
+<a href="<?php echo the_permalink(); ?>" title="Read more" class="thumb-link"><img src="<?php if(get_field('thumbnail')):echo the_field('thumbnail');else:echo get_template_directory_uri();fallbackThumbnailPicker();endif; ?>" alt="<?php if(get_field('alt')):echo the_field('alt');endif; ?>" width="352" height="198"></a>
 <?php categoryLinkGenerator(); ?>
 <span class="homepage-post-title"><a href="<?php echo the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></span>
 </div>
@@ -54,14 +54,14 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <div id="not-sidebar-outer">
 <div id="not-sidebar-inner">
 <div id="not-sidebar-box-left">
-<h1>We&rsquo;re feeling &lsquo;hype&rsquo; about this thing here</h1>
-<img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352">
-<p>Triangles, ghosties, and hot stepbrothers, oh my! We can&rsquo;t wait for the continuation of <b>Oxenfree</b>.</p>
+<h1>*points gun at temple expectantly*</h1>
+<img src="<?php echo get_template_directory_uri(); ?>/img/not-sidebar/persona-3-reload.jpg" alt="A screenshot from Persona 3: Reload. Yukari and the protagonist are talking in a classroom." width="352" height="198">
+<p>We recently played <b>P3P</b> and thought it had <em>major</em> pacing issues. So why are we so hyped for <b>Persona 3: Reload</b>?</p>
 <a href="<?php echo get_site_url(); ?>/radar" class="raquo">What&rsquo;s on our Radar &raquo;</a>
 </div><!-- /not-sidebar-box-left -->
 <div id="not-sidebar-box-right">
 <h1>This is&hellip;<br>objectionable</h1>
-<img src="<?php echo get_template_directory_uri(); ?>/pkmn.jpg" alt="" width="352">
+<img src="<?php echo get_template_directory_uri(); ?>/img/not-sidebar/edgeworth.jpg" alt="Miles Edgeworth looking anguished" width="352" height="198">
 <p>We&rsquo;ve spent the last <span class="timetip" title="8th September 2016 - release date of Ace Attorney 6"><?php echo do_shortcode('[DateCounter startDate="2016-09-08" endDate="now" format="%y years, %m months, and %d days"]'); ?></span> waiting for <b>Ace&nbsp;Attorney&nbsp;7</b>. Hmph.</p>
 <a href="<?php echo get_site_url(); ?>/category/ace-attorney" class="raquo">More Ace Attorney &raquo;</a>
 </div><!-- /not-sidebar-box-right -->

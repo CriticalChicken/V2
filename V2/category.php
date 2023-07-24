@@ -6,14 +6,14 @@ All other trademarks referred to are trademarks of their respective owners. See 
 
 <head>
 <?php get_template_part("V2-meta"); ?>
-<title>Our latest posts - Critical Chicken</title>
+<title><?php single_cat_title(); ?> - Critical Chicken</title>
 <?php wp_head(); ?>
 </head>
 
 <body>
 <?php get_template_part("V2-header"); ?>
 <div id="listing-container">
-<h1>Our latest posts</h1>
+<h1 class="cat-title-<?php echo get_queried_object()->slug; ?>"><?php single_cat_title(); ?></h1>
 <div id="the-post-listing">
 <?php if(have_posts()):while(have_posts()):the_post(); ?>
 <?php get_template_part("V2-listing-post"); ?>
