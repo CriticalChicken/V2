@@ -135,6 +135,10 @@ em {
 	opacity: 0.68;
 }
 
+#header-inner img {
+	width: 419.5px;
+}
+
 #menu-outer {
 	width: 100%;
 	height: 64px;
@@ -774,8 +778,9 @@ em {
 	position: relative;
 	width: 1153px;
 	left: calc((100% - 1120px) / 2);
-	top: 28px;
+	top: 60px;
 	display: block;
+	margin-bottom: 62px;
 }
 
 #listing-container h1 {
@@ -789,7 +794,7 @@ em {
 	margin-top: 59px;
 	display: flex;
 	flex-wrap: wrap;
-	row-gap: 55px;
+	row-gap: 64px;
 }
 
 .homepage-post.listing-post {
@@ -802,6 +807,7 @@ em {
 	margin-right: 32px;
 	float: left;
 	display: block;
+	margin-bottom: 2px;
 }
 
 .homepage-post.listing-post span.timestamp {
@@ -824,9 +830,9 @@ em {
 	font-size: 17.5px;
 	line-height: 32px;
 	display: block;
-	width: calc(100% - 352px - 32px);
 	float: right;
 	padding-top: 8px;
+	width: calc(100% - 352px - 32px);
 }
 
 .homepage-post.listing-post .listing-links {
@@ -834,8 +840,8 @@ em {
 	line-height: 32px;
 	display: block;
 	width: calc(100% - 352px - 32px);
-	float: right;
 	padding-top: 8px;
+	float: right;
 }
 
 .homepage-post.listing-post .listing-links a {
@@ -844,6 +850,11 @@ em {
 	text-decoration-thickness: 2px;
 	text-underline-offset: 3px;
 	text-decoration-skip-ink: all;
+}
+
+.listing-post-gubbins {
+	height: 208px;
+	display: block;
 }
 
 .individual-post {
@@ -894,7 +905,8 @@ em {
 	text-decoration-skip-ink: all;
 }
 
-.individual-post p {
+.individual-post p,
+#no-posts-found p {
 	display: block;
 	font-size: 20px;
 	line-height: 32px;
@@ -903,18 +915,12 @@ em {
 	margin-top: 16px;
 }
 
-.individual-post p:first-of-type {
-	margin-top: 41px;
+#no-posts-found p {
+	margin-top: 45px;
 }
 
-.individual-post p.signoff:after {
-	content: "\00a0";
-	line-height: 0;
-	background-image: url("../img/ui_post-end-bullet_red-on-grey_for15px.png");
-	background-size: 12px 15px;
-	background-position: 16px center;
-	padding-left: 28px;
-	background-repeat: no-repeat;
+.individual-post p:first-of-type {
+	margin-top: 41px;
 }
 
 .individual-post img {
@@ -955,12 +961,17 @@ em {
 	margin-top: 36px;
 }
 
-.individual-post h2 {
+.individual-post h2,
+#no-posts-found h2 {
 	font-size: 41px;
 	line-height: 56px;
 	color: black;
 	margin-top: 43px;
 	font-weight: 500;
+}
+
+#no-posts-found h2 {
+	margin-top: -12px;
 }
 
 .individual-post h2 + p {
@@ -1069,14 +1080,26 @@ em {
 	background-image: url("../img/ui_pullquote_red-on-grey_for23px.png");
 }
 
+.individual-post.category-news .wp-block-pullquote blockquote a {
+	color: #d20202;
+}
+
 .individual-post.category-features .wp-block-pullquote blockquote {
 	color: #1564dc;
 	background-image: url("../img/ui_pullquote_blue-on-grey_for23px.png");
 }
 
+.individual-post.category-features .wp-block-pullquote blockquote a {
+	color: #1564dc;
+}
+
 .individual-post.category-reviews .wp-block-pullquote blockquote {
 	color: #f47614;
 	background-image: url("../img/ui_pullquote_orange-on-grey_for23px.png");
+}
+
+.individual-post.category-reviews .wp-block-pullquote blockquote a {
+	color: #f47614;
 }
 
 .individual-post .wp-block-pullquote blockquote p {
@@ -1117,7 +1140,7 @@ em {
 }
 
 .individual-post .wp-block-pullquote blockquote cite a {
-	color: #717070;
+	color: #717070 !important;
 	text-decoration-thickness: 1px;
 	text-underline-offset: 3px;
 	text-decoration-skip-ink: all;
@@ -1132,12 +1155,14 @@ em {
 	font-style: normal;
 }
 
-.individual-post ul {
+.individual-post ul,
+#no-posts-found ul {
 	padding-top: 32px;
 	padding-bottom: 32px;
 }
 
-.individual-post ul li {
+.individual-post ul li,
+#no-posts-found ul li {
 	width: 928px;
 	padding-left: 96px;
 	font-size: 20px;
@@ -1149,7 +1174,8 @@ em {
 	background-position: 42px 8px;
 }
 
-.individual-post p a {
+.individual-post a,
+#no-posts-found a {
 	text-decoration-thickness: 2px;
 	text-underline-offset: 3px;
 	text-decoration-skip-ink: all;
@@ -1314,7 +1340,7 @@ span.timetip {
 	display: block;
 	border-top: 1px #717070 solid;
 	margin-top: 54px;
-	padding-bottom: 94px;
+	padding-bottom: 95px;
 	font-size: 0;
 	line-height: 0;
 	padding-top: 32px;
@@ -1334,15 +1360,16 @@ span.timetip {
 	font-weight: 500;
 }
 
-#pagination span.newer-posts,
-#pagination span.older-posts {
+span.newer-posts,
+span.older-posts {
 	float: left;
 	position: relative;
 	margin-right: 16px;
+	top: 33px;
 }
 
-#pagination span.newer-posts a,
-#pagination span.older-posts a {
+span.newer-posts a,
+span.older-posts a {
 	display: block;
 	width: 64px;
 	height: 64px;
@@ -1355,12 +1382,19 @@ span.timetip {
 	line-height: 0;
 }
 
-#pagination span.newer-posts a {
+span.newer-posts a {
 	background-image: url(../img/ui_arrow-left_white-on-black_for32px.png);
 }
 
-#pagination span.older-posts a {
+span.older-posts a {
 	background-image: url(../img/ui_arrow-right_white-on-black_for32px.png);
+}
+
+#pagination-container {
+	min-height: 62px;
+	display: block;
+	position: relative;
+	top: 1px;
 }
 
 #footer-socials {
@@ -1635,6 +1669,201 @@ span.timetip {
 
 #search-container.active #search-box input {
 	pointer-events: all;
+}
+
+span.search-icon {
+	padding-left: 25px;
+	background-image: url(../img/inline_search_black-on-grey_for15px.png);
+	background-position: 3px center;
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+}
+
+h1.cat-title-features {
+	font-weight: 700 !important;
+	color: #1564dc !important;
+}
+
+h1.cat-title-guest-blogs,
+h1.cat-title-guides,
+h1.cat-title-interviews,
+h1.cat-title-opinions {
+	font-weight: 400 !important;
+	color: #1564dc !important;
+}
+
+h1.cat-title-news {
+	font-weight: 700 !important;
+	color: #d20202 !important;
+}
+
+h1.cat-title-links,
+h1.cat-title-live-updates,
+h1.cat-title-rumours,
+h1.cat-title-site-updates,
+h1.cat-title-updates,
+h1.cat-title-videos {
+	font-weight: 400 !important;
+	color: #d20202 !important;
+}
+
+h1.cat-title-reviews {
+	font-weight: 700 !important;
+	color: #f47614 !important;
+}
+
+h1.cat-title-first-impressions,
+h1.cat-title-hands-on,
+h1.cat-title-previews,
+h1.cat-title-second-looks {
+	font-weight: 400 !important;
+	color: #f47614 !important;
+}
+
+h1.cat-title-forthegaymers {
+	color: rgba(0, 0, 0, 0) !important;
+	background-image: url(../img/category_forthegaymers_color-on-grey_for42px.png);
+	background-size: 332px 42px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	display: block;
+	position: relative;
+	width: 332px;
+	height: 42px;
+	font-size: 0 !important;
+	line-height: 0 !important;
+	top: 4px;
+	margin-bottom: -1px;
+}
+
+h1.cat-title-ace-attorney {
+	color: rgba(0, 0, 0, 0) !important;
+	background-image: url(../img/category_ace-attorney_color-on-grey_for106px.png);
+	background-size: 231px 106px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	display: block;
+	position: relative;
+	width: 231px;
+	height: 113px;
+	font-size: 0 !important;
+	line-height: 0 !important;
+	top: 7px;
+}
+
+h1.cat-title-best-of {
+	color: rgba(0, 0, 0, 0) !important;
+	background-image: url(../img/category_best-of_gold-on-grey_for36-5px.png);
+	background-size: 186.5px 36.5px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	display: block;
+	position: relative;
+	width: 186.5px;
+	height: 40.5px;
+	font-size: 0 !important;
+	line-height: 0 !important;
+	top: 1px;
+}
+
+h1.cat-title-e3-2016,
+h1.cat-title-e3-2021,
+h1.cat-title-e3-2023 {
+	color: black !important;
+	font-weight: 700 !important;
+	padding-left: 59.5px;
+	background-image: url(../img/category_e3_color-on-grey_for30px.png);
+	background-size: 43.5px 30px;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+h1.cat-title-exclusive {
+	color: black !important;
+	font-weight: 700 !important;
+}
+
+h1.cat-title-nintendo-direct {
+	color: rgba(0, 0, 0, 0) !important;
+	background-image: url(../img/category_nintendo-direct_color-on-grey_for62-5px.png);
+	background-size: 354px 62.5px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	display: block;
+	position: relative;
+	width: 354px;
+	height: 62.5px;
+	font-size: 0 !important;
+	line-height: 0 !important;
+	top: -11px;
+	margin-bottom: -22px;
+}
+
+h1.cat-title-pokemon-presents {
+	color: rgba(0, 0, 0, 0) !important;
+	background-image: url(../img/category_pokemon-presents_color-on-grey_for162px.png);
+	background-size: 246px 162px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	display: block;
+	position: relative;
+	width: 246px;
+	height: 162px;
+	font-size: 0 !important;
+	line-height: 0 !important;
+	top: 4px;
+	margin-bottom: -1px;
+}
+
+h1.cat-title-state-of-play {
+	color: rgba(0, 0, 0, 0) !important;
+	background-image: url(../img/category_state-of-play_black-on-grey_for38-5px.png);
+	background-size: 350.5px 38.5px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	display: block;
+	position: relative;
+	width: 350.5px;
+	height: 40.5px;
+	font-size: 0 !important;
+	line-height: 0 !important;
+	top: -2px;
+}
+
+h1.cat-title-summer-game-fest-2024 {
+	color: #3d299c !important;
+	font-weight: 700 !important;
+	padding-top: 136px;
+	background-image: url(../img/category_summer-game-fest_black-on-grey_for116px.png);
+	background-size: 164.5px 116px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 8px;
+	padding-bottom: 8px;
+}
+
+h1.cat-title-search {
+	line-height: 56px !important;
+	position: relative;
+	top: -8px;
+	margin-bottom: -15px;
+}
+
+h1.cat-title-search img,
+h1.cat-title-tag img {
+	margin-right: 16px;
+}
+
+.post-meta-tags img {
+	margin-right: 8px;
+}
+
+h1.cat-title-tag {
+	line-height: 56px !important;
+	position: relative;
+	top: -8px;
+	margin-bottom: -15px;
 }
 
 

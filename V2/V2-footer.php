@@ -7,7 +7,7 @@
 <li class="footer-socials-mastodon"><a href="https://ohai.social/@CriticalChicken" title="Mastodon" target="_blank" rel="external me">Mastodon</a></li>
 <li class="footer-socials-threads"><a href="<?php echo get_site_url(); ?>/threads" title="Threads" rel="help">Threads</a></li>
 <li class="footer-socials-ko-fi"><a href="https://ko-fi.com/criticalchicken" title="Ko-fi" target="_blank" rel="external me">Ko-fi</a></li>
-<li class="footer-socials-tumblr"><a href="#" title="Tumblr" target="_blank" rel="external me">Tumblr</a></li>
+<li class="footer-socials-tumblr"><a href="https://criticalchicken.tumblr.com" title="Tumblr" target="_blank" rel="external me">Tumblr</a></li>
 </ul>
 </div>
 <span class="copyright">Copyright &copy; 2016&ndash;<?php echo date("Y"); ?> Critical Chicken. All rights reserved.</span>

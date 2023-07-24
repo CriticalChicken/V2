@@ -61,7 +61,7 @@ function categoryLinkGenerator() {
 		if (in_category('e3-2023')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/e3-2023"><span class="titletag titletag-e3">E3 2023 and beyond</span></a>');
+			echo('/category/e3-2023"><span class="titletag titletag-e3">E3&rsquo;s future</span></a>');
 		}
 		if (in_category('summer-game-fest-2024')) {
 			echo('<a class="titletag-link" href="');
@@ -200,3 +200,20 @@ function categoryLinkGenerator() {
 // Add extra pages to the admin dashboard
 require_once(TEMPLATEPATH . '/functions/jumbotron-editor.php');
 require_once(TEMPLATEPATH . '/functions/ticker-editor.php');
+
+
+// De-code the encoded HTML entities for our Tidbyt apps
+function fix_decode_rest_api($response, $post, $request) {
+
+    if (isset($post)) {
+        
+        $decodedTitle = html_entity_decode($post->post_title);
+        $response->data['title']['rendered'] = $decodedTitle;
+ 
+        
+        $decodedPostTitle = html_entity_decode($response->data['title']['rendered']);
+        $response->data['title']['rendered'] = $decodedPostTitle;
+    }
+    return $response;
+}
+add_filter('rest_prepare_post', 'fix_decode_rest_api', 10, 3);
