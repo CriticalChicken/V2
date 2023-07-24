@@ -373,12 +373,13 @@ em {
 }
 
 #socials {
-	height: 64px;
+	height: 88px;
 	position: relative;
 	top: -32px;
 	left: calc(50% + 112px);
 	z-index: 300;
 	border-radius: 8px;
+	width: 448px;
 }
 
 #socials ul,
@@ -432,6 +433,7 @@ em {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-color: #011935;
+	margin-right: 0;
 }
 
 #socials ul li.socials-threads {
@@ -445,8 +447,8 @@ em {
 	background-repeat: no-repeat;
 	background-color: #ff1066;
 	position: relative;
-	left: -240px;
-	top: 48px;
+	left: 240px;
+	top: -16px;
 }
 
 #socials ul li a {
@@ -475,7 +477,7 @@ em {
 	position: relative;
 	width: 1153px;
 	left: calc((100% - 1120px) / 2);
-	top: -36px;
+	top: -60px;
 	display: block;
 }
 
@@ -962,6 +964,38 @@ em {
 
 .individual-post h2 + p {
 	margin-top: 45px !important;
+}
+
+.individual-post h3 {
+	font-size: 31px;
+	line-height: 40px;
+	color: black;
+	margin-top: 47px;
+	font-weight: 500;
+}
+
+.individual-post h2 + h3 {
+	margin-top: 44px !important;
+}
+
+.individual-post h3 + p {
+	margin-top: 17px !important;
+}
+
+.individual-post h4,
+.individual-post h5,
+.individual-post h6 {
+	font-size: 20px;
+	line-height: 32px;
+	color: black;
+	margin-top: 32px;
+	font-weight: 500;
+}
+
+.individual-post h3 + h4,
+.individual-post h4 + h5,
+.individual-post h5 + h6 {
+	margin-top: 33px !important;
 }
 
 .individual-post .wp-block-quote {
@@ -1528,7 +1562,6 @@ span.timetip {
 }
 
 #search-container.active {
-	pointer-events: all;
 	opacity: 1;
 }
 
@@ -1547,6 +1580,11 @@ span.timetip {
 	background-repeat: no-repeat;
 	cursor: pointer;
 	z-index: 10002;
+	pointer-events: none;
+}
+
+#search-container.active #search-handle {
+	pointer-events: all;
 }
 
 #search-box {
@@ -1558,6 +1596,11 @@ span.timetip {
 	top: 0;
 	box-shadow: 0 0 32px rgba(0, 0, 0, 0.32);
 	z-index: 10001;
+	pointer-events: none;
+}
+
+#search-container.active #search-box {
+	pointer-events: all;
 }
 
 #search-box input {
@@ -1574,10 +1617,15 @@ span.timetip {
 	background: white;
 	border: 1px white solid;
 	font-family: "Noto Sans Display", sans-serif;
+	pointer-events: none;
 }
 
 #search-box input::placeholder {
 	color: #717070;
+}
+
+#search-container.active #search-box input {
+	pointer-events: all;
 }
 
 
