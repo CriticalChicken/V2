@@ -675,6 +675,10 @@ em {
 	margin-right: 0;
 }
 
+#home-navigation ul li.ko-fi span:after {
+	content: "\00A0on Ko-fi";
+}
+
 #home-navigation ul li a {
 	font-size: 22px;
 	line-height: 63px;
@@ -732,6 +736,10 @@ em {
 	line-height: 24px;
 	color: black;
 	display: block;
+}
+
+#footer-inner span.copyright br {
+	display: none;
 }
 
 #footer-links {
@@ -2427,4 +2435,412 @@ span.titletag.titletag-hollow {
 .homepage-post span.titletag.titletag.titletag-hollow.titletag-reviews {
 	box-shadow: inset 0 0 0 1px #f47614;
 	color: #f47614;
+}
+
+
+/* LARGE DEVICES - DESKTOPS, 992px AND UP */
+
+@media (max-width: 1200px) {
+	#header-inner {
+		width: 928px;
+		left: calc(50% - 464px);
+	}
+
+	#menu-inner {
+		width: 928px;
+		left: calc(50% - 464px);
+	}
+	
+	#ticker-inner {
+		width: 918px;
+		left: calc(((100% - 928px) / 2) + 10px);
+	}
+
+	#ticker-titletag span.titletag {
+		left: calc((100% - 928px) / 2);
+	}
+
+	#jumbotron-inner {
+		width: 928px;
+		left: calc((100% - 928px) / 2);
+	}
+	
+	#jumbotron-inner img {
+		left: 480px;
+		width: 448px;
+		height: 252px;
+	}
+	
+	#jumbotron-text {
+		width: 448px;
+	}
+	
+	#jumbotron-text span:last-of-type {
+		font-size: 53px;
+		line-height: 80px;
+	}
+	
+	#socials {
+		left: calc(50% + 16px);
+	}
+	
+	#home-content-upper {
+		width: 961px;
+		left: calc((100% - 928px) / 2);
+	}
+	
+	#home-content-lower {
+		width: 961px;
+		left: calc((100% - 928px) / 2);
+	}
+	
+	.homepage-post {
+		width: 288px;
+	}
+	
+	.homepage-post img {
+		width: 288px;
+		height: 162px;
+	}
+	
+	#not-sidebar-inner {
+		width: 928px;
+		left: calc((100% - 928px) / 2);
+	}
+	
+	#not-sidebar-inner img {
+		width: 288px;
+		height: 162px;
+	}
+	
+	#not-sidebar-box-left,
+	#not-sidebar-box-right {
+		width: 288px;
+	}
+	
+	#not-sidebar-box-mastodon {
+		width: 288px;
+	}
+	
+	#not-sidebar-box-mastodon iframe {
+		width: 288px;
+	}
+	
+	#home-navigation {
+		width: 928px;
+		left: calc((100% - 928px) / 2);
+	}
+	
+	#home-navigation ul,
+	#home-navigation ul li {
+		display: inline-block;
+		font-size: 0;
+		line-height: 0;
+	}
+	
+	#home-navigation ul li {
+		width: 160px;
+		height: 64px;
+		margin-right: 32px;
+		border-radius: 8px;
+		background: black;
+		margin-top: 32px;
+		text-align: center;
+	}
+	
+	#home-navigation ul li.ko-fi {
+		width: 160px;
+	}
+
+	#home-navigation ul li.ko-fi span:after {
+		content: "";
+	}
+
+	#home-navigation ul li.ko-fi a {
+		width: 160px;
+	}
+	
+	#home-navigation ul li.ko-fi a img {
+		margin-right: 8px;
+	}
+	
+	#footer-inner {
+		width: 928px;
+		left: calc((100% - 928px) / 2);
+	}
+
+	#footer-inner span.trademark {
+		width: 624px;
+	}
+
+	#footer-inner span.trademark br {
+		display: none;
+	}
+
+	#footer-inner span.copyright br {
+		display: none;
+	}
+
+	#listing-container {
+		width: 961px;
+		left: calc((100% - 928px) / 2);
+	}
+	
+	.homepage-post.listing-post p {
+		width: calc(100% - 288px - 32px);
+	}
+	
+	.homepage-post.listing-post .listing-links {
+		width: calc(100% - 288px - 32px);
+	}
+	
+	.individual-post {
+		width: 928px;
+		left: calc((100% - 928px) / 2);
+	}
+	
+	.individual-post ul li,
+	#no-posts-found ul li {
+		width: 736px;
+	}
+	
+	.individual-post ol li {
+		width: 736px;
+	}
+
+	.individual-post figure iframe {
+		width: 928px;
+		height: 522px;
+	}
+	
+	#post-meta {
+		width: 928px;
+		left: calc((100% - 928px) / 2);
+	}
+	
+	#crp-container {
+		width: 961px;
+		left: calc((100% - 928px) / 2);
+	}
+	
+	.related-post {
+		width: 288px;
+	}
+
+	.related-post img {
+		width: 288px;
+		height: 162px;
+	}
+	
+	#search-container {
+		left: calc(50% + 112px);
+	}
+}
+
+
+/* MEDIUM DEVICES - TABLETS, 768px AND UP */
+
+@media (max-width: 992px) {
+	#header-inner {
+		width: 736px;
+		left: calc(50% - 368px);
+	}
+
+	#menu-inner {
+		width: 736px;
+		left: calc(50% - 368px);
+	}
+
+	#menu-inner ul#regular-menu-items {
+		display: none;
+	}
+	
+	#ticker-inner {
+		width: 726px;
+		left: calc(((100% - 736px) / 2) + 10px);
+	}
+
+	#ticker-titletag span.titletag {
+		left: calc((100% - 736px) / 2);
+	}
+
+	#jumbotron-inner {
+		width: 736px;
+		left: calc((100% - 736px) / 2);
+	}
+	
+	#jumbotron-inner img {
+		left: 384px;
+		width: 352px;
+		height: 198px;
+	}
+	
+	#jumbotron-text {
+		width: 352px;
+	}
+	
+	#jumbotron-text span:last-of-type {
+		font-size: 53px;
+		line-height: 80px;
+	}
+	
+	#socials {
+		left: calc(50% + 16px);
+	}
+	
+	#home-content-upper {
+		width: 768px;
+		left: calc((100% - 736px) / 2);
+	}
+	
+	#home-content-lower {
+		width: 768px;
+		left: calc((100% - 736px) / 2);
+	}
+	
+	.homepage-post {
+		width: 352px;
+	}
+	
+	.homepage-post img {
+		width: 352px;
+		height: 198px;
+	}
+	
+	#not-sidebar-inner {
+		width: 736px;
+		left: calc((100% - 736px) / 2);
+	}
+	
+	#not-sidebar-inner img {
+		width: 352px;
+		height: 198px;
+	}
+	
+	#not-sidebar-box-left,
+	#not-sidebar-box-right {
+		width: 352px;
+	}
+
+	#not-sidebar-box-right {
+		margin-right: 0;
+	}
+	
+	#not-sidebar-box-mastodon {
+		display: none;
+	}
+	
+	#not-sidebar-box-mastodon iframe {
+		display: none;
+	}
+	
+	#home-navigation {
+		width: 928px;
+		left: calc((100% - 928px) / 2);
+	}
+	
+	#home-navigation ul,
+	#home-navigation ul li {
+		display: inline-block;
+		font-size: 0;
+		line-height: 0;
+	}
+	
+	#home-navigation ul li {
+		width: 160px;
+		height: 64px;
+		margin-right: 32px;
+		border-radius: 8px;
+		background: black;
+		margin-top: 32px;
+		text-align: center;
+	}
+	
+	#home-navigation ul li.ko-fi {
+		width: 160px;
+	}
+
+	#home-navigation ul li.ko-fi span:after {
+		content: "";
+	}
+
+	#home-navigation ul li.ko-fi a {
+		width: 160px;
+	}
+	
+	#home-navigation ul li.ko-fi a img {
+		margin-right: 8px;
+	}
+	
+	#footer-inner {
+		width: 736px;
+		left: calc((100% - 736px) / 2);
+	}
+
+	#footer-inner span.copyright br {
+		display: block;
+	}
+
+	#footer-inner span.trademark {
+		width: 624px;
+	}
+
+	#footer-inner span.copyright br {
+		display: block;
+	}
+
+	#listing-container {
+		width: 961px;
+		left: calc((100% - 928px) / 2);
+	}
+	
+	.homepage-post.listing-post p {
+		width: calc(100% - 288px - 32px);
+	}
+	
+	.homepage-post.listing-post .listing-links {
+		width: calc(100% - 288px - 32px);
+	}
+	
+	.individual-post {
+		width: 928px;
+		left: calc((100% - 928px) / 2);
+	}
+	
+	.individual-post ul li,
+	#no-posts-found ul li {
+		width: 736px;
+	}
+	
+	.individual-post ol li {
+		width: 736px;
+	}
+
+	.individual-post figure iframe {
+		width: 928px;
+		height: 522px;
+	}
+	
+	#post-meta {
+		width: 928px;
+		left: calc((100% - 928px) / 2);
+	}
+	
+	#crp-container {
+		width: 961px;
+		left: calc((100% - 928px) / 2);
+	}
+	
+	.related-post {
+		width: 288px;
+	}
+
+	.related-post img {
+		width: 288px;
+		height: 162px;
+	}
+	
+	#search-container {
+		left: calc(50% + 112px);
+	}
 }

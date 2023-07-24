@@ -10,8 +10,8 @@
 <li class="footer-socials-tumblr"><a href="https://criticalchicken.tumblr.com" title="Tumblr" target="_blank" rel="external me">Tumblr</a></li>
 </ul>
 </div>
-<span class="copyright">Copyright &copy; 2016&ndash;<?php echo date("Y"); ?> Critical Chicken. All rights reserved.</span>
-<span class="trademark">Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.<br>All other trademarks referred to are trademarks of their respective owners.</span>
+<span class="copyright">Copyright &copy; 2016&ndash;<?php echo date("Y"); ?> Critical Chicken.&nbsp;<br>All rights reserved.</span>
+<span class="trademark balance-text">Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.&nbsp;<br>All other trademarks referred to are trademarks of their respective owners.</span>
 <div id="footer-links">
 <ul>
 <li><a href="<?php echo get_site_url(); ?>/privacy">Privacy policy &raquo;</a></li>
