@@ -6,6 +6,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 
 #container {
 	top: 32px;
+	min-height: calc(100% - 32px);
 }
 
 #progress-container {
@@ -15,6 +16,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 @media only screen and (max-width: 782px) {
 	#container {
 		top: 46px;
+		min-height: calc(100% - 46px);
 	}
 	
 	#progress-container {
