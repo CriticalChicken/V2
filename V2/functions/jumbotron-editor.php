@@ -257,7 +257,7 @@ function jumbotron_editor_image() {
 ?>
 		<p>URL:</p>
 		<input type="text" name="jumbotron_image" id="jumbotron_image" value="<?php echo get_option('jumbotron_image'); ?>" style="width: 400px">
-		<p style="font-size: small;">Images <strong>must</strong> be 16:9 (widescreen) and <strong>at least</strong> 1,080 &times; 608 pixel resolution.</p>
+		<p style="font-size: small;">Your image <strong>must</strong> be 16:9 (widescreen) and <strong>at least</strong> 1,080 &times; 608 pixel resolution.</p>
 		<p><a href="<?php echo get_site_url(); ?>/wp-admin/upload.php" target="_blank"><b>Media Library &raquo;</b></a></p>
 
 <?php
@@ -267,6 +267,7 @@ function jumbotron_editor_alt() {
 ?>
 		<p>Alt text:</p>
 		<input type="text" name="jumbotron_alt" id="jumbotron_alt" value="<?php echo get_option('jumbotron_alt'); ?>" style="width: 400px">
+		<p style="font-size: small;"><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/" target="_blank" rel="external nofollow help"><b>Describe the purpose of your image &raquo;</b></a></p>
 
 <?php
 }

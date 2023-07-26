@@ -1,3 +1,4 @@
+<?php get_template_part("V2-maintenance-mode.min"); ?>
 <!doctype html>
 <html>
 
@@ -15,7 +16,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <?php if(have_posts()):while(have_posts()):the_post(); ?>
 <div id="progress-container"<?php post_class(); ?>><div id="reading-progress"></div></div>
 <div id="post-<?php the_ID(); ?>"<?php post_class('individual-post') ?>>
-<?php categoryLinkGenerator(); ?><span class="timestamp"><?php echo the_date("l, jS F Y"); ?> by <?php echo the_author_posts_link();?></span>
+<?php categoryLinkGenerator(); ?><span class="timestamp"><?php echo get_the_date("l, jS F Y"); ?> by <?php echo the_author_posts_link();?></span>
 <h1><?php the_title(); ?></h1>
 <?php echo the_content(); ?>
 </div>

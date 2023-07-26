@@ -5,7 +5,6 @@
 <meta name="msapplication-TileColor" content="#d20202">
 <meta name="msapplication-config" content="<?php echo get_template_directory_uri(); ?>/img/manifest/browserconfig.xml">
 <meta name="theme-color" content="#d20202">
-<meta name="robots" content="noindex"><!-- REMOVE THIS LINE BEFORE LAUNCHING -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&subset=latin-ext&display=swap" rel="stylesheet">
