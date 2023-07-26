@@ -1326,6 +1326,8 @@ span.timetip {
 	border-radius: 8px;
 	display: block;
 	margin-bottom: -5px;
+	width: 352px;
+	height: 198px;
 }
 
 .related-post span.crp_title {
@@ -1872,6 +1874,28 @@ h1.cat-title-tag {
 	position: relative;
 	top: -8px;
 	margin-bottom: -15px;
+}
+
+#maintenance-mode-active {
+	background: repeating-linear-gradient(-63.4deg, #ffdc16, #ffdc16 16px, black 16px, black 32px);
+	background-position: center top;
+	position: fixed;
+	width: 217px;
+	height: 32px;
+	top: 32px;
+	left: calc(50% - 108.5px);
+	box-shadow: 0 0 32px rgba(0, 0, 0, 0.32);
+	border-radius: 0 0 8px 8px;
+	z-index: 9999999;
+	line-height: 31px;
+	font-size: 22px;
+	color: white;
+	font-weight: 700;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 1);
+	text-align: center;
+	border-left: 1px black solid;
+	border-bottom: 1px black solid;
+	border-right: 1px black solid;
 }
 
 

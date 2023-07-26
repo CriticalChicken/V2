@@ -97,7 +97,7 @@ function categoryLinkGenerator() {
 	
 	// News categories, in order of priority
 	if (in_category('news')) {
-		if (!in_category('breaking-news') && !in_category('news-alert')) {
+		if (!in_category('breaking-news') && !in_category('news-alerts')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
 			echo('/category/news"><span class="titletag titletag-news">News</span></a>');
@@ -200,6 +200,7 @@ function categoryLinkGenerator() {
 // Add extra pages to the admin dashboard
 require_once(TEMPLATEPATH . '/functions/jumbotron-editor.php');
 require_once(TEMPLATEPATH . '/functions/ticker-editor.php');
+require_once(TEMPLATEPATH . '/functions/maintenance-mode-editor.php');
 
 
 // De-code the encoded HTML entities for our Tidbyt apps

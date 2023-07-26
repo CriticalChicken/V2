@@ -1,4 +1,5 @@
 <?php /* Template Name: V2 Home */ ?>
+<?php get_template_part("V2-maintenance-mode.min"); ?>
 
 <!doctype html>
 <html>
@@ -42,7 +43,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <div id="home-content-upper">
 <h1>Posts we think you&rsquo;ll like</h1>
 <div id="posts-container-upper">
-<?php query_posts('cat=36&posts_per_page=6&offset=0'); if(have_posts()):while(have_posts()):the_post(); ?>
+<?php query_posts('cat=35&posts_per_page=6&offset=0'); if(have_posts()):while(have_posts()):the_post(); ?>
 <div id="post-<?php the_ID(); ?>"<?php post_class('homepage-post') ?>>
 <a href="<?php echo the_permalink(); ?>" title="Read more" class="thumb-link"><img src="<?php if(get_field('thumbnail')):echo the_field('thumbnail');else:echo get_template_directory_uri();fallbackThumbnailPicker();endif; ?>" alt="<?php if(get_field('alt')):echo the_field('alt');endif; ?>" width="352" height="198"></a>
 <?php categoryLinkGenerator(); ?>
@@ -72,7 +73,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 </div><!-- /not-sidebar-outer -->
 <div id="home-content-lower">
 <div id="posts-container-lower">
-<?php query_posts('cat=36&posts_per_page=6&offset=6'); if(have_posts()):while(have_posts()):the_post(); ?><!-- CHANGE CATEGORY NUMBER BEFORE LAUNCHING -->
+<?php query_posts('cat=35&posts_per_page=6&offset=6'); if(have_posts()):while(have_posts()):the_post(); ?>
 <div id="post-<?php the_ID(); ?>"<?php post_class('homepage-post') ?>>
 <a href="<?php echo the_permalink(); ?>" title="Read more" class="thumb-link"><img src="<?php if(get_field('thumbnail')):echo the_field('thumbnail');else:echo get_template_directory_uri();fallbackThumbnailPicker();endif; ?>" alt="<?php if(get_field('alt')):echo the_field('alt');endif; ?>" width="352" height="198"></a>
 <?php categoryLinkGenerator(); ?>
