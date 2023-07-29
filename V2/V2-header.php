@@ -1,5 +1,5 @@
 <div id="container">
-<?php if(get_option("mm_display")=="on"&&current_user_can("edit_posts")): ?><div id="maintenance-mode-active"><span>Maintenance Mode</span></div><?php endif; ?>
+<?php if(get_option("mm_display")=="on"&&current_user_can("edit_posts")): ?><div id="maintenance-mode-active"><span>Pre-launch</span></div><?php endif; ?>
 <div id="header-outer">
 <div id="header-inner">
 <a href="<?php echo get_site_url(); ?>" title="Home"><img src="<?php echo get_template_directory_uri(); ?>/img/branding_logo_color-on-white_for64px.png" alt="Critical Chicken" height="64"></a>
@@ -19,9 +19,23 @@
 <li><a href="<?php echo get_site_url(); ?>/about">About</a></li>
 <li><a href="mailto:office@criticalchicken.com">Contact</a></li>
 </ul><!-- /regular-menu-items -->
+<div id="button-container">
+<div id="menu-button" title="Menu"></div>
 <div id="search-button" title="Search"></div>
+</div>
 </div><!-- /menu-inner -->
 </div><!-- /menu-outer -->
+<div id="popmenu-container">
+<div id="popmenu-handle">
+</div>
+<div id="popmenu-box">
+<ul id="popmenu-contents">
+<li><a href="<?php echo get_site_url(); ?>/radar">Radar</a></li>
+<li><a href="<?php echo get_site_url(); ?>/about">About</a></li>
+<li><a href="mailto:office@criticalchicken.com">Contact</a></li>
+</ul>
+</div>
+</div>
 <div id="search-container">
 <div id="search-handle">
 </div>

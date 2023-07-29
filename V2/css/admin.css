@@ -4,6 +4,9 @@
 /* Copyright © Critical Chicken. All rights reserved. Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.
 All other trademarks referred to are trademarks of their respective owners. See website for current copyright years. */
 
+
+/* STYLES FOR USERS WITH THE edit_posts PERMISSION (AND ABOVE) */
+
 #container {
 	top: 32px;
 	min-height: calc(100% - 32px);
@@ -17,6 +20,10 @@ All other trademarks referred to are trademarks of their respective owners. See 
 	#container {
 		top: 46px;
 		min-height: calc(100% - 46px);
+	}
+
+	#maintenance-mode-active {
+		top: 46px;
 	}
 	
 	#progress-container {

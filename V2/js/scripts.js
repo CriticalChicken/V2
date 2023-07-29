@@ -62,11 +62,22 @@ function getPageLoadTime(){
 
 // Make the search button work
 $("#search-button").click(function() {
+	$("#popmenu-container").removeClass("active");
     $("#search-container").addClass("active");
 	$("#s").focus();
 });
 $("#search-handle").click(function() {
     $("#search-container").removeClass("active");
+});
+
+
+// Make the pop-up menus work
+$("#menu-button").click(function() {
+	$("#search-container").removeClass("active");
+    $("#popmenu-container").addClass("active");
+});
+$("#popmenu-handle").click(function() {
+    $("#popmenu-container").removeClass("active");
 });
 
 

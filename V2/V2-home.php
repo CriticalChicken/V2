@@ -1,5 +1,5 @@
 <?php /* Template Name: V2 Home */ ?>
-<?php get_template_part("V2-maintenance-mode.min"); ?>
+<?php get_template_part("V2-pre-launch"); ?>
 
 <!doctype html>
 <html>
@@ -32,9 +32,10 @@ All other trademarks referred to are trademarks of their respective owners. See 
 </div><!-- /jumbotron-outer -->
 <div id="socials">
 <ul>
+<li class="socials-bluesky"><a href="#" title="Bluesky" rel="external me">Bluesky</a></li>
 <li class="socials-discord"><a href="https://discord.gg/XtGUe4vaVm" title="Discord" target="_blank" rel="external me">Discord</a></li>
 <li class="socials-instagram"><a href="https://www.instagram.com/criticalchicken" title="Instagram" target="_blank" rel="external me">Instagram</a></li>
-<li class="socials-mastodon"><a href="https://ohai.social/@CriticalChicken" title="Mastodon" target="_blank" rel="external me">Mastodon</a></li>
+<li class="socials-mastodon"><a href="https://mastodon.world/@CriticalChicken" title="Mastodon" target="_blank" rel="external me">Mastodon</a></li>
 <li class="socials-ko-fi"><a href="https://ko-fi.com/criticalchicken" title="Ko-fi" target="_blank" rel="external me">Ko-fi</a></li>
 <li class="socials-tumblr"><a href="https://criticalchicken.tumblr.com" title="Tumblr" target="_blank" rel="external me">Tumblr</a></li>
 <li class="socials-threads"><a href="<?php echo get_site_url(); ?>/threads" title="Threads" rel="help">Threads</a></li>
@@ -67,10 +68,11 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <a href="<?php echo get_site_url(); ?>/category/ace-attorney" class="raquo">More Ace Attorney &raquo;</a>
 </div><!-- /not-sidebar-box-right -->
 <div id="not-sidebar-box-mastodon">
-<iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="352" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fohai.social%2Fusers%2FCriticalChicken&theme=light&size=100&header=true&replies=false&boosts=false" frameborder="0"></iframe>
+<iframe width="352" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.world%2Fusers%2FCriticalChicken&theme=light&size=100&header=true&replies=false&boosts=false" frameborder="0"></iframe>
 </div><!-- /not-sidebar-box-mastodon -->
 </div><!-- /not-sidebar-inner -->
 </div><!-- /not-sidebar-outer -->
+<div id="tease-wrapper"><div id="mastodon-tease"><a href="https://mastodon.world/@CriticalChicken" target="_blank" rel="external me">Follow us on Mastodon: <span>@CriticalChicken@mastodon.world</span></a></div></div>
 <div id="home-content-lower">
 <div id="posts-container-lower">
 <?php query_posts('cat=35&posts_per_page=6&offset=6'); if(have_posts()):while(have_posts()):the_post(); ?>
