@@ -1,4 +1,4 @@
-<div id="home-navigation" class="on-a-single-post">
+<div id="home-navigation"<?php if(is_page() || is_single()) { echo('class="on-a-single-post"'); } ?>>
 <ul>
 <li class="latest"><a href="<?php echo get_site_url(); ?>/latest">Latest</a></li>
 <li class="news"><a href="<?php echo get_site_url(); ?>/category/news">News</a></li>

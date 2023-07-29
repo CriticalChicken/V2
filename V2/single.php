@@ -1,4 +1,4 @@
-<?php get_template_part("V2-maintenance-mode.min"); ?>
+<?php get_template_part("V2-pre-launch"); ?>
 <!doctype html>
 <html>
 
