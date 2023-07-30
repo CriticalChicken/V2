@@ -25,6 +25,8 @@ function jumbotron_editor_contents() {
 	font-weight: 700;
 	resize: none;
 	overflow: hidden;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 </style>
 
