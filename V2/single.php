@@ -8,8 +8,8 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <head>
 <?php get_template_part("V2-meta"); ?>
 <title><?php echo single_post_title(); ?> - Critical Chicken</title>
-<meta name="description" content="<?php echo the_excerpt(); ?>">
-<?php if(has_tag()) { ?><meta name="keywords" content="<?php echo the_tags("", ", ", ""); ?>"><?php } ?>
+<meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>">
+<meta name="keywords" content="<?php $posttags = get_the_tags(); if ($posttags) { foreach($posttags as $tag) { echo $tag->name . ', '; }; } ?>">
 <?php wp_head(); ?>
 </head>
 
