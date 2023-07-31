@@ -141,11 +141,6 @@ em {
 	position: relative;
 	top: 16px;
 	opacity: 1;
-	transition: opacity 0.16s;
-}
-
-#header-inner a:hover {
-	opacity: 0.68;
 }
 
 #header-inner img {
@@ -175,15 +170,6 @@ em {
 	background-position: right top;
 	background-repeat: no-repeat;
 	background-size: 32px 32px;
-}
-
-#menu-inner a {
-	transition: opacity 0.16s;
-}
-
-#menu-inner a:hover,
-#menu-inner a:hover {
-	opacity: 0.68;
 }
 
 #bold-menu-items,
@@ -263,11 +249,6 @@ em {
 	color: rgba(0, 0, 0, 0);
 	display: block;
 	background: rgba(255, 255, 255, 0);
-	transition: background 0.16s;
-}
-
-#ticker-link a:hover {
-	background: rgba(255, 255, 255, 0.32);
 }
 
 #jumbotron-outer {
@@ -382,11 +363,6 @@ em {
 	line-height: 0;
 	color: rgba(0, 0, 0, 0);
 	background: rgba(255, 255, 255, 0);
-	transition: background 0.16s;
-}
-
-#jumbotron-link a:hover {
-	background: rgba(255, 255, 255, 0.16);
 }
 
 #socials {
@@ -481,15 +457,10 @@ em {
 	height: 64px;
 	border-radius: 8px;
 	background: rgba(255, 255, 255, 0);
-	transition: background 0.16s;
 	font-size: 0;
 	line-height: 0;
 	color: rgba(0, 0, 0, 0);
 	display: block;
-}
-
-#socials ul li a:hover {
-	background: rgba(255, 255, 255, 0.16);
 }
 
 #socials ul li.socials-threads a {
@@ -562,12 +533,7 @@ em {
 	color: black;
 	text-decoration: none;
 	opacity: 1;
-	transition: opacity 0.16s;
 	font-weight: 700;
-}
-
-.homepage-post-title a:hover {
-	opacity: 0.68;
 }
 
 #not-sidebar-outer {
@@ -712,12 +678,7 @@ em {
 	color: white;
 	text-decoration: none;
 	background: rgba(255, 255, 255, 0);
-	transition: background 0.16s;
 	font-weight: 500;
-}
-
-#home-navigation ul li a:hover {
-	background: rgba(255, 255, 255, 0.16);
 }
 
 #home-navigation ul li.ko-fi a {
@@ -845,8 +806,9 @@ em {
 	line-height: 24px;
 	font-style: italic;
 	color: #717070;
-	float: right;
 	display: block;
+	margin-top: 6px;
+	margin-bottom: 10px;
 }
 
 .homepage-post.listing-post span.timestamp a {
@@ -1389,7 +1351,6 @@ span.timetip {
 	color: black;
 	text-decoration: none;
 	opacity: 1;
-	transition: opacity 0.16s;
 	font-weight: 500;
 	display: inline;
 }
@@ -1543,15 +1504,10 @@ span.older-posts a {
 	height: 32px;
 	border-radius: 6px;
 	background: rgba(255, 255, 255, 0);
-	transition: background 0.16s;
 	font-size: 0;
 	line-height: 0;
 	color: rgba(0, 0, 0, 0);
 	display: block;
-}
-
-#footer-socials ul li a:hover {
-	background: rgba(255, 255, 255, 0.16);
 }
 
 #back-to-top {
@@ -2072,6 +2028,28 @@ h1.cat-title-tag {
 
 .individual-post ul.privacy-list li:last-of-type {
 	background-image: url(../img/ui_privacy-grey-area_black-on-grey_for15px.png);
+}
+
+#openai-container {
+	width: 100%;
+	display: block;
+}
+
+#openai-container #openai-disclaimer {
+	width: calc(1120px - 32.5px);
+	left: calc(((100% - 1120px) / 2) - 0.5px);
+	font-size: 21px;
+	line-height: 32px;
+	color: #717070;
+	font-style: italic;
+	font-weight: 300;
+	background-image: url(../img/inline_openai-logo_dark-grey-on-grey_for17px.png);
+	background-size: 16px 17px;
+	background-position: left 55px;
+	background-repeat: no-repeat;
+	padding-left: 32.5px;
+	margin-bottom: -48px;
+	padding-top: 47px;
 }
 
 

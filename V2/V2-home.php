@@ -32,7 +32,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 </div><!-- /jumbotron-outer -->
 <div id="socials">
 <ul>
-<li class="socials-bluesky"><a href="#" title="Bluesky" rel="external me">Bluesky</a></li>
+<li class="socials-bluesky"><a href="https://bsky.app/profile/criticalchicken.bsky.social" title="Bluesky" target="_blank" rel="external me">Bluesky</a></li>
 <li class="socials-discord"><a href="https://discord.gg/XtGUe4vaVm" title="Discord" target="_blank" rel="external me">Discord</a></li>
 <li class="socials-instagram"><a href="https://www.instagram.com/criticalchicken" title="Instagram" target="_blank" rel="external me">Instagram</a></li>
 <li class="socials-mastodon"><a href="https://mastodon.world/@CriticalChicken" title="Mastodon" target="_blank" rel="external me">Mastodon</a></li>
