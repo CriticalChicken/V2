@@ -9,9 +9,9 @@
 <div id="menu-inner">
 <ul id="bold-menu-items">
 <li><a href="<?php echo get_site_url(); ?>/latest">Latest</a></li>
-<li><a href="<?php echo get_site_url(); ?>/category/news" class="news">News</a></li>
-<li><a href="<?php echo get_site_url(); ?>/category/features" class="features">Features</a></li>
-<li><a href="<?php echo get_site_url(); ?>/category/reviews" class="reviews">Reviews</a></li>
+<li><a href="<?php echo get_site_url(); ?>/category/news">News</a></li>
+<li><a href="<?php echo get_site_url(); ?>/category/features">Features</a></li>
+<li><a href="<?php echo get_site_url(); ?>/category/reviews">Reviews</a></li>
 <li><a href="<?php echo get_site_url(); ?>/explore">Explore</a></li>
 </ul><!-- /bold-menu-items -->
 <ul id="regular-menu-items">
