@@ -111,6 +111,5 @@ $("#back-to-top").click(function() {
 
 // Handle functions that trigger when the page is fully loaded
 $(window).on("load", function() {
-	vitalStatistics();
 	getPageLoadTime();
 });
