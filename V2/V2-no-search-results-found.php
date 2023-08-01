@@ -1,4 +1,3 @@
-<?php define("loopstatus", "nopostsfound"); ?>
 <div id="no-posts-found">
 <h2>We couldn&rsquo;t find any posts matching your search.</h2>
 <p>Here are some things you might want to try:</p>

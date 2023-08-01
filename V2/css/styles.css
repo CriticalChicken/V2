@@ -227,7 +227,7 @@ em {
 
 #ticker-contents li {
 	padding: 1px 45px 0 32px !important;
-	background-image: url("../img/ui_ticker-bullet_color-on-yellow_for16px.png");
+	background-image: url("../img/ui_ticker-bullet_black-on-yellow_for16px.png");
 	background-size: 13px 16px;
 	background-repeat: no-repeat;
 	background-position: right 10px;
@@ -868,8 +868,65 @@ em {
 }
 
 /* Pages with a titleimg */
-#post-158.individual-post h1 /* /threads */ {
-	padding-right: 288px;
+#post-3.individual-post h1:before /* /privacy */ {
+	width: 55px;
+	height: 80px;
+	background-image: url(../img/pagetitle_privacy_black-on-grey_for45px.png);
+	background-size: 39px 45px;
+	background-position: left 35px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	content: "";
+}
+#post-148.individual-post h1:before /* /explore */ {
+	width: 61px;
+	height: 80px;
+	background-image: url(../img/pagetitle_explore_black-on-grey_for45px.png);
+	background-size: 45px 45px;
+	background-position: left 35px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	content: "";
+}
+#post-150.individual-post h1:before /* /radar */ {
+	width: 61px;
+	height: 80px;
+	background-image: url(../img/pagetitle_radar_black-on-grey_for45px.png);
+	background-size: 45px 45px;
+	background-position: left 35px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	content: "";
+}
+#post-152.individual-post h1:before /* /about */ {
+	width: 51.5px;
+	height: 80px;
+	background-image: url(../img/pagetitle_about_color-on-grey_for45px.png);
+	background-size: 35.5px 45px;
+	background-position: left 35px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	content: "";
+}
+#post-158.individual-post h1:before /* /threads */ {
+	width: 61px;
+	height: 80px;
+	background-image: url(../img/pagetitle_threads_color-on-grey_for45px.png);
+	background-size: 45px 45px;
+	background-position: left 35px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	content: "";
+}
+#post-509.individual-post h1:before /* /tags */ {
+	width: 61px;
+	height: 80px;
+	background-image: url(../img/pagetitle_tags_black-on-grey_for45px.png);
+	background-size: 45px 45px;
+	background-position: left 35px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	content: "";
 }
 
 .individual-post.category-news h1 {
@@ -1248,8 +1305,11 @@ hr .wp-block-separator {
 	padding: 0;
 }
 
-.individual-post div.titleimg figure.alignright img {
-	margin-top: -153px;
+.individual-post .mii figure.alignright img {
+	margin-top: 55px;
+	margin-left: 32px;
+	margin-bottom: 32px;
+	padding: 0;
 }
 
 span.timetip {
@@ -2051,28 +2111,6 @@ h1.cat-title-tag {
 
 .individual-post ul.privacy-list li:last-of-type {
 	background-image: url(../img/ui_privacy-grey-area_black-on-grey_for15px.png);
-}
-
-#openai-container {
-	width: 100%;
-	display: block;
-}
-
-#openai-container #openai-disclaimer {
-	width: calc(1120px - 32.5px);
-	left: calc(((100% - 1120px) / 2) - 0.5px);
-	font-size: 21px;
-	line-height: 32px;
-	color: #717070;
-	font-style: italic;
-	font-weight: 300;
-	background-image: url(../img/inline_openai-logo_dark-grey-on-grey_for17px.png);
-	background-size: 16px 17px;
-	background-position: left 55px;
-	background-repeat: no-repeat;
-	padding-left: 32.5px;
-	margin-bottom: -48px;
-	padding-top: 47px;
 }
 
 #tag-cloud {
@@ -3207,10 +3245,6 @@ span.titletag.titletag-hollow {
 		padding-top: 36px;
 	}
 	
-	.individual-post div.titleimg figure.alignright img {
-		margin-top: -115px;
-	}
-	
 	.individual-post ul li,
 	#no-posts-found ul li,
 	.individual-post ol li {
@@ -3549,10 +3583,6 @@ span.titletag.titletag-hollow {
 		line-height: 56px;
 		margin-bottom: -3px;
 		padding-top: 36px;
-	}
-	
-	.individual-post div.titleimg figure.alignright img {
-		margin-top: -115px;
 	}
 	
 	.individual-post ul li,
