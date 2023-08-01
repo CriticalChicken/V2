@@ -16,8 +16,6 @@
 <div id="footer-links">
 <ul>
 <li><a href="<?php echo get_site_url(); ?>/privacy">Privacy policy &raquo;</a></li>
-<li><a href="<?php echo get_site_url(); ?>/roadmap">Roadmap &raquo;</a></li>
-<li><a href="<?php echo get_site_url(); ?>/promises">Our six promises &raquo;</a></li>
 </ul>
 </div><!-- /footer-links -->
 <div id="back-to-top" title="Back to top"></div>

@@ -81,7 +81,7 @@ $("#popmenu-handle").click(function() {
 });
 
 
-// Fix pluralisation on the "waiting for Ace Attorney 7" clock
+// Fix pluralisation for timetips
 $("span.timetip").each(function() {
 	if($(this).text().charAt(0) == "1" && $(this).text().charAt(1) == " ") {
 		$(this).text($(this).text().replace("years","year"));
@@ -111,5 +111,6 @@ $("#back-to-top").click(function() {
 
 // Handle functions that trigger when the page is fully loaded
 $(window).on("load", function() {
+	vitalStatistics();
 	getPageLoadTime();
 });
