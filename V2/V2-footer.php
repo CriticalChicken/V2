@@ -27,7 +27,7 @@
 </div><!-- /container -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>!window.jQuery && document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.4.1.min.js"><\/script>')</script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.webticker.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/momentum.min.js"></script>
+<?php if(get_option('ticker_display') == "on") { ?><script src="<?php echo get_template_directory_uri(); ?>/js/jquery.webticker.min.js"></script><?php } ?>
+<?php if(is_single()) { ?><script src="<?php echo get_template_directory_uri(); ?>/js/momentum.min.js"></script><?php } ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
-<!--<script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script> UN-COMMENT THIS LINE BEFORE LAUNCH -->
+<?php if(!current_user_can('edit_posts')) { ?><script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script><?php } ?>

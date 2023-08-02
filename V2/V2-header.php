@@ -43,7 +43,7 @@
 <form role="search" method="get" id="searchform" class="searchform" action="<?php echo site_url(); ?>/"><div><label class="screen-reader-text" for="s">Search for:</label><input type="text" name="s" id="s" placeholder="Search&hellip;" /><input type="hidden" value="post" name="post_type" id="post_type"/></div></form>
 </div>
 </div>
-<?php $ticker_checker = get_option('ticker_display'); if($ticker_checker == "on") { ?><div id="ticker-outer">
+<?php if(get_option('ticker_display') == "on") { ?><div id="ticker-outer">
 <div id="ticker-titletag">
 <span class="titletag titletag-<?php echo get_option('ticker_titletag_special'); ?>"><?php echo get_option('ticker_titletag_text'); ?></span>
 </div><!-- /ticker-titletag -->
@@ -74,7 +74,7 @@ if(!$item10 == "") { echo "<li>" . $item10 . "</li>"; }
 ?>
 </ul><!-- /ticker-contents -->
 </div><!-- /ticker-inner -->
-<?php $ticker_link_checker = get_option('ticker_link'); if(!$ticker_link_checker == "") { ?><div id="ticker-link">
+<?php if(get_option('ticker_link') != "") { ?><div id="ticker-link">
 <a href="<?php echo get_option('ticker_link'); ?>" title="Read more">Read more</a>
 </div><!-- /ticker-link --><?php } ?>
 </div><!-- /ticker-outer --><?php } ?>

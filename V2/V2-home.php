@@ -20,17 +20,17 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
 <div id="jumbotron-link">
-<?php $jumbotron_link_checker = get_option('jumbotron_link'); if(!$jumbotron_link_checker == "") { ?><a href="<?php echo get_option('jumbotron_link'); ?>" title="Read more">Read more</a><?php } ?>
+<?php if(get_option('jumbotron_link') != "") { ?><a href="<?php echo get_option('jumbotron_link'); ?>" title="Read more">Read more</a><?php } ?>
 </div><!-- /jumbotron-link -->
 <div id="jumbotron-inner">
 <div id="jumbotron-text">
-<span class="titletag titletag-<?php echo get_option('jumbotron_titletag1_special'); ?>"><?php echo get_option('jumbotron_titletag1_text'); ?></span><?php $titletag_checker = get_option('jumbotron_titletag2_display'); if($titletag_checker == "on") { ?><span class="titletag titletag-<?php $titletag_type = get_option('jumbotron_titletag2_type'); if($titletag_type == "main") { echo get_option('jumbotron_titletag2_special'); } else { echo 'hollow'; } ?>"><?php echo get_option('jumbotron_titletag2_text'); ?></span><?php } ?>
+<span class="titletag titletag-<?php echo get_option('jumbotron_titletag1_special'); ?>"><?php echo get_option('jumbotron_titletag1_text'); ?></span><?php if(get_option('jumbotron_titletag2_display') == "on") { ?><span class="titletag titletag-<?php if(get_option('jumbotron_titletag2_type') == "main") { echo get_option('jumbotron_titletag2_special'); } else { echo 'hollow'; } ?>"><?php echo get_option('jumbotron_titletag2_text'); ?></span><?php } ?>
 <span><?php echo get_option('jumbotron_text'); ?></span>
 </div><!-- /jumbotron-text -->
 <img src="<?php echo get_option('jumbotron_image'); ?>" alt="<?php echo get_option('jumbotron_alt'); ?>" width="540" height="304">
 </div><!-- /jumbotron-inner -->
 </div><!-- /jumbotron-outer -->
-<div id="socials">
+<div id="post-jumbotron">
 <ul>
 <li class="socials-bluesky"><a href="https://bsky.app/profile/criticalchicken.bsky.social" title="Bluesky" target="_blank" rel="external me">Bluesky</a></li>
 <li class="socials-discord"><a href="https://discord.gg/XtGUe4vaVm" title="Discord" target="_blank" rel="external me">Discord</a></li>
@@ -40,7 +40,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <li class="socials-tumblr"><a href="https://criticalchicken.tumblr.com" title="Tumblr" target="_blank" rel="external me">Tumblr</a></li>
 <li class="socials-threads"><a href="<?php echo get_site_url(); ?>/threads" title="Threads" rel="help">Threads</a></li>
 </ul>
-</div><!-- /socials -->
+</div><!-- /post-jumbotron -->
 <div id="home-content-upper">
 <h1>Posts we think you&rsquo;ll like</h1>
 <div id="posts-container-upper">
