@@ -140,7 +140,6 @@ em {
 #header-inner a {
 	position: relative;
 	top: 16px;
-	opacity: 1;
 }
 
 #header-inner img {
@@ -218,6 +217,7 @@ em {
 	font-size: 22px !important;
 	line-height: 63px !important;
 	font-weight: 500 !important;
+	color: black !important;
 }
 
 #ticker-contents b,
@@ -1483,7 +1483,6 @@ span.older-posts a {
 	min-height: 62px;
 	display: block;
 	position: relative;
-	top: 1px;
 }
 
 #footer-socials {
@@ -2947,6 +2946,11 @@ span.titletag.titletag-hollow {
 	#search-container {
 		left: calc(50% + 112px);
 	}
+
+	#tag-cloud {
+		width: 928px;
+		left: calc((100% - 928px) / 2);
+	}
 }
 
 
@@ -3212,14 +3216,16 @@ span.titletag.titletag-hollow {
 	.homepage-post.listing-post span.timestamp {
 		width: calc(100% - 352px - 32px);
 		margin: 6px 0 11px 0;
+		float: left;
 	}
 	
 	.homepage-post.listing-post p {
-		width: 100%;
+		width: calc(100% - 352px - 32px);
+		float: left;
 	}
 	
 	.homepage-post.listing-post .listing-links {
-		width: 100%;
+		width: calc(100% - 352px - 32px);
 	}
 
 	.individual-post {
@@ -3278,6 +3284,89 @@ span.titletag.titletag-hollow {
 		text-decoration: none !important;
 		cursor: default !important;
 	}
+
+	#tag-cloud {
+		width: 736px;
+		left: calc((100% - 736px) / 2);
+	}
+
+	/* Pages with a titleimg */
+	#post-3.individual-post h1,
+	#post-148.individual-post h1,
+	#post-150.individual-post h1,
+	#post-152.individual-post h1,
+	#post-158.individual-post h1,
+	#post-509.individual-post h1 {
+		margin-bottom: -8px;
+	}
+
+	#post-3.individual-post h1:before /* /privacy */ {
+		width: 39px;
+		height: 56px;
+		background-image: url(../img/pagetitle_privacy_black-on-grey_for30px.png);
+		background-size: 26px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+
+	#post-148.individual-post h1:before /* /explore */ {
+		width: 45px;
+		height: 56px;
+		background-image: url(../img/pagetitle_explore_black-on-grey_for30px.png);
+		background-size: 30px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+	#post-150.individual-post h1:before /* /radar */ {
+		width: 45px;
+		height: 56px;
+		background-image: url(../img/pagetitle_radar_black-on-grey_for30px.png);
+		background-size: 30px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+	#post-152.individual-post h1:before /* /about */ {
+		width: 35.5px;
+		height: 56px;
+		background-image: url(../img/pagetitle_about_color-on-grey_for30px.png);
+		background-size: 23.5px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+	#post-158.individual-post h1:before /* /threads */ {
+		width: 45px;
+		height: 56px;
+		background-image: url(../img/pagetitle_threads_color-on-grey_for30px.png);
+		background-size: 30px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+	#post-509.individual-post h1:before /* /tags */ {
+		width: 45px;
+		height: 56px;
+		background-image: url(../img/pagetitle_tags_black-on-grey_for30px.png);
+		background-size: 30px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
 }
 
 
@@ -3295,10 +3384,6 @@ span.titletag.titletag-hollow {
 	#menu-inner {
 		width: 544px;
 		left: calc((100% - 544px) / 2);
-	}
-
-	#bold-menu-items li a {
-		margin-right: 16px;
 	}
 
 	#regular-menu-items,
@@ -3322,12 +3407,8 @@ span.titletag.titletag-hollow {
 		border: 1px white solid;
 		cursor: pointer;
 		margin-left: 32px;
-		top: -50px;
+		top: 16px;
 		left: 16px;
-	}
-
-	#search-button {
-		top: -50px;
 	}
 	
 	#ticker-inner {
@@ -3552,14 +3633,16 @@ span.titletag.titletag-hollow {
 	.homepage-post.listing-post span.timestamp {
 		width: calc(100% - 352px - 32px);
 		margin: 6px 0 11px 0;
+		float: left;
 	}
 	
 	.homepage-post.listing-post p {
-		width: 100%;
+		width: calc(100% - 352px - 32px);
+		float: left;
 	}
 	
 	.homepage-post.listing-post .listing-links {
-		width: 100%;
+		width: calc(100% - 352px - 32px);
 	}
 
 	.individual-post {
@@ -3611,16 +3694,95 @@ span.titletag.titletag-hollow {
 	}
 	
 	#search-container {
-		left: calc(50% + -80px);
-	}
-
-	#popmenu-container {
-		left: calc(50% + -128px);
+		left: calc(50% + 16px);
 	}
 
 	.timetip {
 		text-decoration: none !important;
 		cursor: default !important;
+	}
+
+	#tag-cloud {
+		width: 736px;
+		left: calc((100% - 736px) / 2);
+	}
+
+	/* Pages with a titleimg */
+	#post-3.individual-post h1,
+	#post-148.individual-post h1,
+	#post-150.individual-post h1,
+	#post-152.individual-post h1,
+	#post-158.individual-post h1,
+	#post-509.individual-post h1 {
+		margin-bottom: -8px;
+	}
+
+	#post-3.individual-post h1:before /* /privacy */ {
+		width: 39px;
+		height: 56px;
+		background-image: url(../img/pagetitle_privacy_black-on-grey_for30px.png);
+		background-size: 26px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+
+	#post-148.individual-post h1:before /* /explore */ {
+		width: 45px;
+		height: 56px;
+		background-image: url(../img/pagetitle_explore_black-on-grey_for30px.png);
+		background-size: 30px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+	#post-150.individual-post h1:before /* /radar */ {
+		width: 45px;
+		height: 56px;
+		background-image: url(../img/pagetitle_radar_black-on-grey_for30px.png);
+		background-size: 30px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+	#post-152.individual-post h1:before /* /about */ {
+		width: 35.5px;
+		height: 56px;
+		background-image: url(../img/pagetitle_about_color-on-grey_for30px.png);
+		background-size: 23.5px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+	#post-158.individual-post h1:before /* /threads */ {
+		width: 45px;
+		height: 56px;
+		background-image: url(../img/pagetitle_threads_color-on-grey_for30px.png);
+		background-size: 30px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+	#post-509.individual-post h1:before /* /tags */ {
+		width: 45px;
+		height: 56px;
+		background-image: url(../img/pagetitle_tags_black-on-grey_for30px.png);
+		background-size: 30px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
 	}
 }
 
