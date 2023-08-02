@@ -165,10 +165,10 @@ em {
 	text-align-last: justify;
 	cursor: default;
 	line-height: 63px;
-	background-image: url(../img/ui_search-shield_black_for32px.png); /* For the sake of pre-loading */
+	background-image: url(../img/ui_search-shield_black_for36px.png); /* For the sake of pre-loading */
 	background-position: right top;
 	background-repeat: no-repeat;
-	background-size: 32px 32px;
+	background-size: 36px 36px;
 }
 
 #bold-menu-items,
@@ -1689,21 +1689,22 @@ span.older-posts a {
 }
 
 #popmenu-container {
-	width: 352px;
+	width: 354px;
 	height: 112px;
 	position: absolute;
-	top: 112px;
+	top: 110px;
 	left: calc(50% + -32px);
 	display: block;
 	z-index: 10000;
 	border-radius: 0 0 8px 8px;
-	background-image: url(../img/ui_search-shield_black_for32px.png);
+	background-image: url(../img/ui_search-shield_black_for36px.png);
 	background-position: right top;
 	background-repeat: no-repeat;
-	background-size: 32px 32px;
+	background-size: 36px 36px;
 	pointer-events: none;
 	opacity: 0;
 	transition: opacity 0.16s ease-in-out;
+	padding-top: 2px;
 }
 
 #popmenu-container.active {
@@ -1776,21 +1777,22 @@ span.older-posts a {
 }
 
 #search-container {
-	width: 352px;
+	width: 354px;
 	height: 112px;
 	position: absolute;
-	top: 112px;
+	top: 110px;
 	left: calc(50% + 208px);
 	display: block;
 	z-index: 10000;
 	border-radius: 0 0 8px 8px;
-	background-image: url(../img/ui_search-shield_black_for32px.png);
+	background-image: url(../img/ui_search-shield_black_for36px.png);
 	background-position: right top;
 	background-repeat: no-repeat;
-	background-size: 32px 32px;
+	background-size: 36px 36px;
 	pointer-events: none;
 	opacity: 0;
 	transition: opacity 0.16s ease-in-out;
+	padding-top: 2px;
 }
 
 #search-container.active {
@@ -1804,7 +1806,7 @@ span.older-posts a {
 	border-radius: 6px 6px 0 0;
 	position: relative;
 	left: 320px;
-	top: 0;
+	top: 0px;
 	display: block;
 	background-image: url(../img/ui_search_black-on-white_for16px.png);
 	background-size: 16px 16px;
@@ -1825,7 +1827,7 @@ span.older-posts a {
 	background: white;
 	border-radius: 8px 0 8px 8px;
 	position: relative;
-	top: 0;
+	top: 0px;
 	box-shadow: 0 0 32px rgba(0, 0, 0, 0.32);
 	z-index: 10001;
 	pointer-events: none;
