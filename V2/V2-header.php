@@ -7,25 +7,21 @@
 </div><!-- /header-outer -->
 <div id="menu-outer">
 <div id="menu-inner">
-<ul id="bold-menu-items">
-<li><a href="<?php echo get_site_url(); ?>/latest">Latest</a></li>
-<li><a href="<?php echo get_site_url(); ?>/category/news">News</a></li>
-<li><a href="<?php echo get_site_url(); ?>/category/features">Features</a></li>
-<li><a href="<?php echo get_site_url(); ?>/category/reviews">Reviews</a></li>
-<li><a href="<?php echo get_site_url(); ?>/explore">Explore</a></li>
-</ul><!-- /bold-menu-items -->
-<ul id="regular-menu-items">
-<li><a href="<?php echo get_site_url(); ?>/radar">Radar</a></li>
-<li><a href="<?php echo get_site_url(); ?>/about">About</a></li>
-<li><a href="mailto:office@criticalchicken.com">Contact</a></li>
-</ul><!-- /regular-menu-items -->
+<?php get_template_part("V2-menu-items"); ?>
 <div id="button-container">
 <div id="menu-button" title="Menu"></div>
 <div id="search-button" title="Search"></div>
 </div>
 </div><!-- /menu-inner -->
 </div><!-- /menu-outer -->
-<div id="mobile-menu-button"></div>
+<div id="mobile-menu">
+    <div id="mobile-menu-inner">
+    <?php get_template_part("V2-menu-items"); ?>
+    <?php get_template_part("V2-socials-linear"); ?>
+    </div>
+</div>
+<div id="mobile-search-button"></div>
+<div id="mobile-close-button"></div>
 <div id="popmenu-container">
 <div id="popmenu-handle">
 </div>
