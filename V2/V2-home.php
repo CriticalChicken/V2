@@ -20,7 +20,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
 <div id="jumbotron-link">
-<?php if(get_option('jumbotron_link') != "") { ?><a href="<?php echo get_option('jumbotron_link'); ?>" title="Read more">Read more</a><?php } ?>
+<?php if(get_option('jumbotron_link') != "") { ?><a href="<?php echo get_option('jumbotron_link'); ?>">Read more</a><?php } ?>
 </div><!-- /jumbotron-link -->
 <div id="jumbotron-inner">
 <div id="jumbotron-text">
@@ -46,9 +46,9 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <div id="posts-container-upper">
 <?php query_posts('cat=35&posts_per_page=6&offset=0'); if(have_posts()):while(have_posts()):the_post(); ?>
 <div id="post-<?php the_ID(); ?>"<?php post_class('homepage-post') ?>>
-<a href="<?php echo the_permalink(); ?>" title="Read more" class="thumb-link"><img src="<?php if(get_field('thumbnail')):echo the_field('thumbnail');else:echo get_template_directory_uri();fallbackThumbnailPicker();endif; ?>" alt="<?php if(get_field('alt')):echo the_field('alt');endif; ?>" width="352" height="198"></a>
+<a href="<?php echo the_permalink(); ?>" class="thumb-link"><img src="<?php if(get_field('thumbnail')):echo the_field('thumbnail');else:echo get_template_directory_uri();fallbackThumbnailPicker();endif; ?>" alt="<?php if(get_field('alt')):echo the_field('alt');endif; ?>" width="352" height="198"></a>
 <?php categoryLinkGenerator(); ?>
-<span class="homepage-post-title"><a href="<?php echo the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></span>
+<span class="homepage-post-title"><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></span>
 </div>
 <?php endwhile;endif; ?>
 </div><!-- /posts-container-upper -->
@@ -77,9 +77,9 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <div id="posts-container-lower">
 <?php query_posts('cat=35&posts_per_page=6&offset=6'); if(have_posts()):while(have_posts()):the_post(); ?>
 <div id="post-<?php the_ID(); ?>"<?php post_class('homepage-post') ?>>
-<a href="<?php echo the_permalink(); ?>" title="Read more" class="thumb-link"><img src="<?php if(get_field('thumbnail')):echo the_field('thumbnail');else:echo get_template_directory_uri();fallbackThumbnailPicker();endif; ?>" alt="<?php if(get_field('alt')):echo the_field('alt');endif; ?>" width="352" height="198"></a>
+<a href="<?php echo the_permalink(); ?>" class="thumb-link"><img src="<?php if(get_field('thumbnail')):echo the_field('thumbnail');else:echo get_template_directory_uri();fallbackThumbnailPicker();endif; ?>" alt="<?php if(get_field('alt')):echo the_field('alt');endif; ?>" width="352" height="198"></a>
 <?php categoryLinkGenerator(); ?>
-<span class="homepage-post-title"><a href="<?php echo the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></span>
+<span class="homepage-post-title"><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></span>
 </div>
 <?php endwhile;endif; ?>
 </div><!-- /posts-container-lower -->
