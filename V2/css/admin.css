@@ -30,3 +30,14 @@ All other trademarks referred to are trademarks of their respective owners. See 
 		top: 50px;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	#maintenance-mode-active {
+		top: 0px;
+		position: absolute;
+	}
+	
+	#progress-container {
+		top: 4px;
+	}
+}
