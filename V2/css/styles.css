@@ -146,6 +146,10 @@ em {
 	width: 419.5px;
 }
 
+#mobile-menu-button {
+	display: none;
+}
+
 #menu-outer {
 	width: 100%;
 	height: 64px;
@@ -3189,17 +3193,20 @@ span.titletag.titletag-hollow {
 	#footer-inner {
 		width: 736px;
 		left: calc((100% - 736px) / 2);
-		padding-bottom: 16px;
 	}
 
 	#footer-inner span.copyright {
 		line-height: 32px;
 		margin-top: -6px;
-		margin-bottom: 6px;
+		margin-bottom: 0;
 	}
 	
 	#footer-inner span.copyright br {
 		display: block;
+	}
+
+	#footer-inner span.trademark {
+		margin-top: 6px;
 	}
 
 	#footer-inner span.trademark br {
@@ -3393,6 +3400,10 @@ span.titletag.titletag-hollow {
 		display: none;
 	}
 
+	#bold-menu-items li a {
+		margin-right: 16px;
+	}
+
 	#menu-button {
 		width: 30px;
 		height: 30px;
@@ -3409,8 +3420,12 @@ span.titletag.titletag-hollow {
 		border: 1px white solid;
 		cursor: pointer;
 		margin-left: 32px;
-		top: 16px;
+		top: -50px;
 		left: 16px;
+	}
+
+	#search-button {
+		top: -50px;
 	}
 	
 	#ticker-inner {
@@ -3420,6 +3435,10 @@ span.titletag.titletag-hollow {
 
 	#ticker-titletag span.titletag {
 		left: calc((100% - 544px) / 2);
+	}
+
+	.tickercontainer {
+		width: 539px !important;
 	}
 
 	#jumbotron-outer {
@@ -3432,26 +3451,26 @@ span.titletag.titletag-hollow {
 	}
 	
 	#jumbotron-inner img {
-		left: 407px;
-		width: 329px;
-		height: 185px;
-		margin-top: 51px;
+		left: 306px;
+		width: 238px;
+		height: 134px;
+		margin-top: 48px;
 	}
 	
 	#jumbotron-text {
-		width: 352px;
+		width: 100%;
 	}
 
 	#jumbotron-text span:last-of-type {
 		margin-top: 23px;
 		width: 544px; /* This is always 544px */
 		transform-origin: top left;
-		transform: scale(0.6470588235294118);
-		margin-bottom: -107px;
+		transform: scale(0.4705882352941176);
+		margin-bottom: -161px;
 	}
 	
 	#post-jumbotron {
-		left: calc(50% + 48px);
+		left: calc((100% - 320px) / 2);
 		top: 32px;
 		width: 320px;
 		border-radius: 6px;
@@ -3494,6 +3513,7 @@ span.titletag.titletag-hollow {
 	#post-jumbotron ul li.socials-tumblr {
 		background-image: url("../img/socials_tumblr_white-on-blue_for16px.png");
 		background-size: 9px 16px;
+		margin-right: 0;
 	}
 	
 	#post-jumbotron ul li.socials-threads {
@@ -3521,28 +3541,58 @@ span.titletag.titletag-hollow {
 	
 	#home-content-upper,
 	#home-content-lower {
-		width: 769px;
-		left: calc((100% - 736px) / 2);
+		width: 544px;
+		left: calc((100% - 544px) / 2);
 		margin-top: 1px;
+	}
+
+	#home-content-upper {
+		margin-top: 97px;
 	}
 	
 	#home-content-upper h1,
 	#home-content-lower h1 {
-		font-size: 31px;
-		display: block;
-		float: left;
-		margin-bottom: 33px;
-		width: 100%;
-		margin-top: 28px;
+		height: 1;
+		width: 1;
+		font-size: 0;
+		line-height: 0;
+		color: rgba(0, 0, 0, 0);
+	}
+
+	.homepage-post {
+		width: 544px;
+		margin-right: 0;
+	}
+	
+	.homepage-post img,
+	#not-sidebar-inner img {
+		width: 544px;
+		height: 306px;
+	}
+
+	a.thumb-link {
+		margin-bottom: 20px !important;
 	}
 	
 	#not-sidebar-inner {
-		width: 736px;
-		left: calc((100% - 736px) / 2);
+		width: 544px;
+		left: calc((100% - 544px) / 2);
+	}
+
+	#not-sidebar-inner p {
+		margin-top: 13px;
+	}
+
+	#not-sidebar-box-left,
+	#not-sidebar-box-right {
+		width: 544px;
+		margin-right: 0;
 	}
 
 	#not-sidebar-box-right {
-		margin-right: 0;
+		margin-top: 22px;
+		padding-top: 24px;
+		border-top: 1px white solid;
 	}
 
 	#not-sidebar-box-mastodon,
@@ -3552,7 +3602,7 @@ span.titletag.titletag-hollow {
 
 	#mastodon-tease {
 		display: block;
-		height: 96px;
+		height: 81px;
 		width: 100%;
 		background-color: #6364ff;
 		background-image: url(../img/socials_mastodon_color_for96px.png);
@@ -3562,10 +3612,11 @@ span.titletag.titletag-hollow {
 		top: -13px;
 		position: relative;
 		font-size: 23.7px;
-		line-height: 96px;
+		line-height: 33px;
 		color: white;
 		text-align: center;
 		text-shadow: 0 0 6px rgba(0, 0, 0, 1);
+		padding-top: 15px;
 	}
 
 	#mastodon-tease a {
@@ -3579,24 +3630,25 @@ span.titletag.titletag-hollow {
 
 	#mastodon-tease a span {
 		font-weight: 700;
+		display: block;
 	}
 
 	#home-navigation {
-		width: 736px;
-		left: calc((100% - 736px) / 2);
+		width: 544px;
+		left: calc((100% - 544px) / 2);
 	}
 
-	#home-navigation ul li.reviews {
+	#home-navigation ul li.features {
 		margin-right: 0;
 	}
 	
 	#home-navigation ul li.ko-fi {
 		margin-right: 0;
-		width: 100%;
+		width: 352px;
 	}
 	
 	#home-navigation ul li.ko-fi a {
-		width: 100%;
+		width: 352px;
 	}
 	
 	#home-navigation ul li.ko-fi a img {
@@ -3604,17 +3656,28 @@ span.titletag.titletag-hollow {
 	}
 	
 	#footer-inner {
-		width: 736px;
-		left: calc((100% - 736px) / 2);
-		padding-bottom: 16px;
+		width: 544px;
+		left: calc((100% - 544px) / 2);
+	}
+
+	#footer-socials {
+		height: 32px;
+		position: relative;
+		left: calc((100% - 320px) / 2);
+		display: block;
+		padding-top: 2px;
+		width: 320px;
+		float: none;
+		margin-bottom: 30px;
 	}
 
 	#footer-inner span.copyright {
 		line-height: 32px;
 		margin-top: -6px;
 		margin-bottom: 6px;
+		clear: both;
 	}
-	
+
 	#footer-inner span.copyright br {
 		display: block;
 	}
@@ -3624,32 +3687,51 @@ span.titletag.titletag-hollow {
 	}
 
 	p#load_time {
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 19px;
+		width: 389px;
 		font-size: 15px;
+		top: -3px;
+		position: relative;
 	}
 	
 	#listing-container {
-		width: 736px;
-		left: calc((100% - 736px) / 2);
+		width: 544px;
+		left: calc((100% - 544px) / 2);
+	}
+
+	#the-post-listing {
+		row-gap: 55px;
+	}
+
+	.homepage-post.listing-post {
+		margin-right: 0;
 	}
 	
 	.homepage-post.listing-post span.timestamp {
-		width: calc(100% - 352px - 32px);
+		width: 100%;
 		margin: 6px 0 11px 0;
 		float: left;
 	}
 	
 	.homepage-post.listing-post p {
-		width: calc(100% - 352px - 32px);
-		float: left;
+		width: 100%;
+		float: none;
 	}
 	
 	.homepage-post.listing-post .listing-links {
-		width: calc(100% - 352px - 32px);
+		width: 100%;
+	}
+
+	#pagination {
+		width: 100%;
+		margin-bottom: -1px;
 	}
 
 	.individual-post {
-		width: 736px;
-		left: calc((100% - 736px) / 2);
+		width: 544px;
+		left: calc((100% - 544px) / 2);
 	}
 
 	.individual-post .timestamp {
@@ -3673,30 +3755,42 @@ span.titletag.titletag-hollow {
 	.individual-post ul li,
 	#no-posts-found ul li,
 	.individual-post ol li {
-		width: 544px; /* Content width -192px */
+		width: 352px; /* Content width -192px */
 	}
 
 	.individual-post figure iframe {
-		width: 736px;
-		height: 414px;
+		width: 544px;
+		height: 306px;
 	}
 
 	#post-meta {
-		width: 736px;
-		left: calc((100% - 736px) / 2);
+		width: 544px;
+		left: calc((100% - 544px) / 2);
 	}
 	
 	#crp-container {
-		width: 769px;
-		left: calc((100% - 736px) / 2);
+		width: 544px;
+		left: calc((100% - 544px) / 2);
 	}
-	
-	.related-post:nth-of-type(3) {
-		display: none;
+
+	.related-post {
+		margin-right: 0;
+		width: 544px;
+		float: none;
+	}
+
+	.related-post img {
+		width: 544px;
+		height: 306px;
+		margin-bottom: -1px;
 	}
 	
 	#search-container {
-		left: calc(50% + 16px);
+		left: calc(50% + -80px);
+	}
+
+	#popmenu-container {
+		left: calc(50% + -128px);
 	}
 
 	.timetip {
@@ -3705,8 +3799,8 @@ span.titletag.titletag-hollow {
 	}
 
 	#tag-cloud {
-		width: 736px;
-		left: calc((100% - 736px) / 2);
+		width: 544px;
+		left: calc((100% - 544px) / 2);
 	}
 
 	/* Pages with a titleimg */
@@ -3793,5 +3887,763 @@ span.titletag.titletag-hollow {
 /* Flexible content + 32px margin on either side */
 
 @media (max-width: 575.98px) {
+	#header-outer {
+		box-shadow: 0 0 32px rgba(0, 0, 0, 0.32);
+	}
 
+	#header-inner {
+		width: calc(100% - 64px);
+		left: 32px;
+		background-image: none;
+		height: auto;
+		padding-bottom: 26px;
+	}
+
+	#header-inner img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	#menu-outer {
+		display: none;
+	}
+
+	#menu-button {
+		width: 30px;
+		height: 30px;
+		border-radius: 6px;
+		background-color: black;
+		font-size: 0;
+		line-height: 0;
+		display: inline-block;
+		background-image: url(../img/ui_menu_white-on-black_for16px.png);
+		background-size: 16px 16px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		position: relative;
+		border: 1px white solid;
+		cursor: pointer;
+		margin-left: 32px;
+		top: -50px;
+		left: 16px;
+	}
+
+	#ticker-outer {
+		height: 88px;
+	}
+	
+	#ticker-inner {
+		width: calc(100% - 64px);
+		left: 32px;
+		top: 14px;
+	}
+
+	#ticker-link {
+		height: 88px;
+	}
+
+	#ticker-titletag span.titletag {
+		left: 32px;
+	}
+
+	.tickercontainer {
+		width: 100%;
+	}
+
+	#jumbotron-outer {
+		overflow-y: hidden;
+	}
+	
+	#jumbotron-inner {
+		width: calc(100% - 64px);
+		left: 32px;
+	}
+	
+	#jumbotron-inner img {
+		left: 0;
+		width: 100%;
+		height: auto;
+		margin-top: -17px;
+		display: block;
+		position: relative;
+		margin-bottom: 64px;
+	}
+	
+	#jumbotron-text {
+		width: 100%;
+	}
+
+	#jumbotron-text span:last-of-type {
+		font-size: 20px;
+		line-height: 32px;
+		margin-top: 17px;
+	}
+	
+	#post-jumbotron {
+		display: none;
+	}
+	
+	#home-content-upper,
+	#home-content-lower {
+		width: calc(100% - 64px);
+		left: 32px;
+		margin-top: -24px;
+	}
+
+	#home-content-upper {
+		margin-top: 65px;
+	}
+	
+	#home-content-upper h1,
+	#home-content-lower h1 {
+		height: 1;
+		width: 1;
+		font-size: 0;
+		line-height: 0;
+		color: rgba(0, 0, 0, 0);
+	}
+
+	.homepage-post {
+		width: 100%;
+		margin-right: 0;
+	}
+	
+	.homepage-post img,
+	#not-sidebar-inner img {
+		width: 100%;
+		height: auto;
+	}
+
+	a.thumb-link {
+		margin-bottom: 14px !important;
+	}
+
+	#not-sidebar-outer {
+		top: -37px;
+		padding-top: 25px;
+	}
+	
+	#not-sidebar-inner {
+		width: calc(100% - 64px);
+		left: 32px;
+	}
+
+	#not-sidebar-inner img {
+		margin-top: 15px;
+	}
+
+	#not-sidebar-inner h1 {
+		font-size: 20px;
+		line-height: 32px;
+	}
+
+	#not-sidebar-inner p {
+		margin-top: 14px;
+	}
+
+	#not-sidebar-box-left,
+	#not-sidebar-box-right {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	#not-sidebar-box-right {
+		margin-top: 22px;
+		padding-top: 25px;
+		border-top: 1px white solid;
+	}
+
+	#not-sidebar-box-mastodon,
+	#not-sidebar-box-mastodon iframe {
+		display: none;
+	}
+
+	#home-navigation {
+		width: calc(100% - 64px);
+		left: 32px;
+		padding-top: 31px;
+		padding-bottom: 3px;
+	}
+
+	#home-navigation ul,
+	#home-navigation ul li {
+		display: block;
+		font-size: 0;
+		line-height: 0;
+	}
+	
+	#home-navigation ul li {
+		width: 100%;
+		margin-right: 0;
+		border-radius: 2px;
+		margin-top: 1px;
+		height: 63px;
+	}
+
+	#home-navigation ul li.ko-fi {
+		width: 100%;
+		border-radius: 2px 2px 8px 8px;
+	}
+	
+	#home-navigation ul li.ko-fi span:after {
+		content: "";
+	}
+	
+	#home-navigation ul li a {
+		width: 100%;
+		border-radius: 2px;
+		height: 50px;
+		line-height: 61px;
+		height: 63px;
+	}
+	
+	#home-navigation ul li.ko-fi a {
+		width: 100%;
+		border-radius: 2px 2px 8px 8px;
+	}
+	
+	#home-navigation ul li.ko-fi a img {
+		margin-right: 16px;
+	}
+
+	#home-navigation ul li.latest,
+	#home-navigation ul li.latest a {
+		border-radius: 8px 8px 2px 2px;
+	}
+
+	#footer-inner {
+		width: calc(100% - 64px);
+		left: 32px;
+	}
+
+	#footer-socials {
+		display: none;
+	}
+
+	#footer-inner span.copyright {
+		line-height: 32px;
+		margin-top: -6px;
+		margin-bottom: 6px;
+		clear: both;
+	}
+
+	#footer-inner span.copyright br {
+		display: none;
+	}
+
+	#footer-inner span.trademark br {
+		display: none;
+	}
+
+	p#load_time {
+		display: none;
+	}
+
+	#back-to-top {
+		display: none;
+	}
+
+	#mobile-menu-button {
+		display: block;
+		width: 64px;
+		height: 64px;
+		background-color: #d20202;
+		border-radius: 8px;
+		position: fixed;
+		bottom: 48px;
+		right: 48px;
+		z-index: 99999999;
+		box-shadow: 0 0 32px rgba(0, 0, 0, 0.32);
+		background-image: url(../img/ui_mobile-menu_white-on-red_for32px.png);
+		background-size: 32px 30px;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	
+	#listing-container {
+		width: calc(100% - 64px);
+		left: 32px;
+	}
+
+	#the-post-listing {
+		row-gap: 55px;
+	}
+
+	.homepage-post.listing-post {
+		margin-right: 0;
+	}
+	
+	.homepage-post.listing-post span.timestamp {
+		width: 100%;
+		margin: 6px 0 11px 0;
+		float: left;
+	}
+	
+	.homepage-post.listing-post p {
+		width: 100%;
+		float: none;
+	}
+	
+	.homepage-post.listing-post .listing-links {
+		width: 100%;
+	}
+
+	#pagination {
+		width: 100%;
+		margin-bottom: -1px;
+	}
+
+	.individual-post {
+		width: 544px;
+		left: calc((100% - 544px) / 2);
+	}
+
+	.individual-post .timestamp {
+		width: 100%;
+		margin: 8px 0 20px 0;
+	}
+
+	.individual-post h1 {
+		font-size: 41px;
+		line-height: 56px;
+		padding-bottom: 4px;
+	}
+
+	#not-found {
+		font-size: 41px;
+		line-height: 56px;
+		margin-bottom: -3px;
+		padding-top: 36px;
+	}
+	
+	.individual-post ul li,
+	#no-posts-found ul li,
+	.individual-post ol li {
+		width: 352px; /* Content width -192px */
+	}
+
+	.individual-post figure iframe {
+		width: 544px;
+		height: 306px;
+	}
+
+	#post-meta {
+		width: 544px;
+		left: calc((100% - 544px) / 2);
+	}
+	
+	#crp-container {
+		width: 544px;
+		left: calc((100% - 544px) / 2);
+	}
+
+	.related-post {
+		margin-right: 0;
+		width: 544px;
+		float: none;
+	}
+
+	.related-post img {
+		width: 544px;
+		height: 306px;
+		margin-bottom: -1px;
+	}
+	
+	#search-container {
+		left: calc(50% + -80px);
+	}
+
+	#popmenu-container {
+		left: calc(50% + -128px);
+	}
+
+	.timetip {
+		text-decoration: none !important;
+		cursor: default !important;
+	}
+
+	#tag-cloud {
+		width: 544px;
+		left: calc((100% - 544px) / 2);
+	}
+
+	/* Pages with a titleimg */
+	#post-3.individual-post h1,
+	#post-148.individual-post h1,
+	#post-150.individual-post h1,
+	#post-152.individual-post h1,
+	#post-158.individual-post h1,
+	#post-509.individual-post h1 {
+		margin-bottom: -8px;
+	}
+
+	#post-3.individual-post h1:before /* /privacy */ {
+		width: 39px;
+		height: 56px;
+		background-image: url(../img/pagetitle_privacy_black-on-grey_for30px.png);
+		background-size: 26px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+
+	#post-148.individual-post h1:before /* /explore */ {
+		width: 45px;
+		height: 56px;
+		background-image: url(../img/pagetitle_explore_black-on-grey_for30px.png);
+		background-size: 30px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+	#post-150.individual-post h1:before /* /radar */ {
+		width: 45px;
+		height: 56px;
+		background-image: url(../img/pagetitle_radar_black-on-grey_for30px.png);
+		background-size: 30px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+	#post-152.individual-post h1:before /* /about */ {
+		width: 35.5px;
+		height: 56px;
+		background-image: url(../img/pagetitle_about_color-on-grey_for30px.png);
+		background-size: 23.5px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+	#post-158.individual-post h1:before /* /threads */ {
+		width: 45px;
+		height: 56px;
+		background-image: url(../img/pagetitle_threads_color-on-grey_for30px.png);
+		background-size: 30px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+	#post-509.individual-post h1:before /* /tags */ {
+		width: 45px;
+		height: 56px;
+		background-image: url(../img/pagetitle_tags_black-on-grey_for30px.png);
+		background-size: 30px 30px;
+		background-position: left 26px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		content: "";
+		margin-top: -8px;
+	}
+
+	.individual-post span.titletag,
+	#post-meta span.titletag,
+	#jumbotron-outer span.titletag,
+	#ticker-titletag span.titletag {
+		font-size: 16px;
+		height: 24px;
+		border-radius: 4px;
+		line-height: 24px;
+		margin-bottom: 8px;
+	}
+	
+	#jumbotron-outer span.titletag.titletag-ace-attorney {
+		background-image: url("../img/titletag_ace-attorney_black-on-white_for18px.png");
+		background-size: 17px 18px;
+		background-position: 7.5px center;
+		background-repeat: no-repeat;
+		padding-left: 32px;
+	}
+	
+	#jumbotron-outer.red span.titletag.titletag-ace-attorney {
+		background-image: url("../img/titletag_ace-attorney_red-on-white_for18px.png");
+	}
+	
+	#jumbotron-outer.blue span.titletag.titletag-ace-attorney {
+		background-image: url("../img/titletag_ace-attorney_blue-on-white_for18px.png");
+	}
+	
+	#jumbotron-outer.orange span.titletag.titletag-ace-attorney {
+		background-image: url("../img/titletag_ace-attorney_orange-on-white_for18px.png");
+	}
+	
+	#jumbotron-outer span.titletag.titletag-e3 {
+		background-image: url("../img/titletag_e3_black-on-white_for16px.png");
+		background-size: 23px 16px;
+		background-position: 8px center;
+		background-repeat: no-repeat;
+		padding-left: 39px;
+	}
+	
+	#jumbotron-outer.red span.titletag.titletag-e3 {
+		background-image: url("../img/titletag_e3_red-on-white_for16px.png");
+	}
+	
+	#jumbotron-outer.blue span.titletag.titletag-e3 {
+		background-image: url("../img/titletag_e3_blue-on-white_for16px.png");
+	}
+	
+	#jumbotron-outer.orange span.titletag.titletag-e3 {
+		background-image: url("../img/titletag_e3_orange-on-white_for16px.png");
+	}
+	
+	#jumbotron-outer span.titletag.titletag-live {
+		background-image: url("../img/titletag_live_black-on-white_for32px.png");
+		background-size: 16px 96px;
+		background-position: 8px 0px;
+		background-repeat: no-repeat;
+		padding-left: 32px;
+		animation: live32 1.6s infinite step-end;
+	}
+	
+	#jumbotron-outer.red span.titletag.titletag-live {
+		background-image: url("../img/titletag_live_red-on-white_for32px.png");
+	}
+	
+	#jumbotron-outer.blue span.titletag.titletag-live {
+		background-image: url("../img/titletag_live_blue-on-white_for32px.png");
+	}
+	
+	#jumbotron-outer.orange span.titletag.titletag-live {
+		background-image: url("../img/titletag_live_orange-on-white_for32px.png");
+	}
+	
+	#jumbotron-outer span.titletag.titletag-nintendo-direct {
+		background-image: url("../img/titletag_nintendo-direct_black-on-white_for16px.png");
+		background-size: 16px 16px;
+		background-position: 8px center;
+		background-repeat: no-repeat;
+		padding-left: 32px;
+	}
+	
+	#jumbotron-outer.red span.titletag.titletag-nintendo-direct {
+		background-image: url("../img/titletag_nintendo-direct_red-on-white_for16px.png");
+	}
+	
+	#jumbotron-outer.blue span.titletag.titletag-nintendo-direct {
+		background-image: url("../img/titletag_nintendo-direct_blue-on-white_for16px.png");
+	}
+	
+	#jumbotron-outer.orange span.titletag.titletag-nintendo-direct {
+		background-image: url("../img/titletag_nintendo-direct_orange-on-white_for16px.png");
+	}
+	
+	#jumbotron-outer span.titletag.titletag-pokemon-presents {
+		background-image: url("../img/titletag_pokemon-presents_black-on-white_for16px.png");
+		background-size: 16px 16px;
+		background-position: 8px center;
+		background-repeat: no-repeat;
+		padding-left: 32px;
+	}
+	
+	#jumbotron-outer.red span.titletag.titletag-pokemon-presents {
+		background-image: url("../img/titletag_pokemon-presents_red-on-white_for16px.png");
+	}
+	
+	#jumbotron-outer.blue span.titletag.titletag-pokemon-presents {
+		background-image: url("../img/titletag_pokemon-presents_blue-on-white_for16px.png");
+	}
+	
+	#jumbotron-outer.orange span.titletag.titletag-pokemon-presents {
+		background-image: url("../img/titletag_pokemon-presents_orange-on-white_for16px.png");
+	}
+	
+	#jumbotron-outer span.titletag.titletag-state-of-play {
+		background-image: url("../img/titletag_state-of-play_black-on-white_for16px.png");
+		background-size: 20.5px 16px;
+		background-position: 8px center;
+		background-repeat: no-repeat;
+		padding-left: 36.5px;
+	}
+	
+	#jumbotron-outer.red span.titletag.titletag-state-of-play {
+		background-image: url("../img/titletag_state-of-play_red-on-white_for16px.png");
+	}
+	
+	#jumbotron-outer.blue span.titletag.titletag-state-of-play {
+		background-image: url("../img/titletag_state-of-play_blue-on-white_for16px.png");
+	}
+	
+	#jumbotron-outer.orange span.titletag.titletag-state-of-play {
+		background-image: url("../img/titletag_state-of-play_orange-on-white_for16px.png");
+	}
+	
+	#jumbotron-outer span.titletag.titletag-summer-game-fest {
+		background-image: url("../img/titletag_summer-game-fest_black-on-white_for18px.png");
+		background-size: 13px 18px;
+		background-position: 7.5px center;
+		background-repeat: no-repeat;
+		padding-left: 28px;
+	}
+	
+	#jumbotron-outer.red span.titletag.titletag-summer-game-fest {
+		background-image: url("../img/titletag_summer-game-fest_red-on-white_for18px.png");
+	}
+	
+	#jumbotron-outer.blue span.titletag.titletag-summer-game-fest {
+		background-image: url("../img/titletag_summer-game-fest_blue-on-white_for18px.png");
+	}
+	
+	#jumbotron-outer.orange span.titletag.titletag-summer-game-fest {
+		background-image: url("../img/titletag_summer-game-fest_orange-on-white_for18px.png");
+	}
+	
+	.individual-post span.titletag.titletag-ace-attorney,
+	#post-meta span.titletag.titletag-ace-attorney {
+		background-color: black;
+		background-image: url("../img/titletag_ace-attorney_white-on-black_for18px.png");
+		background-size: 17px 18px;
+		background-position: 7.5px center;
+		background-repeat: no-repeat;
+		padding-left: 32px;
+	}
+	
+	.individual-post span.titletag.titletag-best-of,
+	#post-meta span.titletag.titletag-best-of {
+		background-color: #be9f43;
+		background-image: url("../img/titletag_best-of_white-on-gold_for32px.png");
+		background-size: 234.5px 32px;
+		background-position: left center;
+		background-repeat: no-repeat;
+		padding-left: 33.5px;
+		text-shadow: 0 0 4px rgba(0, 0, 0, 0.32);
+	}
+	
+	.individual-post span.titletag.titletag-e3,
+	#post-meta span.titletag.titletag-e3 {
+		background-color: black;
+		background-image: url("../img/titletag_e3_color-on-black_for16px.png");
+		background-size: 23px 16px;
+		background-position: 8px center;
+		background-repeat: no-repeat;
+		padding-left: 39px;
+	}
+	
+	.individual-post span.titletag.titletag-forthegaymers,
+	#post-meta span.titletag.titletag-forthegaymers {
+		background-color: black;
+		background-image: url("../img/titletag_forthegaymers_color-on-black_for32px.png");
+		background-size: 37px 32px;
+		background-position: left center;
+		background-repeat: no-repeat;
+		padding-left: 37px;
+	}
+	
+	.individual-post span.titletag.titletag-live,
+	#post-meta span.titletag.titletag-live {
+		background-color: #ffdc17;
+		background-image: url("../img/titletag_live_black-on-yellow_for32px.png");
+		background-size: 16px 96px;
+		background-position: 8px top;
+		background-repeat: no-repeat;
+		padding-left: 32px;
+		animation: live32 1.6s infinite step-end;
+		color: black;
+	}
+	
+	.individual-post span.titletag.titletag-nintendo-direct,
+	#post-meta span.titletag.titletag-nintendo-direct {
+		background-color: #fc1926;
+		background-image: url("../img/titletag_nintendo-direct_white-on-red_for16px.png");
+		background-size: 16px 16px;
+		background-position: 8px center;
+		background-repeat: no-repeat;
+		padding-left: 32px;
+	}
+	
+	.individual-post span.titletag.titletag-pokemon-presents,
+	#post-meta span.titletag.titletag-pokemon-presents {
+		background-color: black;
+		background-image: url("../img/titletag_pokemon-presents_white-on-black_for16px.png");
+		background-size: 16px 16px;
+		background-position: 8px center;
+		background-repeat: no-repeat;
+		padding-left: 32px;
+	}
+	
+	.individual-post span.titletag.titletag-state-of-play,
+	#post-meta span.titletag.titletag-state-of-play {
+		background-color: black;
+		background-image: url("../img/titletag_state-of-play_white-on-black_for16px.png");
+		background-size: 20.5px 16px;
+		background-position: 8px center;
+		background-repeat: no-repeat;
+		padding-left: 36.5px;
+	}
+	
+	.individual-post span.titletag.titletag-summer-game-fest,
+	#post-meta span.titletag.titletag-summer-game-fest {
+		background-color: #3d299c;
+		background-image: url("../img/titletag_summer-game-fest_white-on-purple_for18px.png");
+		background-size: 13px 18px;
+		background-position: 7.5px center;
+		background-repeat: no-repeat;
+		padding-left: 28px;
+	}
+	
+	#ticker-titletag span.titletag.titletag-ace-attorney {
+		background-image: url("../img/titletag_ace-attorney_yellow-on-black_for18px.png");
+		background-size: 17px 18px;
+		background-position: 7.5px center;
+		background-repeat: no-repeat;
+		padding-left: 32px;
+	}
+	
+	#ticker-titletag span.titletag.titletag-e3 {
+		background-image: url("../img/titletag_e3_yellow-on-black_for16px.png");
+		background-size: 23px 16px;
+		background-position: 8px center;
+		background-repeat: no-repeat;
+		padding-left: 39px;
+	}
+	
+	#ticker-titletag span.titletag.titletag-live {
+		background-image: url("../img/titletag_live_yellow-on-black_for32px.png");
+		background-size: 16px 96px;
+		background-position: 8px 0px;
+		background-repeat: no-repeat;
+		padding-left: 32px;
+		animation: live32 1.6s infinite step-end;
+	}
+	
+	#ticker-titletag span.titletag.titletag-nintendo-direct {
+		background-image: url("../img/titletag_nintendo-direct_yellow-on-black_for16px.png");
+		background-size: 16px 16px;
+		background-position: 8px center;
+		background-repeat: no-repeat;
+		padding-left: 32px;
+	}
+	
+	#ticker-titletag span.titletag.titletag-pokemon-presents {
+		background-image: url("../img/titletag_pokemon-presents_yellow-on-black_for16px.png");
+		background-size: 16px 16px;
+		background-position: 8px center;
+		background-repeat: no-repeat;
+		padding-left: 32px;
+	}
+	
+	#ticker-titletag span.titletag.titletag-state-of-play {
+		background-image: url("../img/titletag_state-of-play_yellow-on-black_for16px.png");
+		background-size: 20.5px 16px;
+		background-position: 8px center;
+		background-repeat: no-repeat;
+		padding-left: 36.5px;
+	}
+	
+	#ticker-titletag span.titletag.titletag-summer-game-fest {
+		background-image: url("../img/titletag_summer-game-fest_yellow-on-black_for18px.png");
+		background-size: 13px 18px;
+		background-position: 7.5px center;
+		background-repeat: no-repeat;
+		padding-left: 29px;
+	}
 }
