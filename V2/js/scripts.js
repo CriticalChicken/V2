@@ -4,6 +4,25 @@
 All other trademarks referred to are trademarks of their respective owners. See website for current copyright years. */
 
 
+// Make the mobile menu work 
+$('#mobile-menu').click(function() {
+	$('body').addClass('no-scroll');
+	$('#mobile-menu').addClass('opened');
+	$('#mobile-search-button').addClass('opened');
+	$('#mobile-close-button').addClass('opened');
+});
+$('#mobile-close-button').click(function() {
+	$('body').removeClass('no-scroll');
+	$('#mobile-menu').removeClass('opened');
+	$('#mobile-search-button').removeClass('opened');
+	$('#mobile-close-button').removeClass('opened');
+});
+$('#mobile-search-button').click(function() {
+	$('#search-container').toggleClass('active');
+	$('#mobile-menu-inner').toggleClass('faded');
+});
+
+
 // Animate the breaking news ticker
 $("#ticker-contents").webTicker({
 	height: "32px",
