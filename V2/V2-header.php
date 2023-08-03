@@ -1,5 +1,5 @@
 <div id="container">
-<?php if(get_option("mm_display")=="ogn"&&current_user_can("edit_posts")): ?><div id="maintenance-mode-active"><span>Pre-launch</span></div><?php endif; ?>
+<?php if(get_option("mm_display")=="on"&&current_user_can("edit_posts")): ?><div id="maintenance-mode-active"><span>Pre-launch</span></div><?php endif; ?>
 <div id="header-outer">
 <div id="header-inner">
 <a href="<?php echo get_site_url(); ?>" title="Home"><img src="<?php echo get_template_directory_uri(); ?>/img/branding_logo_color-on-white_for64px.png" alt="Critical Chicken" height="64"></a>
@@ -72,6 +72,6 @@ if(!$item10 == "") { echo "<li>" . $item10 . "</li>"; }
 </ul><!-- /ticker-contents -->
 </div><!-- /ticker-inner -->
 <?php if(get_option('ticker_link') != "") { ?><div id="ticker-link">
-<a href="<?php echo get_option('ticker_link'); ?>" title="Read more">Read more</a>
+<a href="<?php echo get_option('ticker_link'); ?>">Read more</a>
 </div><!-- /ticker-link --><?php } ?>
 </div><!-- /ticker-outer --><?php } ?>

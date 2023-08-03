@@ -1343,6 +1343,11 @@ span.timetip.vital-timetip {
 	font-weight: 600;
 }
 
+span.timetip.galline-timetip {
+	text-decoration-color: rgba(0, 0, 0, 0.32);
+	font-weight: 400;
+}
+
 #post-meta {
 	width: 1120px;
 	display: block;
@@ -2183,6 +2188,79 @@ a.more-tag-cloud {
 	font-weight: 600;
 }
 
+div.explore-group {
+	padding-top: 16px;
+}
+
+div.explore-group:first-of-type {
+	padding-top: 39px;
+}
+
+div.explore-group.special {
+	padding-bottom: 9px;
+}
+
+div.explore-group span {
+	margin-bottom: 16px;
+}
+
+h2.our-dms {
+	position: relative;
+	top: 3px;
+}
+
+div.our-dms-group div {
+	height: 64px;
+	line-height: 64px;
+	font-size: 22px;
+	padding-top: 16px;
+}
+
+div.our-dms-group div:first-of-type {
+	padding-top: 55px;
+}
+
+div.our-dms-group div:last-of-type {
+	padding-bottom: 9px;
+}
+
+div.our-dms-group div span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 32px;
+	font-size: 22px;
+	position: relative;
+	top: -4px;
+}
+
+div.our-dms-group div a {
+	text-decoration: none;
+	font-weight: 300;
+}
+
+div.our-dms-group div a b {
+	font-weight: 700;
+}
+
+div.our-dms-group div img {
+	margin: 0 32px 0 0;
+	float: left;
+}
+
+div.other-stuff-group a {
+	font-size: 20px;
+	line-height: 32px;
+	text-decoration: underline;
+	color: black;
+	font-weight: 600;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+	text-decoration-skip-ink: all;
+	display: inline-block;
+	margin-top: 16px;
+	margin-right: 32px;
+}
+
 
 /* TITLETAGS */
 
@@ -2204,6 +2282,10 @@ a.more-tag-cloud {
 
 span.titletag {
 	font-weight: 700;
+}
+
+span.titletag span {
+	font-weight: 300;
 }
 
 span.titletag.titletag-hollow {
