@@ -23,17 +23,6 @@ $('#mobile-search-button').click(function() {
 });
 
 
-// Animate the breaking news ticker
-$("#ticker-contents").webTicker({
-	height: "32px",
-	duplicate: true,
-	rssfrequency: 0,
-	startEmpty: true,
-	hoverpause: false,
-	speed: 96
-});
-
-
 // Display the page load time
 var beforeload = (new Date()).getTime();
 
