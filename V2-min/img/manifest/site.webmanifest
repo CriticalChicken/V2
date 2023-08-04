@@ -1,0 +1,19 @@
+{
+    "name": "Critical Chicken",
+    "short_name": "Critical Chicken",
+    "icons": [
+        {
+            "src": "https://www.criticalchicken.com/img/manifest/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://www.criticalchicken.com/img/manifest/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#d20202",
+    "background_color": "#edecec",
+    "display": "standalone"
+}
