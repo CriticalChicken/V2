@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Copyright © Critical Chicken. All rights reserved. Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.
+All other trademarks referred to are trademarks of their respective owners. See website for current copyright years. */
+
+#container{top:32px;min-height:calc(100% - 32px)}#progress-container{top:36px}@media only screen and (max-width:782px){#container{top:46px;min-height:calc(100% - 46px)}#maintenance-mode-active{top:46px}#progress-container{top:50px}}@media only screen and (max-width:600px){#maintenance-mode-active{top:0;position:absolute}#progress-container{top:4px}}
