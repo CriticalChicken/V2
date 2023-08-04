@@ -6,7 +6,7 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 > [!NOTE]
 > Copyright &copy; Critical Chicken. All rights reserved. Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.
 >
->All other trademarks referred to are trademarks of their respective owners. See website for current copyright years.
+>All other trademarks referred to are trademarks of their respective owners. See [website](https://www.criticalchicken.com) for current copyright years.
 
 ## Credits
 
