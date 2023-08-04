@@ -5,12 +5,12 @@
 <span class="trademark">Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.&nbsp;<br>All other trademarks referred to are trademarks of their respective owners.</span>
 <div id="footer-links">
 <ul>
-<li><a href="<?php echo get_site_url(); ?>/privacy">Privacy policy &raquo;</a></li>
+<li><a href="<?php echo get_site_url(); ?>/privacy" rel="help">Privacy policy &raquo;</a></li>
 </ul>
 </div><!-- /footer-links -->
 <div id="back-to-top" title="Back to top"></div>
 <div id="version">
-<img src="<?php echo get_template_directory_uri(); ?>/img/branding_v2_color-on-white_for32px.png" width="43" height="32" alt="Critical Chicken V2" title="V2.0 Brazen Blackbird"><p id="load_time">Still loading&hellip;</p>
+<a href="https://github.com/meejle/V2" target="_blank" rel="external me"><img src="<?php echo get_template_directory_uri(); ?>/img/branding_v2-and-github_color-on-white_for32px.png" width="56" height="32" alt="Critical Chicken V2" title="V2.0 Brazen Blackbird - on GitHub"></a><p id="load_time">Still loading&hellip;</p>
 </div><!-- /version -->
 </div><!-- /footer-inner -->
 </div><!-- /footer-outer -->

@@ -1,5 +1,5 @@
 <?php /* Template Name: V2 Explore */ ?>
-<?php get_template_part("V2-pre-launch"); ?>
+<?php get_template_part("V2-maintenance-mode.min"); ?>
 
 <!doctype html>
 <html>
@@ -21,7 +21,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <p>Greetings, intrepid <span class="timetip galline-timetip" title="of, or pertaining to, the chicken">galline</span> explorer! Whatever you&rsquo;re looking for, our convenient, colour-coded categories will get you where you want to go.</p>
 <p>More categories will appear as we add more stuff.</p>
 <div class="explore-group latest">
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/latest"><span class="titletag">Latest <span>(show me everything)</span></span></a>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/latest"><span class="titletag">Latest <b>&ndash; show me everything</b></span></a>
 </div>
 <div class="explore-group news">
 <a class="titletag-link" href="<?php echo get_site_url(); ?>/category/news"><span class="titletag titletag-news">News</span></a>
