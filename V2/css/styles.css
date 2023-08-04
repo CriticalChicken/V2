@@ -3526,6 +3526,10 @@ span.titletag.titletag-hollow {
 	#search-button {
 		top: -50px;
 	}
+
+	#ticker-outer {
+		margin-bottom: 34px;
+	}
 	
 	#ticker-inner {
 		width: 534px;
@@ -3542,6 +3546,7 @@ span.titletag.titletag-hollow {
 
 	#jumbotron-outer {
 		overflow-y: hidden;
+		top: -34px;
 	}
 	
 	#jumbotron-inner {
@@ -3570,7 +3575,7 @@ span.titletag.titletag-hollow {
 	
 	#post-jumbotron {
 		left: calc((100% - 320px) / 2);
-		top: 32px;
+		top: -2px;
 		width: 320px;
 		border-radius: 6px;
 		height: 32px;
@@ -3646,7 +3651,7 @@ span.titletag.titletag-hollow {
 	}
 
 	#home-content-upper {
-		margin-top: 97px;
+		margin-top: 63px;
 	}
 	
 	#home-content-upper h1,
@@ -3671,6 +3676,10 @@ span.titletag.titletag-hollow {
 
 	a.thumb-link {
 		margin-bottom: 20px !important;
+	}
+
+	#not-sidebar-outer {
+		margin-top: -24px;
 	}
 	
 	#not-sidebar-inner {
@@ -5067,5 +5076,14 @@ span.titletag.titletag-hollow {
 	.individual-post .wp-block-pullquote blockquote p {
 		font-size: 20px;
 		line-height: 32px;
-	}	
+	}
+
+	.individual-post .mii figure.alignright img {
+		margin-top: 55px;
+		margin-left: 32px;
+		margin-bottom: 32px;
+		padding: 0;
+		width: 64px;
+		height: 64px;
+	}
 }
