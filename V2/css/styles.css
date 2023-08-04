@@ -779,7 +779,7 @@ em {
 #version img {
 	float: left;
 	margin-right: 16px;
-	cursor: help;
+	width: 55.5px;
 }
 
 #listing-container {
@@ -2167,6 +2167,7 @@ h2.tag-cloud {
 	line-height: 38px;
 	height: 38px;
 	float: left;
+	overflow: hidden;
 }
 
 #tag-cloud br {
@@ -2202,6 +2203,7 @@ div.explore-group.special {
 
 div.explore-group span {
 	margin-bottom: 16px;
+	margin-right: -4px;
 }
 
 h2.our-dms {
@@ -2214,6 +2216,7 @@ div.our-dms-group div {
 	line-height: 64px;
 	font-size: 22px;
 	padding-top: 16px;
+	width: 100%;
 }
 
 div.our-dms-group div:first-of-type {
@@ -2231,6 +2234,7 @@ div.our-dms-group div span {
 	font-size: 22px;
 	position: relative;
 	top: -4px;
+	width: calc(100% - 64px - 32px);
 }
 
 div.our-dms-group div a {
@@ -2284,7 +2288,7 @@ span.titletag {
 	font-weight: 700;
 }
 
-span.titletag span {
+span.titletag b {
 	font-weight: 300;
 }
 
@@ -3975,6 +3979,31 @@ span.titletag.titletag-hollow {
 		content: "";
 		margin-top: -8px;
 	}
+	
+	#tag-cloud a {
+		font-size: 20px !important;
+	}
+	
+	div.explore-group {
+		padding-top: 16px;
+	}
+	
+	div.explore-group:first-of-type {
+		padding-top: 39px;
+	}
+	
+	div.explore-group.special {
+		padding-bottom: 9px;
+	}
+	
+	div.explore-group span {
+		margin-bottom: 16px;
+		margin-right: -4px;
+	}
+	
+	div.our-dms-group div {
+		padding-top: 32px;
+	}
 }
 
 
@@ -4454,9 +4483,45 @@ span.titletag.titletag-hollow {
 		display: none;
 	}
 
+	.explore-group a {
+		margin-right: 8px !important;
+	}
+
+	div.our-dms-group {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 32px;
+		padding-top: 55px;
+		border-bottom: 9px #edecec solid;
+	}
+
+	div.our-dms-group div {
+		width: 96px;
+		height: 64px;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	div.our-dms-group div span {
+		display: none;
+	}
+
+	#tag-cloud a {
+		font-size: 15px !important;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	a.more-tag-cloud {
+		padding: 8px;
+		font-size: 15px;
+	}
+
 	.individual-post {
 		width: calc(100% - 64px);
 		left: 32px;
+		word-wrap: break-word;
 	}
 
 	.individual-post .timestamp {
@@ -4480,33 +4545,49 @@ span.titletag.titletag-hollow {
 	.individual-post ul li,
 	#no-posts-found ul li,
 	.individual-post ol li {
-		width: 352px; /* Content width -192px */
+		width: calc(100% - 48px);
+		padding-left: 48px;
+		background-position: 0 8px;
 	}
 
 	.individual-post figure iframe {
-		width: 544px;
-		height: 306px;
+		width: 100%;
+		height: 100%;
+		aspect-ratio: 16 / 9;
 	}
 
 	#post-meta {
-		width: 544px;
-		left: calc((100% - 544px) / 2);
+		width: calc(100% - 64px);
+		left: 32px;
+	}
+
+	#post-meta span.post-meta-tags {
+		font-size: 15px;
+		line-height: 24px;
+	}
+
+	#post-meta span.post-meta-tags img {
+		display: none;
+	}
+
+	#post-meta span.post-meta-tags span.full-stop {
+		display: none;
 	}
 	
 	#crp-container {
-		width: 544px;
-		left: calc((100% - 544px) / 2);
+		width: calc(100% - 64px);
+		left: 32px;
 	}
 
 	.related-post {
 		margin-right: 0;
-		width: 544px;
+		width: 100%;
 		float: none;
 	}
 
 	.related-post img {
-		width: 544px;
-		height: 306px;
+		width: 100%;
+		height: auto;
 		margin-bottom: -1px;
 	}
 
@@ -4516,8 +4597,8 @@ span.titletag.titletag-hollow {
 	}
 
 	#tag-cloud {
-		width: 544px;
-		left: calc((100% - 544px) / 2);
+		width: 100%;
+		left: unset;
 	}
 
 	/* Pages with a titleimg */
@@ -4598,6 +4679,7 @@ span.titletag.titletag-hollow {
 		margin-top: -8px;
 	}
 
+	/* Now we get to re-do all the TitleTag dimensions, whee! */
 	.individual-post span.titletag,
 	#post-meta span.titletag,
 	#jumbotron-outer span.titletag,
@@ -4611,10 +4693,9 @@ span.titletag.titletag-hollow {
 	
 	#jumbotron-outer span.titletag.titletag-ace-attorney {
 		background-image: url("../img/titletag_ace-attorney_black-on-white_for18px.png");
-		background-size: 17px 18px;
+		background-size: 13px 14px;
 		background-position: 7.5px center;
-		background-repeat: no-repeat;
-		padding-left: 32px;
+		padding-left: 28px;
 	}
 	
 	#jumbotron-outer.red span.titletag.titletag-ace-attorney {
@@ -4630,32 +4711,30 @@ span.titletag.titletag-hollow {
 	}
 	
 	#jumbotron-outer span.titletag.titletag-e3 {
-		background-image: url("../img/titletag_e3_black-on-white_for16px.png");
-		background-size: 23px 16px;
+		background-image: url("../img/titletag_e3_black-on-white_for18px.png");
+		background-size: 17.5px 12px;
 		background-position: 8px center;
-		background-repeat: no-repeat;
-		padding-left: 39px;
+		padding-left: 33.5px;
 	}
 	
 	#jumbotron-outer.red span.titletag.titletag-e3 {
-		background-image: url("../img/titletag_e3_red-on-white_for16px.png");
+		background-image: url("../img/titletag_e3_red-on-white_for18px.png");
 	}
 	
 	#jumbotron-outer.blue span.titletag.titletag-e3 {
-		background-image: url("../img/titletag_e3_blue-on-white_for16px.png");
+		background-image: url("../img/titletag_e3_blue-on-white_for18px.png");
 	}
 	
 	#jumbotron-outer.orange span.titletag.titletag-e3 {
-		background-image: url("../img/titletag_e3_orange-on-white_for16px.png");
+		background-image: url("../img/titletag_e3_orange-on-white_for18px.png");
 	}
 	
 	#jumbotron-outer span.titletag.titletag-live {
 		background-image: url("../img/titletag_live_black-on-white_for32px.png");
-		background-size: 16px 96px;
-		background-position: 8px 0px;
-		background-repeat: no-repeat;
-		padding-left: 32px;
-		animation: live32 1.6s infinite step-end;
+		background-size: 13px 72px;
+		background-position: 7.5px top;
+		padding-left: 28px;
+		animation: live24 1.6s infinite step-end;
 	}
 	
 	#jumbotron-outer.red span.titletag.titletag-live {
@@ -4672,10 +4751,9 @@ span.titletag.titletag-hollow {
 	
 	#jumbotron-outer span.titletag.titletag-nintendo-direct {
 		background-image: url("../img/titletag_nintendo-direct_black-on-white_for16px.png");
-		background-size: 16px 16px;
+		background-size: 12px 12px;
 		background-position: 8px center;
-		background-repeat: no-repeat;
-		padding-left: 32px;
+		padding-left: 28px;
 	}
 	
 	#jumbotron-outer.red span.titletag.titletag-nintendo-direct {
@@ -4692,10 +4770,9 @@ span.titletag.titletag-hollow {
 	
 	#jumbotron-outer span.titletag.titletag-pokemon-presents {
 		background-image: url("../img/titletag_pokemon-presents_black-on-white_for16px.png");
-		background-size: 16px 16px;
+		background-size: 12px 12px;
 		background-position: 8px center;
-		background-repeat: no-repeat;
-		padding-left: 32px;
+		padding-left: 28px;
 	}
 	
 	#jumbotron-outer.red span.titletag.titletag-pokemon-presents {
@@ -4712,10 +4789,9 @@ span.titletag.titletag-hollow {
 	
 	#jumbotron-outer span.titletag.titletag-state-of-play {
 		background-image: url("../img/titletag_state-of-play_black-on-white_for16px.png");
-		background-size: 20.5px 16px;
-		background-position: 8px center;
-		background-repeat: no-repeat;
-		padding-left: 36.5px;
+		background-size: 16.5px 14px;
+		background-position: 7.5px center;
+		padding-left: 31.5px;
 	}
 	
 	#jumbotron-outer.red span.titletag.titletag-state-of-play {
@@ -4732,10 +4808,10 @@ span.titletag.titletag-hollow {
 	
 	#jumbotron-outer span.titletag.titletag-summer-game-fest {
 		background-image: url("../img/titletag_summer-game-fest_black-on-white_for18px.png");
-		background-size: 13px 18px;
+		background-size: 10px 14px;
 		background-position: 7.5px center;
 		background-repeat: no-repeat;
-		padding-left: 28px;
+		padding-left: 25px;
 	}
 	
 	#jumbotron-outer.red span.titletag.titletag-summer-game-fest {
@@ -4752,151 +4828,244 @@ span.titletag.titletag-hollow {
 	
 	.individual-post span.titletag.titletag-ace-attorney,
 	#post-meta span.titletag.titletag-ace-attorney {
-		background-color: black;
-		background-image: url("../img/titletag_ace-attorney_white-on-black_for18px.png");
-		background-size: 17px 18px;
+		background-image: url("../img/titletag_ace-attorney_white-on-black_for14px.png");
+		background-size: 13px 14px;
 		background-position: 7.5px center;
-		background-repeat: no-repeat;
-		padding-left: 32px;
+		padding-left: 28px;
 	}
 	
 	.individual-post span.titletag.titletag-best-of,
 	#post-meta span.titletag.titletag-best-of {
 		background-color: #be9f43;
-		background-image: url("../img/titletag_best-of_white-on-gold_for32px.png");
-		background-size: 234.5px 32px;
-		background-position: left center;
-		background-repeat: no-repeat;
-		padding-left: 33.5px;
-		text-shadow: 0 0 4px rgba(0, 0, 0, 0.32);
+		background-image: url("../img/titletag_best-of_white-on-gold_for24px.png");
+		background-size: 176px 24px;
+		background-position: -0.5px center;
+		padding-left: 29px;
+		text-shadow: 0 0 4px rgba(0, 0, 0, 0.68);
 	}
 	
 	.individual-post span.titletag.titletag-e3,
 	#post-meta span.titletag.titletag-e3 {
-		background-color: black;
-		background-image: url("../img/titletag_e3_color-on-black_for16px.png");
-		background-size: 23px 16px;
-		background-position: 8px center;
-		background-repeat: no-repeat;
-		padding-left: 39px;
+		background-image: url("../img/titletag_e3_color-on-black_for12px.png");
+		background-size: 17.5px 12px;
+		padding-left: 33.5px;
 	}
 	
 	.individual-post span.titletag.titletag-forthegaymers,
 	#post-meta span.titletag.titletag-forthegaymers {
-		background-color: black;
-		background-image: url("../img/titletag_forthegaymers_color-on-black_for32px.png");
-		background-size: 37px 32px;
-		background-position: left center;
-		background-repeat: no-repeat;
-		padding-left: 37px;
+		background-image: url("../img/titletag_forthegaymers_color-on-black_for24px.png");
+		background-size: 28px 24px;
+		padding-left: 28px;
 	}
 	
 	.individual-post span.titletag.titletag-live,
 	#post-meta span.titletag.titletag-live {
-		background-color: #ffdc17;
-		background-image: url("../img/titletag_live_black-on-yellow_for32px.png");
-		background-size: 16px 96px;
-		background-position: 8px top;
-		background-repeat: no-repeat;
-		padding-left: 32px;
-		animation: live32 1.6s infinite step-end;
-		color: black;
+		background-image: url("../img/titletag_live_black-on-yellow_for24px.png");
+		background-size: 13px 72px;
+		background-position: 7.5px top;
+		padding-left: 28px;
+		animation: live24 1.6s infinite step-end;
 	}
 	
 	.individual-post span.titletag.titletag-nintendo-direct,
 	#post-meta span.titletag.titletag-nintendo-direct {
-		background-color: #fc1926;
-		background-image: url("../img/titletag_nintendo-direct_white-on-red_for16px.png");
-		background-size: 16px 16px;
-		background-position: 8px center;
-		background-repeat: no-repeat;
-		padding-left: 32px;
+		background-image: url("../img/titletag_nintendo-direct_white-on-red_for12px.png");
+		background-size: 12px 12px;
+		padding-left: 28px;
 	}
 	
 	.individual-post span.titletag.titletag-pokemon-presents,
 	#post-meta span.titletag.titletag-pokemon-presents {
-		background-color: black;
-		background-image: url("../img/titletag_pokemon-presents_white-on-black_for16px.png");
-		background-size: 16px 16px;
-		background-position: 8px center;
-		background-repeat: no-repeat;
-		padding-left: 32px;
+		background-image: url("../img/titletag_pokemon-presents_white-on-black_for12px.png");
+		background-size: 12px 12px;
+		padding-left: 28px;
 	}
 	
 	.individual-post span.titletag.titletag-state-of-play,
 	#post-meta span.titletag.titletag-state-of-play {
-		background-color: black;
-		background-image: url("../img/titletag_state-of-play_white-on-black_for16px.png");
-		background-size: 20.5px 16px;
-		background-position: 8px center;
+		background-image: url("../img/titletag_state-of-play_white-on-black_for14px.png");
+		background-size: 16.5px 14px;
+		background-position: 7.5px center;
 		background-repeat: no-repeat;
-		padding-left: 36.5px;
+		padding-left: 31.5px;
 	}
 	
 	.individual-post span.titletag.titletag-summer-game-fest,
 	#post-meta span.titletag.titletag-summer-game-fest {
-		background-color: #3d299c;
-		background-image: url("../img/titletag_summer-game-fest_white-on-purple_for18px.png");
-		background-size: 13px 18px;
+		background-image: url("../img/titletag_summer-game-fest_white-on-purple_for14px.png");
+		background-size: 16.5px 14px;
 		background-position: 7.5px center;
-		background-repeat: no-repeat;
-		padding-left: 28px;
+		padding-left: 31.5px;
 	}
 	
 	#ticker-titletag span.titletag.titletag-ace-attorney {
-		background-image: url("../img/titletag_ace-attorney_yellow-on-black_for18px.png");
-		background-size: 17px 18px;
+		background-size: 13px 14px;
 		background-position: 7.5px center;
-		background-repeat: no-repeat;
-		padding-left: 32px;
+		padding-left: 28px;
 	}
 	
 	#ticker-titletag span.titletag.titletag-e3 {
-		background-image: url("../img/titletag_e3_yellow-on-black_for16px.png");
-		background-size: 23px 16px;
+		background-size: 17.5px 12px;
 		background-position: 8px center;
-		background-repeat: no-repeat;
-		padding-left: 39px;
+		padding-left: 33.5px;
 	}
 	
 	#ticker-titletag span.titletag.titletag-live {
-		background-image: url("../img/titletag_live_yellow-on-black_for32px.png");
-		background-size: 16px 96px;
-		background-position: 8px 0px;
-		background-repeat: no-repeat;
-		padding-left: 32px;
-		animation: live32 1.6s infinite step-end;
+		background-size: 13px 72px;
+		background-position: 7.5px top;
+		padding-left: 28px;
+		animation: live24 1.6s infinite step-end;
 	}
 	
 	#ticker-titletag span.titletag.titletag-nintendo-direct {
-		background-image: url("../img/titletag_nintendo-direct_yellow-on-black_for16px.png");
-		background-size: 16px 16px;
-		background-position: 8px center;
-		background-repeat: no-repeat;
-		padding-left: 32px;
+		background-size: 12px 1px;
+		padding-left: 28px;
 	}
 	
 	#ticker-titletag span.titletag.titletag-pokemon-presents {
-		background-image: url("../img/titletag_pokemon-presents_yellow-on-black_for16px.png");
-		background-size: 16px 16px;
-		background-position: 8px center;
-		background-repeat: no-repeat;
-		padding-left: 32px;
+		background-size: 12px 12px;
+		padding-left: 28px;
 	}
 	
 	#ticker-titletag span.titletag.titletag-state-of-play {
-		background-image: url("../img/titletag_state-of-play_yellow-on-black_for16px.png");
-		background-size: 20.5px 16px;
-		background-position: 8px center;
-		background-repeat: no-repeat;
-		padding-left: 36.5px;
+		background-size: 16.5px 14px;
+		background-position: 7.5px center;
+		padding-left: 31.5px;
 	}
 	
 	#ticker-titletag span.titletag.titletag-summer-game-fest {
-		background-image: url("../img/titletag_summer-game-fest_yellow-on-black_for18px.png");
-		background-size: 13px 18px;
-		background-position: 7.5px center;
-		background-repeat: no-repeat;
-		padding-left: 29px;
+		background-size: 10px 14px;
+		padding-left: 25px;
 	}
+
+	h1.cat-title-forthegaymers {
+		color: black;
+		background-image: none;
+		display: unset;
+		position: unset;
+		width: unset;
+		height: unset;
+		font-size: 41px !important;
+		line-height: unset !important;
+		top: unset;
+		margin-bottom: unset;
+		font-weight: 700 !important;
+	}
+	
+	h1.cat-title-ace-attorney {
+		color: black;
+		background-image: none;
+		display: unset;
+		position: unset;
+		width: unset;
+		height: unset;
+		font-size: 41px !important;
+		line-height: unset !important;
+		top: unset;
+		margin-bottom: unset;
+		font-weight: 700 !important;
+	}
+	
+	h1.cat-title-best-of {
+		color: black;
+		background-image: none;
+		display: unset;
+		position: unset;
+		width: unset;
+		height: unset;
+		font-size: 41px !important;
+		line-height: unset !important;
+		top: unset;
+		margin-bottom: unset;
+		font-weight: 700 !important;
+	}
+	
+	h1.cat-title-e3-2016,
+	h1.cat-title-e3-2021,
+	h1.cat-title-e3-2023 {
+		color: black !important;
+		font-weight: 700 !important;
+		padding-left: 59.5px;
+		background-image: url(../img/category_e3_color-on-grey_for30px.png);
+		background-size: 43.5px 30px;
+		background-position: left center;
+		background-repeat: no-repeat;
+	}
+	
+	h1.cat-title-nintendo-direct {
+		color: #fc1926 !important;
+		background-image: none;
+		display: unset;
+		position: unset;
+		width: unset;
+		height: unset;
+		font-size: 41px !important;
+		line-height: unset !important;
+		top: unset;
+		margin-bottom: unset;
+		font-weight: 700 !important;
+	}
+	
+	h1.cat-title-pokemon-presents {
+		color: black;
+		background-image: none;
+		display: unset;
+		position: unset;
+		width: unset;
+		height: unset;
+		font-size: 41px !important;
+		line-height: unset !important;
+		top: unset;
+		margin-bottom: unset;
+		font-weight: 700 !important;
+	}
+	
+	h1.cat-title-state-of-play {
+		color: black;
+		background-image: none;
+		display: unset;
+		position: unset;
+		width: unset;
+		height: unset;
+		font-size: 41px !important;
+		line-height: unset !important;
+		top: unset;
+		margin-bottom: unset;
+		font-weight: 700 !important;
+	}
+	
+	h1.cat-title-summer-game-fest-2024 {
+		color: #3d299c !important;
+		background-image: none;
+		display: unset;
+		position: unset;
+		width: unset;
+		height: unset;
+		font-size: 41px !important;
+		line-height: unset !important;
+		top: unset;
+		margin-bottom: unset;
+		font-weight: 700 !important;
+	}
+	.individual-post .wp-block-quote {
+		padding-left: 48px;
+		padding-right: 0;
+		background-image: url("../img/ui_blockquote_black-on-grey_for15px.png");
+		background-size: 15px 15px;
+		background-repeat: no-repeat;
+		background-position: 0 56px;
+		padding-top: 7px;
+		padding-bottom: 32px;
+	}
+	
+	.individual-post .wp-block-pullquote blockquote {
+		padding-left: 48px;
+		padding-right: 0;
+		background-position: 0 56px;
+	}
+
+	.individual-post .wp-block-pullquote blockquote p {
+		font-size: 20px;
+		line-height: 32px;
+	}	
 }

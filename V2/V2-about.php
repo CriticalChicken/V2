@@ -1,5 +1,5 @@
 <?php /* Template Name: V2 About */ ?>
-<?php get_template_part("V2-pre-launch"); ?>
+<?php get_template_part("V2-maintenance-mode.min"); ?>
 
 <!doctype html>
 <html>
