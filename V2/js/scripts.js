@@ -1,6 +1,6 @@
 // JavaScript Document
 
-/* Copyright © Critical Chicken. All rights reserved. Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.
+/* Copyright (C) Critical Chicken. All rights reserved. Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.
 All other trademarks referred to are trademarks of their respective owners. See website for current copyright years. */
 
 
@@ -106,8 +106,10 @@ $(".wp-element-caption").each(function() {
 
 
 // Add "and" before the last tag in the list
-$("span.post-meta-tags a:last-of-type").each(function() {
-	$(this).before("and ");
+$('span.post-meta-tags').each(function() {
+	if($('span.post-meta-tags a').length > 1) {
+		$("span.post-meta-tags a:last-of-type").before("and ");
+	}
 });
 
 
