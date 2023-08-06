@@ -8,6 +8,14 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 >
 >All other trademarks referred to are trademarks of their respective owners. See [website](https://www.criticalchicken.com) for current copyright years.
 
+## Changelog
+
+### V2.0.1
+
+- **Bug fix:** `box-shadow` no longer appears &ldquo;cut off&rdquo; on mobile menu&rsquo;s social links
+- **Bug fix:** Script that adds &ldquo;and&rdquo; before the last tag on a single post now only works on posts with more than one tag
+- **Accessibility:** Added `lang` attribute to opening `html` tags
+
 ## Credits
 
 - &ldquo;Line&rdquo; icons by [Gregor Cresnar](https://iconix.si), licensed through [Noun Project](https://thenounproject.com/grega.cresnar)
