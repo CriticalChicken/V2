@@ -20,7 +20,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
 <div id="jumbotron-link">
-<?php if(get_option('jumbotron_link') != "") { ?><a href="<?php echo get_option('jumbotron_link'); ?>">Read more</a><?php } ?>
+<?php if(get_option('jumbotron_link') != "") { ?><a href="<?php echo get_option('jumbotron_link'); ?>"><?php echo get_option('jumbotron_text'); ?></a><?php } ?>
 </div><!-- /jumbotron-link -->
 <div id="jumbotron-inner">
 <div id="jumbotron-text">
