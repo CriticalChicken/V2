@@ -10,6 +10,10 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.2
+
+- **SEO:** Fixed non-descriptive Jumbotron link
+
 ### V2.0.1
 
 - **Bug fix:** `box-shadow` no longer appears &ldquo;cut off&rdquo; on mobile menu&rsquo;s social links
