@@ -1,8 +1,8 @@
 <?php get_template_part("V2-maintenance-mode.min"); ?>
 <!doctype html>
-<html>
+<html lang="en-GB">
 
-<!-- Copyright © Critical Chicken. All rights reserved. Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.
+<!-- Copyright (C) Critical Chicken. All rights reserved. Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.
 All other trademarks referred to are trademarks of their respective owners. See website for current copyright years. -->
 
 <head>
