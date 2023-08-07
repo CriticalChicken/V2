@@ -10,6 +10,10 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.3
+
+- **Bug fix:** Replaced Microanalytics code as it was set up wrong.
+
 ### V2.0.2
 
 - **SEO:** Fixed non-descriptive Jumbotron link
