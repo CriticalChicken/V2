@@ -10,6 +10,10 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.5
+
+- **Improvement** Mastofeed now includes Boosts for more content variety
+
 ### V2.0.4
 
 - **Improvement:** Replaced #ForTheGaymers logo with a new design
@@ -32,6 +36,7 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 ## Credits
 
 - &ldquo;Line&rdquo; icons by [Gregor Cresnar](https://iconix.si), licensed through [Noun Project](https://thenounproject.com/grega.cresnar)
-- [momentum.js](https://github.com/sschoepke/momentum) by [sschoepke](https://github.com/sschoepke)
+- [Mastofeed](https://github.com/fenwick67/mastofeed) by [Drew Harwell](https://github.com/fenwick67)
+- [momentum.js](https://github.com/sschoepke/momentum) by [Stephen Schoepke](https://github.com/sschoepke)
 - [Reset CSS](https://meyerweb.com/eric/tools/css/reset/index.html) by [Eric A. Meyer](https://meyerweb.com/eric)
 - [Web-Ticker](https://github.com/mazedigital/Web-Ticker) by [Maze Digital](https://github.com/mazedigital)
