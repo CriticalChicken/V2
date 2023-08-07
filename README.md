@@ -10,9 +10,14 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.4
+
+- **Improvement:** Replaced #ForTheGaymers logo with a new design
+- **Bug fix:** Listing pages&rsquo;s layout no longer breaks on tablets
+
 ### V2.0.3
 
-- **Bug fix:** Replaced Microanalytics code as it was set up wrong.
+- **Bug fix:** Replaced Microanalytics code as it was set up wrong
 
 ### V2.0.2
 
