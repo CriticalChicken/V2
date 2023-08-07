@@ -17,7 +17,7 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 ### V2.0.4
 
 - **Improvement:** Replaced #ForTheGaymers logo with a new design
-- **Bug fix:** Listing pages&rsquo;s layout no longer breaks on tablets
+- **Bug fix:** Listing pages&rsquo; layout no longer breaks on tablets
 
 ### V2.0.3
 
