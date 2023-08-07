@@ -12,7 +12,7 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ### V2.0.5
 
-- **Improvement** Mastofeed now includes Boosts for more content variety
+- **Improvement:** Mastofeed now includes Boosts for more content variety
 
 ### V2.0.4
 
