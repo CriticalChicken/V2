@@ -68,7 +68,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <a href="<?php echo get_site_url(); ?>/category/ace-attorney" class="raquo">More Ace Attorney &raquo;</a>
 </div><!-- /not-sidebar-box-right -->
 <div id="not-sidebar-box-mastodon">
-<iframe width="352" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.world%2Fusers%2FCriticalChicken&theme=light&size=100&header=true&replies=false&boosts=false" frameborder="0"></iframe>
+<iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="352" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.world%2Fusers%2FCriticalChicken&theme=light&size=100&header=true&replies=false&boosts=true" frameborder="0"></iframe>
 </div><!-- /not-sidebar-box-mastodon -->
 </div><!-- /not-sidebar-inner -->
 </div><!-- /not-sidebar-outer -->
