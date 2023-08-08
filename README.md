@@ -10,9 +10,13 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.6
+
+- **Improvement:** Added stacked and combined logo variants for smaller devices (so #ForTheGaymers branding can always be seen)
+
 ### V2.0.5
 
-- **Improvement** Mastofeed now includes Boosts for more content variety
+- **Improvement:** Mastofeed now includes Boosts for more content variety
 
 ### V2.0.4
 
