@@ -5,7 +5,8 @@
 <span class="trademark">Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.&nbsp;<br>All other trademarks referred to are trademarks of their respective owners.</span>
 <div id="footer-links">
 <ul>
-<li><a href="<?php echo get_site_url(); ?>/privacy" rel="help">Privacy policy &raquo;</a></li>
+<li><a href="<?php echo get_site_url(); ?>/privacy" rel="help">Privacy policy &raquo;</a></li><?php $page = get_page(649); if($page->post_status == 'publish'){ ?>
+<li><a href="<?php echo get_site_url(); ?>/tidbyt">Tidbyt app &raquo;</a></li><?php } ?>
 </ul>
 </div><!-- /footer-links -->
 <div id="back-to-top" title="Back to top"></div>

@@ -74,7 +74,8 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <hr>
 <h2 class="our-dms">Other stuff</h2>
 <div class="other-stuff-group">
-<a href="<?php echo get_site_url(); ?>/privacy" rel="help">Privacy policy&nbsp;&raquo;</a>
+<a href="<?php echo get_site_url(); ?>/privacy" rel="help">Privacy policy&nbsp;&raquo;</a><?php $page = get_page(649); if($page->post_status == 'publish'){ ?>
+<li><a href="<?php echo get_site_url(); ?>/tidbyt">Tidbyt app &raquo;</a></li><?php } ?>
 <a href="https://github.com/CriticalChicken/V2" target="_blank" rel="external me">V2 theme on GitHub&nbsp;&raquo;</a>
 </div>
 <hr>

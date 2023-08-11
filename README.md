@@ -10,6 +10,13 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.7
+
+- **New feature:** Added a page to promote our new [Tidbyt applet](https://github.com/tidbyt/community/pull/1731)
+- **Improvement:** Added the new #ForTheGaymers logo to its [category page](https://www.criticalchicken.com/category/forthegaymers)
+- **Bug fix:** Margin around the logo on small mobile devices is now the right size
+- **Bug fix:** Category page titles now display properly on small mobile devices
+
 ### V2.0.6
 
 - **Improvement:** Added stacked and combined logo variants for smaller devices (so #ForTheGaymers branding can always be seen)
