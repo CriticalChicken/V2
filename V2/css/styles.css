@@ -2269,6 +2269,31 @@ div.other-stuff-group a {
 	margin-right: 32px;
 }
 
+span.htftg {
+	font-family: "V2" !important;
+	font-weight: 400 !important;
+	font-style: normal !important;
+}
+
+span.htftg.orange {
+	color: #f47614 !important;
+}
+
+span.ftg {
+	font-weight: 700 !important;
+	font-style: normal !important;
+}
+
+span.ftg.red {
+	color: #d20202 !important;
+}
+
+span.ccname {
+	font-weight: 700 !important;
+	color: #d20202 !important;
+	font-style: normal !important;
+}
+
 
 /* TITLETAGS */
 
@@ -2538,6 +2563,7 @@ span.titletag.titletag-hollow {
 	background-position: left center;
 	background-repeat: no-repeat;
 	padding-left: 37px;
+	font-weight: 700;
 }
 
 .individual-post span.titletag.titletag-live,
@@ -2762,6 +2788,7 @@ span.titletag.titletag-hollow {
 	background-repeat: no-repeat;
 	color: white;
 	padding-left: 28px;
+	font-weight: 700;
 }
 
 .homepage-post span.titletag.titletag-live {
@@ -4897,6 +4924,7 @@ span.titletag.titletag-hollow {
 		background-image: url("../img/titletag_forthegaymers_color-on-black_for24px.png");
 		background-size: 28px 24px;
 		padding-left: 28px;
+		font-weight: 700;
 	}
 
 	.individual-post span.titletag.titletag-live,
@@ -4980,17 +5008,34 @@ span.titletag.titletag-hollow {
 	}
 
 	h1.cat-title-forthegaymers {
-		color: black !important;
+		color: rgba(0, 0, 0, 0) !important;
 		background-image: none;
 		display: unset;
 		position: unset;
-		width: unset;
+		width: 0 !important;
 		height: unset;
-		font-size: 41px !important;
+		font-size: 0 !important;
 		line-height: unset !important;
 		top: unset;
 		margin-bottom: unset;
 		font-weight: 700 !important;
+	}
+
+	h1.cat-title-forthegaymers:before {
+		content: "\0023" !important;
+		color: black !important;
+		width: unset;
+		font-family: "V2", "Noto Sans Display", sans-serif !important;
+		font-weight: 400 !important;
+		font-size: 41px !important;
+	}
+
+	h1.cat-title-forthegaymers:after {
+		content: "ForTheGaymers" !important;
+		color: black !important;
+		width: unset;
+		font-weight: 700 !important;
+		font-size: 41px !important;
 	}
 
 	h1.cat-title-ace-attorney {

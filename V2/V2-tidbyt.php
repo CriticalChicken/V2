@@ -131,10 +131,6 @@ All other trademarks referred to are trademarks of their respective owners. See 
     h1.tidbyt-logo span.get {
         color: #be74ff;
     }
-    span.ccname {
-        color: #d20202;
-        font-weight: 700;
-    }
     @media (min-width: 992px) and (max-width: 1183.98px)  {
         div.tidbyt-previews {
             display: block;

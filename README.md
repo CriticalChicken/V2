@@ -10,6 +10,10 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.9
+
+- **Improvement:** Added custom &ldquo;&num;&rdquo; symbol to V2 font and restyled &ldquo;#ForTheGaymers&rdquo; site-wide
+
 ### V2.0.8
 
 - **Improvement:** Tweaks to design and wording of Tidbyt page

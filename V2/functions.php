@@ -91,7 +91,7 @@ function categoryLinkGenerator() {
 		if (in_category('forthegaymers')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/forthegaymers"><span class="titletag titletag-forthegaymers">#ForTheGaymers</span></a>');
+			echo('/category/forthegaymers"><span class="titletag titletag-forthegaymers"><span class="htftg">#</span>ForTheGaymers</span></a>');
 		}
 	}
 	

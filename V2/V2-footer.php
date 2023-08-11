@@ -2,7 +2,7 @@
 <div id="footer-inner">
 <?php get_template_part("V2-socials-linear"); ?>
 <span class="copyright">Copyright &copy; 2016&ndash;<?php echo date("Y"); ?> Critical Chicken.&nbsp;<br>All rights reserved.</span>
-<span class="trademark">Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.&nbsp;<br>All other trademarks referred to are trademarks of their respective owners.</span>
+<span class="trademark"><span class="ccname">Critical Chicken</span>, the Critical Chicken logo and wordmark, and <span class="htftg orange">#</span><span class="ftg red">ForTheGaymers</span> are trademarks of Critical Chicken.&nbsp;<br>All other trademarks referred to are trademarks of their respective owners.</span>
 <div id="footer-links">
 <ul>
 <li><a href="<?php echo get_site_url(); ?>/privacy" rel="help">Privacy policy &raquo;</a></li><?php $page = get_page(649); if($page->post_status == 'publish'){ ?>

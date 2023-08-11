@@ -18,7 +18,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <?php if(have_posts()):while(have_posts()):the_post(); ?>
 <div id="post-<?php the_ID(); ?>"<?php post_class('individual-post') ?>>
 <h1><?php the_title(); ?></h1>
-<p>Welcome to Critical Chicken, your one-stop shop for video game news, features, and reviews &ndash; with a healthy dollop of Queer culture on the side.</p>
+<p>Welcome to <b>Critical Chicken</b>, your one-stop shop for video game news, features, and reviews &ndash; with a healthy dollop of Queer culture on the side.</p>
 <h2>Vital statistics</h2>
 <ul>
 <li>We&rsquo;ve been online for <span class="timetip vital-timetip" title="11th June 2016 - launch of Critical Chicken"><?php echo do_shortcode('[DateCounter startDate="2016-06-11" endDate="now" format="%y years, %m months, and %d days"]'); ?></span>.</li>
