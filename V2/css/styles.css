@@ -10,6 +10,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Copyright (C) Critical Chicken. All rights reserved. Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.
 All other trademarks referred to are trademarks of their respective owners. See website for current copyright years. */
 
+/* V2 font */
+/* Contains icons by Gregor Cresnar, licensed through Noun Project. */
+/* https://iconix.si https://thenounproject.com/grega.cresnar */
+
+@font-face { font-family: "V2"; src: url("../img/V2.woff2") format("woff2"), url('../img/V2.woff') format('woff'); font-weight: 400; font-style: normal; font-display: swap; }
+
 /* ANIMATIONS */
 
 @keyframes slide {
@@ -239,11 +245,13 @@ em {
 }
 
 #ticker-contents li {
-	padding: 1px 45px 0 32px !important;
-	background-image: url("../img/ui_ticker-bullet_black-on-yellow_for16px.png");
-	background-size: 13px 16px;
-	background-repeat: no-repeat;
-	background-position: right 10px;
+	padding: 1px 0 0 0 !important;
+}
+
+#ticker-contents li::after {
+	content: "-";
+	font-family: "V2";
+	padding: 1px 32px 0 32px;
 }
 
 #ticker-link {

@@ -111,15 +111,16 @@ All other trademarks referred to are trademarks of their respective owners. See 
     h1.tidbyt-logo {
         background-image: url(<?php echo get_template_directory_uri(); ?>/img/tidbyt/logo.png);
         background-size: 302px 45px;
-        background-position: 256px 51px;
+        background-position: 247px 51px;
         background-repeat: no-repeat;
+        font-weight: 500;
     }
     h1.tidbyt-logo span.tidbyt {
         font-size: 0;
         line-height: 0;
         color: rgba(0, 0, 0, 0);
         display: inline-block;
-        width: 341px;
+        width: 342px;
     }
     h1.tidbyt-logo span.app {
         color: #7c8af7;
@@ -129,6 +130,10 @@ All other trademarks referred to are trademarks of their respective owners. See 
     }
     h1.tidbyt-logo span.get {
         color: #be74ff;
+    }
+    span.ccname {
+        color: #d20202;
+        font-weight: 700;
     }
     @media (min-width: 992px) and (max-width: 1183.98px)  {
         div.tidbyt-previews {
@@ -163,7 +168,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
         }
         h1.tidbyt-logo {
             background-size: 208px 31px;
-            background-position: 170px 49px;
+            background-position: 164px 49px;
             background-repeat: no-repeat;
             padding-top: 36px;
         }
@@ -187,7 +192,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
         }
         h1.tidbyt-logo {
             background-size: 208px 31px;
-            background-position: 170px 49px;
+            background-position: 164px 49px;
             background-repeat: no-repeat;
             padding-top: 36px;
         }
@@ -243,11 +248,13 @@ All other trademarks referred to are trademarks of their respective owners. See 
             background-image: none;
             padding-top: 36px;
         }
+        h1.tidbyt-logo span {
+            color: black !important;
+        }
         h1.tidbyt-logo span.tidbyt {
             width: unset;
             font-size: inherit;
             line-height: inherit;
-            color: #ff59ff;
         }
         div.disclaimer {
             line-height: 24px;
@@ -285,8 +292,8 @@ All other trademarks referred to are trademarks of their respective owners. See 
 </div>
 <p><b>We love our sleek, sexy, unobtrusive, and <em>deliciously</em> retro <a href="https://tidbyt.com" target="_blank" rel="external nofollow">Tidbyt</a>. We love it very much.</b></p>
 <p>We love that it&rsquo;s one of the only devices in our office that isn&rsquo;t spying on us. And we love how it keeps us up to date, without us needing to spend (even) more time on our smart devices.</p>
-<p>We love Tidbyt so much, in fact, that we&rsquo;ve made an app of our very own.</p>
-<p>To get our latest blog posts on your Tidbyt, just search for <b>&ldquo;Critical Chicken&rdquo;</b> in your Tidbyt app.</p>
+<p>We love our Tidbyt so much, in fact, that we designed an app of our very own.</p>
+<p>To get our latest blog posts on your Tidbyt, just <span class="search-icon">search</span> for <span class="ccname">Critical&nbsp;Chicken</span> in your Tidbyt app.</p>
 <div class="store-buttons">
 <a href="https://play.google.com/store/apps/details?id=com.tidbyt.android" rel="external nofollow" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/tidbyt/play-store.png" width="139" height="40" alt="Get it on Google Play"></a><a href="https://apps.apple.com/us/app/tidbyt/id1524348619" rel="external nofollow" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/tidbyt/app-store.png" width="123" height="40" alt="Download on the App store"></a>
 </div>

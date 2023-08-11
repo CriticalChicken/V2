@@ -10,6 +10,11 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.8
+
+- **Improvement:** Tweaks to design and wording of Tidbyt page
+- **Improvement:** Breaking news ticker now uses a font for the bullets instead of an image, so it no longer flickers/judders when scrolling
+
 ### V2.0.7
 
 - **New feature:** Added a page to promote our new [Tidbyt applet](https://github.com/tidbyt/community/pull/1731)
