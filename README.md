@@ -10,6 +10,11 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.10
+
+- **Improvement:** Added line breaks to &ldquo;#ForTheGaymers&rdquo; wherever it appears as a title, so it doesn&rsquo;t overflow the screen width on mobile devices
+- **Bug fix:** Mii images on the [About](https://www.criticalchicken.com/about) page now display at the correct (smaller) size on mobile devices
+
 ### V2.0.9
 
 - **Improvement:** Added custom &ldquo;&num;&rdquo; symbol to V2 font and restyled &ldquo;#ForTheGaymers&rdquo; site-wide

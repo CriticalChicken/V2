@@ -14,7 +14,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 /* Contains icons by Gregor Cresnar, licensed through Noun Project. */
 /* https://iconix.si https://thenounproject.com/grega.cresnar */
 
-@font-face { font-family: "V2"; src: url("../img/V2.woff2") format("woff2"), url('../img/V2.woff') format('woff'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "V2"; src: url("../img/V2.woff2") format("woff2"), url("../img/V2.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
 
 /* ANIMATIONS */
 
@@ -2292,6 +2292,10 @@ span.ccname {
 	font-weight: 700 !important;
 	color: #d20202 !important;
 	font-style: normal !important;
+}
+
+br.breakpoint {
+	display: none;
 }
 
 
@@ -5031,11 +5035,12 @@ span.titletag.titletag-hollow {
 	}
 
 	h1.cat-title-forthegaymers:after {
-		content: "ForTheGaymers" !important;
+		content: "ForThe\aGaymers" !important;
 		color: black !important;
 		width: unset;
 		font-weight: 700 !important;
 		font-size: 41px !important;
+		white-space: pre;
 	}
 
 	h1.cat-title-ace-attorney {
@@ -5160,7 +5165,11 @@ span.titletag.titletag-hollow {
 		margin-left: 32px;
 		margin-bottom: 32px;
 		padding: 0;
-		width: 64px;
-		height: 64px;
+		width: 64px !important;
+		height: 64px !important;
+	}
+
+	br.breakpoint {
+		display: block;
 	}
 }
