@@ -10,6 +10,10 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.11
+
+- **Bug fix:** Spacing underneath related posts now works again
+
 ### V2.0.10
 
 - **Improvement:** Added line breaks to &ldquo;#ForTheGaymers&rdquo; wherever it appears as a title, so it doesn&rsquo;t overflow the screen width on mobile devices

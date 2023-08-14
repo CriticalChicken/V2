@@ -201,6 +201,9 @@ function categoryLinkGenerator() {
 require_once(TEMPLATEPATH . '/functions/jumbotron-editor.php');
 require_once(TEMPLATEPATH . '/functions/ticker-editor.php');
 require_once(TEMPLATEPATH . '/functions/maintenance-mode-editor.php');
+require_once(TEMPLATEPATH . '/functions/cc-jumbotron-editor.php');
+require_once(TEMPLATEPATH . '/functions/cc-ticker-editor.php');
+require_once(TEMPLATEPATH . '/functions/cc-maintenance-mode-editor.php');
 
 
 // filter for tags with comma
