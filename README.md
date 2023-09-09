@@ -1,4 +1,4 @@
-![A blackbird perched on top of a tree stump, next to the V2 logo](https://github.com/CriticalChicken/V2/assets/35422415/2fc7fe5d-0d96-4231-bc9c-b882fa1dec66)
+![A blackbird perched on top of a tree stump, next to the V2 logo](https://github.com/CriticalChicken/V2/assets/35422415/1ef9798d-5f07-4aa0-96f6-148c08351cfa)
 
 # V2.0 Brazen Blackbird
 The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.com).
