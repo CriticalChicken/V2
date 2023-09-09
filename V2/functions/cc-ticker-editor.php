@@ -6,14 +6,14 @@ All other trademarks referred to are trademarks of their respective owners. See 
 add_action( 'admin_menu', 'cc_ticker_editor' );
 
 function cc_ticker_editor() {
-	add_menu_page('Ticker Editor', 'Ticker', 'manage_options', 'cc-ticker-editor', 'cc_ticker_editor_contents', 'dashicons-warning', 3.5  );
+	add_menu_page('Ticker editor', 'Ticker', 'manage_options', 'cc-ticker-editor', 'cc_ticker_editor_contents', 'dashicons-warning', 3.5  );
 }
 
 function cc_ticker_editor_contents() {
 ?>
 
 <div class="wrap">
-	<h1 style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/admin_v2_color-on-transparent_for31px.png'); background-size: 41.5px 31px; background-position: left 12px; background-repeat: no-repeat; padding: 8px 0 12px 53.5px !important; height: 31px !important; line-height: 31px !important;">Ticker Editor</h1>
+	<h1 style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/admin_v2_color-on-transparent_for31px.png'); background-size: 41.5px 31px; background-position: left 12px; background-repeat: no-repeat; padding: 8px 0 12px 53.5px !important; height: 31px !important; line-height: 31px !important;">Ticker editor</h1>
 	<form method="POST" action="options.php">
 		<?php
 		settings_fields('cc-ticker-editor');
@@ -47,16 +47,8 @@ function cc_ticker_settings_init() {
 	
 	add_settings_field(
 		'cc_ticker_titletag_special',
-		__( 'TitleTag', 'my-textdomain' ),
+		__( 'Titletag (required)', 'my-textdomain' ),
 		'cc_ticker_editor_titletag_special',
-		'cc-ticker-editor',
-		'cc-ticker-editor_setting_section'
-	);
-	
-	add_settings_field(
-		'cc_ticker_titletag_text',
-		__( '', 'my-textdomain' ),
-		'cc_ticker_editor_titletag_text',
 		'cc-ticker-editor',
 		'cc-ticker-editor_setting_section'
 	);
@@ -151,7 +143,6 @@ function cc_ticker_settings_init() {
 
 	register_setting( 'cc-ticker-editor', 'cc_ticker_display' );
 	register_setting( 'cc-ticker-editor', 'cc_ticker_titletag_special' );
-	register_setting( 'cc-ticker-editor', 'cc_ticker_titletag_text' );
 	register_setting( 'cc-ticker-editor', 'cc_ticker_item1' );
 	register_setting( 'cc-ticker-editor', 'cc_ticker_item2' );
 	register_setting( 'cc-ticker-editor', 'cc_ticker_item3' );
@@ -180,25 +171,21 @@ function cc_ticker_editor_display() {
 function cc_ticker_editor_titletag_special() {
 	$current_titletag_special = get_option('cc_ticker_titletag_special');
 ?>
-		<p>Icon:</p>
 		<select name="cc_ticker_titletag_special" id="cc_ticker_titletag_special" style="width: 400px">
-			<option value="none"<?php if($current_titletag_special == "none") { echo(' selected="selected"'); } ?>>None</option>
 			<option value="ace-attorney"<?php if($current_titletag_special == "ace-attorney") { echo(' selected="selected"'); } ?>>Ace Attorney</option>
-			<option value="e3"<?php if($current_titletag_special == "e3") { echo(' selected="selected"'); } ?>>E3</option>
+			<option value="breaking-news"<?php if($current_titletag_special == "breaking-news") { echo(' selected="selected"'); } ?>>Breaking news</option>
+			<option value="dungeons-and-dragons"<?php if($current_titletag_special == "dungeons-and-dragons") { echo(' selected="selected"'); } ?>>Dungeons &amp; Dragons</option>
+			<option value="e3s-future"<?php if($current_titletag_special == "e3s-future") { echo(' selected="selected"'); } ?>>E3&rsquo;s future</option>
+			<option value="exclusive"<?php if($current_titletag_special == "exclusive") { echo(' selected="selected"'); } ?>>Exclusive</option>
+			<option value="forthegaymers"<?php if($current_titletag_special == "forthegaymers") { echo(' selected="selected"'); } ?>>&num;ForTheGaymers</option>
 			<option value="live"<?php if($current_titletag_special == "live") { echo(' selected="selected"'); } ?>>Live</option>
+			<option value="news-alert"<?php if($current_titletag_special == "news-alert") { echo(' selected="selected"'); } ?>>News alert</option>
 			<option value="nintendo-direct"<?php if($current_titletag_special == "nintendo-direct") { echo(' selected="selected"'); } ?>>Nintendo Direct</option>
+			<option value="pokemon"<?php if($current_titletag_special == "pokemon") { echo(' selected="selected"'); } ?>>Pok&eacute;mon</option>
 			<option value="pokemon-presents"<?php if($current_titletag_special == "pokemon-presents") { echo(' selected="selected"'); } ?>>Pok&eacute;mon Presents</option>
 			<option value="state-of-play"<?php if($current_titletag_special == "state-of-play") { echo(' selected="selected"'); } ?>>State of Play</option>
-			<option value="summer-game-fest"<?php if($current_titletag_special == "summer-game-fest") { echo(' selected="selected"'); } ?>>Summer Game Fest</option>
+			<option value="summer-game-fest-2024"<?php if($current_titletag_special == "summer-game-fest-2024") { echo(' selected="selected"'); } ?>>Summer Game Fest 2024</option>
 		</select>
-
-<?php
-}
-
-function cc_ticker_editor_titletag_text() {
-?>
-		<p>Text:</p>
-		<input type="text" name="cc_ticker_titletag_text" id="cc_ticker_titletag_text" style="width: 400px" value="<?php echo get_option('cc_ticker_titletag_text'); ?>">
 
 <?php
 }

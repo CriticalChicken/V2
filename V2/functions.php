@@ -197,6 +197,10 @@ function categoryLinkGenerator() {
 
 }
 
+
+// Add featured images (groundwork for V2.1)
+add_theme_support( 'post-thumbnails' );
+
 // Add extra pages to the admin dashboard
 require_once(TEMPLATEPATH . '/functions/jumbotron-editor.php');
 require_once(TEMPLATEPATH . '/functions/ticker-editor.php');
@@ -204,6 +208,8 @@ require_once(TEMPLATEPATH . '/functions/maintenance-mode-editor.php');
 require_once(TEMPLATEPATH . '/functions/cc-jumbotron-editor.php');
 require_once(TEMPLATEPATH . '/functions/cc-ticker-editor.php');
 require_once(TEMPLATEPATH . '/functions/cc-maintenance-mode-editor.php');
+require_once(TEMPLATEPATH . '/functions/cc-menu-editor.php');
+require_once(TEMPLATEPATH . '/functions/cc-chickenfeed-editor.php');
 
 
 // filter for tags with comma
@@ -242,6 +248,13 @@ function fix_decode_rest_api($response, $post, $request) {
         
         $decodedPostTitle = html_entity_decode($response->data['title']['rendered']);
         $response->data['title']['rendered'] = $decodedPostTitle;
+
+		$decodedExcerpt = html_entity_decode($post->post_excerpt);
+        $response->data['excerpt']['rendered'] = $decodedExcerpt;
+ 
+        
+        $decodedPostExcerpt = html_entity_decode($response->data['excerpt']['rendered']);
+        $response->data['excerpt']['rendered'] = $decodedPostExcerpt;
     }
     return $response;
 }

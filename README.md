@@ -10,6 +10,10 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.12
+
+- **Archive:** Very minor tweaks and bug fixes. Final ever commit for V2.0, as V2.1 Charasmatic Cockatiel nears completion.
+
 ### V2.0.11
 
 - **Bug fix:** Spacing underneath related posts now works again
