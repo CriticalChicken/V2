@@ -1,4 +1,4 @@
-![A blackbird perched on top of a tree stump, next to the V2 logo](https://github.com/CriticalChicken/V2/assets/35422415/1ef9798d-5f07-4aa0-96f6-148c08351cfa)
+![A blackbird perched on top of a tree stump, next to the V2 logo](https://github.com/CriticalChicken/V2/assets/35422415/93f2349f-1da0-4701-a101-865d0de56488)
 
 # V2.0 Brazen Blackbird
 The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.com).
@@ -12,7 +12,7 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ### V2.0.12
 
-- **Archive:** Very minor tweaks and bug fixes. Final ever commit for V2.0, as V2.1 Charasmatic Cockatiel nears completion.
+- **Archive:** Very minor tweaks and bug fixes. Final ever commit for V2.0, as V2.1 Charasmatic Cockatiel nears completion
 
 ### V2.0.11
 
