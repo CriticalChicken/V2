@@ -14,6 +14,7 @@
     - Added titleTags for **Pok&eacute;mon** and **Dungeons&nbsp;&amp;&nbsp;Dragons** categories
   - All clickable elements now have mouseover animations, including &ldquo;glass&rdquo; overlays on post thumbnails
   - Vastly improved (narrower) listing pages with obvious visual distinction between posts
+    - Used [BalanceText](https://github.com/adobe/balance-text) to evenly distribute long headlines on the page
     - New sidebar featuring randomly-selected posts from the &ldquo;Best of&rdquo; category, and links to related categories
     - Enlarged titleTags are now used as headings on category pages, for improved visual consistency
     - Headers on tag, author, and search results pages have also been redesigned
