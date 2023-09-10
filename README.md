@@ -9,6 +9,8 @@ The WordPress theme for [CriticalChicken.com](https://www.criticalchicken.com). 
 
 ## What&rsquo;s new
 
+[Go in-depth with our new changelog &raquo;](CHANGELOG.md)
+
 ### A bold new look:
 
 ![A side-by-side comparison of V2.0 and V2.1](https://github.com/CriticalChicken/V2/assets/35422415/ef45d937-e1f2-4eab-a4fa-4704728eab9f)
