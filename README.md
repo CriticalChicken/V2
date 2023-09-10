@@ -7,7 +7,7 @@ The WordPress theme for [CriticalChicken.com](https://www.criticalchicken.com). 
 > Copyright &copy; Critical Chicken. All rights reserved.
 > Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken. All other trademarks referred to are trademarks of their respective owners.
 
-## A sneak preview of what&rsquo;s new
+## What&rsquo;s new
 
 ### A bold new look:
 
@@ -29,7 +29,7 @@ In V2.1 we&rsquo;ve simplified titleTags, introduced new icons, and made it even
 
 Our homepage is now home to ChickenFeed &ndash; a glanceable hub that&rsquo;s home to *faux* stock markets, weekly opinion polls, and &lsquo;vital&rsquo; games industry statistics.
 
-### Redesigned Tidbyt applet:
+### Redesigned Tidbyt app:
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/CriticalChicken/V2/assets/35422415/bc4c3fd5-a86b-499d-a9ce-3da4aa7d4b6c">
@@ -37,7 +37,11 @@ Our homepage is now home to ChickenFeed &ndash; a glanceable hub that&rsquo;s ho
   <img alt="An animated GIF showing our Tidbyt applet in action. Text in image: A year after announcing their partnership, E3 and show organiser ReedPop are parting ways. ReedPop and E3 have announced a 'mutual decision' to part ways, after this year's expo was cancelled. Plus: has E3 2024 already been cancelled, too?" src="https://github.com/CriticalChicken/V2/assets/35422415/07a6c9a1-26e2-4041-8c8d-6f21a02ada98">
 </picture>
 
-### &hellip;And there&rsquo;s more still to come!
+We&rsquo;ve completely rebuilt our [Tidbyt](https://tidbyt.com) applet to match our new design language &ndash; it even has its own titleTags! We now show a short blurb as well as a headline, so you get even more gaming news at a glance.
+
+[See our applet on the Tidbyt Community GitHub page &raquo;](https://github.com/tidbyt/community/tree/main/apps/criticalchicken)
+
+### And there&rsquo;s more still to come!
 
 ## Changelog
 
