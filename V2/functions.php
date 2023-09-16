@@ -26,72 +26,72 @@ function categoryLinkGenerator() {
 		if (in_category('best-of')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/best-of"><span class="titletag titletag-best-of">Best of</span></a>');
+			echo('/section/best-of"><span class="titletag titletag-best-of">Best of</span></a>');
 		}
 		if (in_category('exclusives')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/exclusives"><span class="titletag titletag-yellow">Exclusive</span></a>');
+			echo('/section/exclusives"><span class="titletag titletag-yellow">Exclusive</span></a>');
 		}
 		if (in_category('live')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/live-updates"><span class="titletag titletag-live">Live</span></a>');
+			echo('/section/live-updates"><span class="titletag titletag-live">Live</span></a>');
 		}
 		if (in_category('breaking-news')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/news"><span class="titletag titletag-yellow">Breaking news</span></a>');
+			echo('/section/news"><span class="titletag titletag-yellow">Breaking news</span></a>');
 		}
 		if (in_category('news-alerts')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/news"><span class="titletag titletag-yellow">News alert</span></a>');
+			echo('/section/news"><span class="titletag titletag-yellow">News alert</span></a>');
 		}
 		if (in_category('e3-2016')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/e3-2016"><span class="titletag titletag-e3">E3 2016</span></a>');
+			echo('/section/e3-2016"><span class="titletag titletag-e3">E3 2016</span></a>');
 		}
 		if (in_category('e3-2021')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/e3-2021"><span class="titletag titletag-e3">E3 2021</span></a>');
+			echo('/section/e3-2021"><span class="titletag titletag-e3">E3 2021</span></a>');
 		}
 		if (in_category('e3-2023')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/e3-2023"><span class="titletag titletag-e3">E3&rsquo;s future</span></a>');
+			echo('/section/e3-2023"><span class="titletag titletag-e3">E3&rsquo;s future</span></a>');
 		}
 		if (in_category('summer-game-fest-2024')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/summer-game-fest-2024"><span class="titletag titletag-summer-game-fest">Summer Game Fest 2024</span></a>');
+			echo('/section/summer-game-fest-2024"><span class="titletag titletag-summer-game-fest">Summer Game Fest 2024</span></a>');
 		}
 		if (in_category('nintendo-direct')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/nintendo-direct"><span class="titletag titletag-nintendo-direct">Nintendo Direct</span></a>');
+			echo('/section/nintendo-direct"><span class="titletag titletag-nintendo-direct">Nintendo Direct</span></a>');
 		}
 		if (in_category('pokemon-presents')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/pokemon-presents"><span class="titletag titletag-pokemon-presents">Pok&eacute;mon Presents</span></a>');
+			echo('/section/pokemon-presents"><span class="titletag titletag-pokemon-presents">Pok&eacute;mon Presents</span></a>');
 		}
 		if (in_category('state-of-play')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/state-of-play"><span class="titletag titletag-state-of-play">State of Play</span></a>');
+			echo('/section/state-of-play"><span class="titletag titletag-state-of-play">State of Play</span></a>');
 		}
 		if (in_category('ace-attorney')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/ace-attorney"><span class="titletag titletag-ace-attorney">Ace Attorney</span></a>');
+			echo('/section/ace-attorney"><span class="titletag titletag-ace-attorney">Ace Attorney</span></a>');
 		}
 		if (in_category('forthegaymers')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/forthegaymers"><span class="titletag titletag-forthegaymers"><span class="htftg">#</span>ForTheGaymers</span></a>');
+			echo('/section/forthegaymers"><span class="titletag titletag-forthegaymers"><span class="htftg">#</span>ForTheGaymers</span></a>');
 		}
 	}
 	
@@ -100,44 +100,44 @@ function categoryLinkGenerator() {
 		if (!in_category('breaking-news') && !in_category('news-alerts')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/news"><span class="titletag titletag-news">News</span></a>');
+			echo('/section/news"><span class="titletag titletag-news">News</span></a>');
 		}
 		if (in_category('updated')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/news"><span class="titletag titletag-hollow titletag-news">Updated</span></a>');
+			echo('/section/news"><span class="titletag titletag-hollow titletag-news">Updated</span></a>');
 		}
 		if (in_category('links')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/links"><span class="titletag titletag-hollow titletag-news">Link</span></a>');
+			echo('/section/links"><span class="titletag titletag-hollow titletag-news">Link</span></a>');
 		}
 		if (in_category('live-updates')) {
 			if (!in_category('live')) {
 				echo('<a class="titletag-link" href="');
 				echo get_site_url();
-				echo('/category/live-updates"><span class="titletag titletag-hollow titletag-news">Live updates</span></a>');
+				echo('/section/live-updates"><span class="titletag titletag-hollow titletag-news">Live updates</span></a>');
 			}
 		}
 		if (in_category('rumours')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/rumours"><span class="titletag titletag-hollow titletag-news">Rumour</span></a>');
+			echo('/section/rumours"><span class="titletag titletag-hollow titletag-news">Rumour</span></a>');
 		}
 		if (in_category('site-updates')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/site-updates"><span class="titletag titletag-hollow titletag-news">Site update</span></a>');
+			echo('/section/site-updates"><span class="titletag titletag-hollow titletag-news">Site update</span></a>');
 		}
 		if (in_category('updates')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/updates"><span class="titletag titletag-hollow titletag-news">Update</span></a>');
+			echo('/section/updates"><span class="titletag titletag-hollow titletag-news">Update</span></a>');
 		}
 		if (in_category('videos')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/videos"><span class="titletag titletag-hollow titletag-news">Video</span></a>');
+			echo('/section/videos"><span class="titletag titletag-hollow titletag-news">Video</span></a>');
 		}
 	}
 	
@@ -145,26 +145,26 @@ function categoryLinkGenerator() {
 	if (in_category('features')) {
 		echo('<a class="titletag-link" href="');
 		echo get_site_url();
-		echo('/category/features"><span class="titletag titletag-features">Feature</span></a>');
+		echo('/section/features"><span class="titletag titletag-features">Feature</span></a>');
 		if (in_category('guest-blogs')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/guest-blogs"><span class="titletag titletag-hollow titletag-features">Guest blog</span></a>');
+			echo('/section/guest-blogs"><span class="titletag titletag-hollow titletag-features">Guest blog</span></a>');
 		}
 		if (in_category('guides')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/guides"><span class="titletag titletag-hollow titletag-features">Guide</span></a>');
+			echo('/section/guides"><span class="titletag titletag-hollow titletag-features">Guide</span></a>');
 		}
 		if (in_category('interviews')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/interviews"><span class="titletag titletag-hollow titletag-features">Interview</span></a>');
+			echo('/section/interviews"><span class="titletag titletag-hollow titletag-features">Interview</span></a>');
 		}
 		if (in_category('opinions')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/opinions"><span class="titletag titletag-hollow titletag-features">Opinion</span></a>');
+			echo('/section/opinions"><span class="titletag titletag-hollow titletag-features">Opinion</span></a>');
 		}
 	}
 	
@@ -172,26 +172,26 @@ function categoryLinkGenerator() {
 	if (in_category('reviews')) {
 		echo('<a class="titletag-link" href="');
 		echo get_site_url();
-		echo('/category/reviews"><span class="titletag titletag-reviews">Review</span></a>');
+		echo('/section/reviews"><span class="titletag titletag-reviews">Review</span></a>');
 		if (in_category('first-impressions')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/first-impressions"><span class="titletag titletag-hollow titletag-reviews">First impressions</span></a>');
+			echo('/section/first-impressions"><span class="titletag titletag-hollow titletag-reviews">First impressions</span></a>');
 		}
 		if (in_category('hands-on')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/hands-on"><span class="titletag titletag-hollow titletag-reviews">Hands on</span></a>');
+			echo('/section/hands-on"><span class="titletag titletag-hollow titletag-reviews">Hands on</span></a>');
 		}
 		if (in_category('previews')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/previews"><span class="titletag titletag-hollow titletag-reviews">Previews</span></a>');
+			echo('/section/previews"><span class="titletag titletag-hollow titletag-reviews">Previews</span></a>');
 		}
 		if (in_category('second-looks')) {
 			echo('<a class="titletag-link" href="');
 			echo get_site_url();
-			echo('/category/second-looks"><span class="titletag titletag-hollow titletag-reviews">Second look</span></a>');
+			echo('/section/second-looks"><span class="titletag titletag-hollow titletag-reviews">Second look</span></a>');
 		}
 	}
 
@@ -259,3 +259,11 @@ function fix_decode_rest_api($response, $post, $request) {
     return $response;
 }
 add_filter('rest_prepare_post', 'fix_decode_rest_api', 10, 3);
+
+
+// Stop users editing their profiles
+if( defined('IS_PROFILE_PAGE') && IS_PROFILE_PAGE === true ){
+	$site = get_site_url();
+	$path = get_template_directory_uri();
+    wp_die( '<p><img src="' . $path . '/img/admin_v2_color-on-transparent_for31px.png" style="width: 41.5px; height: 31px;" alt="V2"></p><p><b>We&rsquo;ve disabled this page for security reasons.</b></p><p>If you need something changed in your profile, email <a href="mailto:office@criticalchicken.com">office@criticalchicken.com</a>. You can change your own profile picture on <a href="https://en.gravatar.com" target="_blank" rel="external">Gravatar</a> (sign in with your firstname@criticalchicken.com email address).</p><p><a href="'. $site . '/wp-admin/index.php">Go back to the Dashboard &raquo;</a></p>' );
+}

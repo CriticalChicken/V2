@@ -5,6 +5,6 @@
 <li>Go back to the <a href="<?php echo get_site_url(); ?>">homepage</a>.</li>
 <li>Make sure you spelled your search term correctly.</li>
 <li>Search for something else.</li>
-<li>Have a look at some of our <a href="<?php echo get_site_url(); ?>/category/best-of">best posts</a>.</li>
+<li>Have a look at some of our <a href="<?php echo get_site_url(); ?>/section/best-of">best posts</a>.</li>
 </ul>
 </div>

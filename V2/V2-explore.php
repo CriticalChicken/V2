@@ -24,40 +24,40 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <a class="titletag-link" href="<?php echo get_site_url(); ?>/latest"><span class="titletag">Latest <b>&ndash; show me everything</b></span></a>
 </div>
 <div class="explore-group news">
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/news"><span class="titletag titletag-news">News</span></a>
-<?php $args=array('category'=>16,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/category/links"><span class="titletag titletag-news titletag-hollow">Links</span>');} ?>
-<?php $args=array('category'=>18,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/category/live-updates"><span class="titletag titletag-news titletag-hollow">Live updates</span>');} ?>
-<?php $args=array('category'=>25,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/category/rumours"><span class="titletag titletag-news titletag-hollow">Rumours</span>');} ?>
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/site-updates"><span class="titletag titletag-news titletag-hollow">Site updates</span></a>
-<?php $args=array('category'=>29,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/category/updates"><span class="titletag titletag-news titletag-hollow">Updates</span>');} ?>
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/videos"><span class="titletag titletag-news titletag-hollow">Videos</span></a>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/news"><span class="titletag titletag-news">News</span></a>
+<?php $args=array('category'=>16,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/section/links"><span class="titletag titletag-news titletag-hollow">Links</span>');} ?>
+<?php $args=array('category'=>18,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/section/live-updates"><span class="titletag titletag-news titletag-hollow">Live updates</span>');} ?>
+<?php $args=array('category'=>25,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/section/rumours"><span class="titletag titletag-news titletag-hollow">Rumours</span>');} ?>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/site-updates"><span class="titletag titletag-news titletag-hollow">Site updates</span></a>
+<?php $args=array('category'=>29,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/section/updates"><span class="titletag titletag-news titletag-hollow">Updates</span>');} ?>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/videos"><span class="titletag titletag-news titletag-hollow">Videos</span></a>
 </div>
 <div class="explore-group features">
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/features"><span class="titletag titletag-features">Features</span></a>
-<?php $args=array('category'=>11,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/category/guest-blogs"><span class="titletag titletag-features titletag-hollow">Guest blogs</span>');} ?>
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/guides"><span class="titletag titletag-features titletag-hollow">Guides</span></a>
-<?php $args=array('category'=>15,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/category/interviews"><span class="titletag titletag-features titletag-hollow">Interviews</span>');} ?>
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/opinions"><span class="titletag titletag-features titletag-hollow">Opinions</span></a>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/features"><span class="titletag titletag-features">Features</span></a>
+<?php $args=array('category'=>11,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/section/guest-blogs"><span class="titletag titletag-features titletag-hollow">Guest blogs</span>');} ?>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/guides"><span class="titletag titletag-features titletag-hollow">Guides</span></a>
+<?php $args=array('category'=>15,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/section/interviews"><span class="titletag titletag-features titletag-hollow">Interviews</span>');} ?>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/opinions"><span class="titletag titletag-features titletag-hollow">Opinions</span></a>
 </div>
 <div class="explore-group reviews">
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/reviews"><span class="titletag titletag-reviews">Reviews</span></a>
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/first-impressions"><span class="titletag titletag-reviews titletag-hollow">First impressions</span></a>
-<?php $args=array('category'=>14,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/category/hands-on"><span class="titletag titletag-reviews titletag-hollow">Hands on</span>');} ?>
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/previews"><span class="titletag titletag-reviews titletag-hollow">Previews</span></a>
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/second-looks"><span class="titletag titletag-reviews titletag-hollow">Second looks</span></a>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/reviews"><span class="titletag titletag-reviews">Reviews</span></a>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/first-impressions"><span class="titletag titletag-reviews titletag-hollow">First impressions</span></a>
+<?php $args=array('category'=>14,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/section/hands-on"><span class="titletag titletag-reviews titletag-hollow">Hands on</span>');} ?>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/previews"><span class="titletag titletag-reviews titletag-hollow">Previews</span></a>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/second-looks"><span class="titletag titletag-reviews titletag-hollow">Second looks</span></a>
 </div>
 <div class="explore-group special">
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/ace-attorney"><span class="titletag titletag-ace-attorney">Ace Attorney</span></a>
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/best-of"><span class="titletag titletag-best-of">Best of</span></a>
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/e3-2016"><span class="titletag titletag-e3">E3 2016</span></a>
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/e3-2021"><span class="titletag titletag-e3">E3 2021</span></a>
-<a class="titletag-link" href="<?php echo get_site_url(); ?>/category/e3-2023"><span class="titletag titletag-e3">E3&rsquo;s future</span></a>
-<?php $args=array('category'=>9,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/category/exclusives"><span class="titletag titletag-yellow">Exclusives</span>');} ?>
-<?php $args=array('category'=>34,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/category/forthegaymers"><span class="titletag titletag-forthegaymers"><span class="htftg">#</span>ForTheGaymers</span>');} ?>
-<?php $args=array('category'=>20,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/category/nintendo-direct"><span class="titletag titletag-nintendo-direct">Nintendo Direct</span>');} ?>
-<?php $args=array('category'=>22,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/category/pokemon-presents"><span class="titletag titletag-pokemon-presents">Pok&eacute;mon Presents</span>');} ?>
-<?php $args=array('category'=>28,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/category/state-of-play"><span class="titletag titletag-state-of-play">State of Play</span>');} ?>
-<?php $args=array('category'=>33,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/category/summer-game-fest-2024"><span class="titletag titletag-summer-game-fest">Summer Game Fest 2024</span>');} ?>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/ace-attorney"><span class="titletag titletag-ace-attorney">Ace Attorney</span></a>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/best-of"><span class="titletag titletag-best-of">Best of</span></a>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/e3-2016"><span class="titletag titletag-e3">E3 2016</span></a>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/e3-2021"><span class="titletag titletag-e3">E3 2021</span></a>
+<a class="titletag-link" href="<?php echo get_site_url(); ?>/section/e3-2023"><span class="titletag titletag-e3">E3&rsquo;s future</span></a>
+<?php $args=array('category'=>9,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/section/exclusives"><span class="titletag titletag-yellow">Exclusives</span>');} ?>
+<?php $args=array('category'=>34,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/section/forthegaymers"><span class="titletag titletag-forthegaymers"><span class="htftg">#</span>ForTheGaymers</span>');} ?>
+<?php $args=array('category'=>20,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/section/nintendo-direct"><span class="titletag titletag-nintendo-direct">Nintendo Direct</span>');} ?>
+<?php $args=array('category'=>22,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/section/pokemon-presents"><span class="titletag titletag-pokemon-presents">Pok&eacute;mon Presents</span>');} ?>
+<?php $args=array('category'=>28,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/section/state-of-play"><span class="titletag titletag-state-of-play">State of Play</span>');} ?>
+<?php $args=array('category'=>33,'numberposts'=>'1','post_status'=>'publish');$recent_posts=wp_get_recent_posts($args);foreach($recent_posts as $recent){echo('<a class="titletag-link" href="'.get_site_url().'/section/summer-game-fest-2024"><span class="titletag titletag-summer-game-fest">Summer Game Fest 2024</span>');} ?>
 </div>
 <hr>
 <h2 class="our-dms">Ways to connect with us</h2>

@@ -21,7 +21,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <li>Go back to the <a href="<?php echo get_site_url(); ?>">homepage</a>.</li>
 <li>Make sure you&rsquo;ve typed the web address correctly.</li>
 <li>Use the <span class="search-icon">Search</span> button in the main menu.</li>
-<li>Have a look at some of our <a href="<?php echo get_site_url(); ?>/category/best-of">best posts</a>.</li>
+<li>Have a look at some of our <a href="<?php echo get_site_url(); ?>/section/best-of">best posts</a>.</li>
 </ul>
 </div>
 <?php get_template_part("V2-home-navigation"); ?>

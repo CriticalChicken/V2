@@ -65,7 +65,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <h1>This is&hellip;<br>objectionable</h1>
 <img src="<?php echo get_template_directory_uri(); ?>/img/not-sidebar/edgeworth.jpg" alt="Miles Edgeworth looking anguished" width="352" height="198">
 <p>We&rsquo;ve spent the last <span class="timetip" title="8th September 2016 - release date of Ace Attorney 6"><?php echo do_shortcode('[DateCounter startDate="2016-09-08" endDate="now" format="%y years, %m months, and %d days"]'); ?></span> waiting for <b>Ace&nbsp;Attorney&nbsp;7</b>. Hmph.</p>
-<a href="<?php echo get_site_url(); ?>/category/ace-attorney" class="raquo">More Ace Attorney &raquo;</a>
+<a href="<?php echo get_site_url(); ?>/section/ace-attorney" class="raquo">More Ace Attorney &raquo;</a>
 </div><!-- /not-sidebar-box-right -->
 <div id="not-sidebar-box-mastodon">
 <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="352" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.world%2Fusers%2FCriticalChicken&theme=light&size=100&header=true&replies=false&boosts=true" frameborder="0"></iframe>
