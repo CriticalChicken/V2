@@ -28,7 +28,11 @@
   - Menu bar now has a prominent &ldquo;home&rdquo; button for unambiguous navigation (the logo still links to the homepage, too)
   - Menu bar now appears at the top *and* bottom of every page, for easier navigation with less scrolling
   - &ldquo;Special menu item&rdquo;, editable through the WordPress admin panel, for temporary menu items e.g. links to expo coverage
+- **Improvement/SEO:** Changed WordPress&rsquo;s `category` taxonomy to `section`, `tag` to `topic`, and `author` to `writer`, in line with our in-house style
+  - Added permanent redirects for the old-style links
 - **Improvement/SEO:** New `ChickenDefender` function automatically, permanently redirects &ldquo;overlapping&rdquo; taxonomies &ndash; e.g. the &ldquo;**Ace&nbsp;Attorney** (series)&rdquo; tag now redirects to the main **Ace&nbsp;Attorney** category
+- **SEO:** Removed ability for users to edit their own profiles, to avoid the possibility of broken links (i.e. to writer pages)
+- **Security:** Added minimum password strength requirements for new writers
 
 ## See what changed in previous versions:
 
