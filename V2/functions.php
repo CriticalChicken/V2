@@ -210,6 +210,7 @@ require_once(TEMPLATEPATH . '/functions/cc-ticker-editor.php');
 require_once(TEMPLATEPATH . '/functions/cc-maintenance-mode-editor.php');
 require_once(TEMPLATEPATH . '/functions/cc-menu-editor.php');
 require_once(TEMPLATEPATH . '/functions/cc-chickenfeed-editor.php');
+require_once(TEMPLATEPATH . '/functions/cc-adminnouncement-editor.php');
 
 
 // filter for tags with comma
@@ -265,5 +266,86 @@ add_filter('rest_prepare_post', 'fix_decode_rest_api', 10, 3);
 if( defined('IS_PROFILE_PAGE') && IS_PROFILE_PAGE === true ){
 	$site = get_site_url();
 	$path = get_template_directory_uri();
-    wp_die( '<p><img src="' . $path . '/img/admin_v2_color-on-transparent_for31px.png" style="width: 41.5px; height: 31px;" alt="V2"></p><p><b>We&rsquo;ve disabled this page for security reasons.</b></p><p>If you need something changed in your profile, email <a href="mailto:office@criticalchicken.com">office@criticalchicken.com</a>. You can change your own profile picture on <a href="https://en.gravatar.com" target="_blank" rel="external">Gravatar</a> (sign in with your firstname@criticalchicken.com email address).</p><p><a href="'. $site . '/wp-admin/index.php">Go back to the Dashboard &raquo;</a></p>' );
+    wp_die( '<p><img src="' . $path . '/img/admin_v2_color-on-transparent_for31px.png" style="width: 41.5px; height: 31px;" alt="V2"></p><p><b>There are potentially website-breaking things on this page, so we&rsquo;ve disabled it.</b></p><p>You can still change your own profile picture on <a href="https://en.gravatar.com" target="_blank" rel="external">Gravatar</a> (sign in with your &ldquo;firstname@criticalchicken.com&rdquo; email address). If you&rsquo;d like any other changes made to your profile, email <a href="mailto:office@criticalchicken.com">office@criticalchicken.com</a>.</p><p><a href="'. $site . '/wp-admin/index.php">Go back to the Dashboard &raquo;</a></p>' );
 }
+
+
+// Change "Thank you for creating with WordPress" text
+function remove_footer_admin () {
+	echo '<span id="footer-thankyou">Thank you for creating with <a href="https://github.com/CriticalChicken/V2" target="_blank" rel="external me">V2</a> and <a href="https://wordpress.org" target="_blank" rel="external">WordPress</a>.</span>';
+}
+add_filter('admin_footer_text', 'remove_footer_admin');
+
+
+// Admin announcements box
+function is_site_admin(){
+	return in_array('administrator', wp_get_current_user()->roles);
+}
+function v2_admin_ticker() {
+	// Dummied out until V2.1
+	$message = '';
+    return $message;
+}
+add_shortcode('v2_admin_ticker', 'v2_admin_ticker');
+function v2_admin_mmode() {
+	// Dummied out until V2.1
+	$message = '';
+	return $message;
+}
+add_shortcode('v2_admin_mmode', 'v2_admin_mmode');
+function v2_admin_emailedit() {
+	$message = '<a href="mailto:office@criticalchicken.com" rel="me" class="iconic email" title="Email the admins"><img src="https://www.criticalchicken.com/wp-content/themes/V2-1/img/admin/iconic-email.png" width="30" height="30" alt="Email"></a>';
+	if(is_site_admin()) {
+		$message = '<a href="https://www.criticalchicken.com/wp-admin/admin.php?page=cc-adminnouncement-editor" class="iconic edit" title="Edit these announcements"><img src="https://www.criticalchicken.com/wp-content/themes/V2-1/img/admin/iconic-edit.png" width="30" height="30" alt="Edit"></a>';
+	}
+	return $message;
+}
+add_shortcode('v2_admin_emailedit', 'v2_admin_emailedit');
+function v2_adminnouncement() {
+	$message = '';
+	if(get_option('cc_adminnouncement_display') == 'on') {
+		$item1 = '';
+		$item2 = '';
+		$item3 = '';
+		$item4 = '';
+		$item5 = '';
+		$item6 = '';
+		$item7 = '';
+		$item8 = '';
+		$item9 = '';
+		$item10 = '';
+		if(get_option('cc_adminnouncement_item1') != '') {
+			$item1 = '<p>' . get_option('cc_adminnouncement_item1') . '</p>';
+		}
+		if(get_option('cc_adminnouncement_item2') != '') {
+			$item2 = '<p>' . get_option('cc_adminnouncement_item2') . '</p>';
+		}
+		if(get_option('cc_adminnouncement_item3') != '') {
+			$item3 = '<p>' . get_option('cc_adminnouncement_item3') . '</p>';
+		}
+		if(get_option('cc_adminnouncement_item4') != '') {
+			$item4 = '<p>' . get_option('cc_adminnouncement_item4') . '</p>';
+		}
+		if(get_option('cc_adminnouncement_item5') != '') {
+			$item5 = '<p>' . get_option('cc_adminnouncement_item5') . '</p>';
+		}
+		if(get_option('cc_adminnouncement_item6') != '') {
+			$item6 = '<p>' . get_option('cc_adminnouncement_item6') . '</p>';
+		}
+		if(get_option('cc_adminnouncement_item7') != '') {
+			$item7 = '<p>' . get_option('cc_adminnouncement_item7') . '</p>';
+		}
+		if(get_option('cc_adminnouncement_item8') != '') {
+			$item8 = '<p>' . get_option('cc_adminnouncement_item8') . '</p>';
+		}
+		if(get_option('cc_adminnouncement_item9') != '') {
+			$item9 = '<p>' . get_option('cc_adminnouncement_item9') . '</p>';
+		}
+		if(get_option('cc_adminnouncement_item10') != '') {
+			$item10 = '<p>' . get_option('cc_adminnouncement_item10') . '</p>';
+		}
+		$message = '<div class="notice adminnouncement inline">' . $item1 . $item2 . $item3 . $item4 . $item5 . $item6 . $item7 . $item8 . $item9 . $item10 . '</div>';
+	}
+    return $message;
+}
+add_shortcode('v2_adminnouncement', 'v2_adminnouncement');

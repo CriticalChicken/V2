@@ -10,7 +10,7 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
-### V2.0.12&ndash;V2.0.13
+### V2.0.12&ndash;V2.0.14
 
 - **Archive:** Now archived and only receiving hotfixes, as V2.1 Charasmatic Cockatiel nears completion
 
