@@ -7,6 +7,9 @@
     - Stock market content is fully editable through the WordPress admin panel
   - &ldquo;We did the math(s)&rdquo; section with a variety of offbeat gaming statistics
   - Weekly polls and a new poll archive page
+- **New feature:** Added *Adminnouncements* box to the WordPress Dashboard which shows the news ticker, maintenance mode status, announcements for staff members, and a random greeting
+  - *Adminnouncements* themselves are fully editable through the WordPress Dashboard
+  - The box also links to relevant settings for users who can access them
 - **Improvement:** Refreshed and refined design
   - Nearly all code has been rewritten to make it more efficient and more accessible
   - Redesigned, more visually-distinct titleTags

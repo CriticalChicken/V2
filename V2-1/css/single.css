@@ -1,0 +1,511 @@
+/*
+Copyright (C) Critical Chicken. All rights reserved.
+Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.
+All other trademarks referred to are trademarks of their respective owners.
+*/
+
+.single-post h1 {
+    font-size: 62px;
+    line-height: 80px;
+    color: var(--black);
+    font-weight: 700;
+    padding-top: 24px;
+}
+
+.single-post.category-news h1 {
+	color: var(--red);
+}
+
+.single-post.category-features h1 {
+	color: var(--blue);
+}
+
+.single-post.category-reviews h1 {
+	color: var(--orange);
+}
+
+.single-post .timestamp {
+	color: var(--darkgrey);
+	font-size: 22px;
+	line-height: 32px;
+	top: 15px;
+	position: relative;
+	font-style: italic;
+	float: right;
+	font-weight: 300;
+}
+
+.single-post .echo-the-content p.last-updated {
+	color: #717070;
+	font-style: italic;
+	font-weight: 300;
+	margin-top: 32px;
+}
+
+.single-post .timestamp a {
+	color: #717070;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+	text-decoration-skip-ink: all;
+}
+
+.single-post .echo-the-content p,
+#no-posts-found .echo-the-content p {
+	display: block;
+	font-size: 20px;
+	line-height: 32px;
+	position: relative;
+	color: black;
+	margin-top: 16px;
+}
+
+#no-posts-found .echo-the-content p {
+	margin-top: 45px;
+}
+
+.single-post .echo-the-content p:first-of-type {
+	margin-top: 41px;
+}
+
+.single-post .echo-the-content img {
+	margin-top: 55px;
+	border-radius: 8px;
+}
+
+.single-post .echo-the-content .dont-round img {
+	border-radius: 0 !important;
+}
+
+.single-post .echo-the-content figure + p {
+	margin-top: 59px;
+}
+
+.single-post .echo-the-content figcaption {
+	font-size: 20px;
+	line-height: 32px;
+	color: #717070;
+	padding-left: 32px;
+	display: block;
+	background-image: url("../img/ui_caption-image_dark-grey-on-grey_for15px.png");
+	background-size: 15.5px 15px;
+	background-repeat: no-repeat;
+	background-position: left 9px;
+	padding-top: 1px;
+}
+
+.single-post .echo-the-content .is-type-video figcaption {
+	background-image: url("../img/ui_caption-video_dark-grey-on-grey_for15px.png");
+}
+
+.single-post .echo-the-content figcaption a {
+	color: #717070;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+	text-decoration-skip-ink: all;
+}
+
+.single-post .echo-the-content figure.has-caption + p {
+	margin-top: 48px;
+}
+
+/* To do: need to find a new way to achieve this! */
+.single-post h1 + h2 {
+	margin-top: 36px;
+}
+
+.single-post .echo-the-content h2,
+#no-posts-found .echo-the-content h2 {
+	font-size: 41px;
+	line-height: 56px;
+	color: black;
+	margin-top: 43px;
+	font-weight: 500;
+}
+
+#no-posts-found .echo-the-content h2 {
+	margin-top: -12px;
+}
+
+.single-post .echo-the-content h2 + p {
+	margin-top: 45px !important;
+}
+
+.single-post .echo-the-content h3 {
+	font-size: 31px;
+	line-height: 40px;
+	color: black;
+	margin-top: 47px;
+	font-weight: 500;
+}
+
+.single-post .echo-the-content h2 + h3 {
+	margin-top: 44px !important;
+}
+
+.single-post .echo-the-content h3 + p {
+	margin-top: 17px !important;
+}
+
+.single-post .echo-the-content h4,
+.single-post .echo-the-content h5,
+.single-post .echo-the-content h6 {
+	font-size: 20px;
+	line-height: 32px;
+	color: black;
+	margin-top: 32px;
+	font-weight: 500;
+}
+
+.single-post .echo-the-content h3 + h4,
+.single-post .echo-the-content h4 + h5,
+.single-post .echo-the-content h5 + h6 {
+	margin-top: 33px !important;
+}
+
+.single-post .echo-the-content .wp-block-quote {
+	display: block;
+	font-size: 20px;
+	line-height: 32px;
+	position: relative;
+	color: black;
+	padding-left: 96px;
+	padding-right: 96px;
+	background-image: url("../img/ui_blockquote_black-on-grey_for15px.png");
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	background-position: 49px 56px;
+	padding-top: 7px;
+	padding-bottom: 32px;
+}
+
+.single-post .echo-the-content .wp-block-quote cite {
+	width: 100%;
+	text-align: right;
+	position: relative;
+	display: block;
+	color: #717070;
+	font-size: 20px;
+	line-height: 32px;
+	top: 16px;
+	font-style: italic;
+	padding-bottom: 16px;
+}
+
+.single-post .echo-the-content .wp-block-quote cite a {
+	color: #717070;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+	text-decoration-skip-ink: all;
+}
+
+.single-post .echo-the-content .wp-block-quote cite:before {
+	content: "\2014\00A0";
+}
+
+.single-post .echo-the-content .wp-block-quote cite i,
+.single-post .echo-the-content .wp-block-quote cite em {
+	font-style: normal;
+}
+
+.single-post .echo-the-content .wp-block-pullquote {
+	margin: 0;
+	padding: 0;
+}
+
+.single-post .echo-the-content .wp-block-pullquote blockquote {
+	display: block;
+	position: relative;
+	color: black;
+	padding-left: 96px;
+	padding-right: 96px;
+	background-image: url("../img/ui_pullquote_black-on-grey_for23px.png");
+	background-size: 23px 23px;
+	background-repeat: no-repeat;
+	background-position: 41px 56px;
+	text-align: left;
+	padding-top: 6px;
+	margin-bottom: -10px;
+}
+
+.single-post.category-news .echo-the-content .wp-block-pullquote blockquote {
+	color: #d20202;
+	background-image: url("../img/ui_pullquote_red-on-grey_for23px.png");
+}
+
+.single-post.category-news .echo-the-content .wp-block-pullquote blockquote a {
+	color: #d20202;
+}
+
+.single-post.category-features .echo-the-content .wp-block-pullquote blockquote {
+	color: #1564dc;
+	background-image: url("../img/ui_pullquote_blue-on-grey_for23px.png");
+}
+
+.single-post.category-features .echo-the-content .wp-block-pullquote blockquote a {
+	color: #1564dc;
+}
+
+.single-post.category-reviews .echo-the-content .wp-block-pullquote blockquote {
+	color: #f47614;
+	background-image: url("../img/ui_pullquote_orange-on-grey_for23px.png");
+}
+
+.single-post.category-reviews .echo-the-content .wp-block-pullquote blockquote a {
+	color: #f47614;
+}
+
+.single-post .echo-the-content .wp-block-pullquote blockquote p {
+	font-size: 31px;
+	line-height: 40px;
+}
+
+.single-post .echo-the-content .wp-block-pullquote blockquote p br {
+	width: 1px;
+	height: 1px;
+	content: "";
+	display: block;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+@-moz-document url-prefix() {
+	.single-post .echo-the-content .wp-block-pullquote blockquote p br {
+		margin-bottom: 16px !important;
+	}
+}
+
+.single-post .echo-the-content .wp-block-pullquote blockquote cite {
+	width: 100%;
+	text-align: right;
+	position: relative;
+	display: block;
+	color: #717070;
+	font-size: 20px;
+	line-height: 32px;
+	top: 17px;
+	font-style: italic;
+	padding-bottom: 16px;
+}
+
+.single-post .echo-the-content .wp-block-pullquote blockquote cite a {
+	color: #717070 !important;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+	text-decoration-skip-ink: all;
+}
+
+.single-post .echo-the-content .wp-block-pullquote blockquote cite:before {
+	content: "\2014\00A0";
+}
+
+.single-post .echo-the-content .wp-block-pullquote blockquote cite i,
+.single-post .echo-the-content .wp-block-pullquote blockquote cite em {
+	font-style: normal;
+}
+
+.single-post .echo-the-content ul,
+#no-posts-found .echo-the-content ul {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.single-post .echo-the-content ul li,
+#no-posts-found .echo-the-content ul li {
+	width: 928px;
+	padding-left: 96px;
+	font-size: 20px;
+	line-height: 32px;
+	margin-top: 16px;
+	background-image: url("../img/ui_bullet_black-on-grey_for15px.png");
+	background-size: 21.5px 15px;
+	background-repeat: no-repeat;
+	background-position: 42px 8px;
+}
+
+.single-post .echo-the-content a,
+#no-posts-found .echo-the-content a {
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+	text-decoration-skip-ink: all;
+	color: black;
+}
+
+.echo-the-content hr,
+.echo-the-content hr .wp-block-separator {
+	border: 0 !important;
+	height: 1px !important;
+	background: #717070 !important;
+	margin-top: 54px !important;
+	margin-bottom: 57px !important;
+}
+
+.single-post .echo-the-content blockquote.pullquote + p {
+	margin-top: 49px;
+}
+
+.single-post .echo-the-content ol {
+	counter-reset: bullets;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.single-post .echo-the-content ol li {
+	width: 928px;
+	font-size: 20px;
+	line-height: 32px;
+	margin-top: 16px;
+	counter-increment: bullets;
+	display: block;
+	position: relative;
+	left: 96px;
+}
+
+.single-post .echo-the-content ol li:before {
+	content: counter(bullets) ".";
+	width: 64px;
+	display: inline-block;
+	margin-left: -96px;
+	text-align: right;
+	margin-right: 32px;
+}
+
+.single-post .echo-the-content figure iframe {
+	width: 1120px;
+	height: 630px;
+	border-radius: 8px;
+	margin-top: 55px;
+	margin-bottom: -2px;
+}
+
+.single-post .echo-the-content figure.alignright {
+	margin: 0;
+	padding: 0;
+}
+
+.single-post .echo-the-content figure.alignright img {
+	margin-top: 28px;
+	margin-left: 32px;
+	margin-bottom: 32px;
+	padding: 0;
+}
+
+/* To do: may not be needed */
+.single-post .echo-the-content .mii figure.alignright img {
+	margin-top: 55px;
+	margin-left: 32px;
+	margin-bottom: 32px;
+	padding: 0;
+}
+
+.echo-the-content span.timetip {
+	text-decoration: underline;
+	cursor: help;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+	text-decoration-skip-ink: all;
+	text-decoration-color: rgba(255, 255, 255, 0.64);
+}
+
+.echo-the-content span.timetip.vital-timetip {
+	text-decoration-color: rgba(0, 0, 0, 0.32);
+	font-weight: 600;
+}
+
+.echo-the-content span.timetip.galline-timetip {
+	text-decoration-color: rgba(0, 0, 0, 0.32);
+	font-weight: 400;
+}
+
+#post-meta {
+	width: 1120px;
+	display: block;
+	position: relative;
+	left: calc((100% - 1120px) / 2);
+	margin-top: 29px;
+	padding-bottom: 25px;
+	border-top: 1px #717070 solid;
+}
+
+#post-meta span.post-meta-title {
+	font-size: 41px;
+	line-height: 56px;
+	color: black;
+	font-weight: 500;
+	padding-top: 20px;
+	display: block;
+	padding-bottom: 4px;
+}
+
+#post-meta div.no-tags {
+	position: relative;
+	display: block;
+	width: 100px;
+	height: 9px;
+}
+
+#post-meta span.post-meta-tags {
+	position: relative;
+	display: block;
+	margin-top: 41px;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+#post-meta span.post-meta-tags a {
+	color: black;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+	text-decoration-skip-ink: all;
+	display: inline-block;
+}
+
+#crp-container {
+	position: relative;
+	width: 1153px;
+	left: calc((100% - 1120px) / 2);
+	display: block;
+	height: auto;
+	overflow: auto;
+	padding-top: 14px;
+	padding-bottom: 25px;
+}
+
+.crp_related {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 23px;
+}
+
+.related-post {
+	width: 352px;
+	float: left;
+	margin-right: 32px;
+	display: block;
+	height: auto;
+	overflow: visible;
+}
+
+.related-post a.crp_link {
+	border-radius: 8px 8px 0 0;
+	display: inline;
+	text-decoration: none;
+}
+
+.related-post img {
+	border-radius: 8px;
+	display: block;
+	margin-bottom: 11px;
+	width: 352px;
+	height: 198px;
+}
+
+.related-post span.crp_title {
+	font-size: 20px;
+	line-height: 32px;
+	color: black;
+	text-decoration: none;
+	opacity: 1;
+	font-weight: 500;
+	display: inline;
+}
