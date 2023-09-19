@@ -1,6 +1,6 @@
 # V2.1 Charismatic Cockatiel - changelog
 
-## V2.1.0 (so far):5218
+## V2.1.0 (so far):
 
 - **New feature:** Comments!
   - Staff members&rdquo; comments are distinguished with a green tick
