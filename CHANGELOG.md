@@ -3,7 +3,7 @@
 ## V2.1.0 (so far):
 
 - **New feature:** Comments!
-  - Staff members&rdquo; comments are distinguished with a green tick
+  - Staff members&rsquo; comments are distinguished with a green tick
 - **New feature:** ChickenFeed hub added to the homepage
   - *Faux* gaming stock markets section, to prominently feature topics we&rsquo;re happy, angry, or ambivalent about
     - Stock market content is fully editable through the WordPress admin panel
