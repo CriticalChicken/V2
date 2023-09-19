@@ -78,9 +78,46 @@ $.fn.digits = function(){
     })
 }
 
+// Add "and" before the last tag in the list
+$('span.post-meta-tags').each(function() {
+	if($('span.post-meta-tags a').length > 1) {
+		$("span.post-meta-tags a:last-of-type").before("and ");
+	}
+});
+
 // Add a title attribute to 'green tick' verified comments
 $('#top-comments .comment-author-link a').each(function() {
 	$(this).attr('title', 'Staff member');
+});
+$('span.comment-author a').each(function() {
+	$(this).attr('title', 'Staff member');
+});
+
+// Remove h3 tag from YARPP related posts
+$('div.yarpp h3').each(function() {
+	$(this).remove();
+});
+
+// Automatically resize textareas
+$("textarea").each(function () {
+	if($('p.logged-in-as').length) {
+		this.setAttribute("placeholder", "What’s on your mind?");
+	} else {
+		this.setAttribute("placeholder", "So we know what’s on your mind");
+	}
+	this.setAttribute("title", "");
+	this.setAttribute("style", "height:" + (this.scrollHeight) + "px;overflow-y:hidden;");
+}).on("input", function () {
+	this.style.height = 0;
+	this.style.height = (this.scrollHeight) + "px";
+});
+$("p.comment-form-author input").each(function () {
+	this.setAttribute("placeholder", "So we know what to call you");
+	this.setAttribute("title", "");
+});
+$("p.comment-form-email input").each(function () {
+	this.setAttribute("placeholder", "So we know you’re not a spammer");
+	this.setAttribute("title", "");
 });
 
 // Trigger functions when ONLY the DOM has loaded

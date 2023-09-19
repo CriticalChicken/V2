@@ -27,6 +27,40 @@ All other trademarks referred to are trademarks of their respective owners.
 <div class="echo-the-content">
 <?php echo the_content(); ?>
 </div>
+
+<div id="post-meta">
+<h2>More like this</h2>
+<?php ctTitletag(); ?>
+<?php if(has_tag()) { ?><span class="post-meta-tags"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-meta-topic.png" height="15" alt=""><?php echo the_tags("Topics in this post: ", ", ", "<span class='full-stop'>.</span>"); ?></span><?php } else { ?><div class="no-tags"></div><?php } ?>
+</div><!-- /post-meta -->
+<?php if ( function_exists( 'yarpp_related' ) ) { yarpp_related(); } ?>
+
+<section id="begging-message-mini">
+<h2>Want us to write even more like this?</h2>
+<div id="begging-message">
+We&rsquo;re<span class="terrible-thing-free">ad-free,</span><span class="even-worse-thing-free">tracker-free,</span><span class="lazy-thing-free">AI-free,&nbsp;and</span><span class="good-thing">100% independent.</span>
+</div>
+<div id="begging-button">
+<a href="https://ko-fi.com/criticalchicken" target="_blank" rel="external me">Please support us on Ko-fi.</a>
+</div>
+</section>
+
+<?php if(comments_open()) : ?><a name="comments"></a><div id="the-comments">
+	<div id="comment-listing">
+	<h2><img src="<?php echo get_template_directory_uri(); ?>/img/icon-comments<?php comments_number("-sad-header","-header","-header"); ?>.png" width="30" height="30" alt="">This post has <?php comments_number("no comments.","1 comment.","% comments."); ?><br />Will yours be <?php comments_number("the first?","next?","next?"); ?></h2>
+	<?php comment_form(); ?><?php comments_template(); ?>
+	</div>
+	<div id="comment-rules">
+	<h3>Comment rules</h3>
+	<p><img src="<?php echo get_template_directory_uri(); ?>/img/icon-comments-rule-nice.png" alt="" width="15" height="15">Keep your comments PG-13, and play nice. Don&rsquo;t spam.</p>
+	<p><img src="<?php echo get_template_directory_uri(); ?>/img/icon-comments-rule-privacy.png" alt="" width="15" height="15">Read our <a href="<?php echo get_site_url(); ?>/privacy" rel="help" class="hover-out">privacy policy</a> before commenting.</p>
+	<p><img src="<?php echo get_template_directory_uri(); ?>/img/icon-comments-rule-queue.png" alt="" width="15" height="15">Your comment may be held in a moderation queue before it&rsquo;s published.</p>
+	<p><img src="<?php echo get_template_directory_uri(); ?>/img/icon-comments-rule-gravatar.png" alt="" width="15" height="15">Want a custom profile picture? Sign up for a free <a href="https://en.gravatar.com/" target="_blank" rel="external" class="hover-out">Gravatar</a>.</p>
+	<a href="mailto:office@criticalchicken.com" class="need-help hover-out">Need help? Let us know</a>
+	</div>
+	<div id="comment-clearing"></div>
+</div><!-- / the-comments --><?php else : ?><div id="the-lack-of-comments"></div><?php endif; ?>
+
 </div>
 </section>
 </main>

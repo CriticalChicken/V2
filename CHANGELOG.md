@@ -2,6 +2,8 @@
 
 ## V2.1.0 (so far):
 
+- **New feature:** Comments!
+  - Staff members&rdquo; comments are distinguished with a green tick
 - **New feature:** ChickenFeed hub added to the homepage
   - *Faux* gaming stock markets section, to prominently feature topics we&rsquo;re happy, angry, or ambivalent about
     - Stock market content is fully editable through the WordPress admin panel
@@ -18,7 +20,7 @@
   - All clickable elements now have mouseover animations, including &ldquo;glass&rdquo; overlays on post thumbnails
   - Vastly improved (narrower) listing pages with obvious visual distinction between posts
     - Used [BalanceText](https://github.com/adobe/balance-text) to evenly distribute long headlines on the page
-    - New sidebar featuring randomly-selected posts from the &ldquo;Best of&rdquo; section, and links to related sections
+    - New sidebar featuring randomly-selected posts from the &ldquo;Best of&rdquo; section, links to related sections, and latest comments
     - Enlarged titleTags are now used as headings on section pages, for improved visual consistency
     - Headers on topic, writer, and search results pages have also been redesigned
     - Redesigned, &ldquo;Google-style&rdquo; pagination with clickable page numbers
@@ -31,6 +33,7 @@
   - Menu bar now has a prominent &ldquo;home&rdquo; button for unambiguous navigation (the logo still links to the homepage, too)
   - Menu bar now appears at the top *and* bottom of every page, for easier navigation with less scrolling
   - &ldquo;Special menu item&rdquo;, editable through the WordPress admin panel, for temporary menu items e.g. links to expo coverage
+- **Improvement:** Migrated from Select Contextual Related Posts plugin to YARPP, for better recommendations.
 - **Improvement/SEO:** Changed WordPress&rsquo;s `category` taxonomy to `section`, `tag` to `topic`, and `author` to `writer`, in line with our in-house style
   - Added permanent redirects for the old-style links
 - **Improvement/SEO:** New `ChickenDefender` function automatically, permanently redirects &ldquo;overlapping&rdquo; taxonomies &ndash; e.g. the &ldquo;**Ace&nbsp;Attorney** (series)&rdquo; topic now redirects to the main **Ace&nbsp;Attorney** section
