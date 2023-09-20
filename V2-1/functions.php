@@ -448,6 +448,30 @@ function tkIcon() {
 
 
 
+// New post thumbnail handler
+function ccThumbHandler() {
+	$path = get_template_directory_uri();
+	if(has_post_thumbnail()) {
+		echo the_post_thumbnail_url();
+	} else {
+		if (in_category('exclusives') || in_category('live') || in_category('breaking-news') || in_category('news-alerts')) {
+			echo($path . '/img/thumbs/yellow.png');
+		} else if (in_category('news')) {
+			echo($path . '/img/thumbs/red.png');
+		} else if (in_category('features')) {
+			echo($path . '/img/thumbs/blue.png');
+		} else if (in_category('reviews')) {
+			echo($path . '/img/thumbs/orange.png');
+		} else {
+			echo($path . '/img/thumbs/black.png');
+		}
+	}
+}
+function ccThumbAlt() {
+	$theAlt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
+	echo esc_html($theAlt);
+}
+
 
 
 // CATEGORY TITLETAGS

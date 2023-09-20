@@ -593,21 +593,17 @@ p.comment-form-email {
 }
 
 p.logged-in-as {
-	font-size: 0;
-	color: var(--hidden);
 	margin-bottom: -7px;
+	color: var(--green);
 }
 
 p.logged-in-as:before {
-	font-size: 20px;
-	color: var(--green);
-	content: "You\2019re posting as a staff member.";
+	content: "Good to see you,\00A0";
 	background-image: url(../img/icon-comments-logged-in.png);
 	background-size: 15px 15px;
 	background-position: left 6px;
 	background-repeat: no-repeat;
 	padding-left: 23px;
-	font-style: italic;
 }
 
 div#respond p input[type=text] {
@@ -717,6 +713,7 @@ div.individual-comment span.comment-avatar {
 div.individual-comment span.comment-avatar img {
 	border-radius: 20px;
 	box-shadow: 0 2px var(--black);
+	background-color: var(--white);
 }
 
 div.individual-comment span.comment-author {
@@ -751,6 +748,16 @@ div.individual-comment span.comment-body {
 
 div.individual-comment span.comment-body p {
 	margin-top: 8px;
+}
+
+div.individual-comment span.comment-body p a {
+	color: var(--black);
+	opacity: 1;
+	transition: opacity 0.12s ease-out;
+}
+
+div.individual-comment span.comment-body p a:hover {
+	opacity: 0.68;
 }
 
 div.individual-comment span.comment-body p:first-of-type {

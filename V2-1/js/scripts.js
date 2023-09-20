@@ -196,3 +196,12 @@ ityped.init('#ityped',{
 $(window).on("load", function() {
 	getPageLoadTime();
 });
+
+// Clean up the 'logged in as' text
+$('p.logged-in-as').each(function() {
+    var text = $(this).text();
+    text = text.replace('Logged in as ', '');
+	text = text.replace('.', '');
+	text = text.replace(' Edit your profile. Log out? Required fields are marked *', '!');
+    $(this).text(text); 
+});
