@@ -43,6 +43,12 @@ We&rsquo;ve completely rebuilt our [Tidbyt](https://tidbyt.com) applet to match 
 
 [See our applet on the Tidbyt Community GitHub page &raquo;](https://github.com/tidbyt/community/tree/main/apps/criticalchicken)
 
+### Admin improvements
+
+![A screenshot showing the V2 pop-out menu in our WordPress Dashboard, and our "Adminnouncements" box, which is alerting a staff member that maintenance mode is enabled.](https://github.com/CriticalChicken/V2/assets/35422415/7b1295a3-a252-4ab7-872f-e8938cc5e7b3)
+
+We&rsquo;ve also made things easier for our writers and admins. Our new V2 menu provides instant access to everyday tasks, while our announcements box makes sure everyone&rsquo;s informed about important goings-on.
+
 ### And there&rsquo;s more still to come!
 
 ## Credits
