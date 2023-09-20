@@ -39,6 +39,7 @@
   - Added permanent redirects for the old-style links
 - **Improvement/SEO:** New `ChickenDefender` function automatically, permanently redirects &ldquo;overlapping&rdquo; taxonomies &ndash; e.g. the &ldquo;**Ace&nbsp;Attorney** (series)&rdquo; topic now redirects to the main **Ace&nbsp;Attorney** section
 - **SEO:** Removed ability for users to edit their own profiles, to avoid the possibility of broken links (i.e. to writer pages)
+- **Privacy:** Prevented Google from serving [Amp](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) versions of our pages
 - **Security:** Added minimum password strength requirements for new writers
 
 ## See what changed in previous versions:
