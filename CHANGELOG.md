@@ -24,6 +24,7 @@
     - Enlarged titleTags are now used as headings on section pages, for improved visual consistency
     - Headers on topic, writer, and search results pages have also been redesigned
     - Redesigned, &ldquo;Google-style&rdquo; pagination with clickable page numbers
+    - New placeholder/fallback thumbnails
     - V2.0.14 had a total of 148 unique image files; V2.1.0 has 246 (and counting&hellip;)
     - Easter egg
   - Prominent Ko-fi fundraising section added to homepage, to spotlight the fact we&rsquo;re &ldquo;ad-free, tracker-free, AI-free, and 100% independent&rdquo;
