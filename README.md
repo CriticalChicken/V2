@@ -11,13 +11,23 @@ The WordPress theme for [CriticalChicken.com](https://www.criticalchicken.com). 
 
 [Go in-depth with our new changelog &raquo;](CHANGELOG.md)
 
-### A bold new look:
+### A bold new look
 
 ![A side-by-side comparison of V2.0 and V2.1](https://github.com/CriticalChicken/V2/assets/35422415/ef45d937-e1f2-4eab-a4fa-4704728eab9f)
 
 Drop shadows, dynamic animations, and visually-distinct sections combine to create a new design that&rsquo;s more approachable, easier to navigate, and recognisable at a glance.
 
-### Redesigned titleTags:
+### Comments
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/CriticalChicken/V2/assets/35422415/5d751bef-3e0b-4631-a1d6-f47c246d6ed4">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/CriticalChicken/V2/assets/35422415/8d42d73d-eb2f-45d4-8905-b0d79c457404">
+  <img alt="Various icons used in our comments section" src="https://github.com/CriticalChicken/V2/assets/35422415/8d42d73d-eb2f-45d4-8905-b0d79c457404">
+</picture>
+
+For the first time in our seven-year history, we&rsquo;re throwing open the floodgates to comments from our readers! We&rsquo;re determined to build a safe, inclusive place for people to share their opinions &ndash; without having to worry about personal attacks.
+
+### Redesigned titleTags
 
 ![The redesigned titleTags for a variety of categories, including "E3's future" and "Rumour"](https://github.com/CriticalChicken/V2/assets/35422415/67b62f5c-d277-45a8-9da4-807f95bc0a71)
 
@@ -25,13 +35,13 @@ Our colour-coded titleTags appear alongside every post, making it easy to find r
 
 In V2.1 we&rsquo;ve simplified titleTags, introduced new icons, and made it even easier to spot the games and topics &ndash; like **Ace&nbsp;Attorney** and **Dungeons&nbsp;&amp;&nbsp;Dragons** &ndash; that we&rsquo;re covering in-depth.
 
-### ChickenFeed:
+### ChickenFeed
 
 ![A cropped screenshot of the new ChickenFeed section](https://github.com/CriticalChicken/V2/assets/35422415/023f8dbb-d2c2-4fbc-b9bc-8d6199e61df5)
 
-Our homepage is now home to ChickenFeed &ndash; a glanceable hub that&rsquo;s home to *faux* stock markets, weekly opinion polls, and &lsquo;vital&rsquo; games industry statistics.
+Our homepage is now home to ChickenFeed &ndash; a glanceable hub that&rsquo;s home to faux stock markets, weekly opinion polls, and &lsquo;vital&rsquo; games industry statistics.
 
-### Redesigned Tidbyt app:
+### Redesigned Tidbyt app
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/CriticalChicken/V2/assets/35422415/bc4c3fd5-a86b-499d-a9ce-3da4aa7d4b6c">
@@ -48,8 +58,6 @@ We&rsquo;ve completely rebuilt our [Tidbyt](https://tidbyt.com) applet to match 
 ![A screenshot showing the V2 pop-out menu in our WordPress Dashboard, and our "Adminnouncements" box, which is alerting a staff member that maintenance mode is enabled.](https://github.com/CriticalChicken/V2/assets/35422415/7b1295a3-a252-4ab7-872f-e8938cc5e7b3)
 
 We&rsquo;ve also made things easier for our writers and admins. Our new V2 menu provides instant access to everyday tasks, while our announcements box makes sure everyone&rsquo;s informed about important goings-on.
-
-### And there&rsquo;s more still to come!
 
 ## Credits
 
