@@ -2,46 +2,46 @@
 
 ## V2.1.0 (so far):
 
-- **New feature:** Comments!
-  - Staff members&rsquo; comments are distinguished with a green tick
-- **New feature:** ChickenFeed hub added to the homepage
-  - *Faux* gaming stock markets section, to prominently feature topics we&rsquo;re happy, angry, or ambivalent about
-    - Stock market content is fully editable through the WordPress admin panel
-  - &ldquo;We did the math(s)&rdquo; section with a variety of offbeat gaming statistics
-  - Weekly polls and a new poll archive page
-- **New feature:** Added *Adminnouncements* box to the WordPress Dashboard which shows the news ticker, maintenance mode status, announcements for staff members, and a random greeting
-  - *Adminnouncements* themselves are fully editable through the WordPress Dashboard
-  - The box also links to relevant settings for users who can access them
-- **Improvement:** Refreshed and refined design
-  - Nearly all code has been rewritten to make it more efficient and more accessible
-  - Redesigned, more visually-distinct titleTags
-    - Made titleTags slightly larger on the homepage and listing pages, making them easier to click or tap
-    - Added titleTags for **Pok&eacute;mon** and **Dungeons&nbsp;&amp;&nbsp;Dragons** sections
-  - All clickable elements now have mouseover animations, including &ldquo;glass&rdquo; overlays on post thumbnails
-  - Vastly improved (narrower) listing pages with obvious visual distinction between posts
+- **New feature:** Added comments to post pages
+  - Implemented GDPR-compliant [Friendly Captcha](https://friendlycaptcha.com) to reduce spam whilst staying as un-Googled as possible
+  - Distinguished staff members&rsquo; comments with an X-inspired &ldquo;green tick&rdquo;
+- **New feature:** Added ChickenFeed hub to homepage
+  - Added faux gaming &ldquo;stock markets&rdquo; to prominently feature topics we&rsquo;re happy, angry, or ambivalent about
+    - Made markets fully editable through the V2 menu in the WordPress Dashboard
+  - Added &ldquo;We did the math(s)&rdquo; section with a variety of offbeat gaming statistics
+  - Added scheduled, weekly opinion polls and a new poll archive page
+- **New feature:** Added announcements box to the WordPress Dashboard showing news ticker information, maintenance mode status, and announcements for staff members
+  - Made announcements box fully editable through the V2 menu in the WordPress Dashboard
+- **New feature:** Added custom V2 menu to the WordPress Dashboard to consolidate existing &ldquo;V2 settings&rdquo;, and menu items for frequently-used tasks, into one place
+- **Improvement:** Refreshed and refined design of entire website
+  - Rewrote almost all code to make it more efficient and more accessible
+  - Redesigned titleTags to make them more visually distinct from each other
+    - Made titleTags slightly larger on homepage and listing pages, for easier tapping on mobile devices
+    - Added titleTags for Pok&eacute;mon and Dungeons&nbsp;&amp;&nbsp;Dragons sections
+  - Added mouseover animations to all clickable elements, including &ldquo;glass&rdquo; overlays on post thumbnails
+  - Vastly improved listing pages with shorter line length and more obvious visual distinction between posts
     - Used [BalanceText](https://github.com/adobe/balance-text) to evenly distribute long headlines on the page
-    - New sidebar featuring randomly-selected posts from the &ldquo;Best of&rdquo; section, links to related sections, and latest comments
-    - Enlarged titleTags are now used as headings on section pages, for improved visual consistency
-    - Headers on topic, writer, and search results pages have also been redesigned
-    - Redesigned, &ldquo;Google-style&rdquo; pagination with clickable page numbers
-    - New placeholder/fallback thumbnails
-    - V2.0.14 had a total of 148 unique image files; V2.1.0 has 246 (and counting&hellip;)
-    - Easter egg
-  - Prominent Ko-fi fundraising section added to homepage, to spotlight the fact we&rsquo;re &ldquo;ad-free, tracker-free, AI-free, and 100% independent&rdquo;
-  - Full-screen search modal for a clearer, more focused search experience
-  - Completely redesigned Tidbyt applet to bring it in line with our new design language
-    - Tidbyt applet now shows excerpts as well as headlines
-- **Improvement:** Redesigned menu bar
-  - Menu bar now has a prominent &ldquo;home&rdquo; button for unambiguous navigation (the logo still links to the homepage, too)
-  - Menu bar now appears at the top *and* bottom of every page, for easier navigation with less scrolling
-  - &ldquo;Special menu item&rdquo;, editable through the WordPress admin panel, for temporary menu items e.g. links to expo coverage
-- **Improvement:** Migrated from Select Contextual Related Posts plugin to YARPP, for better recommendations.
-- **Improvement/SEO:** Changed WordPress&rsquo;s `category` taxonomy to `section`, `tag` to `topic`, and `author` to `writer`, in line with our in-house style
+    - Added new sidebar featuring randomly-selected posts from the &ldquo;Best of&rdquo; section, links to related sections, and latest comments
+    - Redesigned headers on topic, writer, and search results pages
+    - Implemented Google-inspired pagination with clickable page numbers
+    - Redesigned placeholder/fallback thumbnails
+    - Added Easter egg
+  - Added Ko-fi fundraising section to homepage, to spotlight the fact we&rsquo;re &ldquo;ad-free, tracker-free, AI-free, and 100% independent&rdquo;
+  - Added full-screen search modal for a more intuitive search experience
+  - Completely redesigned Tidbyt applet to bring it in line with new design language
+    - Added excerpts to Tidbyt applet
+  - Replaced Miis on the About page and writer pages with their [Gravatars](https://en.gravatar.com)
+  - Redesigned Radar page and added new shortcode-based &ldquo;tags&rdquo; to show expected release dates, consoles/platforms, and other relevant information
+- **Improvement:** Improved design of menu bar
+  - Added a prominent &ldquo;home&rdquo; button for unambiguous navigation
+  - Added menu bar to the bottom of every page, above the footer, to reduce to need for scrolling
+  - Added an optional &ldquo;Special menu item&rdquo;, editable through the V2 menu in the WordPress Dashboard, e.g. for expo coverage
+- **Improvement:** Migrated from Select Contextual Related Posts plugin to YARPP to improve recommendations
+- **Improvement:** Changed WordPress&rsquo;s taxonomies in line with our in-house style: `category` to `section`, `tag` to `topic`, and `author` to `writer`
   - Added permanent redirects for the old-style links
-- **Improvement/SEO:** New `ChickenDefender` function automatically, permanently redirects &ldquo;overlapping&rdquo; taxonomies &ndash; e.g. the &ldquo;**Ace&nbsp;Attorney** (series)&rdquo; topic now redirects to the main **Ace&nbsp;Attorney** section
-- **SEO:** Removed ability for users to edit their own profiles, to avoid the possibility of broken links (i.e. to writer pages)
-- **Privacy:** Prevented Google from serving [Amp](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) versions of our pages
-- **Security:** Added minimum password strength requirements for new writers
+- **Improvement:** Added ChickenDefender function to automatically, permanently redirect &ldquo;overlapping&rdquo; taxonomies &ndash; e.g. the &ldquo;Ace&nbsp;Attorney (series)&rdquo; topic now redirects to the main Ace&nbsp;Attorney section
+- **Privacy and security:** Prevented Google from serving [Amp](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) versions of our pages
+- **Privacy and security:** Added minimum password strength requirements for new and existing writers
 
 ## See what changed in previous versions:
 
