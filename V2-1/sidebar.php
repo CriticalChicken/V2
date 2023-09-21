@@ -11,7 +11,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
 <a href="<?php echo the_permalink(); ?>" class="thumb-link"><img src="<?php ccThumbHandler(); ?>" alt="<?php ccThumbAlt(); ?>" width="352" height="198"></a>
 <?php ctTitletag(); ?>
 <span class="homepage-post-title"><a href="<?php echo the_permalink(); ?>" class="hover-out"><?php the_title(); ?></a></span>
-<?php if(comments_open()){ ?><span class="comment-count"><a href="<?php comments_link(); ?>"><?php comments_number("No comments","1 comment","% comments"); ?></a></span><?php } ?>
+<?php if(comments_open()){ ?><span class="comment-count"><a href="<?php comments_link(); ?>"><?php comments_number("No comments","1 comment","% comments"); ?></a></span><?php } else { ?><span class="no-comment-count"></span><?php } ?>
 </div>
 <?php endwhile; endif; wp_reset_query(); ?>
 </div><?php } else { echo '<div id="already-viewing-best-of"></div>'; } ?>

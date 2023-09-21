@@ -516,6 +516,12 @@ section.forthegaymers h1.listing-header {
     margin-bottom: 20px;
 }
 
+#section-info .no-comment-count {
+    display: block;
+    height: 3px;
+    width: 100%;
+}
+
 #section-info .comment-count a {
     color: var(--white);
     opacity: 1;
@@ -912,13 +918,13 @@ h1.tag-header,
 h1.author-header {
     width: 736px;
     display: inline-block;
-    margin-top: 8px;
+    margin-top: 4px;
     font-size: 41px;
     font-weight: 700;
     line-height: 56px;
     color: var(--black);
     overflow-wrap: break-word;
-    margin-bottom: -8px;
+    margin-bottom: -12px;
 }
 
 h1.tag-header img {

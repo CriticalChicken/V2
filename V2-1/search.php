@@ -22,7 +22,7 @@ All other trademarks referred to are trademarks of their respective owners.
 <main>
 <section class="listing full-width <?php echo get_queried_object()->slug; ?>">
 <div class="listing_inner responsive">
-<h1 class="tag-header search"><?php if(get_search_query() != '') { ?><img src="<?php echo get_template_directory_uri(); ?>/img/sections/search-header.png" width="30" height="30" alt="">Search results for &ldquo;<?php the_search_query(); ?>&rdquo;<?php } else { ?><img src="<?php echo get_template_directory_uri(); ?>/img/sections/blank-search-header.png" width="30" height="30" alt="" class="ha-ha">What, did you think something funny would happen if you sent us an empty search box?<?php } ?></h1>
+<h1 class="tag-header search"><?php if(get_search_query() != '') { ?><img src="<?php echo get_template_directory_uri(); ?>/img/sections/search-header.png" width="30" height="30" alt="">Search results for &ldquo;<?php the_search_query(); ?>&rdquo;<?php } else { ?><img src="<?php echo get_template_directory_uri(); ?>/img/sections/blank-search-header.png" width="30" height="30" alt="" class="ha-ha">Did you think something funny would happen if you sent us an empty search box?<?php } ?></h1>
 <?php get_template_part('sidebar'); ?>
 <?php get_template_part('listing'); ?>
 </div>

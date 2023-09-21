@@ -1,4 +1,4 @@
-<?php get_template_part('maintenance-mode'); chickenDefender(); ?><!doctype html>
+<?php get_template_part('maintenance-mode'); ?><!doctype html>
 <html lang="en-GB">
 
 <!--

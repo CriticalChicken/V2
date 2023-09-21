@@ -1,3 +1,4 @@
+<?php /* Template Name: V2 Polls */ ?>
 <?php get_template_part('maintenance-mode'); ?><!doctype html>
 <html lang="en-GB">
 
@@ -12,6 +13,8 @@ All other trademarks referred to are trademarks of their respective owners.
 <title><?php echo single_post_title(); ?> - Critical Chicken</title>
 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/single.css" as="style">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single.css">
+<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/poll-archive.css" as="style">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/poll-archive.css">
 <?php wp_head(); ?>
 </head>
 <body>
@@ -22,7 +25,7 @@ All other trademarks referred to are trademarks of their respective owners.
 <section id="post-<?php the_ID(); ?>"<?php post_class('single-post full-width') ?>>
 <div class="single-post-inner responsive">
 <h1 class="page-header <?php echo get_post_field('post_name', get_post()); ?>"><span></span><?php the_title(); ?></h1>
-<div class="echo-the-content page">
+<div class="poll-archive">
 <?php echo the_content(); ?>
 </div>
 </div>

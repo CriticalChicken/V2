@@ -362,6 +362,21 @@ All other trademarks referred to are trademarks of their respective owners.
 	padding-bottom: 32px;
 }
 
+/* Shifted bullets for Radar page */
+/* TO DO: Remove #post-827 selector before launch */
+#post-827 .echo-the-content ul li, 
+#post-150 .echo-the-content ul li {
+	width: 928px;
+	padding-left: 96px;
+	font-size: 20px;
+	line-height: 32px;
+	margin-top: 16px;
+	background-image: url("../img/icon-post-bullet.png");
+	background-size: 8px 8px;
+	background-repeat: no-repeat;
+	background-position: 56px 21px;
+}
+
 .single-post .echo-the-content ul li,
 #no-posts-found .echo-the-content ul li {
 	width: 928px;
@@ -372,7 +387,7 @@ All other trademarks referred to are trademarks of their respective owners.
 	background-image: url("../img/icon-post-bullet.png");
 	background-size: 8px 8px;
 	background-repeat: no-repeat;
-	background-position: 56px 21px;
+	background-position: 56px 12px;
 }
 
 .single-post .echo-the-content a,
@@ -1104,7 +1119,7 @@ li span.radar-tag.ios,
 li span.radar-tag.ipad,
 li span.radar-tag.mac,
 li span.radar-tag.iphone,
-li span.radar-tag.apple.tv {
+li span.radar-tag.apple {
 	background-color: var(--apple);
 	background-image: url(../img/icon-radar-apple.png);
 	background-size: 10px 12px;
@@ -1160,13 +1175,13 @@ li span.radar-tag.windows {
 h1.page-header {
     width: 736px;
     display: inline-block;
-    margin-top: 8px;
+    margin-top: 12px;
     font-size: 41px;
     font-weight: 700;
     line-height: 56px;
     color: var(--black);
     overflow-wrap: break-word;
-    margin-bottom: -8px;
+    margin-bottom: 4px;
 }
 
 h1.page-header span {
@@ -1216,6 +1231,10 @@ h1.page-header.about span {
 	background-image: url(../img/page-header-about.png);
 	background-size: 23.5px 30px;
 	display: inline-block;
+}
+
+h1.page-header.polls {
+	margin-top: -20px;
 }
 
 h1.page-header.polls span {

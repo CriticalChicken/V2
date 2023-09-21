@@ -659,6 +659,10 @@ h1.context-title {
     font-weight: 900;
 }
 
+#not-sidebar-inner span.poll-start-date {
+    display: none;
+}
+
 #chickenfeed-top-arrow {
     width: 30px;
     height: 48px;
@@ -734,12 +738,13 @@ h1.context-title {
 
 #not-sidebar-middle iframe {
     border-bottom: 2px var(--black) solid;
-    border-radius:8px;
-    margin-top:8px;
-    margin-bottom:18px;
-    height:calc(100% - 102px);
-    position:absolute;
-    display:block;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    height: calc(100% - 104px);
+    position: absolute;
+    display: block;
+    top: 64px;
 }
 
 #not-sidebar-inner span.markets {
@@ -988,6 +993,12 @@ div.wp-polls {
     text-shadow: 0 2px var(--black);
 }
 
+/* Don't show archive link on the first ever poll */
+/* TO DO: This can be removed any time after the first poll closes */
+#polls-11 .poll-archive-link {
+    display: none !important;
+}
+
 .poll-archive-link.add-one {
     top: 1px;
 }
@@ -1148,6 +1159,8 @@ span.poll-error {
     text-shadow: 0 2px var(--black);
     position: relative;
     top: 1px;
+    background-color: var(--blue);
+    display: block;
 }
 
 .error-link {

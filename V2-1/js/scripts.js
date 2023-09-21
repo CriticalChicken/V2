@@ -78,6 +78,22 @@ $.fn.digits = function(){
     })
 }
 
+// Correct pluralisation for vote(s) in WP Polls results
+$('li.poll-result small').each(function() {
+    var text = $(this).text();
+    text = text.replace('(1 votes', '(1 vote');
+    $(this).text(text); 
+});
+
+// Reformat dates on Poll archive page
+$('.poll-archive .poll-start-date').each(function() {
+	var input = $(this).text();
+	var splitAfterDay = input.split(', ');
+	var splitBeforeTime = splitAfterDay[1].split(' @');
+	var middleformDate = splitBeforeTime[0];
+	$(this).text(middleformDate);
+})
+
 // Add "and" before the last tag in the list
 $('span.post-meta-tags').each(function() {
 	if($('span.post-meta-tags a').length > 1) {
@@ -97,6 +113,14 @@ $('span.comment-author a').each(function() {
 $('div.yarpp h3').each(function() {
 	$(this).remove();
 });
+
+// Poll archive fallback - annoying, but necessary
+$('.poll-archive .wp-polls').each(function() {
+	if(!$('.one-archived-poll').length) {
+		$(this).html('<p class="no-polls-in-archive">We couldn&rsquo;t find any completed polls to show you.</p><p class="no-polls-in-archive">You can head to the <a href="https://www.criticalchicken.com">homepage</a> to take part in this week&rsquo;s poll.</p>');
+	}
+});
+
 
 // Automatically resize textareas
 $("textarea").each(function () {
