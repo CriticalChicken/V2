@@ -31,6 +31,7 @@ All other trademarks referred to are trademarks of their respective owners.
     --black: #000;
     --blue: #1564dc;
     --darkgrey: #717070;
+    --midgrey: #9f9e9e;
     --lightgrey: #edecec;
     --orange: #f47614;
     --white: #fff;
@@ -38,7 +39,6 @@ All other trademarks referred to are trademarks of their respective owners.
     --red: #d20202;
     --green: #048929;
     --not-black: #121313;
-    --lightwhite: #f9f9f9;
     --gold: #be9f43;
 
     /* Other colours */
@@ -49,12 +49,18 @@ All other trademarks referred to are trademarks of their respective owners.
     --e3-murky: #212023;
     --pokemon-grey: #5e5e5e;
     --pokemon-yellow: #ffe103;
+    --structure-background: #e1dfdf;
+    --structure-shadow: #9e9d9d;
+    --iconic-background: rgba(255,255,255,0.84);
+    --markets-background: #b8cef4;
 
     /* Nav gradients */
     --nav-game-fest: linear-gradient(90deg, #5613c5 0%, #cd4298 100%);
     --nav-latest: linear-gradient(-63.4deg, var(--orange) 0%, var(--blue) 50%, var(--red) 100%);
 
     /* Third-party brand colours */
+    --android: #3ddc84;
+    --apple: #121212;
     --beingbigbrother-pink: #fc1291;
     --beingbigbrother-yellow: #ffca03;
     --bluesky-icon: #5bb9e1;
@@ -64,13 +70,22 @@ All other trademarks referred to are trademarks of their respective owners.
     --ko-fi-alt: #ff5f5f;
     --mastodon: #6364FF;
     --mastodon-off-white: #f6f5fa;
+    --nintendo-3ds-red: #cf181f;
     --nintendo-direct-red: #fc1926;
+    --nintendo-ds-grey: #929497;
+    --playstation: #0070d1;
+    --steam-background: #171d25;
+    --steam-logo: #c5c3c0;
     --summer-game-fest: #38199e;
     --tumblr-icon: #ffc5eb;
+    --windows-11: #0078d4;
+    --xbox: #0f7c10;
 
     /* Hacky stuff */
-    --hidden-black: rgba(0,0,0,0);
+    --hidden: rgba(0,0,0,0);
     --opaque-black: rgba(0,0,0,0.68);
+    --opaque-white: rgba(255,255,255,0.68);
+    --faint-black: rgba(0,0,0,0.32);
 
     /* Jumbotron backgrounds */
     --jt90-black: linear-gradient(90deg, var(--black) 0%, var(--darkgrey) 100%);
@@ -795,7 +810,7 @@ div#search-box-gubbins input[type=text] {
 	border: 0;
 	margin: 0 16px 0 16px;
 	outline: none !important;
-	background: var(--white);
+	background-color: var(--white);
 	border: none;
 	font-family: "Noto Sans Display", sans-serif;
     overflow-y: hidden;
@@ -813,7 +828,7 @@ div#search-box-gubbins input[type=submit] {
 	border: 0;
 	margin: 0;
 	outline: none !important;
-	background: var(--green);
+	background-color: var(--green);
 	border: none;
     background-image: url(img/search-box-search-button.png);
     background-size: 32px 32px;

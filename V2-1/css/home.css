@@ -198,7 +198,7 @@ nav.top ul#nav_iconic {
     top: 432px;
     border-radius: 16px;
     left: 640px;
-    background-color: rgba(255,255,255,0.84);
+    background-color: var(--iconic-background);
     padding-top: 16px;
     box-shadow: 0 2px var(--black);
     backdrop-filter: blur(8px);
@@ -478,7 +478,7 @@ nav.top ul#nav_iconic li a:hover {
 #jumbotron-link a {
 	height: 100%;
 	overflow: auto;
-	color: var(--hidden-black);
+	color: var(--hidden);
     border-radius: 16px;
 }
 
@@ -725,7 +725,7 @@ h1.context-title {
 .not-sidebar-wrapper {
     width: calc(100% - 16px);
     padding: 8px;
-    background-color: rgba(255,255,255,0.68);
+    background-color: var(--markets-background);
     border-radius: 8px;
     border-bottom: 2px var(--black) solid;
     top: 2px;
@@ -757,7 +757,7 @@ h1.context-title {
     width: calc(100% - 32px);
     padding: 14px 16px 10px 16px;
     background-color: var(--blue);
-    border-bottom: 2px var(--opaque-black) solid;
+    border-bottom: 2px var(--black) solid;
     display: block;
     border-radius: 4px;
     margin-bottom: 6px;
@@ -1067,7 +1067,7 @@ div.wp-polls {
 	font-size: 0;
 	line-height: 0;
 	transition: all 0.12s ease-out;
-    color: var(--hidden-black);
+    color: var(--hidden);
     cursor: pointer;
     opacity: 1;
 }
@@ -1092,7 +1092,7 @@ div.pollbar {
     border: 0 !important;
     border-radius: 8px;
     box-shadow: 0 2px var(--black);
-    background-color: rgba(255,255,255,0.68) !important;
+    background-color: var(--markets-background) !important;
     margin: 1px 0 7px 0 !important;
     display: block;
 }

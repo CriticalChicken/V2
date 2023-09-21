@@ -1,4 +1,4 @@
-<?php get_template_part('maintenance-mode'); ?><!doctype html>
+<?php get_template_part('maintenance-mode'); chickenDefender(); ?><!doctype html>
 <html lang="en-GB">
 
 <!--
@@ -9,9 +9,7 @@ All other trademarks referred to are trademarks of their respective owners.
 
 <head>
 <?php get_template_part('meta'); ?>
-<title>Posts by <?php the_author(); ?> - Critical Chicken</title>
-<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/listing.css" as="style">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/listing.css">
+<title><?php echo single_post_title(); ?> - Critical Chicken</title>
 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/single.css" as="style">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single.css">
 <?php wp_head(); ?>
@@ -19,15 +17,18 @@ All other trademarks referred to are trademarks of their respective owners.
 <body>
 <div id="container">
 <?php get_template_part('header'); ?>
+<?php if(have_posts()):while(have_posts()):the_post(); ?>
 <main>
-<section class="listing full-width <?php the_author_meta('user_login'); ?>">
-<div class="listing_inner responsive">
-<h1 class="author-header"><?php writer_page_avatar(); ?>Posts by <?php the_author(); ?></h1>
-<?php get_template_part('sidebar'); ?>
-<?php get_template_part('listing'); ?>
+<section id="post-<?php the_ID(); ?>"<?php post_class('single-post full-width') ?>>
+<div class="single-post-inner responsive">
+<h1 class="page-header <?php echo get_post_field('post_name', get_post()); ?>"><span></span><?php the_title(); ?></h1>
+<div class="echo-the-content page">
+<?php echo the_content(); ?>
+</div>
 </div>
 </section>
 </main>
+<?php endwhile;endif; ?>
 <nav class="bottom full-width">
 <div class="responsive-rounded nav_inner">
 <?php get_template_part('nav'); ?>

@@ -111,41 +111,6 @@ function tickerContents() {
 }
 
 
-
-
-
-// Fallback thumbnail picker
-
-function fallbackThumbnailPicker() {
-
-	if (in_category('exclusives') || in_category('live') || in_category('breaking-news') || in_category('news-alerts')) {
-
-		echo('/img/thumbnail_black-on-yellow_for198px.png');
-
-	} else if (in_category('news')) {
-
-		echo('/img/thumbnail_white-on-red_for198px.png');
-
-	} else if (in_category('features')) {
-
-		echo('/img/thumbnail_white-on-blue_for198px.png');
-
-	} else if (in_category('reviews')) {
-
-		echo('/img/thumbnail_white-on-orange_for198px.png');
-
-	} else {
-
-		echo('/img/thumbnail_white-on-black_for198px.png');
-
-	}
-
-}
-
-
-
-
-
 // JUMBOTRON
 
 
@@ -1288,3 +1253,78 @@ function v2_adminnouncement() {
     return $message;
 }
 add_shortcode('v2_adminnouncement', 'v2_adminnouncement');
+
+// Writer page avatars
+function writer_page_avatar() {
+	$which_writer = get_the_author_meta('ID');
+	$site = get_site_url();
+	$path = get_template_directory_uri();
+    // Fallback avatar if no Gravatar is set
+	$avatar1 = '<img src="' . $path . '/img/icon-avatar-missing.png" class="avatar avatar-64 photo" height="64" width="64" alt="">';
+	$avatar2 = '';
+    if(get_avatar($which_writer)) {
+		if($which_writer == 3) {
+			$avatar1 = get_avatar(1, 64);
+			$avatar2 = get_avatar(2, 64);
+		} else {
+			$avatar1 = get_avatar($which_writer, 64);
+		}
+    }
+	echo $avatar1 . $avatar2;
+}
+
+// Get Users' Gravatars (or a placeholder)
+function radar_player($_atts) {
+    $defaults = array(
+        'name' => '',
+    );
+    $atts = shortcode_atts( $defaults, $_atts );
+	$site = get_site_url();
+	$path = get_template_directory_uri();
+    // Fallback avatar if no Gravatar is set
+	$avatar = '<img src="' . $path . '/img/icon-avatar-missing.png" class="avatar avatar-64 photo" height="64" width="64" alt="">';
+    // Fallback if someone messes up the shortcode
+    $message = '';
+    if(get_user_by('login', $atts['name']) && $atts['name']) {
+        $user_data = get_user_by('login', $atts['name']);
+        if(get_avatar($user_data->ID)) {
+            $avatar = get_avatar($user_data->ID, 64);
+        }
+        $message = '<a href="' . $site . '/writer/' . $atts['name'] . '" rel="author" title="'. $user_data->display_name . '" class="whos-playing hover-out">' . $avatar . '</a>';
+    }
+	return $message;
+}
+add_shortcode('radar_player', 'radar_player');
+
+// Radar tags
+function radar_tag($_atts) {
+    $defaults = array(
+        'text' => '',
+    );
+    $atts = shortcode_atts( $defaults, $_atts );
+    // Fallback if someone messes up the shortcode
+    $message = '';
+    if($atts['text']) {
+		$platform1 = str_replace("/"," ", esc_html(strtolower($atts['text'])));
+		$platform2 = str_replace("3ds","three-ds", $platform1);
+		$platform3 = str_replace("360","three-sixty", $platform2);
+        $message = '<span class="radar-tag ' . $platform3 .'">' . esc_html($atts['text']) . '</span>';
+    }
+    return $message;
+}
+add_shortcode('radar_tag', 'radar_tag');
+
+// Radar release dates
+function radar_release($_atts) {
+    $defaults = array(
+        'date' => '',
+    );
+    $atts = shortcode_atts( $defaults, $_atts );
+    // Fallback if someone messes up the shortcode
+    $message = '';
+    if($atts['date']) {
+        $message = '<span class="radar-tag date">' . esc_html($atts['date']) . '</span>';
+    }
+    return $message;
+}
+add_shortcode('radar_release', 'radar_release');

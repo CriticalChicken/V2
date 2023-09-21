@@ -9,7 +9,7 @@ All other trademarks referred to are trademarks of their respective owners.
 
 <head>
 <?php get_template_part('meta'); ?>
-<title>Posts mentioning <?php single_tag_title(); ?> - Critical Chicken</title>
+<title><?php single_tag_title(); ?> - Critical Chicken</title>
 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/listing.css" as="style">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/listing.css">
 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/single.css" as="style">
@@ -22,7 +22,7 @@ All other trademarks referred to are trademarks of their respective owners.
 <main>
 <section class="listing full-width <?php echo get_queried_object()->slug; ?>">
 <div class="listing_inner responsive">
-<h1 class="tag-header"><img src="<?php echo get_template_directory_uri(); ?>/img/sections/tag-header.png" width="30" height="30" alt="">Posts mentioning <?php single_tag_title(); ?></h1>
+<h1 class="tag-header"><img src="<?php echo get_template_directory_uri(); ?>/img/sections/tag-header.png" width="27" height="30" alt=""><?php single_tag_title(); ?></h1>
 <?php get_template_part('sidebar'); ?>
 <?php get_template_part('listing'); ?>
 </div>

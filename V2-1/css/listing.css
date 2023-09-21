@@ -15,13 +15,13 @@ All other trademarks referred to are trademarks of their respective owners.
 
 #listing-container .a-listing-post {
     margin-bottom: 32px;
-    background-color: rgba(113,112,112,0.10);
+    background-color: var(--structure-background);
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 15px;
     padding-bottom: 24px;
     border-radius: 16px;
-    box-shadow: 0 2px rgba(113,112,112,0.64);
+    box-shadow: 0 2px var(--structure-shadow);
 }
 
 #listing-container .a-listing-post .thumbnail-and-headline {
@@ -429,7 +429,7 @@ section.forthegaymers h1.listing-header {
     font-weight: 700;
     color: var(--white);
     padding-left: 40px;
-    border-bottom: 8px var(--hidden-black) solid;
+    border-bottom: 8px var(--hidden) solid;
 }
 
 #section-info a.thumb-link img {
@@ -443,7 +443,7 @@ section.forthegaymers h1.listing-header {
 	border-radius: 8px;
 	display: block;
     background-image: url(../img/thumb-hover.png);
-    background-size: 525px 198px;
+    background-size: 525px 180px;
     background-position: -206px 0;
     z-index: 100;
     content: "";
@@ -730,7 +730,7 @@ div#pagenavi-wrapper a.first:hover {
     line-height: 40px;
     font-weight: 700;
     color: var(--white);
-    border-bottom: 16px var(--hidden-black) solid;
+    border-bottom: 16px var(--hidden) solid;
 }
 
 #more-categories.mastodon h2 {
@@ -906,6 +906,7 @@ div#pagenavi-wrapper a.first:hover {
 
 
 /* Topic and writer styles */
+/* TO DO: These aren't on-grid yet */
 
 h1.tag-header,
 h1.author-header {
@@ -932,53 +933,17 @@ h1.tag-header.search img.ha-ha {
     margin-right: 13px;
 }
 
-h1.author-header span {
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    margin-right: 14px;
-    border-radius: 15px;
-    background-color: var(--black);
-    background-image: url(../img/sections/author-header.png);
-    background-size: 14px 15px;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.mike h1.author-header span {
-    background-image: url(../img/mii/mike.png);
-    background-size: 30px 30px;
-}
-
-.matthew h1.author-header span {
-    background-image: url(../img/mii/matthew.png);
-    background-size: 30px 30px;
-}
-
-.mike-and-matthew h1.author-header {
-    margin-left: 38px;
-}
-
-.mike-and-matthew h1.author-header span {
-    background-image: url(../img/mii/matthew.png);
-    background-size: 30px 30px;
+h1.author-header img.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: var(--white);
+    box-shadow: 0 2px var(--black);
+    margin-right: 8px;
     position: relative;
-    top: 10px;
+    top: 1px;
 }
 
-.mike-and-matthew h1.author-header span:before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    margin-right: 18px;
-    border-radius: 15px;
-    background-color: var(--black);
-    background-image: url(../img/mii/mike.png);
-    background-size: 30px 30px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
-    left: -38px;
-    top: -10px;
+h1.author-header img.avatar:last-of-type {
+    margin-right: 16px;
 }
