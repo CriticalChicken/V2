@@ -12,32 +12,32 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ### V2.0.12&ndash;V2.0.14
 
-- **Archive:** Now archived and only receiving hotfixes, as V2.1 Charasmatic Cockatiel nears completion
+- **Archive:** Archived V2.0, as V2.1 is nearing completion. V2.0 will now only receive hotfixes
 
 ### V2.0.11
 
-- **Bug fix:** Spacing underneath related posts now works again
+- **Bug fix:** Corrected amount of spacing beneath related posts section
 
 ### V2.0.10
 
-- **Improvement:** Added line breaks to &ldquo;#ForTheGaymers&rdquo; wherever it appears as a title, so it doesn&rsquo;t overflow the screen width on mobile devices
-- **Bug fix:** Mii images on the [About](https://www.criticalchicken.com/about) page now display at the correct (smaller) size on mobile devices
+- **Improvement:** Added line breakpoints to &ldquo;#ForTheGaymers&rdquo; wherever it appears as a title, so it doesn&rsquo;t overflow the screen width on mobile devices
+- **Bug fix:** Fixed Mii images on the [About](https://www.criticalchicken.com/about) page, which were not displaying at the correct (smaller) size on mobile devices
 
 ### V2.0.9
 
-- **Improvement:** Added custom &ldquo;&num;&rdquo; symbol to V2 font and restyled &ldquo;#ForTheGaymers&rdquo; site-wide
+- **Improvement:** Added custom &ldquo;&num;&rdquo; symbol to V2 font and applied it to all instances of &ldquo;#ForTheGaymers&rdquo; site-wide
 
 ### V2.0.8
 
-- **Improvement:** Tweaks to design and wording of Tidbyt page
-- **Improvement:** Breaking news ticker now uses a font for the bullets instead of an image, so it no longer flickers/judders when scrolling
+- **Improvement:** Tweaked design and wording of Tidbyt page
+- **Improvement:** Replaced ticker bullets with a webfont instead of an image, so it no longer flickers/judders when scrolling
 
 ### V2.0.7
 
-- **New feature:** Added a page to promote our new [Tidbyt applet](https://github.com/tidbyt/community/pull/1731)
-- **Improvement:** Added the new #ForTheGaymers logo to its [category page](https://www.criticalchicken.com/category/forthegaymers)
-- **Bug fix:** Margin around the logo on small mobile devices is now the right size
-- **Bug fix:** Category page titles now display properly on small mobile devices
+- **New feature:** Added page to promote our new [Tidbyt applet](https://github.com/tidbyt/community/pull/1731)
+- **Improvement:** Added new #ForTheGaymers logo to its [category page](https://www.criticalchicken.com/category/forthegaymers)
+- **Bug fix:** Corrected size of logo&rsquo;s margin on small mobile devices
+- **Bug fix:** Fixed category page titles which weren&rsquo;t displaying properly on small mobile devices
 
 ### V2.0.6
 
@@ -45,16 +45,16 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ### V2.0.5
 
-- **Improvement:** Mastofeed now includes Boosts for more content variety
+- **Improvement:** Added Boosts to Mastofeed for greater variety of content
 
 ### V2.0.4
 
 - **Improvement:** Replaced #ForTheGaymers logo with a new design
-- **Bug fix:** Listing pages&rsquo; layout no longer breaks on tablets
+- **Bug fix:** Fixed listing pages&rsquo; broken layout on tablets
 
 ### V2.0.3
 
-- **Bug fix:** Replaced Microanalytics code as it was set up wrong
+- **Bug fix:** Replaced old/outdated Microanalytics code
 
 ### V2.0.2
 
@@ -62,8 +62,8 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ### V2.0.1
 
-- **Bug fix:** `box-shadow` no longer appears &ldquo;cut off&rdquo; on mobile menu&rsquo;s social links
-- **Bug fix:** Script that adds &ldquo;and&rdquo; before the last tag on a single post now only works on posts with more than one tag
+- **Bug fix:** Fixed `box-shadow` appearing &ldquo;cut off&rdquo; on mobile menu&rsquo;s social links
+- **Bug fix:** Fixed script that adds &ldquo;and&rdquo; before last tag on a single post, so it only works on posts with more than one tag
 - **Accessibility:** Added `lang` attribute to opening `html` tags
 
 ## Credits
