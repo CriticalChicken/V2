@@ -1,6 +1,6 @@
 # V2.1 Charismatic Cockatiel - changelog
 
-## V2.1.0 (so far):
+## V2.1.0 (so far)
 
 - **New feature:** Added comments to post pages
   - Implemented GDPR-compliant [Friendly Captcha](https://friendlycaptcha.com) to reduce spam whilst staying as un-Googled as possible
@@ -43,6 +43,6 @@
 - **Privacy and security:** Prevented Google from serving [Amp](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) versions of our pages
 - **Privacy and security:** Added minimum password strength requirements for new and existing writers
 
-## See what changed in previous versions:
+## See what changed in previous versions
 
 - [V2.0 Brazen Blackbird](https://github.com/CriticalChicken/V2/tree/V2.0-Brazen-Blackbird)
