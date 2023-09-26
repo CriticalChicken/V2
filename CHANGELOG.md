@@ -26,19 +26,20 @@
     - Implemented Google-inspired pagination with clickable page numbers
     - Redesigned placeholder/fallback thumbnails
     - Added Easter egg
+  - Improved design of menu bar
+    - Added a prominent &ldquo;home&rdquo; button for unambiguous navigation
+    - Added menu bar to the bottom of every page, above the footer, to reduce to need for scrolling
+    - Added an optional &ldquo;Special menu item&rdquo;, editable through the V2 menu in the WordPress Dashboard, e.g. for expo coverage
+      - An optional CSS class, e.g. `summer-game-fest`, can be added to allow custom styling of the menu item
   - Added Ko-fi fundraising section to homepage, to spotlight the fact we&rsquo;re &ldquo;ad-free, tracker-free, AI-free, and 100% independent&rdquo;
   - Added full-screen search modal for a more intuitive search experience
-  - Completely redesigned Tidbyt applet to bring it in line with new design language
-    - Added excerpts to Tidbyt applet
   - Replaced Miis on the About page and writer pages with their [Gravatars](https://en.gravatar.com)
   - Redesigned Radar page and added new shortcode-based &ldquo;tags&rdquo; to show expected release dates, consoles/platforms, and other relevant information
-  - Migrated from [ACF](https://www.advancedcustomfields.com)-based post thumbnails to WordPress&rsquo;s native Featured Images, for better compatibility with other features and plugins
   - Added [&ldquo;Written by Human, Not by AI&rdquo;](https://notbyai.fyi) badge to the footer
-- **Improvement:** Improved design of menu bar
-  - Added a prominent &ldquo;home&rdquo; button for unambiguous navigation
-  - Added menu bar to the bottom of every page, above the footer, to reduce to need for scrolling
-  - Added an optional &ldquo;Special menu item&rdquo;, editable through the V2 menu in the WordPress Dashboard, e.g. for expo coverage
+- **Improvement:** Completely redesigned Tidbyt applet to bring it in line with new design language
+  - Added excerpts to Tidbyt applet
 - **Improvement:** Migrated from Select Contextual Related Posts plugin to YARPP to improve recommendations
+- **Improvement:** Migrated from [ACF](https://www.advancedcustomfields.com)-based post thumbnails to WordPress&rsquo;s native Featured Images, for better compatibility with other features and plugins
 - **Improvement:** Changed WordPress&rsquo;s taxonomies in line with our in-house style: `category` to `section`, `tag` to `topic`, and `author` to `writer`
   - Added permanent redirects for the old-style links
 - **Improvement:** Added ChickenDefender function to automatically, permanently redirect &ldquo;overlapping&rdquo; taxonomies &ndash; e.g. the &ldquo;Ace&nbsp;Attorney (series)&rdquo; topic now redirects to the main Ace&nbsp;Attorney section
