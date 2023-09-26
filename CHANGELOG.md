@@ -33,6 +33,7 @@
   - Replaced Miis on the About page and writer pages with their [Gravatars](https://en.gravatar.com)
   - Redesigned Radar page and added new shortcode-based &ldquo;tags&rdquo; to show expected release dates, consoles/platforms, and other relevant information
   - Migrated from [ACF](https://www.advancedcustomfields.com)-based post thumbnails to WordPress&rsquo;s native Featured Images, for better compatibility with other features and plugins
+  - Added [&ldquo;Written by Human, Not by AI&rdquo;](https://notbyai.fyi) badge to the footer
 - **Improvement:** Improved design of menu bar
   - Added a prominent &ldquo;home&rdquo; button for unambiguous navigation
   - Added menu bar to the bottom of every page, above the footer, to reduce to need for scrolling
