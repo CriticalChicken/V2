@@ -17,7 +17,7 @@
   - Rewrote almost all code to make it more efficient and more accessible
   - Redesigned titleTags to make them more visually distinct from each other
     - Made titleTags slightly larger on homepage and listing pages, for easier tapping on mobile devices
-    - Added titleTags for Pok&eacute;mon and Dungeons&nbsp;&amp;&nbsp;Dragons sections
+    - Added titleTags for Pok&eacute;mon Dungeons&nbsp;&amp;&nbsp;Dragons, and Switch 2 sections
   - Added mouseover animations to all clickable elements, including &ldquo;glass&rdquo; overlays on post thumbnails
   - Vastly improved listing pages with shorter line length and more obvious visual distinction between posts
     - Used [BalanceText](https://github.com/adobe/balance-text) to evenly distribute long headlines on the page
