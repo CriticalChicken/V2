@@ -1,7 +1,7 @@
-![A cockatiel with a funky hair-do, posing against a blue background next to the V2 logo](https://github.com/CriticalChicken/V2/assets/35422415/e9d3272b-332e-422f-aaef-3ed10223c28d)
+![A cockatiel with a funky hair-do, posing against a blue background next to the V2 logo](https://github.com/CriticalChicken/V2/assets/35422415/40c5d93d-54a2-43b0-84a8-e87b02d9dd20)
 
 # V2.1 Charismatic Cockatiel
-The WordPress theme for [CriticalChicken.com](https://www.criticalchicken.com). Coming soon.
+The transformative new theme for [CriticalChicken.com](https://www.criticalchicken.com). Coming soon.
 
 > [!NOTE]
 > Copyright &copy; Critical Chicken. All rights reserved.
