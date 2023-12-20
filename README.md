@@ -67,6 +67,7 @@ We&rsquo;ve also made things easier for our writers and admins. Our new V2 menu 
 - [iTyped](https://github.com/luisvinicius167/ityped) by [Luis Vinicius](https://github.com/luisvinicius167) 
 - [Mastofeed](https://github.com/fenwick67/mastofeed) by [Drew Harwell](https://github.com/fenwick67)
 - [momentum.js](https://github.com/sschoepke/momentum) by [Stephen Schoepke](https://github.com/sschoepke)
+- [pure-snow.js](https://github.com/hyperstown/pure-snow.js) by [hyperstown](https://github.com/hyperstown)
 - [Reset CSS](https://meyerweb.com/eric/tools/css/reset/index.html) by [Eric A. Meyer](https://meyerweb.com/eric)
 - &ldquo;Softy&rdquo; icons by [Gregor Cresnar](https://iconix.si), licensed through [Noun Project](https://thenounproject.com/grega.cresnar)
 - [Web-Ticker](https://github.com/mazedigital/Web-Ticker) by [Maze Digital](https://github.com/mazedigital)
