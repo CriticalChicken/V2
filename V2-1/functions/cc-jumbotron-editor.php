@@ -31,7 +31,7 @@ function cc_jumbotron_editor_contents() {
 </style>
 
 <div class="wrap">
-	<h1 style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/admin/v2-logo.png'); background-size: 41.5px 31px; background-position: left 12px; background-repeat: no-repeat; padding: 8px 0 12px 53.5px !important; height: 31px !important; line-height: 31px !important;">Jumbotron editor</h1>
+	<h1 style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/admin/v2-logo.png'); background-size: 54.5px 31px; background-position: left 12px; background-repeat: no-repeat; padding: 8px 0 12px 70.5px !important; height: 31px !important; line-height: 31px !important;">Jumbotron editor</h1>
 	<form method="POST" action="options.php">
 		<?php
 		settings_fields('cc-jumbotron-editor');
@@ -65,7 +65,7 @@ function cc_jumbotron_settings_init() {
 	
 	add_settings_field(
 		'cc_jumbotron_titletag1_special',
-		__( 'Special titletag (optional)', 'my-textdomain' ),
+		__( 'Special titleTag (optional)', 'my-textdomain' ),
 		'cc_jumbotron_editor_titletag1_special',
 		'cc-jumbotron-editor',
 		'cc-jumbotron-editor_setting_section'
@@ -73,7 +73,7 @@ function cc_jumbotron_settings_init() {
 	
 	add_settings_field(
 		'cc_jumbotron_titletag2_type',
-		__( 'Main titletag (required)', 'my-textdomain' ),
+		__( 'Main titleTag (required)', 'my-textdomain' ),
 		'cc_jumbotron_editor_titletag2_type',
 		'cc-jumbotron-editor',
 		'cc-jumbotron-editor_setting_section'
@@ -144,14 +144,17 @@ function cc_jumbotron_editor_titletag1_special() {
 			<option value="none"<?php if($current_titletag1_special == "none") { echo(' selected="selected"'); } ?>>None</option>
 			<option value="ace-attorney"<?php if($current_titletag1_special == "ace-attorney") { echo(' selected="selected"'); } ?>>Ace Attorney</option>
 			<option value="best-of"<?php if($current_titletag1_special == "best-of") { echo(' selected="selected"'); } ?>>Best of</option>
+			<option value="breaking-news"<?php if($current_titletag1_special == "breaking-news") { echo(' selected="selected"'); } ?>>Breaking news</option>
 			<option value="dungeons-and-dragons"<?php if($current_titletag1_special == "dungeons-and-dragons") { echo(' selected="selected"'); } ?>>Dungeons &amp; Dragons</option>
 			<option value="e3s-future"<?php if($current_titletag1_special == "e3s-future") { echo(' selected="selected"'); } ?>>E3&rsquo;s future</option>
 			<option value="exclusive"<?php if($current_titletag1_special == "exclusive") { echo(' selected="selected"'); } ?>>Exclusive</option>
 			<option value="forthegaymers"<?php if($current_titletag1_special == "forthegaymers") { echo(' selected="selected"'); } ?>>&num;ForTheGaymers</option>
 			<option value="live"<?php if($current_titletag1_special == "live") { echo(' selected="selected"'); } ?>>Live</option>
+			<option value="news-alert"<?php if($current_titletag1_special == "news-alert") { echo(' selected="selected"'); } ?>>News alert</option>
 			<option value="nintendo-direct"<?php if($current_titletag1_special == "nintendo-direct") { echo(' selected="selected"'); } ?>>Nintendo Direct</option>
 			<option value="pokemon"<?php if($current_titletag1_special == "pokemon") { echo(' selected="selected"'); } ?>>Pok&eacute;mon</option>
 			<option value="pokemon-presents"<?php if($current_titletag1_special == "pokemon-presents") { echo(' selected="selected"'); } ?>>Pok&eacute;mon Presents</option>
+			<option value="switch-2"<?php if($current_titletag1_special == "switch-2") { echo(' selected="selected"'); } ?>>Switch 2</option>
 			<option value="state-of-play"<?php if($current_titletag1_special == "state-of-play") { echo(' selected="selected"'); } ?>>State of Play</option>
 			<option value="summer-game-fest-2024"<?php if($current_titletag1_special == "summer-game-fest-2024") { echo(' selected="selected"'); } ?>>Summer Game Fest 2024</option>
 		</select>
@@ -163,6 +166,7 @@ function cc_jumbotron_editor_titletag2_type() {
 	$current_titletag2_type = get_option('cc_jumbotron_titletag2_type');
 ?>
 		<select name="cc_jumbotron_titletag2_type" id="cc_jumbotron_titletag2_type" style="width: 400px">
+			<option value="critical-chicken"<?php if($current_titletag2_type == "critical-chicken") { echo(' selected="selected"'); } ?>>Critical Chicken</option>
 			<option value="news"<?php if($current_titletag2_type == "news") { echo(' selected="selected"'); } ?>><b>News</b></option>
 			<option value="link"<?php if($current_titletag2_type == "link") { echo(' selected="selected"'); } ?>>&mdash; Link</option>
 			<option value="live-updates"<?php if($current_titletag2_type == "live-updates") { echo(' selected="selected"'); } ?>>&mdash; Live updates</option>
@@ -180,6 +184,7 @@ function cc_jumbotron_editor_titletag2_type() {
 			<option value="hands-on"<?php if($current_titletag2_type == "hands-on") { echo(' selected="selected"'); } ?>>&mdash; Hands on</option>
 			<option value="preview"<?php if($current_titletag2_type == "preview") { echo(' selected="selected"'); } ?>>&mdash; Preview</option>
 			<option value="second-look"<?php if($current_titletag2_type == "second-look") { echo(' selected="selected"'); } ?>>&mdash; Second look</option>
+			
 		</select>
 
 <?php

@@ -7,7 +7,7 @@
 <li><a href="<?php echo get_site_url(); ?>/explore" class="hover-out">Explore</a></li>
 </ul>
 <?php if(get_option('cc_timedmenu_display')=='on'){ ?><ul id="nav_timed">
-<li><a href="<?php echo get_option('cc_timedmenu_url'); ?>" class="hover-out special"><?php echo get_option('cc_timedmenu_text'); ?></a></li>
+<li><a href="<?php echo get_option('cc_timedmenu_url'); ?>" class="hover-out special" name="<?php $optional_class = get_option('cc_timedmenu_class'); if($optional_class != '') { echo $optional_class; } else { echo 'no-optional-class-provided'; } ?>"><?php echo get_option('cc_timedmenu_text'); ?></a></li>
 </ul><?php } ?>
 <div class="floated-right">
 <ul id="nav_sub">
@@ -21,7 +21,7 @@
 </ul>
 </div>
 <ul id="nav_iconic">
-<li class="bluesky"><a href="https://bsky.app/profile/criticalchicken.bsky.social" target="_blank" title="Bluesky" rel="external me"></a></li>
+<li class="bluesky"><a href="https://bsky.app/profile/criticalchicken.com" target="_blank" title="Bluesky" rel="external me"></a></li>
 <li class="discord"><a href="https://discord.gg/XtGUe4vaVm" target="_blank" title="Discord" rel="external me"></a></li>
 <li class="instagram"><a href="https://www.instagram.com/criticalchicken" target="_blank" title="Instagram" rel="external me"></a></li>
 <li class="ko-fi"><a href="https://ko-fi.com/criticalchicken" target="_blank" title="Ko-fi" rel="external me"></a></li>

@@ -18,11 +18,7 @@ Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are
 All other trademarks referred to are trademarks of their respective owners.
 */
 
-/* V2 font */
-/* Contains icons by Gregor Cresnar, licensed through Noun Project. */
-/* https://iconix.si https://thenounproject.com/grega.cresnar */
-
-@font-face { font-family: "V2"; src: url("woff/V2.woff2") format("woff2"), url("woff/V2.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "icon-ticker-bullet"; src: url("img/icon-ticker-bullet.woff2") format("woff2"), url("img/icon-ticker-bullet.woff2") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
 
 /* Variables */
 
@@ -61,13 +57,10 @@ All other trademarks referred to are trademarks of their respective owners.
     /* Third-party brand colours */
     --android: #3ddc84;
     --apple: #121212;
-    --beingbigbrother-pink: #fc1291;
-    --beingbigbrother-yellow: #ffca03;
-    --bluesky-icon: #5bb9e1;
+    --bluesky-icon: #1185fe;
     --discord: #5865f2;
     --instagram: #ff0069;
     --ko-fi: #13C3FF;
-    --ko-fi-alt: #ff5f5f;
     --mastodon: #6364FF;
     --mastodon-off-white: #f6f5fa;
     --nintendo-3ds-red: #cf181f;
@@ -98,30 +91,6 @@ All other trademarks referred to are trademarks of their respective owners.
     --jt63-orange: linear-gradient(-63.4deg, var(--orange) 50%, var(--lightorange) 50%);
 }
 
-/* Animations */
-
-@keyframes begging-gloss {
-    0% {
-        background-position: -452px 0;
-        opacity: 0;
-    }
-    25% {
-        background-position: -339px 0;
-        opacity: 0.68;
-    }
-    50% {
-        background-position: -226px 0;
-        opacity: 0.68;
-    }
-    75% {
-        background-position: -113px 0;
-        opacity: 0.68;
-    }
-    100% {
-        background-position: 0 0;
-        opacity: 0;
-    }
-}
 
 /* Shortcut styles */
 
@@ -169,12 +138,6 @@ All other trademarks referred to are trademarks of their respective owners.
     opacity: 0.68;
 }
 
-span.htftg {
-    font-family: "V2", "Noto Sans Display", sans-serif !important;
-    font-weight: 400 !important;
-    font-style: normal !important;
-}
-
 /* Common styles */
 
 body {
@@ -204,19 +167,19 @@ header {
 #header_inner {
     height: 96px;
     background-image: url(img/forthegaymers.png);
-    background-size: 147px 64px;
-    background-position: right 16px;
+    background-size: 346px 43px;
+    background-position: right 31px;
     background-repeat: no-repeat;
 }
 
 #header_inner a {
     display: block;
-    width: 419.5px;
+    width: 387px;
     height: 64px;
     position: relative;
     top: 16px;
     background-image: url(img/logo.png);
-    background-size: 419.5px 64px;
+    background-size: 387px 64px;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -353,169 +316,6 @@ nav.top ul#nav_iconic {
     color: var(--white);
 }
 
-/* Nav for non-paginated pages */
-
-#begging {
-    background-color: var(--lightgrey);
-    padding-bottom: 32px;
-}
-
-#begging-inner {
-    width: 1184px;
-    position: relative;
-    left: calc((100% - 1184px) / 2);
-    display: block;
-    background-color: var(--blue);
-    border-bottom: 2px var(--black) solid;
-    border-radius: 16px;
-    padding-top: 32px;
-    padding-bottom: 31px;
-}
-
-#begging-message {
-    display: inline-block;
-    width: 752px;
-    height: 63px;
-    margin-right: 32px;
-    font-size: 22px;
-    line-height: 61px;
-    color: var(--black);
-    font-weight: 300;
-    border: 1px var(--black) solid;
-    box-shadow: 0 1px var(--black);
-    left: 32px;
-    position: relative;
-    text-align: center;
-    border-radius: 8px;
-    background-color: var(--white);
-}
-
-#begging-message span {
-    background-size: 49px 49px;
-    background-position: left center;
-    background-repeat: no-repeat;
-    padding-left: 49px;
-    display: inline-block;
-    height: 63px;
-}
-
-#begging-message .terrible-thing-free {
-    background-image: url(img/icon-begging-terrible.png);
-}
-
-#begging-message .even-worse-thing-free {
-    background-image: url(img/icon-begging-worse.png);
-}
-
-#begging-message .lazy-thing-free {
-    background-image: url(img/icon-begging-lazy.png);
-}
-
-#begging-message .good-thing {
-    background-image: url(img/icon-begging-good.png);
-}
-
-#begging-button {
-    display: block;
-    width: 352px;
-    height: 64px;
-    border-bottom: 2px var(--black) solid;
-    background-color: var(--ko-fi-alt);
-    border-radius: 8px;
-    background-image: url(img/button-begging.png);
-    background-size: 352px 64px;
-    float: right;
-    margin-right: 32px;
-}
-
-#begging-button a {
-    display: block;
-    width: 352px;
-    height: 64px;
-    border-radius: 8px;
-    background-image: url(img/thumb-hover.png);
-    background-size: 577px 198px;
-    background-position: -226px center;
-    opacity: 0;
-    transition: all 0.12s ease-out;
-}
-
-#begging-button a:hover {
-    background-position: 0 center;
-    opacity: 1;
-}
-
-#begging-top {
-    width: calc(100% - 64px);
-    display: block;
-    height: 200px;
-    margin-bottom: 16px;
-    margin-left: 32px;
-}
-
-#begging-top img {
-    float: left;
-    border-radius: 8px;
-    box-shadow: 0 2px var(--black);
-    margin-right: 32px;
-}
-
-#begging-gloss {
-    position: absolute;
-    width: 352px;
-    height: 198px;
-    border-radius: 8px;
-    display: block;
-    top: 32px;
-    left: 32px;
-    background-image: url(img/thumb-begging-gloss.png);
-    background-size: 804px 198px;
-    background-position: -452px 0;
-    opacity: 0;
-    animation: begging-gloss 24s linear infinite;
-    background-repeat: no-repeat;
-}
-
-#begging-top span.instead {
-    font-size: 41px;
-    line-height: 48px;
-    color: var(--white);
-    font-weight: 300;
-    text-shadow: 0 2px var(--black);
-}
-
-#begging-top span.heres {
-    font-size: 64.9166667px;
-    line-height: 76px;
-    color: var(--white);
-    font-weight: 300;
-    display: block;
-    text-shadow: 0 2px var(--black);
-}
-
-#begging-top span.heres b,
-#begging-top span.heres strong {
-    font-weight: 500;
-}
-
-div.image-credit {
-    position: absolute;
-    font-size: 15px;
-    line-height: 24px;
-    height: 24px;
-    display: block;
-    color: var(--white);
-    top: 318px;
-    text-shadow: 0 2px var(--black);
-    font-weight: 300;
-}
-
-div.image-credit a {
-    color: var(--white);
-    font-weight: 500;
-    text-decoration: none;
-}
-
 /* Footer styles */
 
 #footer_inner {
@@ -548,13 +348,15 @@ span.trademarks {
 	color: var(--black);
 	font-weight: 500;
     clear: both;
-    border-top: 26px var(--white) solid;
+    border-top: 34px var(--white) solid;
 }
 
 #version img {
+    height: 40.1px;
 	float: left;
 	margin-right: 16px;
-	width: 55.5px;
+	width: 87px;
+    margin-bottom: -8.5px;
 }
 
 p#load_time {
@@ -578,6 +380,14 @@ nav#footer-links li {
     margin-right: 16px;
 }
 
+nav#footer-links li.press {
+    clear: both;
+    float: none;
+    margin-right: 0;
+    position: relative;
+    top: 8px;
+}
+
 nav#footer-links a {
     color: var(--black);
     text-decoration: none;
@@ -587,6 +397,23 @@ nav#footer-links a {
     background-size: 12.5px 12px;
     background-position: right 5px;
     background-repeat: no-repeat;
+}
+
+#not-lazy {
+    position: absolute;
+    bottom: 32px;
+    right: 112px;
+    width: 131px;
+    height: 42px;
+    display: block;
+}
+
+#not-lazy a {
+    border-radius: 0 13px 0 14px;
+}
+
+#not-lazy img {
+    border-radius: 0 13px 0 14px;
 }
 
 #back-to-top {
@@ -614,7 +441,7 @@ nav.bottom ul#nav_iconic {
     top: 112px;
     right: 32px;
     height: 34px;
-    width: 272px;
+    width: auto;
     z-index: 300;
 }
 
@@ -682,7 +509,6 @@ nav.bottom ul#nav_iconic li a:hover {
 nav.top .nav_background,
 nav.bottom .nav_background {
     height: 64px;
-    background-image: var(--nav-latest);
     z-index: 3990;
     position: relative;
     display: block;
@@ -694,8 +520,13 @@ nav.bottom .nav_background.latest {
     background-image: var(--nav-latest);
 }
 
+/* Special menu items */
 nav.top .nav_background.special,
 nav.bottom .nav_background.special {
+    background-color: var(--not-black);
+}
+nav.top .nav_background.special.summer-game-fest,
+nav.bottom .nav_background.special.summer-game-fest {
     background-image: var(--nav-game-fest);
 }
 

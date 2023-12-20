@@ -34,17 +34,6 @@ All other trademarks referred to are trademarks of their respective owners.
 <?php if(has_tag()) { ?><span class="post-meta-tags"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-meta-topic.png" height="15" alt=""><?php echo the_tags("Topics in this post: ", ", ", "<span class='full-stop'>.</span>"); ?></span><?php } else { ?><div class="no-tags"></div><?php } ?>
 </div><!-- /post-meta -->
 <?php if ( function_exists( 'yarpp_related' ) ) { yarpp_related(); } ?>
-
-<section id="begging-message-mini">
-<h2>Want us to write even more like this?</h2>
-<div id="begging-message">
-We&rsquo;re<span class="terrible-thing-free">ad-free,</span><span class="even-worse-thing-free">tracker-free,</span><span class="lazy-thing-free">AI-free,&nbsp;and</span><span class="good-thing">100% independent.</span>
-</div>
-<div id="begging-button">
-<a href="https://ko-fi.com/criticalchicken" target="_blank" rel="external me">Please support us on Ko-fi.</a>
-</div>
-</section>
-
 <?php if(comments_open()) : ?><a name="comments"></a><div id="the-comments">
 	<div id="comment-listing">
 	<h2><img src="<?php echo get_template_directory_uri(); ?>/img/icon-comments<?php comments_number("-sad-header","-header","-header"); ?>.png" width="30" height="30" alt="">This post has <?php comments_number("no comments.","1 comment.","% comments."); ?><br />Will yours be <?php comments_number("the first?","next?","next?"); ?></h2>

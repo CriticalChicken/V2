@@ -59,6 +59,8 @@ nav.top ul#nav_iconic {
 	line-height: 63px !important;
 	font-weight: 500 !important;
 	color: var(--black) !important;
+    position: relative !important;
+    top: 0.4px !important;
 }
 
 #ticker-contents b,
@@ -72,9 +74,13 @@ nav.top ul#nav_iconic {
 }
 
 #ticker-contents li:after {
-    content: "\007E";
-    position: relative;
-    margin-left: 32px;
-    font-family: "V2", "Noto Sans Display", sans-serif !important;
+    content: "-" !important;
+    position: relative !important;
+    margin-left: 32px !important;
+    font-family: "icon-ticker-bullet", "Noto Sans Display", sans-serif !important;
     font-weight: 400 !important;
+    font-size: 20px !important;
+    position: relative !important;
+    top: -2px !important;
+    line-height: 0 !important;
 }

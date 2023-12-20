@@ -4,13 +4,6 @@ Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are
 All other trademarks referred to are trademarks of their respective owners.
 */
 
-/* Visby CF DEMO fonts */
-/* Free for personal, non-profit use. */
-/* https://befonts.com/visby-cf-font-family.html */
-
-@font-face { font-family: "Visby CF"; src: url("../woff/Fontspring-DEMO-visbycf-demibold.otf") format("opentype"); font-weight: 500; font-style: normal; font-display: swap; }
-@font-face { font-family: "Visby CF"; src: url("../woff/Fontspring-DEMO-visbycf-extrabold.otf") format("opentype"); font-weight: 700; font-style: normal; font-display: swap; }
-
 /* Animations */
 
 @keyframes slide {
@@ -178,14 +171,6 @@ All other trademarks referred to are trademarks of their respective owners.
     }
 }
 
-@keyframes bbb-vvc {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 157.5px 0;
-    }
-}
 
 /* Iconic styles */
 
@@ -279,7 +264,7 @@ nav.top ul#nav_iconic li a:hover {
     top: 0;
     height: 100%;
     background-color: var(--lightgrey);
-    z-index: 999;
+    z-index: 1002;
 }
 
 #jts-left {
@@ -293,7 +278,7 @@ nav.top ul#nav_iconic li a:hover {
 .jts-corner {
     width: 34px;
     position: absolute;
-    z-index: 998;
+    z-index: 1003;
     background-repeat: no-repeat;
 }
 
@@ -468,7 +453,7 @@ nav.top ul#nav_iconic li a:hover {
 	height: 100%;
 	overflow: auto;
 	position: absolute;
-	z-index: 1000;
+	z-index: 1001;
 	top: 0;
 	display: block;
     left: calc((100% - 1184px) / 2);
@@ -482,6 +467,35 @@ nav.top ul#nav_iconic li a:hover {
     border-radius: 16px;
 }
 
+/* Snow effect for December */
+#snow {
+	width: 1184px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    pointer-events: none;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: calc(50% - (1184px / 2));
+    opacity: 0;
+    transition: opacity 1.6s ease-in-out;
+}
+
+#snow.ready {
+    opacity: 0.86;
+}
+
+.snowflake {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(white, white);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
 /* Home listings */
 
 .home_listing {
@@ -492,7 +506,7 @@ nav.top ul#nav_iconic li a:hover {
 
 .home_listing.lower {
     padding-top: 24px;
-    padding-bottom: 25px;
+    padding-bottom: 43px;
 }
 
 h1.context-title {
@@ -608,7 +622,7 @@ h1.context-title {
 #not-sidebar-inner {
     background-color: var(--blue);
     backdrop-filter: blur(8px);
-    border-radius: 16px 16px 0 0;
+    border-radius: 16px;
     width: 1184px;
     position: relative;
     left: calc((100% - 1184px) / 2);
@@ -619,6 +633,7 @@ h1.context-title {
     background-size: 1px 1px;
     background-position: 0 0;
     background-repeat: no-repeat;
+    border-bottom: 2px var(--black) solid;
 }
 
 #not-sidebar-left,
@@ -1169,76 +1184,4 @@ span.poll-error {
 
 .wp-polls-ul {
     margin-left: 0 !important;
-}
-
-/* Being Big Brother tease */
-
-#beingbigbrother {
-    background-color: var(--not-black);
-    border-radius: 0 0 16px 16px;
-    width: 693px;
-    position: relative;
-    left: calc((100% - 1184px) / 2);
-    border-bottom: 2px var(--black) solid;
-    padding-top: 26px;
-    background-image: url(../img/beingbigbrother.png);
-    background-size: 459px 256px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    height: 230px;
-    padding-left: 491px;
-    font-family: "Visby CF", sans-serif;
-}
-
-.bbb-tease,
-#beingbigbrother a {
-    font-size: 22px;
-    line-height: 32px;
-    font-weight: 700;
-    color: var(--white);
-    display: block;
-}
-
-#beingbigbrother a {
-    font-weight: 500;
-    text-decoration: none;
-    position: absolute;
-    bottom: 46px;
-    padding-right: 24px;
-    background-image: url(../img/beingbigbrother-link.png);
-    background-size: 16px 16px;
-    background-position: right 6px;
-    background-repeat: no-repeat;
-}
-
-.bbb-headline {
-    font-size: 41px;
-    line-height: 48px;
-    font-weight: 700;
-    color: var(--white);
-    display: block;
-    margin-top: 3px;
-}
-
-#beingbigbrother span.being {
-    color: var(--beingbigbrother-pink);
-}
-
-#beingbigbrother span.big-brother {
-    color: var(--beingbigbrother-yellow);
-}
-
-#viewvotecontrol {
-    width: 724.1px;
-    height: 15px;
-    display: block;
-    position: absolute;
-    background-image: url(../img/beingbigbrother-viewvotecontrol.png);
-    background-size: 157.5px 15px;
-    background-repeat: repeat-x;
-    background-position: 0 0;
-    right: 0;
-    bottom: 0;
-    animation: bbb-vvc 23s linear infinite;
-    border-radius: 0 0 16px 0;
 }

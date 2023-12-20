@@ -200,22 +200,33 @@ All other trademarks referred to are trademarks of their respective owners.
 	background-image: url("../img/icon-post-info.png");
 }
 
-.single-post .echo-the-content .wp-block-quote.tweet {
+.single-post .echo-the-content .wp-block-quote.tweet,
+.single-post .echo-the-content .wp-block-quote.twitter {
 	background-image: url("../img/icon-post-tweet.png");
 	background-size: 18.5px 15px;
 	background-position: 45.5px 56px;
 }
 
-.single-post .echo-the-content .wp-block-quote.x-post {
+.single-post .echo-the-content .wp-block-quote.x-post,
+.single-post .echo-the-content .wp-block-quote.x {
 	background-image: url("../img/icon-post-x.png");
 	background-size: 14.5px 15px;
 	background-position: 49.5px 56px;
 }
 
-.single-post .echo-the-content .wp-block-quote.toot {
+.single-post .echo-the-content .wp-block-quote.toot,
+.single-post .echo-the-content .wp-block-quote.mastodon {
 	background-image: url("../img/icon-post-toot.png");
 	background-size: 14px 15px;
 	background-position: 50px 56px;
+}
+
+.single-post .echo-the-content .wp-block-quote.bluesky,
+.single-post .echo-the-content .wp-block-quote.bsky,
+.single-post .echo-the-content .wp-block-quote.skeet {
+	background-image: url("../img/icon-post-bluesky.png");
+	background-size: 15px 13.5px;
+	background-position: 49px 56.75px;
 }
 
 .single-post .echo-the-content ul.privacy-list li {
@@ -372,9 +383,9 @@ All other trademarks referred to are trademarks of their respective owners.
 	line-height: 32px;
 	margin-top: 16px;
 	background-image: url("../img/icon-post-bullet.png");
-	background-size: 8px 8px;
+	background-size: 15px 15px;
 	background-repeat: no-repeat;
-	background-position: 56px 21px;
+	background-position: 49px 17px;
 }
 
 .single-post .echo-the-content ul li,
@@ -385,9 +396,9 @@ All other trademarks referred to are trademarks of their respective owners.
 	line-height: 32px;
 	margin-top: 16px;
 	background-image: url("../img/icon-post-bullet.png");
-	background-size: 8px 8px;
+	background-size: 15px 15px;
 	background-repeat: no-repeat;
-	background-position: 56px 12px;
+	background-position: 49px 8px;
 }
 
 .single-post .echo-the-content a,
@@ -856,34 +867,6 @@ div#the-lack-of-comments {
 }
 
 
-/* Mini begging message */
-
-section#begging-message-mini {
-	width: 100%;
-	display: block;
-	margin-top: 33px;
-	padding-bottom: 1px;
-}
-
-#begging-message-mini h2 {
-	font-size: 31px;
-	line-height: 40px;
-	color: var(--black);
-	font-weight: 500;
-}
-
-div#begging-message {
-	left: 0;
-	margin-right: 0;
-	margin-top: 8px;
-}
-
-div#begging-button {
-	margin-right: 0;
-	margin-top: 8px;
-}
-
-
 /* Styles for YARPP related posts */
 
 div.yarpp {
@@ -924,16 +907,17 @@ span.yarpp-thumbnail-default {
 	border-radius: 8px !important;
 }
 
-span.yarpp-thumbnail-default img {
+a.yarpp-thumbnail img {
 	width: 352px !important;
 	height: 198px !important;
 	min-width: unset !important;
 	min-height: unset !important;
 	border-radius: 8px !important;
 	box-shadow: 0 2px var(--black) !important;
+	margin: 0 !important;
 }
 
-span.yarpp-thumbnail-default:after {
+a.yarpp-thumbnail:before {
 	content: "";
 	width: 352px;
 	height: 198px;
@@ -941,16 +925,17 @@ span.yarpp-thumbnail-default:after {
 	position: relative;
 	display: block;
 	left: 0;
-	top: -198px;
+	top: 0;
 	background-image: url(../img/thumb-hover.png);
     background-size: 577px 198px;
     background-position: -226px 0;
     z-index: 100;
     opacity: 0;
     transition: all 0.12s ease-out;
+	margin-bottom: -198px;
 }
 
-span.yarpp-thumbnail-default:hover:after {
+a.yarpp-thumbnail:hover:before {
     background-position: 0 0;
     opacity: 1;
 }
@@ -970,7 +955,7 @@ span.yarpp-thumbnail-title {
 	transition: opacity 0.12s ease-out;
 }
 
-span.yarpp-thumbnail-title:hover {
+a.yarpp-thumbnail:hover span.yarpp-thumbnail-title {
 	opacity: 0.68;
 }
 
@@ -1226,10 +1211,10 @@ h1.page-header.explore span {
 }
 
 h1.page-header.about span {
-	width: 23.5px;
+	width: 24px;
 	margin-right: 16px;
 	background-image: url(../img/page-header-about.png);
-	background-size: 23.5px 30px;
+	background-size: 24px 30px;
 	display: inline-block;
 }
 

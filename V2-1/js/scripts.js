@@ -156,7 +156,9 @@ $(document).ready(function() {
 
 	// Nav hover effects
 	$('#nav_main a.latest').mouseenter(function() {
+		var optionalClass = $('#nav_timed a.special').attr('name');
 		$('.nav_background').removeClass('special');
+		$('.nav_background').removeClass(optionalClass);
 		$('.nav_background').addClass('latest');
 		$('.nav_inner').addClass('latest');
 	});
@@ -182,8 +184,10 @@ $(document).ready(function() {
 		$('.nav_inner').removeClass('reviews');
 	});
 	$('#nav_timed a.special').mouseenter(function() {
+		var optionalClass = $('#nav_timed a.special').attr('name');
 		$('.nav_background').removeClass('latest');
 		$('.nav_background').addClass('special');
+		$('.nav_background').addClass(optionalClass);
 		$('.nav_inner').addClass('special');
 	});
 	$('#nav_timed a.special').mouseleave(function() {

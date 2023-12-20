@@ -149,6 +149,10 @@ function jtSpecialAlt() {
 
 		echo 'Best of';
 
+	} else if ($type == 'breaking-news') {
+
+		echo 'Breaking news';
+
 	} else if ($type == 'e3-2023') {
 
 		echo 'E3&rsquo;s future';
@@ -164,6 +168,10 @@ function jtSpecialAlt() {
 	} else if ($type == 'live') {
 
 		echo 'Live';
+
+	} else if ($type == 'news-alert') {
+
+		echo 'News alert';
 
 	} else if ($type == 'nintendo-direct') {
 
@@ -188,6 +196,10 @@ function jtSpecialAlt() {
 	} else if ($type == 'dungeons-and-dragons') {
 
 		echo 'Dungeons &amp; Dragons';
+
+	} else if ($type == 'switch-2') {
+
+		echo 'Switch 2';
 
 	}
 
@@ -297,6 +309,10 @@ function jtMainAlt() {
 
 		echo 'Video';
 
+	} else {
+
+		echo 'Critical Chicken';
+		
 	}
 
 }
@@ -387,25 +403,13 @@ function tkAlt() {
 
 		echo 'Dungeons &amp; Dragons';
 
-	}
+	} else if ($type == 'switch-2') {
 
-}
-
-
-
-// Add an icon if needed
-
-function tkIcon() {
-
-	$type = get_option('cc_ticker_titletag_special');
-
-	if ($type == 'breaking-news' || $type == 'news-alert') {
-
-		echo '<span class="titletag icon-only"><img src="' . get_template_directory_uri() . '/img/titletags/ticker/news-icon.png" height="32" alt="News | "></span><span class="titletag after-icon">';
+		echo 'Switch 2';
 
 	} else {
 
-		echo '<span class="titletag">';
+		echo 'Critical Chicken';
 
 	}
 
@@ -544,6 +548,12 @@ function ctTitletag() {
 		}
 
 	// Priority 4 - Individual games, topics
+
+		if (in_category('switch-2')) {
+
+			echo '<span class="titletag"><a href="' . $site . '/section/switch-2"><img src="' . $path . '/img/titletags/switch-2.png" alt="Switch 2" height="32"></a></span>';
+
+		}
 
 		if (in_category('dungeons-and-dragons')) {
 
@@ -991,7 +1001,7 @@ require_once(TEMPLATEPATH . '/functions/cc-adminnouncement-editor.php');
 
 if(!is_admin()){ // make sure the filters are only called in the frontend
 
-    function comma_tag_filter($tag_arr){
+    function comma_tag_filter_cockatiel($tag_arr){
 
         $tag_arr_new = $tag_arr;
 
@@ -1005,17 +1015,17 @@ if(!is_admin()){ // make sure the filters are only called in the frontend
 
     }
 
-    add_filter('get_post_tag', 'comma_tag_filter');
+    add_filter('get_post_tag', 'comma_tag_filter_cockatiel');
 
 
 
-    function comma_tags_filter($tags_arr){
+    function comma_tags_filter_cockatiel($tags_arr){
 
         $tags_arr_new = array();
 
         foreach($tags_arr as $tag_arr){
 
-            $tags_arr_new[] = comma_tag_filter($tag_arr);
+            $tags_arr_new[] = comma_tag_filter_cockatiel($tag_arr);
 
         }
 
@@ -1023,9 +1033,9 @@ if(!is_admin()){ // make sure the filters are only called in the frontend
 
     }
 
-    add_filter('get_terms', 'comma_tags_filter');
+    add_filter('get_terms', 'comma_tags_filter_cockatiel');
 
-    add_filter('get_the_terms', 'comma_tags_filter');
+    add_filter('get_the_terms', 'comma_tags_filter_cockatiel');
 
 }
 
@@ -1035,7 +1045,7 @@ if(!is_admin()){ // make sure the filters are only called in the frontend
 
 // De-code the encoded HTML entities for our Tidbyt apps
 
-function fix_decode_rest_api($response, $post, $request) {
+function fix_decode_rest_api_cockatiel($response, $post, $request) {
 
 
 
@@ -1075,29 +1085,29 @@ function fix_decode_rest_api($response, $post, $request) {
 
 }
 
-add_filter('rest_prepare_post', 'fix_decode_rest_api', 10, 3);
+add_filter('rest_prepare_post', 'fix_decode_rest_api_cockatiel', 10, 3);
 
 
 // Stop users editing their profiles
 if( defined('IS_PROFILE_PAGE') && IS_PROFILE_PAGE === true ){
 	$site = get_site_url();
 	$path = get_template_directory_uri();
-    wp_die( '<p><img src="' . $path . '/img/admin/v2-logo.png" style="width: 41.5px; height: 31px;" alt="V2"></p><p><b>There are potentially website-breaking things on this page, so we&rsquo;ve disabled it.</b></p><p>You can still change your own profile picture on <a href="https://en.gravatar.com" target="_blank" rel="external">Gravatar</a> (sign in with your &ldquo;firstname@criticalchicken.com&rdquo; email address). If you&rsquo;d like any other changes made to your profile, email <a href="mailto:office@criticalchicken.com">office@criticalchicken.com</a>.</p><p><a href="'. $site . '/wp-admin/index.php">Go back to the Dashboard &raquo;</a></p>' );
+    wp_die( '<p><img src="' . $path . '/img/admin/v2-logo.png" style="width: 54.5px; height: 31px; margin-bottom: -6px;" alt="V2"></p><p><b>There are potentially website-breaking things on this page, so we&rsquo;ve disabled it.</b></p><p>You can still change your own profile picture on <a href="https://en.gravatar.com" target="_blank" rel="external">Gravatar</a> (sign in with your &ldquo;firstname@criticalchicken.com&rdquo; email address). If you&rsquo;d like any other changes made to your profile, email <a href="mailto:office@criticalchicken.com">office@criticalchicken.com</a>.</p><p><a href="'. $site . '/wp-admin/index.php">Go back to the Dashboard &raquo;</a></p>' );
 }
 
 
 // Change "Thank you for creating with WordPress" text
-function remove_footer_admin () {
+function remove_footer_admin_cockatiel () {
 	echo '<span id="footer-thankyou">Thank you for creating with <a href="https://github.com/CriticalChicken/V2" target="_blank" rel="external me">V2</a> and <a href="https://wordpress.org" target="_blank" rel="external">WordPress</a>.</span>';
 }
-add_filter('admin_footer_text', 'remove_footer_admin');
+add_filter('admin_footer_text', 'remove_footer_admin_cockatiel');
 
 
 // Admin announcements box
-function is_site_admin(){
+function is_site_admin_cockatiel(){
 	return in_array('administrator', wp_get_current_user()->roles);
 }
-function v2_admin_ticker() {
+function v2_admin_ticker_cockatiel() {
 	$message = '';
 	if(get_option('cc_ticker_display') == 'on') {
 		$type = get_option('cc_ticker_titletag_special');
@@ -1117,6 +1127,8 @@ function v2_admin_ticker() {
 			$title = 'Ace Attorney';
 		} else if($type == 'breaking-news') {
 			$title = 'Breaking news';
+		} else if($type == 'switch-2') {
+			$title = 'Switch 2';
 		} else if($type == 'dungeons-and-dragons') {
 			$title = 'Dungeons &amp; Dragons';
 		} else if($type == 'e3-2023') {
@@ -1173,15 +1185,15 @@ function v2_admin_ticker() {
 		if(get_option('cc_ticker_item10') != '') {
 			$item10 = '<p>' . get_option('cc_ticker_item10') . '</p>';
 		}
-		if(is_site_admin()) {
+		if(is_site_admin_cockatiel()) {
 			$link2 = '<p class="ticker-link"><a href="https://www.criticalchicken.com/wp-admin/admin.php?page=cc-ticker-editor">Ticker settings &raquo;</a></p>';
 		}
 		$message = '<div class="notice ticker inline"><p><b>' . $title . '</b></p>' . $item1 . $item2 . $item3 . $item4 . $item5 . $item6 . $item7 . $item8 . $item9 . $item10 . $link . $link2 . '</div>';
 	}
     return $message;
 }
-add_shortcode('v2_admin_ticker', 'v2_admin_ticker');
-function v2_admin_mmode() {
+add_shortcode('v2_admin_ticker', 'v2_admin_ticker_cockatiel');
+function v2_admin_mmode_cockatiel() {
 	$message = '';
 	$message2 = '<p>As long as you stay logged in, you should still be able to access the Critical Chicken website.</p>';
 	$message3 = '';
@@ -1189,23 +1201,23 @@ function v2_admin_mmode() {
 		if(!current_user_can('edit_posts')) {
 			$message2 = '<p>You may not be able to access the Critical Chicken website for a while.</p>';
 		}
-		if(is_site_admin()) {
+		if(is_site_admin_cockatiel()) {
 			$message3 = '<p><a href="https://www.criticalchicken.com/wp-admin/admin.php?page=cc-mm-editor">Maintenance mode settings &raquo;</a></p>';
 		}
 		$message = '<div class="notice inline mm"><p><b>Maintenance mode is enabled</b></p>' . $message2 . $message3 . '</div>';
 	}
 	return $message;
 }
-add_shortcode('v2_admin_mmode', 'v2_admin_mmode');
-function v2_admin_emailedit() {
+add_shortcode('v2_admin_mmode', 'v2_admin_mmode_cockatiel');
+function v2_admin_emailedit_cockatiel() {
 	$message = '<a href="mailto:office@criticalchicken.com" rel="me" class="iconic email" title="Email the admins"><img src="https://www.criticalchicken.com/wp-content/themes/V2-1/img/admin/iconic-email.png" width="30" height="30" alt="Email"></a>';
-	if(is_site_admin()) {
+	if(is_site_admin_cockatiel()) {
 		$message = '<a href="https://www.criticalchicken.com/wp-admin/admin.php?page=cc-adminnouncement-editor" class="iconic edit" title="Edit these announcements"><img src="https://www.criticalchicken.com/wp-content/themes/V2-1/img/admin/iconic-edit.png" width="30" height="30" alt="Edit"></a>';
 	}
 	return $message;
 }
-add_shortcode('v2_admin_emailedit', 'v2_admin_emailedit');
-function v2_adminnouncement() {
+add_shortcode('v2_admin_emailedit', 'v2_admin_emailedit_cockatiel');
+function v2_adminnouncement_cockatiel() {
 	$message = '';
 	if(get_option('cc_adminnouncement_display') == 'on') {
 		$item1 = '';
@@ -1252,7 +1264,7 @@ function v2_adminnouncement() {
 	}
     return $message;
 }
-add_shortcode('v2_adminnouncement', 'v2_adminnouncement');
+add_shortcode('v2_adminnouncement', 'v2_adminnouncement_cockatiel');
 
 // Writer page avatars
 function writer_page_avatar() {

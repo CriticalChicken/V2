@@ -144,10 +144,10 @@ h1.listing-header {
     box-shadow: 0 2px var(--black);
     margin-top: 16px;
     background-image: url(../img/sections/fallback-header.png);
-    background-size: 337.5px 60px;
+    background-size: 229.5px 60px;
     background-position: 16px 0;
     background-repeat: no-repeat;
-    width: 369.5px;
+    width: 261.5px;
     margin-bottom: 4px;
 }
 
@@ -200,9 +200,9 @@ section.e3-2023 h1.listing-header {
 section.exclusives h1.listing-header {
     background-color: var(--yellow);
     background-image: url(../img/sections/exclusives-header.png);
-    background-size: 234.5px 60px;
+    background-size: 239.5px 60px;
     background-position: 16px 0;
-    width: 266.5px;
+    width: 271.5px;
 }
 
 section.videos h1.listing-header {
@@ -373,6 +373,14 @@ section.nintendo-direct h1.listing-header {
     width: 386px;
 }
 
+section.switch-2 h1.listing-header {
+    background-color: var(--nintendo-direct-red);
+    background-image: url(../img/sections/switch-2.png);
+    background-size: 213.5px 60px;
+    background-position: 16px 0;
+    width: 245.5px;
+}
+
 section.state-of-play h1.listing-header {
     background-image: url(../img/sections/state-of-play-header.png);
     background-size: 329px 60px;
@@ -390,9 +398,9 @@ section.summer-game-fest-2024 h1.listing-header {
 
 section.forthegaymers h1.listing-header {
     background-image: url(../img/sections/forthegaymers-header.png);
-    background-size: 364.5px 60px;
+    background-size: 366px 60px;
     background-position: 0 0;
-    width: 364.5px;
+    width: 366px;
 }
 
 /* Section sidebar */

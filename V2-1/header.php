@@ -18,7 +18,7 @@
 <?php if(get_option('cc_ticker_display')=='on'){ ?><section id="ticker" class="full-width">
 <div id="ticker_inner" class="responsive-rounded-no-padding">
 <div id="ticker_top-layer">
-<?php if(get_option('cc_ticker_link')!=""){ ?><a href="<?php echo get_option('cc_ticker_link'); ?>"></a><?php } ?><?php tkIcon(); ?><img src="<?php tkSpecialTitletag(); ?>" height="32" alt="<?php tkAlt(); ?>"></span>
+<?php if(get_option('cc_ticker_link')!=""){ ?><a href="<?php echo get_option('cc_ticker_link'); ?>"></a><?php } ?><span class="titletag"><img src="<?php tkSpecialTitletag(); ?>" height="32" alt="<?php tkAlt(); ?>"></span>
 </div>
 <div id="ticker_bottom-layer"><ul id="ticker-contents"><?php tickerContents(); ?></ul></div>
 </div>

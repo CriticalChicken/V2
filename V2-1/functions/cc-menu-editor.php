@@ -31,7 +31,7 @@ function cc_timedmenu_editor_contents() {
 </style>
 
 <div class="wrap">
-	<h1 style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/admin/v2-logo.png'); background-size: 41.5px 31px; background-position: left 12px; background-repeat: no-repeat; padding: 8px 0 12px 53.5px !important; height: 31px !important; line-height: 31px !important;">Special menu item editor</h1>
+	<h1 style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/admin/v2-logo.png'); background-size: 54.5px 31px; background-position: left 12px; background-repeat: no-repeat; padding: 8px 0 12px 70.5px !important; height: 31px !important; line-height: 31px !important;">Special menu item editor</h1>
 	<form method="POST" action="options.php">
 		<?php
 		settings_fields('cc-timedmenu-editor');
@@ -79,9 +79,18 @@ function cc_timedmenu_settings_init() {
 		'cc-timedmenu-editor_setting_section'
 	);
 
+	add_settings_field(
+		'cc_timedmenu_class',
+		__( 'CSS class', 'my-textdomain' ),
+		'cc_timedmenu_editor_class',
+		'cc-timedmenu-editor',
+		'cc-timedmenu-editor_setting_section'
+	);
+
 	register_setting( 'cc-timedmenu-editor', 'cc_timedmenu_display' );
 	register_setting( 'cc-timedmenu-editor', 'cc_timedmenu_text' );
 	register_setting( 'cc-timedmenu-editor', 'cc_timedmenu_url' );
+	register_setting( 'cc-timedmenu-editor', 'cc_timedmenu_class' );
 }
 
 function cc_timedmenu_editor_intro() {
@@ -106,6 +115,16 @@ function cc_timedmenu_editor_text() {
 function cc_timedmenu_editor_url() {
 ?>
 		<input type="text" name="cc_timedmenu_url" id="cc_timedmenu_url" value="<?php echo get_option('cc_timedmenu_url'); ?>" style="width: 400px">
+
+<?php
+}
+
+function cc_timedmenu_editor_class() {
+?>
+		<p>Optionally, add a CSS class &ndash; like &ldquo;summer-game-fest&rdquo; &ndash; to your menu item.</p>
+		<input type="text" name="cc_timedmenu_class" id="cc_timedmenu_class" value="<?php echo get_option('cc_timedmenu_class'); ?>" style="width: 400px">
+		<p style="font-size: small;">If you don&rsquo;t need to add a CSS class, just leave this box blank.</p>
+		<p style="font-size: small;">We&rsquo;ll always add the &ldquo;special&rdquo; class, regardless of what&rsquo;s in this box.</p>
 
 <?php
 }

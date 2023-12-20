@@ -9,6 +9,7 @@ All other trademarks referred to are trademarks of their respective owners.
 -->
 
 <head>
+<?php if(date('n') == 12) { define("LETITSNOW", 1); } else if(date('j') == 1 && $thisDate <= 5) { define("LETITSNOW", 1); } ?>
 <?php get_template_part('meta'); ?>
 <title>Critical Chicken - Video game news, features, and reviews #ForTheGaymers</title>
 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/home.css" as="style">
@@ -23,6 +24,7 @@ All other trademarks referred to are trademarks of their respective owners.
                 <div id="jts-left" class="jts"><div id="jts-left-top-corner" class="jts-corner"></div><div id="jts-left-bottom-corner" class="jts-corner"></div></div>
                 <div id="jts-right" class="jts"><div id="jts-right-top-corner" class="jts-corner"></div><div id="jts-right-bottom-corner" class="jts-corner"></div></div>
                 <div id="jts-shadow"></div>
+                <?php if(defined('LETITSNOW')) { ?><div id="snow"></div><?php } ?>
                 <div class="bg"></div>
                 <div class="bg bg2"></div>
                 <div class="bg bg3"></div>
@@ -95,12 +97,6 @@ All other trademarks referred to are trademarks of their respective owners.
                     </div><!--/not-sidebar-right-->
                     <br>
                 </div><!--/not-sidebar-inner-->
-                <div id="beingbigbrother">
-                    <span class="bbb-tease">Big Brother fan?</span>
-                    <span class="bbb-headline">Check out our side hustle,<br><span class="being">Being</span>&nbsp;<span class="big-brother">Big&nbsp;Brother</span>.</span>
-                    <div id="viewvotecontrol"></div>
-                    <a href="https://beingbigbrother.blog" rel="external me" class="hover-out" target="_blank">Go to beingbigbrother.blog</a>
-                </div>
             </section>
             <section class="home_listing listing lower full-width">
                 <div class="home_listing-inner responsive">
@@ -116,7 +112,6 @@ All other trademarks referred to are trademarks of their respective owners.
                     </div><!--/posts-container-lower-->
                 </div>
             </section>
-            <?php get_template_part('begging'); ?>
         </main>
         <nav class="bottom full-width">
             <div class="responsive-rounded nav_inner">

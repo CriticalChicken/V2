@@ -1,7 +1,7 @@
 <?php add_action('admin_menu','mm_editor');function mm_editor(){add_menu_page('Maintenance Mode','Maintenance Mode','manage_options','mm-editor','mm_editor_contents','dashicons-hidden',3.6);}function mm_editor_contents(){ ?>
 
 <div class="wrap">
-	<h1 style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/admin/v2-logo.png'); background-size: 41.5px 31px; background-position: left 12px; background-repeat: no-repeat; padding: 8px 0 12px 53.5px !important; height: 31px !important; line-height: 31px !important;">Maintenance Mode</h1>
+	<h1 style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/admin/v2-logo.png'); background-size: 54.5px 31px; background-position: left 12px; background-repeat: no-repeat; padding: 8px 0 12px 70.5px !important; height: 31px !important; line-height: 31px !important;">Maintenance Mode</h1>
 	<form method="POST" action="options.php">
 		<?php settings_fields('mm-editor');do_settings_sections('mm-editor');submit_button(); ?>
     </form>
