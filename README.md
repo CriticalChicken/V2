@@ -10,9 +10,9 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
-### V2.0.12&ndash;V2.0.14
+### V2.0.12&ndash;V2.0.15
 
-- **Archive:** Archived V2.0, as V2.1 is nearing completion. V2.0 will now only receive hotfixes
+- **Bug fixes**
 
 ### V2.0.11
 
