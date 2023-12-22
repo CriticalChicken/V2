@@ -24,11 +24,11 @@ div.tidbyt-previews{display:block;width:1120px;height:408px;padding-top:35px;pad
 <div class="tidbyt-previews">
 <div class="ctable">
 <img src="<?php echo get_template_directory_uri(); ?>/img/tidbyt/cmask.png" width="138" height="69" alt="" class="cmask">
-<img src="<?php echo get_template_directory_uri(); ?>/img/tidbyt/preview2.gif" width="138" height="69" alt="" class="cpreview">
+<img src="<?php echo get_template_directory_uri(); ?>/img/tidbyt/preview1.gif" width="138" height="69" alt="" class="cpreview">
 </div>
 <div class="ktable">
 <img src="<?php echo get_template_directory_uri(); ?>/img/tidbyt/kmask.png" width="200" height="100" alt="" class="kmask">
-<img src="<?php echo get_template_directory_uri(); ?>/img/tidbyt/preview1.gif" width="200" height="100" alt="" class="kpreview">
+<img src="<?php echo get_template_directory_uri(); ?>/img/tidbyt/preview2.gif" width="200" height="100" alt="" class="kpreview">
 </div>
 <div class="disclaimer"><span>Screen images simulated.&nbsp;</span>We&rsquo;re not sponsored by or affiliated with Tidbyt.</div>
 </div>

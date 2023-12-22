@@ -11,7 +11,7 @@
 </div><!-- /footer-links -->
 <div id="back-to-top" title="Back to top"></div>
 <div id="version">
-<a href="https://github.com/CriticalChicken/V2" target="_blank" rel="external me"><img src="<?php echo get_template_directory_uri(); ?>/img/branding_v2-and-github_color-on-white_for32px.png" width="56" height="32" alt="Critical Chicken V2" title="V2.0 Brazen Blackbird - on GitHub"></a><p id="load_time">Still loading&hellip;</p>
+<a href="https://github.com/CriticalChicken/V2" target="_blank" rel="external me"><img src="<?php echo get_template_directory_uri(); ?>/img/branding_v2-and-github_color-on-white_for32px.png" width="87" alt="Critical Chicken V2" title="V2.0 Brazen Blackbird - on GitHub"></a><p id="load_time">Still loading&hellip;</p>
 </div><!-- /version -->
 </div><!-- /footer-inner -->
 </div><!-- /footer-outer -->

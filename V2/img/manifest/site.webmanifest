@@ -3,12 +3,12 @@
     "short_name": "Critical Chicken",
     "icons": [
         {
-            "src": "https://www.criticalchicken.com/img/manifest/android-chrome-192x192.png",
+            "src": "https://www.criticalchicken.com/manifest/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "https://www.criticalchicken.com/img/manifest/android-chrome-512x512.png",
+            "src": "https://www.criticalchicken.com/manifest/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }

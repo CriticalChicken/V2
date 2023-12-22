@@ -266,7 +266,7 @@ add_filter('rest_prepare_post', 'fix_decode_rest_api', 10, 3);
 if( defined('IS_PROFILE_PAGE') && IS_PROFILE_PAGE === true ){
 	$site = get_site_url();
 	$path = get_template_directory_uri();
-    wp_die( '<p><img src="' . $path . '/img/admin_v2_color-on-transparent_for31px.png" style="width: 41.5px; height: 31px;" alt="V2"></p><p><b>There are potentially website-breaking things on this page, so we&rsquo;ve disabled it.</b></p><p>You can still change your own profile picture on <a href="https://en.gravatar.com" target="_blank" rel="external">Gravatar</a> (sign in with your &ldquo;firstname@criticalchicken.com&rdquo; email address). If you&rsquo;d like any other changes made to your profile, email <a href="mailto:office@criticalchicken.com">office@criticalchicken.com</a>.</p><p><a href="'. $site . '/wp-admin/index.php">Go back to the Dashboard &raquo;</a></p>' );
+    wp_die( '<p><img src="' . $path . '/img/admin_v2_color-on-transparent_for31px.png" style="width: 41.5px; height: 23.5px;" alt="V2"></p><p><b>There are potentially website-breaking things on this page, so we&rsquo;ve disabled it.</b></p><p>You can still change your own profile picture on <a href="https://en.gravatar.com" target="_blank" rel="external">Gravatar</a> (sign in with your &ldquo;firstname@criticalchicken.com&rdquo; email address). If you&rsquo;d like any other changes made to your profile, email <a href="mailto:office@criticalchicken.com">office@criticalchicken.com</a>.</p><p><a href="'. $site . '/wp-admin/index.php">Go back to the Dashboard &raquo;</a></p>' );
 }
 
 

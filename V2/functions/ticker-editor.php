@@ -13,7 +13,7 @@ function ticker_editor_contents() {
 ?>
 
 <div class="wrap">
-	<h1 style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/admin_v2_color-on-transparent_for31px.png'); background-size: 41.5px 31px; background-position: left 12px; background-repeat: no-repeat; padding: 8px 0 12px 53.5px !important; height: 31px !important; line-height: 31px !important;">Ticker Editor</h1>
+	<h1 style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/admin_v2_color-on-transparent_for31px.png'); background-size: 41.5px 23.5px; background-position: left 12px; background-repeat: no-repeat; padding: 8px 0 12px 53.5px !important; height: 31px !important; line-height: 31px !important;">Ticker Editor</h1>
 	<form method="POST" action="options.php">
 		<?php
 		settings_fields('ticker-editor');

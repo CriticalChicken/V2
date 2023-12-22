@@ -32,7 +32,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 </div><!-- /jumbotron-outer -->
 <div id="post-jumbotron">
 <ul>
-<li class="socials-bluesky"><a href="https://bsky.app/profile/criticalchicken.bsky.social" title="Bluesky" target="_blank" rel="external me">Bluesky</a></li>
+<li class="socials-bluesky"><a href="https://bsky.app/profile/criticalchicken.com" title="Bluesky" target="_blank" rel="external me">Bluesky</a></li>
 <li class="socials-discord"><a href="https://discord.gg/XtGUe4vaVm" title="Discord" target="_blank" rel="external me">Discord</a></li>
 <li class="socials-instagram"><a href="https://www.instagram.com/criticalchicken" title="Instagram" target="_blank" rel="external me">Instagram</a></li>
 <li class="socials-mastodon"><a href="https://mastodon.world/@CriticalChicken" title="Mastodon" target="_blank" rel="external me">Mastodon</a></li>
@@ -56,9 +56,9 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <div id="not-sidebar-outer">
 <div id="not-sidebar-inner">
 <div id="not-sidebar-box-left">
-<h1>*points gun at temple expectantly*</h1>
-<img src="<?php echo get_template_directory_uri(); ?>/img/not-sidebar/persona-3-reload.jpg" alt="A screenshot from Persona 3: Reload. Yukari and the protagonist are talking in a classroom." width="352" height="198">
-<p>We recently played <b>P3P</b> and thought it had <em>major</em> pacing issues. So why are we so hyped for <b>Persona 3: Reload</b>?</p>
+<h1>Anyone for more Phantom Thieves?</h1>
+<img src="<?php echo get_template_directory_uri(); ?>/img/not-sidebar/tactica.jpg" alt="A screenshot from Persona 5 Tactica. Chibified versions of The Phantom Thieves are hanging out in Le Blanc." width="352" height="198">
+<p><em>Chibi</em> Phantom Thieves, no less! We&rsquo;re days away from <b>Persona 5 Tactica</b>, and we could hardly be more excited.</p>
 <a href="<?php echo get_site_url(); ?>/radar" class="raquo">What&rsquo;s on our Radar &raquo;</a>
 </div><!-- /not-sidebar-box-left -->
 <div id="not-sidebar-box-right">

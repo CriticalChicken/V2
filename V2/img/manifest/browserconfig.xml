@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="https://www.criticalchicken.com/img/manifest/mstile-150x150.png"/>
+            <square150x150logo src="https://www.criticalchicken.com/manifest/mstile-150x150.png"/>
             <TileColor>#c00000</TileColor>
         </tile>
     </msapplication>
