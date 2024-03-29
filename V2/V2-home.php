@@ -38,7 +38,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <li class="socials-mastodon"><a href="https://mastodon.world/@CriticalChicken" title="Mastodon" target="_blank" rel="external me">Mastodon</a></li>
 <li class="socials-ko-fi"><a href="https://ko-fi.com/criticalchicken" title="Ko-fi" target="_blank" rel="external me">Ko-fi</a></li>
 <li class="socials-tumblr"><a href="https://criticalchicken.tumblr.com" title="Tumblr" target="_blank" rel="external me">Tumblr</a></li>
-<li class="socials-threads"><a href="<?php echo get_site_url(); ?>/threads" title="Threads" rel="help">Threads</a></li>
+<li class="socials-threads" aria-hidden="true"><a href="#" aria-hidden="true">&nbsp;</a></li>
 </ul>
 </div><!-- /post-jumbotron -->
 <div id="home-content-upper">
@@ -56,10 +56,10 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <div id="not-sidebar-outer">
 <div id="not-sidebar-inner">
 <div id="not-sidebar-box-left">
-<h1>Anyone for more Phantom Thieves?</h1>
-<img src="<?php echo get_template_directory_uri(); ?>/img/not-sidebar/tactica.jpg" alt="A screenshot from Persona 5 Tactica. Chibified versions of The Phantom Thieves are hanging out in Le Blanc." width="352" height="198">
-<p><em>Chibi</em> Phantom Thieves, no less! We&rsquo;re days away from <b>Persona 5 Tactica</b>, and we could hardly be more excited.</p>
-<a href="<?php echo get_site_url(); ?>/radar" class="raquo">What&rsquo;s on our Radar &raquo;</a>
+<h1>Love writing? Hate money?</h1>
+<img src="<?php echo get_template_directory_uri(); ?>/img/not-sidebar/writers.png" alt="An off-screen screenshot of somebody publishing a blog post" width="352" height="198">
+<p>Do we have an income? No. Do we desperately need writers? Heck yes. We promise it&rsquo;ll look good on your CV&hellip;</p>
+<a href="mailto:office@criticalchicken.com" class="raquo">Do it for the exposure &raquo;</a>
 </div><!-- /not-sidebar-box-left -->
 <div id="not-sidebar-box-right">
 <h1>This is&hellip;<br>objectionable</h1>
@@ -68,11 +68,11 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <a href="<?php echo get_site_url(); ?>/section/ace-attorney" class="raquo">More Ace Attorney &raquo;</a>
 </div><!-- /not-sidebar-box-right -->
 <div id="not-sidebar-box-mastodon">
-<iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="352" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.world%2Fusers%2FCriticalChicken&theme=light&size=100&header=true&replies=false&boosts=true" frameborder="0"></iframe>
+<iframe width="352" src="https://www.criticalchicken.com/wp-content/themes/V2-1/bluesky-feed.php" frameborder="0"></iframe>
 </div><!-- /not-sidebar-box-mastodon -->
 </div><!-- /not-sidebar-inner -->
 </div><!-- /not-sidebar-outer -->
-<div id="tease-wrapper"><div id="mastodon-tease"><a href="https://mastodon.world/@CriticalChicken" target="_blank" rel="external me">Follow us on Mastodon: <span>@CriticalChicken@mastodon.world</span></a></div></div>
+<div id="tease-wrapper"><div id="mastodon-tease"><a href="https://bsky.app/profile/criticalchicken.com" target="_blank" rel="external me">Follow us on Bluesky: <span>@criticalchicken.com</span></a></div></div>
 <div id="home-content-lower">
 <div id="posts-container-lower">
 <?php query_posts('cat=35&posts_per_page=6&offset=6'); if(have_posts()):while(have_posts()):the_post(); ?>
