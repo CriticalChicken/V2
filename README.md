@@ -10,10 +10,17 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.17
+
+- **Improvement:** Centred the logo at the top of the page on small mobile devices
+- **Bug fix:** Corrected spacing/line breaks between topics on single post pages
+  - Added a script to remove the serial comma when there are only two topics (so it says &ldquo;A and B&rdquo; instead of &ldquo;A, and B&rdquo;)
+- **Third-party:** Updated [bsky-embed](https://github.com/Vincenius/bsky-embed) to v0.1.0
+
 ### V2.0.16
 
 - Development on V2.1 has stalled somewhat, so we&rsquo;re making a few small improvements to V2.0 in the meantime. You should expect V2.1 to launch in the latter half of this year
-- **Improvement:** Replaced [Mastofeed](https://github.com/fenwick67/mastofeed) with [bsky-feed](https://github.com/Vincenius/bsky-embed) on the homepage, and changed all prominent Mastodon references to Bluesky ones
+- **Improvement:** Replaced [Mastofeed](https://github.com/fenwick67/mastofeed) with [bsky-embed](https://github.com/Vincenius/bsky-embed) on the homepage, and changed all prominent Mastodon references to Bluesky ones
   - The plan going forward is to turn our [Mastodon feed](https://mastodon.world/@CriticalChicken) into an automated feed of our latest posts, and use our [Bluesky feed](https://bsky.app/profile/criticalchicken.com) to do all our actual &ldquo;socialising&rdquo;
   - Removed all references to Threads, as we&rsquo;re no longer throwing our weight behind the Fediverse
 - **Bug fix:** The mobile search box no longer stays open after the main menu is closed on small mobile devices

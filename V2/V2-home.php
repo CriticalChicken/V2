@@ -58,7 +58,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <div id="not-sidebar-box-left">
 <h1>Love writing? Hate money?</h1>
 <img src="<?php echo get_template_directory_uri(); ?>/img/not-sidebar/writers.png" alt="An off-screen screenshot of somebody publishing a blog post" width="352" height="198">
-<p>Do we have an income? No. Do we desperately need writers? Heck yes. We promise it&rsquo;ll look good on your CV&hellip;</p>
+<p>Do we have any income? No. Do we desperately need writers? Heck yes. We&nbsp;promise it&rsquo;ll look good on your CV&hellip;</p>
 <a href="mailto:office@criticalchicken.com" class="raquo">Do it for the exposure &raquo;</a>
 </div><!-- /not-sidebar-box-left -->
 <div id="not-sidebar-box-right">
