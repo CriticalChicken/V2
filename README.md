@@ -88,7 +88,7 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Credits
 
-- [bsky-feed](https://github.com/Vincenius/bsky-embed) by [Vincent Will](https://github.com/Vincenius)
+- [bsky-embed](https://github.com/Vincenius/bsky-embed) by [Vincent Will](https://github.com/Vincenius)
 - &ldquo;Line&rdquo; icons by [Gregor Cresnar](https://iconix.si), licensed through [Noun Project](https://thenounproject.com/grega.cresnar)
 - [momentum.js](https://github.com/sschoepke/momentum) by [Stephen Schoepke](https://github.com/sschoepke)
 - [Reset CSS](https://meyerweb.com/eric/tools/css/reset/index.html) by [Eric A. Meyer](https://meyerweb.com/eric)
