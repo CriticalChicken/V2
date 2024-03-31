@@ -27,9 +27,6 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <?php categoryLinkGenerator(); ?>
 <?php if(has_tag()) { ?><span class="post-meta-tags"><img src="<?php echo get_template_directory_uri(); ?>/img/ui_tag_black-on-grey_for15px.png" width="15" height="15" alt=""><?php echo the_tags("In this post we mentioned: ", "<span class='comma-between-tags'>, </span>", "<span class='full-stop'>.</span>"); ?></span><?php } else { ?><div class="no-tags"></div><?php } ?>
 </div><!-- /post-meta -->
-<div id="crp-container">
-<?php if ( function_exists( 'echo_crp' ) ) { echo_crp(); } ?>
-</div>
 <?php get_template_part("V2-home-navigation"); ?>
 <?php endwhile;endif; ?>
 <?php get_template_part("V2-footer"); ?>
