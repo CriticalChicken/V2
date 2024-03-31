@@ -3,6 +3,35 @@
 /* Copyright (C) Critical Chicken. All rights reserved. Critical Chicken, the Critical Chicken logo and wordmark, and #ForTheGaymers are trademarks of Critical Chicken.
 All other trademarks referred to are trademarks of their respective owners. See website for current copyright years. */
 
+// Redirect if people end up in a "secret" place
+
+function chickenDefender() {
+	$theCategory = get_queried_object()->slug;
+	$siteUrl = get_site_url();
+	if ($theCategory == 'featured-posts' || $theCategory == 'special' || $theCategory == 'uncategorised') {
+		header('Location: '. $siteURL . '/', true, 301);
+		exit();
+	} else if ($theCategory == 'updated' || $theCategory == 'news-alerts' || $theCategory == 'breaking-news') {
+		header('Location: '. $siteURL . '/section/news', true, 301);
+		exit();
+	} else if ($theCategory == 'live') {
+		header('Location: '. $siteURL . '/section/live-updates', true, 301);
+		exit();
+	} else if ($theCategory == 'ace-attorney-series') {
+		header('Location: '. $siteURL . '/section/ace-attorney', true, 301);
+		exit();
+	} else if ($theCategory == 'pokemon-series') {
+		header('Location: '. $siteURL . '/section/pokemon', true, 301);
+		exit();
+	} else if ($theCategory == 'dungeons-dragons') {
+		header('Location: '. $siteURL . '/section/dungeons-and-dragons', true, 301);
+		exit();
+	} else if ($theCategory == 'nintendo-switch-2') {
+		header('Location: '. $siteURL . '/section/switch-2', true, 301);
+		exit();
+	}
+}
+
 // Fallback thumbnail picker
 function fallbackThumbnailPicker() {
 	if (in_category('exclusives') || in_category('live') || in_category('breaking-news') || in_category('news-alerts')) {

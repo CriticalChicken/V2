@@ -10,6 +10,11 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.18
+
+- **SEO:** Fixed a major issue/oversight with our XML sitemap that was preventing most of our posts from appearing on it
+  - Backported the ChickenDefender function from V2.1 to automatically, permanently redirect &ldquo;overlapping&rdquo; taxonomies &ndash; e.g. the &ldquo;Ace Attorney (series)&rdquo; topic now redirects to the main Ace Attorney section
+
 ### V2.0.17
 
 - **Improvement:** Centred the logo at the top of the page on small mobile devices
