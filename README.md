@@ -10,6 +10,10 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.20&ndash;V2.0.21
+
+- **Bug fixes and minor improvements**
+
 ### V2.0.19
 
 - Removed &ldquo;Contextual Related Posts&rdquo; plugin from single post pages, because it is *hopeless.* This will be migrated to YARPP in V2.1. This is probably the last change for a while, as long as we don&rsquo;t find any more bugs

@@ -378,3 +378,19 @@ function v2_adminnouncement() {
     return $message;
 }
 add_shortcode('v2_adminnouncement', 'v2_adminnouncement');
+
+
+// add a link to the WP Toolbar
+function custom_toolbar_link($wp_admin_bar) {
+    $args = array(
+        'id' => 'wpsoftyicons',
+        'title' => 'Softy Icons', 
+        'href' => 'https://www.criticalchicken.com/softy-icon-collections', 
+        'meta' => array(
+            'class' => 'wpsoftyicons', 
+            'title' => 'Search WPBeginner Tutorials'
+            )
+    );
+    $wp_admin_bar->add_node($args);
+}
+add_action('admin_bar_menu', 'custom_toolbar_link', 999);

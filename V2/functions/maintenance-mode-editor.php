@@ -12,6 +12,8 @@
 <h2>It&rsquo;s designed to limit HTTP requests, so it could be useful in the unlikely event of (e.g.) a &ldquo;Reddit hug of death&rdquo;.</h2>
 <h2 style="color: #d20202;">Use it sparingly.</h2>
 
+<div style="padding: 8px; background-color: #d20202; border-radius: 8px;"><h2 style="color: white;">AFTER you enable or disable Maintenance Mode, click the &ldquo;Delete Cache&rdquo; button in the top toolbar.</h2></div>
+
 <?php }function mm_editor_display(){$current_mm_display=get_option('mm_display'); ?>
 		<input type="checkbox" name="mm_display" id="mm_display"<?php if($current_mm_display=="on"){echo(' checked');} ?>>
 

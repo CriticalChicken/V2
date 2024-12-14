@@ -68,7 +68,7 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <a href="<?php echo get_site_url(); ?>/section/ace-attorney" class="raquo">More Ace Attorney &raquo;</a>
 </div><!-- /not-sidebar-box-right -->
 <div id="not-sidebar-box-mastodon">
-<iframe width="352" src="https://www.criticalchicken.com/wp-content/themes/V2-1/bluesky-feed.php" frameborder="0"></iframe>
+<iframe width="352" src="https://www.criticalchicken.com/wp-content/themes/V2/V2-bsky-embed.php" frameborder="0"></iframe>
 </div><!-- /not-sidebar-box-mastodon -->
 </div><!-- /not-sidebar-inner -->
 </div><!-- /not-sidebar-outer -->
