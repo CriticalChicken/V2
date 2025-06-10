@@ -56,10 +56,10 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <div id="not-sidebar-outer">
 <div id="not-sidebar-inner">
 <div id="not-sidebar-box-left">
-<h1>Love writing? Hate money?</h1>
-<img src="<?php echo get_template_directory_uri(); ?>/img/not-sidebar/writers.png" alt="An off-screen screenshot of somebody publishing a blog post" width="352" height="198">
-<p>Do we have any income? No. Do we desperately need writers? Heck yes. We&nbsp;promise it&rsquo;ll look good on your CV&hellip;</p>
-<a href="mailto:office@criticalchicken.com" class="raquo">Do it for the exposure &raquo;</a>
+<h1>Help us take back the internet</h1>
+<img src="https://www.criticalchicken.com/wp-content/uploads/2025/06/gplusringhero-1120x630.avif" alt="The Gaymers&plus; Webring logo on a softly glowing, pastel-coloured rainbow background" width="352" height="198">
+<p>What&rsquo;s old is new again! Be part of our inclusive Gaymers&plus;&nbsp;Webring and join the fight against enshittification.</p>
+<a href="https://www.criticalchicken.com/webring" class="raquo">Join today &raquo;</a>
 </div><!-- /not-sidebar-box-left -->
 <div id="not-sidebar-box-right">
 <h1>This is&hellip;<br>objectionable</h1>
