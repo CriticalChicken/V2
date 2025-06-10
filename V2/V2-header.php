@@ -27,8 +27,8 @@
 </div>
 <div id="popmenu-box">
 <ul id="popmenu-contents">
-<li><a href="<?php echo get_site_url(); ?>/radar">Radar</a></li>
 <li><a href="<?php echo get_site_url(); ?>/about">About</a></li>
+<li><a href="<?php echo get_site_url(); ?>/webring">Webring</a></li>
 <li><a href="mailto:office@criticalchicken.com">Contact</a></li>
 </ul>
 </div>
