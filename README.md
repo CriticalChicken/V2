@@ -10,6 +10,10 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.23
+
+- **Improvement:** Made a bunch of changes to the Gaymers+ Webring page, and trimmed some more dead wood
+
 ### V2.0.22
 
 I can&rsquo;t believe this is still going.
