@@ -1,12 +1,13 @@
 <div id="footer-outer">
-<iframe src="https://www.criticalchicken.com/gp_iframe/vibrant.php" width="100%" height="64" frameborder="0" scrolling="no"></iframe>
 <div id="footer-inner">
+<iframe src="https://www.criticalchicken.com/gp_iframe/vibrant.php" width="100%" height="64" frameborder="0" scrolling="no" style="margin-top: -30px; margin-bottom: 28px;"></iframe>
 <?php get_template_part("V2-socials-linear"); ?>
 <span class="copyright">Copyright &copy; 2016&ndash;<?php echo date("Y"); ?> Critical Chicken.&nbsp;<br>All rights reserved.</span>
 <span class="trademark"><span class="ccname">Critical Chicken</span>, the Critical Chicken logo and wordmark, and <span class="htftg orange">#</span><span class="ftg red">ForTheGaymers</span> are trademarks of Critical Chicken.&nbsp;<br>All other trademarks referred to are trademarks of their respective owners.</span>
 <div id="footer-links">
 <ul>
 <li><a href="<?php echo get_site_url(); ?>/privacy" rel="help">Privacy policy &raquo;</a></li><?php $page = get_page(649); if($page->post_status == 'publish'){ ?>
+<li><a href="<?php echo get_site_url(); ?>/tidbyt">Tidbyt app &raquo;</a></li><?php } ?>
 </ul>
 </div><!-- /footer-links -->
 <div id="back-to-top" title="Back to top"></div>
