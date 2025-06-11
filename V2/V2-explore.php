@@ -71,13 +71,6 @@ All other trademarks referred to are trademarks of their respective owners. See 
 <div class="tumblr"><a href="https://criticalchicken.tumblr.com" target="_blank" rel="external me"><img src="<?php echo get_template_directory_uri(); ?>/img/socials_tumblr_white-on-blue_for64px.png" width="64" height="64" alt="Tumblr icon"></a><span><a href="https://criticalchicken.tumblr.com" target="_blank" rel="external me">Tumblr: <b>criticalchicken.tumblr.com</b></a></span></div>
 </div>
 <hr>
-<h2 class="our-dms">Other stuff</h2>
-<div class="other-stuff-group">
-<a href="<?php echo get_site_url(); ?>/privacy" rel="help">Privacy policy&nbsp;&raquo;</a>
-<a href="<?php echo get_site_url(); ?>/tidbyt">Tidbyt app &raquo;</a>
-<a href="https://github.com/CriticalChicken/V2" target="_blank" rel="external me">V2 theme on GitHub&nbsp;&raquo;</a>
-</div>
-<hr>
 <h2 class="tag-cloud">What we&rsquo;ve written about the most</h2>
 <div id="tag-cloud" class="minimised"><?php wp_tag_cloud("orderby=count&order=DESC&smallest=15&largest=31&unit=px&number=30"); ?><br></div>
 <a href="<?php echo get_site_url(); ?>/tags" class="more-tag-cloud">See all <?php echo do_shortcode('[sbs_tags]'); ?> tags &raquo;</a>
