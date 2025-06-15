@@ -20,6 +20,9 @@ function chickenDefender() {
 	} else if ($theCategory == 'ace-attorney-series') {
 		header('Location: '. $siteURL . '/section/ace-attorney', true, 301);
 		exit();
+	} else if ($theCategory == 'persona-series') {
+		header('Location: '. $siteURL . '/section/persona', true, 301);
+		exit();
 	} else if ($theCategory == 'pokemon-series') {
 		header('Location: '. $siteURL . '/section/pokemon', true, 301);
 		exit();

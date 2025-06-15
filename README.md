@@ -10,6 +10,10 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.24
+
+- Added **Persona** section to the ChickenDefender function
+
 ### V2.0.23
 
 - **Improvement:** Made a bunch of changes to the Gaymers+ Webring page, and trimmed some more dead wood
