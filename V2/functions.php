@@ -8,7 +8,8 @@ All other trademarks referred to are trademarks of their respective owners. See 
 function chickenDefender() {
 	$theCategory = get_queried_object()->slug;
 	$siteUrl = get_site_url();
-	if ($theCategory == 'featured-posts' || $theCategory == 'special' || $theCategory == 'uncategorised') {
+
+	if ($theCategory == 'featured-posts' || $theCategory == 'special' || $theCategory == 'uncategorised' || $theCategory == 'editorial' || $theCategory == 'top-stories') {
 		header('Location: '. $siteURL . '/', true, 301);
 		exit();
 	} else if ($theCategory == 'updated' || $theCategory == 'news-alerts' || $theCategory == 'breaking-news') {

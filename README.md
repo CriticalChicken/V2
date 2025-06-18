@@ -10,6 +10,10 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ## Changelog
 
+### V2.0.25
+
+- Added &ldquo;Editorial&rdquo; and &ldquo;Top stories&rdquo; sections to the ChickenDefender function
+
 ### V2.0.24
 
 - Added **Persona** section to the ChickenDefender function
@@ -31,12 +35,12 @@ I can&rsquo;t believe this is still going.
 
 ### V2.0.19
 
-- Removed &ldquo;Contextual Related Posts&rdquo; plugin from single post pages, because it is *hopeless.* This will be migrated to YARPP in V2.1. This is probably the last change for a while, as long as we don&rsquo;t find any more bugs
+- Removed &ldquo;Contextual Related Posts&rdquo; plugin from single post pages, because it is *hopeless.* This will be migrated to YARPP in Tri (V3.0). This is probably the last change for a while, as long as we don&rsquo;t find any more bugs
 
 ### V2.0.18
 
 - **SEO:** Fixed a major issue/oversight with our XML sitemap that was preventing most of our posts from appearing on it
-  - Backported the ChickenDefender function from V2.1 to automatically, permanently redirect &ldquo;overlapping&rdquo; taxonomies &ndash; e.g. the &ldquo;Ace Attorney (series)&rdquo; topic now redirects to the main Ace Attorney section
+  - Backported the ChickenDefender function from Tri (V3.0) to automatically, permanently redirect &ldquo;overlapping&rdquo; taxonomies &ndash; e.g. the &ldquo;Ace Attorney (series)&rdquo; topic now redirects to the main Ace Attorney section
 
 ### V2.0.17
 
@@ -47,7 +51,7 @@ I can&rsquo;t believe this is still going.
 
 ### V2.0.16
 
-- Development on V2.1 has stalled somewhat, so we&rsquo;re making a few small improvements to V2.0 in the meantime. You should expect V2.1 to launch in the latter half of this year
+- Development on Tri (V3.0) has stalled somewhat, so we&rsquo;re making a few small improvements to V2.0 in the meantime.
 - **Improvement:** Replaced [Mastofeed](https://github.com/fenwick67/mastofeed) with [bsky-embed](https://github.com/Vincenius/bsky-embed) on the homepage, and changed all prominent Mastodon references to Bluesky ones
   - The plan going forward is to turn our [Mastodon feed](https://mastodon.world/@CriticalChicken) into an automated feed of our latest posts, and use our [Bluesky feed](https://bsky.app/profile/criticalchicken.com) to do all our actual &ldquo;socialising&rdquo;
   - Removed all references to Threads, as we&rsquo;re no longer throwing our weight behind the Fediverse
