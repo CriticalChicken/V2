@@ -20,13 +20,12 @@ The new WordPress theme for [CriticalChicken.com](https://www.criticalchicken.co
 
 ### V2.0.23
 
-- **Improvement:** Made a bunch of changes to the Gaymers+ Webring page, and trimmed some more dead wood
+- **Improvement:** Trimmed some more dead wood
 
 ### V2.0.22
 
 I can&rsquo;t believe this is still going.
 
-- **New feature:** Added a new page for the [Gaymers+ Webring](https://www.criticalchicken.com/webring), and added the Webring widget to the site footer
 - Removed the Radar page and references to the now-dead Tidbyt project
 
 ### V2.0.20&ndash;V2.0.21
